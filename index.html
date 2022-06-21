@@ -1,0 +1,11 @@
+---
+layout: default
+title: Home
+---
+<div class="table">
+	<h1> lbwei </h1>
+	{% for pages in site.pages %}
+	<h3>{{ pages.title }}</h3>
+	<p>{{ pages.content }}</p>
+	{% endfor %}
+</div>
