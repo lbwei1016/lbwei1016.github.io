@@ -25,6 +25,12 @@
       {% endif %}
     {% endfor %}
 
+    {% for collection in site.collections %}
+      {% if collection.label != "posts" %}
+        <a class="sidebar-nav-item" href="{{ collection.label | absolute_url }}">{{ collection.label }}</a>
+      {% endif %}
+    {% endfor %} 
+
     <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 

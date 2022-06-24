@@ -1,11 +1,16 @@
 ---
-layout: default
+layout: table
 title: Home
 ---
-<div class="table">
-	<h1> lbwei </h1>
-	{% for pages in site.pages %}
-	<h3>{{ pages.title }}</h3>
-	<p>{{ pages.content }}</p>
-	{% endfor %}
-</div>
+
+{% for collection in site.collections %}
+  {% if collection.label != "posts" %}
+    <h2>{{ collection.label }}</h2>
+    <ul>
+      {% for item in site[collection.label] %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  
+  {% endif %}
+{% endfor %} 

@@ -4,7 +4,7 @@ highlighter:         Rouge
 title:               lbwei
 tagline:             'doodles'
 description:         'Enjoy :)'
-url:                 https://lbwei1016.github.io
+url:                 https://lbwei1016.github.io/
 baseurl:             ''
 paginate:            5
 permalink:           pretty
@@ -26,12 +26,11 @@ google_analytics_id: UA-146052-15
 # collections
 collections_dir: my_collections
 collections:
-        math:
-                label: math
-                output: true
-                usemathjax: true
-        misc:
-                label: misc
-                output: true
-                usemathjax: true
+        Math:
+          # label: Math
+          url: "/Math"
+          output: true
+        Misc:
+          # label: Misc
+          output: true
                        
