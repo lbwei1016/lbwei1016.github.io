@@ -27,7 +27,7 @@
 
     {% for collection in site.collections %}
       {% if collection.label != "posts" %}
-        <a class="sidebar-nav-item" href="{{ collection.label | absolute_url }}">{{ collection.label }}</a>
+        <a class="sidebar-nav-item{% if page.title == collection.label %} active{% endif %}" href="{{ collection.label | absolute_url }}">{{ collection.label }}</a>
       {% endif %}
     {% endfor %} 
 

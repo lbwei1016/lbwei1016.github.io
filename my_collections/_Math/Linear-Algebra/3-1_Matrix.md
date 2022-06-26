@@ -11,13 +11,15 @@ tag: Linear Algebra
 * $$AB \neq BA$$: Communitative Law (交換)
 * $$A (B+C) = Ab + AC$$；$$(A+B) C = AB + AC$$: Distributitive Law (分配)
 
+---
+
 ## Matrix: with Gaussian-Jordan Elimination
 
-* use vector-matrix product to represent *row reduction(or adding)* in Elimination
+* use vector-matrix product to represent *row reduction (or adding)* in Elimination
 
   > **matrix-vector product:**
   >
-  > * 如果是 matrix-**column**_vector product，結果就是 the linear combination of **columns** of the matrix
+  > * 如果是 matrix-*column-vector* product，結果就是 the linear combination of **columns** of the matrix
   >   * $$A_{m\times n}\boldsymbol{v_{n\times 1}} = \boldsymbol{b_{m\times 1}}$$ (column vector 在右)
   > * 若為 matrix-row_vector product，結果是 the linear combination of **rows** of the matrix
   >   * $$\boldsymbol{v_{1\times m}A_{m\times n}} = \boldsymbol{b_{1\times n}}$$ (row vector 在左)
@@ -44,6 +46,8 @@ tag: Linear Algebra
     >$$P_{ij} \times P_{ij} = I$$<br>
     >e.g. $$P_{21} = \begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}$$ 
 
+---
+
 ##  Inverse
 
 ### Definition
@@ -57,15 +61,23 @@ tag: Linear Algebra
 > Invertible matrix must be a *square matrix*. (Both *left inverse* and *right inverse* exists)
 
 ### Gaussain-Jordan Elimination for Finding Inverse Matrix
+If $$[\ A\ | \ B\ ] \rightarrow [\ I\ | \ R\ ]$$ is obtainable, then $$A^{-1} = R$$.
 
-## LU, LDU Factorization(Decomposition)
+---
 
 ## Transpose
 
 > For matrix $$A$$, denote $$A^T$$ as the *transpose* of $$A$$, where the columns of $$A^T$$ are the rows of $$A$$. 
 
-### Symmetric 
+### Theorem
+1. $$(A+B)^T = A^T + B^T$$
+2. $$(AB)^T = B^TA^T$$
+3. $$(A^{-1})^T = (A^T)^{-1}$$
+
+---
+
+## Symmetric 
 
 > If $$A$$ is symmetric, $$A = A^T$$, i.e. $$a_{ij} = a_{ji}$$.
 
-> Notes for *Inverse*, *Gaussain-Jordan Elimination for Finding Inverse Matrix*, *LU, LDU Factorization(Decomposition)*, *Transpose*, and *Symmetric* are attached below.
+性質頗多，留待下次。

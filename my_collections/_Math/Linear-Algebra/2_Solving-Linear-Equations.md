@@ -52,6 +52,8 @@ tag: Linear Algebra
    > leading entry(coefficient): the first non-zero entry of a row
 
    e.g. $$\begin{bmatrix}11&2&3&4\\0&1&2&5\\0&0&7&9\end{bmatrix}$$
+   
+---
 
 ## Jordan Elimination
 

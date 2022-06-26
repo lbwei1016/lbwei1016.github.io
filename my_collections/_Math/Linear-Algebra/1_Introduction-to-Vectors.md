@@ -15,6 +15,8 @@ tag: Linear Algebra
 
 > A ***linear combination*** consists of the two operations above
 
+---
+
 ## Axiom 
 
 * Associativity of addition (結合)
