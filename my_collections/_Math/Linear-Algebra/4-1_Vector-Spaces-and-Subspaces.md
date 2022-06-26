@@ -44,13 +44,6 @@ tag: Linear Algebra
 * $$span(U)$$ is always a subspace of $$V$$ (refer to the *Theorem* of *subspaces*)
 * $$C(A) = span(U)$$, where $$U = \{ column\ vectors\ of\ A\}$$ 
 
-## Dimension of Vector Space
-
-> $$dim(V) = $$ **number of vectors** in any *basis* for $$V$$ (basis 的 vector 數量) (詳見 [Linear Transformation])
-
-> [*Linear Independence*](../4-0_Linear-Independence)<br>
-> [*Basis*](../4-2_Basis)
-
 ## Rank & Nullity
 
 > Given $$A_{m\times n}$$

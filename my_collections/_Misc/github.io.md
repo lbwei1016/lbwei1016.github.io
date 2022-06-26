@@ -27,9 +27,9 @@ title: Github Page
 
 ## Step II: Deploy
 
-1. 到 *github.io* repo，按下 Settings。![](./img/github.io.setting.png)
+1. 到 *github.io* repo，按下 Settings。![](../img/github.io.setting.png)
 
-2. 右方選擇 *Pages*，然後變更 source 為 *gh-pages*。完成！![](./img/github.io.page.png)
+2. 右方選擇 *Pages*，然後變更 source 為 *gh-pages*。完成！![](../img/github.io.page.png)
 
 ## Step III: Play
 

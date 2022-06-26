@@ -38,7 +38,6 @@ tag: Linear Algebra
 
 ## Calulation
 ### Finding Column Space
-* 去除 linearly dependent 的 column 即可。
 
 ### Finding Null space
 *Define:* 
@@ -51,7 +50,7 @@ tag: Linear Algebra
 3. Identify *special solutions*. 
 4. $$N(A)$$ = $$span(\{special\ solutions\})$$ 
 
-> If there are no free variables in step 2, $$N(A)=\{\boldsymbol{0}\}$$. In this case, $$dim(N(A))=0$$. (因為 basis 是 $$\{\phi\}$$)
+> If there are no free variables in step 2, $$N(A)=\{\boldsymbol{0}\}$$. In this case, $$dim(N(A))=0$$. (因為 basis 是 $$\{\emptyset\}$$)
 
 ### The dimension of null space
 *Define:* 
