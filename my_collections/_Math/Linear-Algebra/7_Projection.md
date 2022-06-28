@@ -44,4 +44,25 @@ To sum up, from $$\boldsymbol{p} = A\boldsymbol{x} = A(A^TA)^{-1}A^T\boldsymbol{
 > $$A^TA$$ is invertible if only if $$A$$ has linearly independent columns.
 
 *Proof:*
-First, show that $$A^A$$
+
+First, show that $$A^TA$$ has the same *null space* as $$A$$, i.e. $$N(A) \subseteq N(A^TA)$$ and $$N(A^TA) \subseteq N(A)$$
+
+**(i)**
+
+For all $$\boldsymbol{x} \in N(A), A\boldsymbol{x} = \boldsymbol{0} \Rightarrow A^TA\boldsymbol{x} = A^T\boldsymbol{0} = \boldsymbol{0}$$, which implies $$\boldsymbol{x} \in N(A^TA)$$. Therefore, $$N(A) \subseteq N(A^TA)$$.
+
+**(ii)**
+
+For all $$\boldsymbol{x} \in N(A^TA), (A^TA)\boldsymbol{x} = \boldsymbol{0} \Rightarrow \boldsymbol{x}^T A^TA\boldsymbol{x} = \boldsymbol{x}^T\boldsymbol{0} = 0\ (scalar)$$, and we know $$\boldsymbol{x}^T A^TA\boldsymbol{x} = (A\boldsymbol{x})^T \cdot (A\boldsymbol{x}) = \|A\boldsymbol{x}\|^2 = 0$$. We can conclude that $$A\boldsymbol{x}$$ is a vector with *norm* equal to *zero*, which implies $$A\boldsymbol{x}=\boldsymbol{0}$$, i.e. $$\boldsymbol{x} \in N(A)$$. Therefore, $$N(A^TA) \subseteq N(A)$$.
+
+From **(i)** and **(ii)**, $$N(A) = N(A^TA)$$ is shown.
+
+**(iii)**
+
+Note that $$A$$ is $$m \times n$$ and $$A^TA$$ is $$n \times n$$.
+
+Given $$rank(A)=r, dim(N(A)) = n-r, dim(N(A^TA))=n-rank(A^TA)$$. Since $$N(A) = N(A^TA)$$, hence $$dim(N(A)) = dim(N(A^TA)) \Rightarrow rank(A^TA) = r$$.
+
+As $$A$$ has linealy independent columns, i.e. $$rank(A) = n$$, $$rank(A^TA)$$ also equals to $$n$$. Therefore, $$A^TA$$ is invertible, and $$A^TA$$ is invertible only if its rank is $$n$$. ◼
+
+> Application of this theorem: [image encryption](https://github.com/SiriusKoan/NYCU-LA-final-project/blob/main/technique_specifics.pdf)
