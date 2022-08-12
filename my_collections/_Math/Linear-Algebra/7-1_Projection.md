@@ -38,6 +38,8 @@ $$\boldsymbol{x} = (A^TA)^{-1}A^T\boldsymbol{b}$$.<br>($$A^TA$$ is invertible he
 
 To sum up, from $$\boldsymbol{p} = A\boldsymbol{x} = A(A^TA)^{-1}A^T\boldsymbol{b} = P\boldsymbol{b}$$, we can find that *projection matrix* $$P=A(A^TA)^{-1}A^T$$, and that $$P^2 = P$$.
 
+In a special case when $$\boldsymbol{b}$$ is projected onto *a single vector* $$\boldsymbol{a}$$ (not a subspace; 1-D projection), $$\boldsymbol{p} = (\boldsymbol{aa^T} / \boldsymbol{a^Ta})\boldsymbol{b} = (\boldsymbol{a^Tb} / \boldsymbol{a^Ta}) \boldsymbol{a}$$. (This formula is analogous to the multi-dimensional version.) (See [The Gram-Schmidt Process](../9_Orthogonality-More/))
+
 ---
 
 ## Theorem
