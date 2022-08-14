@@ -5,6 +5,16 @@ usemathjax: true
 tag: Theory of Computation
 ---
 
+### Classification Problems
+又稱為 **decision problems**。此類問題的答案是 *Yes or No*；例如「x 是不是質數？」
+而 **decision procedure** 指的就是 **algorithm**。
+
+其他問題分類有：Optimization problems, Quantified problems, Quantified problems, etc.
+
+> ***Turing machine*** in modern language, is simply a computer program. (Math and Computation, Avi Wigderson)
+
+---
+
 ### $$\mathcal{P}$$ v.s. $$\mathcal{NP}$$
 簡單來說，若某類問題 $$\mathcal{C \in P}$$，代表 $$\mathcal{C}$$ 可以「有效率地」（即在多項式時間內）被解決；若 $$\mathcal{C \in NP}$$，則問題 $$\mathcal{C}$$ 可以「有效率地」被驗證（存在 *witness* $$y$$）。
 
