@@ -1,6 +1,6 @@
 ---
 layout: table
-title: Math
+title: Concrete-Math
 ---
 
 <ul>
