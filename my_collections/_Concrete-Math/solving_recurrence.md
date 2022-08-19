@@ -2,7 +2,7 @@
 layout: page
 title: Solving Recurrences I
 usemathjax: true
-tag: Basics
+tag: Concrete Mathematics, Recurrence
 ---
 
 > *Solve* 指的是解出 *closed form*。<br>
@@ -15,6 +15,8 @@ tag: Basics
   - [Example $$\rm III$$:](#example-rm-iii)
   - [Example $$\rm IV$$:](#example-rm-iv)
   - [Reference](#reference)
+
+---
 
 > **First-Order Recurrences** <br>
 > 形式：$$a_n = Ca_{n-1} + f(n)$$ <br>
@@ -54,6 +56,8 @@ h_n &=& \alpha(a_n + f_{n-1}) + \beta(b_n + g_{n-1}) \\
 \end{eqnarray}$$
 
 總而言之，因為以上三種遞迴關係有著相同的結構（$$\mathcal{F_n} = a_n + \mathcal{F_{n-1}}$$），利用線性組合便可以相互轉換。於是複雜的遞迴關係（$$h_n$$）可以由簡單的（$$f_n, g_n$$）得出，而 $$f_n, g_n$$ 就是 $$h_n$$ 的 **repertoire**。
+
+---
 
 ### Example $$\rm I$$:
 
@@ -108,6 +112,8 @@ h_n &=& f_n + {3 \over 2}u_n + {11 \over 2}g_n + c_0 \\
 3. 擴充 *repertoire*（消除多餘項）
 4. 代回原式
 5. 代入初始項
+
+---
 
 ### Example $$\rm II$$:
 
@@ -181,6 +187,8 @@ C(n) &=& l
 
 現在我們已經解出 *generalized* $$f(n)$$ 了！再代入符合原遞迴關係的常數 $$(\alpha, \beta, \gamma)$$ 即可。
 
+---
+
 ### Example $$\rm III$$:
 考慮上一範例的推廣：
 
@@ -194,6 +202,8 @@ f(dn + j) &=& cf(n) + \beta_j,\ 0 \leq j < d,\ n \geq 1
 $$f((b_mb_{m-1}...b_1b_0)_d) = (\alpha_{b_m}\beta_{b_{m-1}}...\beta_{b_1}\beta_{b_0})_c \tag{3}$$
 
 （試著展開原遞迴關係就可以得到上述解！）
+
+---
 
 ### Example $$\rm IV$$:
 比上一個範例更複雜一些：
@@ -229,6 +239,8 @@ H(n) &=& -\gamma n
 這樣就解出 $$g(n) = h(n) + H(n)$$ 了！
 
 > *Note*: $$h(n)$$ 用 [Example $$\rm III$$](#example-rm-iii) 的方法解。
+
+---
 
 ### Reference
 - [Fun with Recursion and the Repertoire Method](https://www.youtube.com/watch?v=2YW-RqAGskE)
