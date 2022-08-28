@@ -7,6 +7,19 @@ time: 2022/08/26
 ---
 
 **Table of Content**
+- [Definition](#definition)
+- [Basic Identities](#basic-identities)
+  - [Symmetry](#symmetry)
+  - [Absorption](#absorption)
+  - [Addition](#addition)
+  - [上下差 $$r$$](#上下差-r)
+  - [上 $$k$$](#上-k)
+  - [Binomial Theorem](#binomial-theorem)
+  - [Negation](#negation)
+  - [頂真](#頂真)
+  - [Multinomial Coefficient](#multinomial-coefficient)
+  - [Trinomial Theorem](#trinomial-theorem)
+- [Vandermonde's Convolution](#vandermondes-convolution)
 
 ---
 
@@ -22,15 +35,17 @@ $$
 
 > 參考 [Finite Calculus](../Finite-Calculus)
 
-## Identities
+---
 
-- Symmetry
+## Basic Identities
+
+### Symmetry
 
 $${n \choose k}= {n \choose n-k},\ n \in \mathbb{Z}^+$$ 
 
 > $$n$$ 一定不能是負的！詳見 *Concrete Math p.156*
 
-- Absorption
+### Absorption
 
 $${r \choose k} = {r \over k}{r-1 \choose k-1},\ k \not = 0$$
 
@@ -52,19 +67,19 @@ $$f(x) = g(x) \tag*{$\blacksquare$}$$
 
 套用到本性質：等號左右皆為 $$r$$ 的 $$k+1$$ 次多項式，而且對於所有 $$r \in \mathbb{Z}^+$$ 等號皆成立（也就是無限多個點上，兩多項式相等，符合 *polynomial argument*），因此多項式相等，$$r$$ 於是可推廣至實數。
 
-- Addition
+### Addition
   
 $${r \choose k} = {r-1 \choose k} + {r-1 \choose k-1},\ k \in \mathbb{Z}$$
 
-- 上下差 $$r$$
+### 上下差 $$r$$
 
 $$\sum_{k \leq n}{r+k \choose k} = {r+n+1 \choose n},\ n \in \mathbb{Z}$$
 
-- 上 $$k$$
+### 上 $$k$$
 
 $$\sum_{0 \leq k \leq n}{k \choose m} = {n+1 \choose m+1},\ m, n \in \mathbb{N}$$
 
-- Binomial Theorem
+### Binomial Theorem
 
 $$(x+y)^r = \sum_k{r \choose k}x^ry^{r-k},\ r \in \mathbb{N} \lor \bigl| x/y \bigr| < 1$$
 
@@ -73,3 +88,35 @@ $$(x+y)^r = \sum_k{r \choose k}x^ry^{r-k},\ r \in \mathbb{N} \lor \bigl| x/y \bi
 可以推廣至複數（設 $$z = x/y$$）：
 
 $$(1+z)^r = \sum_k{r \choose k}z^k,\ \left| z \right| < 1$$
+
+> $$z$$ 的限制是為了確保 *infinite sum* 收斂
+
+### Negation
+
+$${r \choose k} = (-1)^k{k-r-1 \choose k},\ k \in \mathbb{Z}$$
+
+$$\sum_{k \leq m}{r \choose k}(-1)^k = (-1)^m{r-1 \choose m}$$ 
+
+> 第二個公式可用 ***上下差 $$r$$*** 導出
+
+### 頂真
+
+$${r \choose m}{m \choose k} = {r \choose k}{r-k \choose m-k}$$
+
+### Multinomial Coefficient
+
+$${a_1 + a_2 + \cdots + a_m \choose a_1, a_2, \cdots, a_m} = {(a_1 + a_2 + \cdots + a_m)! \over a_1! a_2! \cdots a_m!}$$
+
+### Trinomial Theorem
+
+$$(x+y+z)^n = \sum_{0 \leq a,b,c \leq n \\ a+b+c=n} {a+b+c \choose a,b,c} = {(a+b+c)! \over a!b!c!}x^ay^bz^c$$
+
+## Vandermonde's Convolution
+
+$$\sum_k {r \choose m+k}{s \choose n-k} = {r+s \choose m+n},\ m, n \in \mathbb{Z} \tag{1}$$
+
+$$\sum_k{l \choose m+\boldsymbol{k}}{s \choose n+\boldsymbol{k}} = {l+s \choose l-m+n},\ l \in \mathbb{N}; m, n \in \mathbb{Z} \tag{2}$$
+
+$$\sum_k{l \choose m+\boldsymbol{k}}{s+\boldsymbol{k} \choose n}(-1)^\boldsymbol{k} = (-1)^{l+m}{s-m \choose n-l} \tag{3}$$
+
+$$
