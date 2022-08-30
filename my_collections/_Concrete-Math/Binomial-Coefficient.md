@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Binomial Coefficient I
+title: Binomial Coefficient
 usemathjax: true
 tag: Concrete Mathematics, Binomial
 time: 2022/08/26
@@ -25,7 +25,14 @@ time: 2022/08/26
   - [Going Halves](#going-halves)
   - [Difference](#difference)
   - [移動 k](#移動-k)
+  - [Inversion](#inversion)
 - [Newton Series](#newton-series)
+- [Derangement](#derangement)
+  - [Definition](#definition-1)
+  - [Identities](#identities)
+- [Generating Function](#generating-function)
+  - [Generalized binomial function](#generalized-binomial-function)
+  - [Generalized exponential series](#generalized-exponential-series)
 - [Reference](#reference)
 
 ---
@@ -167,6 +174,14 @@ $$\Delta^n = (E-1)^n = \sum_k{n \choose k}E^k(-1)^{n-k}$$
 
 > 把 $$k$$ 從下（上）標往上（下）移
 
+### Inversion
+
+$$g(n) = \sum_{k}{n \choose k}(-1)^kf(k) \iff f(n) = \sum_{k}{n \choose k}(-1)^kg(k)$$
+
+**Proof**
+
+直接將 $$f(x)$$ 或 $$g(x)$$ 代入
+
 ---
 
 ## Newton Series
@@ -216,9 +231,56 @@ $$(-1)^nn!a_n = \sum_k{n \choose k}(-1)^{k}(a_0 + \cdots + a_nk^n)$$
 
 將 Newton Series 推廣至 infinity，可以類比 *Taylor Series*
 
-$$g(a+x) = \sum_n{\Delta^ng(a) \over n!}x^{\underline n}$$
+$$g(a+x) = \sum_n{\Delta^ng(a) \over n!}x^{\underline n} = \sum_n{\Delta^ng(a)} {x \choose n}$$
+
+---
+
+## Derangement
+
+> 錯置排列，詳見 CMath p.193-196
+
+> 從前從前，有一棒球隊贏得冠軍，隊員們都非常高興，同時用力地將自己的帽子往天空拋去。當帽子墜落下來、重回球員們的手中時，多少人可以拿回自己的帽子？
+
+### Definition
+
+> 令 $$h(n, k)$$ 代表 $$n$$ 位球員中恰 $$k$$ 位拿回自己的帽子的排列數，而 $$n¡ = h(n, 0)$$，代表所有人的帽子錯置（$$n¡$$ 念做 *n factorial*）。
+
+### Identities
+
+$$h(n, k) = {n \choose k}h(n-k, 0) = {n \choose k}(n-k)¡, \tag{1}$$
+
+> 選 $$k$$ 人拿回自己的帽子
+
+$$n! = \sum_k h(n, k) = \sum_k {n \choose k}(n-k)¡ = \sum_k {n \choose k}k¡, \tag{2}$$
+
+然後利用 [Inversion](../Binomial-Coefficient-1/#inversion) 可以得到
+
+$$n¡ = (-1)^n\sum_k{n \choose k}(-1)^kk!$$
+
+> 設 $$g(n) = n!,\ f(k) = (-1)^kk¡$$
+
+所以
+
+$$n¡ = \sum_{0 \leq k \leq n}{n! \over (n-k)!}(-1)^{n-k} = n!\sum_{0 \leq k \leq n}(-1)^k / k!, \tag{3}$$
+
+因為 
+
+$$\sum_{k \geq 0}(-1)^k/k! = e^{-1}$$
+
+然後再經過一番曲折，可以得到 closed form
+
+$$n¡ = \Big\lfloor {n! \over e} + {1 \over 2} \Big\rfloor + [n=0]$$
+
+---
+
+## Generating Function
+
+### Generalized binomial function
+### Generalized exponential series
+
+> 見 CMath p.200
+
+---
 
 ## Reference
-- Concrete Mathematics: A Foundation for Computer Science, by Ronald Graham, Donald Knuth, and Oren Patashni [CMath]
-
-> note till p.203
+- [CMath], Concrete Mathematics: A Foundation for Computer Science, by Ronald Graham, Donald Knuth, and Oren Patashni

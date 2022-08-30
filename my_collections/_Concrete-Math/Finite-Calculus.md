@@ -15,6 +15,7 @@ time: 2022/08/24
   - [Difference operator ($$\Delta$$)](#difference-operator-delta)
   - [Harmonic Number](#harmonic-number)
 - [Operations](#operations)
+  - [Basics](#basics)
   - [Law of Exponents (falling factorial)](#law-of-exponents-falling-factorial)
   - [Fundamental Theorem](#fundamental-theorem)
   - [Definite Sum](#definite-sum)
@@ -57,6 +58,14 @@ $$H_n = 1 + {1\over 2} + \cdots + {1\over n}$$
 > 類比 $$ln(x)$$
 
 ## Operations
+
+### Basics
+
+$$1^{\bar k} = k! = k^{\underline{k}},\ k \in \mathbb{N}$$
+
+$$x^{\bar k}(-1)^k = (-x)^{\underline k}$$
+
+$$x^{\underline k}(-1)^k = (-x)^{\bar k}$$
 
 ### Law of Exponents (falling factorial)
 
