@@ -38,7 +38,7 @@ $$
 0,\ k \in \mathbb{Z}^-
 \end{cases}
 $$
-> $$k$$ 必為整數，$$r$$ 為任意實數
+> $$k$$ 必為整數，$$r$$ 為任意實數，甚至複數
 
 > 參考 [Finite Calculus](../Finite-Calculus)
 
@@ -136,7 +136,7 @@ $$\sum_k{l \choose m+\boldsymbol{k}}{s+\boldsymbol{k} \choose n}(-1)^\boldsymbol
 
 $$\sum_{\boldsymbol{k \leq l}}{l-\boldsymbol{k} \choose m}{s \choose \boldsymbol{k}-n}(-1)^\boldsymbol{k} = (-1)^{l+m}{s-m-1 \choose l-m-n},\ l, m, n \in \mathbb{N} \tag{4} $$
 
-$$\sum_{0 \leq k \leq l}{l-\boldsymbol{k} \choose m}{q+\boldsymbol{k} n} = {l+q+1 \choose m+n+1},\ l, m, n, q \in \mathbb{N}; n \geq q \geq 0 \tag{5}$$
+$$\sum_{0 \leq k \leq l}{l-\boldsymbol{k} \choose m}{q+\boldsymbol{k} \choose n} = {l+q+1 \choose m+n+1},\ l, m, n, q \in \mathbb{N}; n \geq q \geq 0 \tag{5}$$
 
 > 注意 sum 的下標和 $$k$$ 的位置 \\
 > *CMath p.169*
@@ -220,3 +220,5 @@ $$g(a+x) = \sum_n{\Delta^ng(a) \over n!}x^{\underline n}$$
 
 ## Reference
 - Concrete Mathematics: A Foundation for Computer Science, by Ronald Graham, Donald Knuth, and Oren Patashni [CMath]
+
+> note till p.203
