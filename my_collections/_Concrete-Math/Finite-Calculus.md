@@ -51,6 +51,8 @@ $$\Delta f(x) \equiv f(x+1) - f(x)$$
 
 > 類比於 $$Df(x) = lim_{h\to 0}{f(x+h) - f(x)\over h}$$
 
+> polynomial 每取一次 difference，degree 就會減 1 
+
 ### Harmonic Number
 
 $$H_n = 1 + {1\over 2} + \cdots + {1\over n}$$
