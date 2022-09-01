@@ -21,6 +21,7 @@ time: 2022/08/26
   - [Trinomial Theorem](#trinomial-theorem)
   - [Three Coefficients](#three-coefficients)
 - [Vandermonde's Convolution](#vandermondes-convolution)
+  - [變體](#變體)
 - [Some Tricks](#some-tricks)
   - [Going Halves](#going-halves)
   - [Difference](#difference)
@@ -136,6 +137,8 @@ $$\sum_k {a+b \choose a+k}{b+c \choose b+k}{c+a \choose c+k}(-1)^k = {a+b+c \cho
 ## Vandermonde's Convolution
 
 $$\sum_k {r \choose m+k}{s \choose n-k} = {r+s \choose m+n},\ m, n \in \mathbb{Z} \tag{1}$$
+
+### 變體
 
 $$\sum_k{l \choose m+\boldsymbol{k}}{s \choose n+\boldsymbol{k}} = {l+s \choose l-m+n},\ l \in \mathbb{N}; m, n \in \mathbb{Z} \tag{2}$$
 
