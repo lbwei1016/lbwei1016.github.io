@@ -6,6 +6,8 @@ tag: Concrete Mathematics, Binomial
 time: 2022/08/26
 ---
 
+> *There's no need to fuss over boundary conditions.*
+
 **Table of Content**
 - [Definition](#definition)
 - [Basic Identities](#basic-identities)

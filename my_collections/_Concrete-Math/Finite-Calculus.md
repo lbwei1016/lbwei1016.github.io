@@ -49,9 +49,9 @@ $$0^{\underline{n}} = 0 \iff n > 0$$
 
 $$\Delta f(x) \equiv f(x+1) - f(x)$$
 
-> 類比於 $$Df(x) = lim_{h\to 0}{f(x+h) - f(x)\over h}$$
+> 類比於 $$Df(x) = \lim_{h\to 0}{f(x+h) - f(x)\over h}$$
 
-> polynomial 每取一次 difference，degree 就會減 1 
+> polynomial 每取一次 difference，degree 就會減 1；所以 $$n$$ 次 poly 取 $$n+1$$ 次 $$\Delta$$ 就會消失（$$=0$$）
 
 ### Harmonic Number
 
