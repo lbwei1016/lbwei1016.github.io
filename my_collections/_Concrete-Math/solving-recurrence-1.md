@@ -3,10 +3,13 @@ layout: page
 title: Solving Recurrences I
 usemathjax: true
 tag: Concrete Mathematics, Recurrence
+time: 2022/08/21
 ---
 
 > *Solve* 指的是解出 *closed form*。<br>
 > 本系列討論僅止於 *linear recurrences*。
+
+> *The point of a closed form is not necessarily to provide us with a fast method of calculation, but rather to tell us how $$F_n$$ relates to other quantities in mathematics.* -- [CMath]
 
 **Table of Content**
 - [The Repertoire Method](#the-repertoire-method)
@@ -14,7 +17,8 @@ tag: Concrete Mathematics, Recurrence
   - [Example $$\rm II$$:](#example-rm-ii)
   - [Example $$\rm III$$:](#example-rm-iii)
   - [Example $$\rm IV$$:](#example-rm-iv)
-  - [Reference](#reference)
+  - [Reflection](#reflection)
+- [Reference](#reference)
 
 ---
 
@@ -24,7 +28,7 @@ tag: Concrete Mathematics, Recurrence
 
 ## The Repertoire Method
 
-> 出自 *Concrete Mathematics*
+> 出自 [CMath]
 
 > *Repertoire (曲目)*: all the music or plays, etc. that you can do or perform or that you know (Cambridge)
 
@@ -242,7 +246,18 @@ H(n) &=& -\gamma n
 
 ---
 
-### Reference
+### Reflection
+
+從上述例子可以體會 *The repertoire method* 的線性組合精神；也就是說，如果某遞迴關係可以表示成
+
+$$f(n) = \alpha A(n) + \beta B(n) + \gamma C(n)，$$
+
+就可以用 *The repertoire method* 解！
+
+---
+
+## Reference
 - [Fun with Recursion and the Repertoire Method](https://www.youtube.com/watch?v=2YW-RqAGskE)
 - [StackExchange](https://math.stackexchange.com/questions/1017498/mathematical-explanation-for-the-repertoire-method/1023510#1023510)
 - [Dang-Khoa's blog](https://dangkhoasdc.github.io/en/post/2017/12/26/the-repertoire-method/)
+- [CMath], Concrete Mathematics: A Foundation for Computer Science, by Ronald Graham, Donald Knuth, and Oren Patashni

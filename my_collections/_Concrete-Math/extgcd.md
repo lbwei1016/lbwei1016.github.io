@@ -26,7 +26,7 @@ $$\begin{eqnarray}
 
 (直到代換出 $$a, b$$)
 
-$$gcd(a,b) = ax_0+by_0 \ ◼$$ 
+$$gcd(a,b) = ax_0+by_0 \tag*{$\blacksquare$}$$ 
 
 ### e.g.
 > Solve $$47x + 21y = gcd(47,21) = 1$$.
@@ -43,4 +43,4 @@ $$\boldsymbol{1} = 21 - 4\times\color{#A569BD}{5}$$<br>
 $$\boldsymbol{1} = 21 - 4\times\color{#A569BD}{(47 - 2\times 21)}$$<br>
 $$\boldsymbol{1} = 47\times (-4) + 21 \times 9$$
 
-$$(x,y) = (-4,9) \ ◼$$
+$$(x,y) = (-4,9) \tag*{$\blacksquare$}$$
