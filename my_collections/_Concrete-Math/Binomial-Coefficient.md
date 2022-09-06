@@ -234,6 +234,8 @@ $$(-1)^nn!a_n = \sum_k{n \choose k}(-1)^{k}(a_0 + \cdots + a_nk^n)$$
 
 > 這個 identity 的重點是 $$\sum{n \choose k}(-1)^k$$
 
+> 如果 polynomial $$a_0 + \cdots + a_nk^n$$ 的次數小於 $$n$$（$$a_n = 0$$），則整個 summation 為 $$0$$（常用！）
+
 將 Newton Series 推廣至 infinity，可以類比 *Taylor Series*
 
 $$g(a+x) = \sum_n{\Delta^ng(a) \over n!}x^{\underline n} = \sum_n{\Delta^ng(a)} {x \choose n}$$
