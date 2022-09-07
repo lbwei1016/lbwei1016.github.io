@@ -7,6 +7,10 @@ time: 2022/09/01
 ---
 
 **Table of Content**
+- [Hypergeometric Transformation](#hypergeometric-transformation)
+  - [Reflection Law](#reflection-law)
+  - [Differentiation](#differentiation)
+- [Partial Hypergeometric Sums](#partial-hypergeometric-sums)
 
 ---
 

@@ -49,6 +49,8 @@ time: 2022/08/23
 
 ## Identities
 
+> Table 258, Table 259 可以提供關於 Stirling numbers 的靈感（[CMath] p.258, 259）
+
 ### 邊界
 
 $$\begin{bmatrix}n \\ 0 \end{bmatrix} = 0,\ \begin{bmatrix}0 \\ 0 \end{bmatrix} = 1;\ \begin{bmatrix}n \\ k \end{bmatrix} = 0,\ n < k$$
