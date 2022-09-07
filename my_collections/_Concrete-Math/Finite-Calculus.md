@@ -21,6 +21,8 @@ time: 2022/08/24
   - [Definite Sum](#definite-sum)
   - [Powers](#powers)
   - [Summation by parts](#summation-by-parts)
+    - [Example $$\rm I$$](#example-rm-i)
+    - [Example $$\rm II$$](#example-rm-ii)
 
 ---
 
@@ -122,8 +124,41 @@ $$\sum u\Delta v = uv - \sum Ev\Delta u \tag{9}$$
 
 > $$E$$ 是 operator，$$E = \Delta + 1$$，也就是 $$Ef(x) = \Delta f(x) + f(x) = f(x+1)$$
 
-**e.g.**
+#### Example $$\rm I$$
 
 $$\sum_{k=0}^n k2^k = \sum_0^{n+1}x2^x\delta x = x2^x - 2^{x+1} \Big |_0^{n+1}$$
 
 > *Note:* 和「微積分」相關的操作要用有 $$\delta x$$ 的 sum，否則上界會少一
+
+#### Example $$\rm II$$
+
+$$S_n = \sum_{k=1}^nH_k/k = \sum_{k=1}^{n+1}{H_x \over x} \delta x$$
+
+令
+
+$$u = H_x,\ \Delta v = {1 \over x}\delta x,$$
+
+$$v = H_{x-1},\ \Delta u = {1 \over x+1}\delta x$$
+
+> Note: $$v = H_{x-1}$$ 而非 $$H_x$$！
+
+> $$\Delta$$ 項的後方留著 $$\delta x$$，幫助記憶
+
+於是
+
+$$\begin{eqnarray}
+S_n &=& H_xH_{x-1}\Big|_1^{n+1} - \sum_{k=1}^{n+1}{H_x \over x+1}\delta x \\
+&=& H_n^2 + {1 \over n+1}H_n - \sum_{k=1}^{n}H_k/(k+1) \\
+&=& H_n^2 - \sum_{k=1}^{n-1}H_k/(k+1) \\
+&=& H_n^2 - \sum_{k=1}^{n}H_{k-1}/k， \\
+\end{eqnarray}$$
+
+又
+
+$$\sum_{k=1}^{n}H_{k-1}/k = \sum_{k=1}^nH_k/k - {1 \over k^2} = S_n - H^{(2)}_n，$$
+
+所以
+
+$$S_n = {1 \over 2}(H^2_n + H^{(2)}_n \tag*{$\blacksquare$})$$
+
+> 其實用 $$\sum_{k=1}^{n}H_{k-1}/k$$ 做 summation by parts 比較輕鬆，但不容易直接想到
