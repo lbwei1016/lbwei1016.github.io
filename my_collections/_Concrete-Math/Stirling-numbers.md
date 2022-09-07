@@ -87,7 +87,11 @@ $$x^{\underline{k}} = \sum_k\begin{bmatrix}n \\ k\end{bmatrix}(-1)^{n-k}x^k,\ n 
 
 ### Inversion formula
 
-$$\sum_k\begin{Bmatrix}n \\ k\end{Bmatrix}\begin{bmatrix}k \\ m\end{bmatrix}(-1)^{n-k} = \sum_k\begin{bmatrix}n \\ k\end{bmatrix}\begin{Bmatrix}k \\ m\end{Bmatrix}(-1)^{n-k} = [m = n]$$
+$$\sum_k\begin{Bmatrix}n \\ k\end{Bmatrix}\begin{bmatrix}k \\ m\end{bmatrix}(-1)^{n-k} = \sum_k\begin{bmatrix}n \\ k\end{bmatrix}\begin{Bmatrix}k \\ m\end{Bmatrix}(-1)^{n-k} = [m = n] \tag{1}$$
+
+$$g(n) = \sum_k\begin{Bmatrix}n \\ k\end{Bmatrix}(-1)^kf(k) \iff f(n) = \sum_k\begin{bmatrix}n \\ k\end{bmatrix}(-1)^kg(k) \tag{2}$$
+
+> 將 [Converting between powers](#converting-between-powers) 的公式互相代入可以證明 $$(1)$$，然後 $$(1)$$ 可以證明 $$(2)$$
 
 ---
 
