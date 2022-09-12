@@ -15,6 +15,8 @@ time: 2022/08/19
   - [Definition $$\rm IV$$ (transitive)](#definition-rm-iv-transitive)
   - [Definition $$\rm V$$ (composition)](#definition-rm-v-composition)
   - [Definition $$\rm VI$$ (power)](#definition-rm-vi-power)
+- [Some Relations](#some-relations)
+  - [Equivalence Relation](#equivalence-relation)
 - [Partial Orderings](#partial-orderings)
   - [Definition $$\rm I$$ (partial ordering)](#definition-rm-i-partial-ordering)
   - [Definition $$\rm II$$ (compare)](#definition-rm-ii-compare)
@@ -23,6 +25,8 @@ time: 2022/08/19
   - [Theorem (induction)](#theorem-induction)
     - [**The Principle of Well-Ordered Induction**](#the-principle-of-well-ordered-induction)
     - [***Proof:***](#proof)
+- [Some Definitions on Sets](#some-definitions-on-sets)
+  - [Partition and Cell](#partition-and-cell)
 - [Reference](#reference)
 - [See also](#see-also)
 
@@ -58,6 +62,21 @@ time: 2022/08/19
 
 ### Definition $$\rm VI$$ (power)
 > $$R^1 = R$$ and $$R^{n+1} = R^n \circ R$$.
+
+---
+
+## Some Relations
+
+### Equivalence Relation
+
+**Definition**
+> An **equivalence relation** $$R$$ on a set $$S$$ is one that satisfies *reflexive, symmetric, and transitive*, $$\forall x, y, z \in S$$.
+
+> 與底下的 **poset** 比較
+
+**Example**
+
+對於任意非空集合 $$S$$，$$(S, =)$$ 是 **equivalence relation**。
 
 ---
 
@@ -97,8 +116,20 @@ Suppose it is not the case that $$P(x)$$ is true for all $$x \in S$$ ... (proof 
 
 ---
 
+## Some Definitions on Sets
+
+### Partition and Cell
+A **partition** of a set $$S$$ is a collection of nonempty subsets of $$S$$ such that every element of $$S$$ is in exactly one of the subsets. The subsets are the **cells** of the partition.
+
+> 想想貝氏定理的分割圖（或任何分割圖）
+
+$$\bar x$$：指包含 $$x$$ 的 cell
+
+---
+
 ## Reference
 - Discrete Mathematics and Its Applications, K. H. Rosen, 7/e (Global edition)
+- A First Course in Abstract Algebra, John B. Fraleigh, Victor J. Katz, 7/e
 
 ---
 
