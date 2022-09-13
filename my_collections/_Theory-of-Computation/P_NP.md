@@ -9,7 +9,7 @@ tag: Theory of Computation
 又稱為 **decision problems**。此類問題的答案是 *Yes or No*；例如「x 是不是質數？」
 而 **decision procedure** 指的就是 **algorithm**。
 
-其他問題分類有：Optimization problems, Quantified problems, Quantified problems, etc.
+其他問題分類有：Optimization problems, Quantified problems, etc.
 
 > ***Turing machine*** in modern language, is simply a computer program. (Math and Computation, Avi Wigderson)
 
