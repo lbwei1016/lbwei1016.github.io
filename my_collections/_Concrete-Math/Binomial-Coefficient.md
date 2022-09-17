@@ -50,7 +50,7 @@ $$
 $$
 > $$k$$ 必為整數，$$r$$ 為任意實數，甚至複數
 
-> 參考 [Finite Calculus](../Finite-Calculus)
+> 參考 [Finite Calculus](../Finite-Calculus)、[generalized factorial function](../hypergeometric_func-1/#prerequisites)
 
 ---
 

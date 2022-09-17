@@ -39,3 +39,6 @@ collections:
 
         Concrete-Math:
           output: true
+
+        Probability-Theory:
+          output: true

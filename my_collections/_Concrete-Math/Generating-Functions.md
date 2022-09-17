@@ -7,6 +7,17 @@ time: 2022/09/13
 ---
 
 **Table of Contents**
+- [Why Generating Functions?](#why-generating-functions)
+- [What is a Generating Function?](#what-is-a-generating-function)
+- [Basics](#basics)
+  - [Linear Combination](#linear-combination)
+  - [Shift Right](#shift-right)
+  - [Shift Left](#shift-left)
+  - [Constant Multiple](#constant-multiple)
+  - [Differentiation](#differentiation)
+  - [Integration](#integration)
+  - [Multiplication](#multiplication)
+- [More Generating Functions](#more-generating-functions)
 
 ---
 
@@ -18,7 +29,7 @@ time: 2022/09/13
 
 ---
 
-## What is a Generating Function
+## What is a Generating Function?
 
 **Generating function** 是一個函數，可以展開為 *infinite power series*，例如 $$G(z) = 1 / 1-2z = \sum_n2^nz^n$$；其中我們感興趣的是 $$z^n$$ 的係數，也就是 $$[z^n]G = 2^n$$：欲操作的數列就在係數。
 
@@ -87,6 +98,27 @@ $${1 \over 1-z}G(z) = \sum_n\Big(\sum_{k \leq n}g_k\Big)z^n \tag{9}$$
 
 ---
 
-## Identities
+## More Generating Functions
+
+$$\sum_n {c \choose n}z^n = (1+z)^c \tag{1}$$
+
+> 當 $$n < 0$$，$${c \choose n} = 0。$$
+
+$$\sum_n {c+n-1 \choose n}z^n = {1 \over (1-z)^c} \tag{2}$$
+
+> [Negation](../Binomial-Coefficient/#negation)
+
+$$\sum_{n \geq 1}{1 \over n}z^n = \ln{1 \over 1-z} \tag{3}$$
+
+$$\sum_{n \geq 1}{(-1)^{n+1} \over n}z^n = \ln(1+z) \tag{4}$$
+
+> [Integration](#integration)；小心邊界
+
+$$\sum_{n \geq 0}{z^n \over n!} = e^z \tag{5}$$
+
+$$\sum_{n \geq 0}{(-1)^n \over (2n+1)!}z^{2n+1} = \sin z \tag{6}$$
+
+$$\sum_{n \geq 0}{(-1)^n \over (2n)!}z^{2n} = \cos z \tag{7}$$
+
 
 見 [CMath] p.335, 351
