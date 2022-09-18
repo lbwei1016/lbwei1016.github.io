@@ -17,6 +17,8 @@ time: 2022/09/17
   - [Surjection](#surjection)
 - [{Homo, Iso}morphism](#homo-isomorphism)
   - [Homomorphism](#homomorphism)
+  - [Isomorphism](#isomorphism)
+- [Reference](#reference)
 
 ---
 
@@ -119,22 +121,39 @@ $$T(\boldsymbol{e_2}) = \begin{pmatrix}3(0)-1 \\ 1 \\ 0\end{pmatrix}$$
 > "Homomorphism" comes from the greek homo (same) and morphus (form or shape).<br>
 > So a "homomorphism" is a map that "preserves the shape" or **"preserves the structure."** --[StackExchange](https://math.stackexchange.com/questions/29944/difference-between-linear-map-and-homomorphism)（很棒的參考！）
 
-*Linear transformation* 本身就 *preserve the vector space structure*（參照 [Vector Spaces and Subspaces](../4-1_Vector-Spaces-and-Subspaces) 和 linear trans. 的定義），所以 *homomorphisms of vector spaces* 和 *linear trans.* 其實意義相同！
+*Linear transformation* 本身就 *preserve the vector space structure*（參照 [Vector Spaces and Subspaces](../4-1_Vector-Spaces-and-Subspaces) 和 [linear trans. 的定義](#definition)）；*homomorphisms of vector spaces* 和 *linear trans.* 其實意義相同！
 
 > 更多 **homomorphism** 見 [StackExchange](https://math.stackexchange.com/questions/29944/difference-between-linear-map-and-homomorphism)
 
+### Isomorphism
 
+> The word *isomorphism* derives from the Greek iso, meaning "equal," and morphosis, meaning "to form" or "to shape."
 
-<br><br>
+> The term isomorphism is mainly used for *algebraic structures*. In this case, mappings are called homomorphisms, and **a homomorphism is an isomorphism if and only if it is bijective**. --[Wiki](https://en.wikipedia.org/wiki/Isomorphism)
 
-令 $$S_n = C_1 \cup \cdots \cup C_n$$。
+也就是說，Two algebraic structures are **isomorphic** if there exist:
 
-原本的 axiom:
+1. a **bijective function**
+2. **homomorphism**
 
-$$\lim_{n \to \infty}P(S_n) = \lim_{n \to \infty}\sum^n_{k=1}P(C_k) \tag{1}$$
+between them.
 
-強化版 axiom:
+因為是 *bijective*，所以存在 **inverse mapping** between two structures，這正是 *isomorphism* 和 *homomorphism* 的不同之處。
 
-$$P(\lim_{n \to \infty}S_n) = \lim_{n \to \infty}\sum^n_{k=1}P(C_k) \tag{2}$$
+> 再次注意：*homomorphism* 是 *isomorphism* 的必要條件
 
-我對 $$(1)$$ 的解讀是，把 $$P(C_k)$$ 看作集合的函數，所以左式是對「函數」取極限；而 $$(2)$$ 的左式則是對「集合的聯集」取極限。除非 $$P(C_k)$$ 是連續函數，否則 $$\lim$$ 沒辦法任意移動，兩者也就不一定相等。
+就線性代數而言：
+> A linear map $$T$$ is called an **isomorphism** if $$T$$ is **bijective**. 
+ 
+為什麼這裡沒看到 **homomorphism**？因為[這裡](#homomorphism)已經說明，linear map 本身就是 **homomorphism**！
+
+---
+
+## Reference
+- [StackExchange](https://math.stackexchange.com/questions/29944/
+difference-between-linear-map-and-homomorphism)
+- [Interactive Linear Algebra -- one-to-one and onto](https://textbooks.math.gatech.edu/ila/one-to-one-onto.html)
+- [Interactive Linear Algebra -- linear transformation](https://textbooks.math.gatech.edu/ila/linear-transformations.html)
+- [LibreTexts](https://math.libretexts.org/Bookshelves/Linear_Algebra/A_First_Course_in_Linear_Algebra_(Kuttler)/05%3A_Linear_Transformations/5.06%3A_Isomorphisms)
+- [Wolfram MathWorld](https://mathworld.wolfram.com/Isomorphism.html)
+- [Wiki](https://en.wikipedia.org/wiki/Isomorphism)
