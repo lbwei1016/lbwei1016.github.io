@@ -27,6 +27,7 @@ time: 2022/08/19
     - [***Proof:***](#proof)
 - [Some Definitions on Sets](#some-definitions-on-sets)
   - [Partition and Cell](#partition-and-cell)
+  - [Disjoint Union](#disjoint-union)
 - [Reference](#reference)
 - [See also](#see-also)
 
@@ -123,7 +124,13 @@ A **partition** of a set $$S$$ is a collection of nonempty subsets of $$S$$ such
 
 > 想想貝氏定理的分割圖（或任何分割圖）
 
-$$\bar x$$：指包含 $$x$$ 的 cell
+$$\bar x$$：指包含 $$x$$ 的 cell，稱作 *the equivalence class containing* $$x$$；而 $$x$$ 叫做 *a representative of the cell*。
+
+### Disjoint Union
+
+設 $$\{S_1, S_2, \cdots\}$$ 是 $$S$$ 的一個 partition，則 
+
+$$S = \sqcup_i S_i。$$
 
 ---
 

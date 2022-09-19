@@ -42,3 +42,6 @@ collections:
 
         Probability-Theory:
           output: true
+
+        Algebra:
+          output: true

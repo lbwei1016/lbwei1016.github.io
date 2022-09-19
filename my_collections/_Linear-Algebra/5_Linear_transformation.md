@@ -147,6 +147,8 @@ between them.
  
 為什麼這裡沒看到 **homomorphism**？因為[這裡](#homomorphism)已經說明，linear map 本身就是 **homomorphism**！
 
+> 見 [Isomorphism](../../Algebra/Isomorphism)
+
 ---
 
 ## Reference
