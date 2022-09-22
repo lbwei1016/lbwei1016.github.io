@@ -2,7 +2,7 @@
 layout: page
 title: Isomorphism
 usemathjax: true
-tag: Algebra
+tag: Abstract Algebra
 time: 2022/09/19
 ---
 
@@ -12,6 +12,7 @@ time: 2022/09/19
   - [Example $$\rm I$$](#example-rm-i)
   - [Example $$\rm II$$](#example-rm-ii)
   - [Example $$\rm III$$](#example-rm-iii)
+- [Something on Homomorphism](#something-on-homomorphism)
 - [Morphisms and Closed Subset](#morphisms-and-closed-subset)
   - [Theorem](#theorem)
 
@@ -113,6 +114,24 @@ and hence
 $$\phi(b) = i \not \in \mathbb{R},$$
 
 which is a contradiction. ◼
+
+---
+
+## Something on Homomorphism
+
+$$det: M_n(\mathbb{R}) \to \mathbb{R}$$ 
+
+is **multiplication homomorphism**, since
+
+$$det(AB) = det(A)det(B);$$
+
+and
+
+$$tr: M_n(\mathbb{R}) \to \mathbb{R}$$
+
+is **addition homomorphism**, since
+
+$$tr(A+B) = tr(A) + tr(B).$$
 
 ---
 

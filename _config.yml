@@ -43,5 +43,5 @@ collections:
         Probability-Theory:
           output: true
 
-        Algebra:
+        Abstract-Algebra:
           output: true

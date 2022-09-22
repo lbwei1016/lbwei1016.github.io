@@ -1,6 +1,6 @@
 ---
 layout: table
-title: Algebra
+title: Abstract-Algebra
 ---
 
 <ul>

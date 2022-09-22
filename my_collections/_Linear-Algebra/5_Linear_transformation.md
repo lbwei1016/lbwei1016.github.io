@@ -125,6 +125,8 @@ $$T(\boldsymbol{e_2}) = \begin{pmatrix}3(0)-1 \\ 1 \\ 0\end{pmatrix}$$
 
 > 更多 **homomorphism** 見 [StackExchange](https://math.stackexchange.com/questions/29944/difference-between-linear-map-and-homomorphism)
 
+> **homomorphism** 的簡陋定義可見 [Abstract Algebra](../../Abstract-Algebra/2-Isomorphism/#isomorphism)
+
 ### Isomorphism
 
 > The word *isomorphism* derives from the Greek iso, meaning "equal," and morphosis, meaning "to form" or "to shape."

@@ -24,7 +24,6 @@ time: 2022/08/19
   - [Definition $$\rm IV$$ (well-ordered)](#definition-rm-iv-well-ordered)
   - [Theorem (induction)](#theorem-induction)
     - [**The Principle of Well-Ordered Induction**](#the-principle-of-well-ordered-induction)
-    - [***Proof:***](#proof)
 - [Some Definitions on Sets](#some-definitions-on-sets)
   - [Partition and Cell](#partition-and-cell)
   - [Disjoint Union](#disjoint-union)
@@ -112,7 +111,8 @@ time: 2022/08/19
 
 > 廣義的數學歸納法
 
-#### ***Proof:***
+**Proof**
+
 Suppose it is not the case that $$P(x)$$ is true for all $$x \in S$$ ... (proof by contradiction).
 
 ---
@@ -130,7 +130,7 @@ $$\bar x$$：指包含 $$x$$ 的 cell，稱作 *the equivalence class containing
 
 設 $$\{S_1, S_2, \cdots\}$$ 是 $$S$$ 的一個 partition，則 
 
-$$S = \sqcup_i S_i。$$
+$$S = \bigsqcup_i S_i。$$
 
 ---
 

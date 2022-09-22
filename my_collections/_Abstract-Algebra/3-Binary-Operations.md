@@ -2,7 +2,7 @@
 layout: page
 title: Binary Operations
 usemathjax: true
-tag: Algebra
+tag: Abstract Algebra
 time: 2022/09/20
 ---
 

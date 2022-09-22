@@ -2,23 +2,16 @@
 layout: page
 title: Introduction
 usemathjax: true
-tag: Algebra, Set, Basics
+tag: Abstract Algebra, Set, Basics
 time: 2022/09/19
 ---
 
 **Table of Content**
-- [What is Algebra?](#what-is-algebra)
 - [Set](#set)
   - [Cardinality](#cardinality)
     - [Schröder–Bernstein theorem](#schröderbernstein-theorem)
     - [Problems](#problems)
 - [Misc](#misc)
-
----
-
-## What is Algebra?
-
-這裡指的是 *abstract algebra*。...
 
 ---
 
@@ -53,8 +46,10 @@ This is a bijection. ◼
 
 ## Misc
 
-$$\mathbb{Q}^{\times} = \mathbb{Q} - \{0\}$$ 
+$$\mathbb{Q}^{\times} = \mathbb{Q} \backslash \{0\}$$ 
 
 $$\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z} = \{\bar 0, \bar 1, \cdots, \overline{n-1} \}$$
+
+> $$\bar 0, \bar 1, \cdots, \overline{n-1}$$ 是 $$\mathbb{Z}_n$$ 的 elements。
 
 > 見 [Relation](../../Concrete-Math/Relation)
