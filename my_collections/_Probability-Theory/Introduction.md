@@ -74,6 +74,51 @@ $$P(A_i|B) \leftrightarrow P(B|A_i)$$
 
 ## Independence
 
+### Definition
 
+> Events $$A$$ and $$B$$ are **independent** if $$P(A \cap B) = P(A)P(B).$$
 
+事件的獨立與否與其代表的集合之間的關係無關（如交集、聯集的情形）；獨立與否由**指派給事件的機率決定**，也就是說，只要滿足定義，就是獨立。
 
+例如，兩事件**互斥**經常被拿來與獨立比較（說他們不獨立），但考慮以下情況：
+
+$$A \cap B = \emptyset,\ P(A) = 0$$
+
+則定義是被滿足的！（$$P(\emptyset) = 0$$）
+
+從本例可以看出，關鍵在於如何指派 $$P(A), P(B)$$。
+
+### Facts
+
+若 $$A, B$$ 獨立，則，$$\{A, A^c\} \times \{B, B^c\}$$ 中任一對事件皆獨立。
+
+**Proof**
+因為
+
+$$A = (A \cap B) \cup (A \cap B^c)$$
+
+則
+
+$$P(A) = P(A)P(B) + P(A \cap B^c)$$
+
+於是
+
+$$P(A \cap B^c) = P(A)(1 - P(B)) = P(A)P(B^c) \tag*{$\blacksquare$}$$
+
+--- 
+
+## Conditional Independence
+
+### Definition
+
+> Let $$A, B, C$$ be events. $$A$$ and $$B$$ are said to be **conditionally independent** given $$C$$ if only if $$P(C) > 0$$ and
+>
+>$$P(A \cap B | C) = P(A | C)P(B | C).$$
+
+> $$A, B$$ 獨立，不代表他們在 $$C$$ 發生下也獨立；一切取決於指派的機率。
+
+### Problem
+
+Given two unfair coins, $$A$$ and $$B$$: 
+
+$$P(H | A) = 0.9, P(H | B) = 0.1$$
