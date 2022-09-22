@@ -3,10 +3,21 @@ layout: page
 title: Introduction
 usemathjax: true
 tag: Basics
-time: 2022/09/15
+time: 2022/09/22
 ---
 
 **Table of Content**
+- [Axioms](#axioms)
+- [Some identities](#some-identities)
+  - [Multiplication Rule (Chain Rule)](#multiplication-rule-chain-rule)
+  - [Sum](#sum)
+  - [Bayes' Rule](#bayes-rule)
+- [Independence](#independence)
+  - [Definition](#definition)
+  - [Facts](#facts)
+- [Conditional Independence](#conditional-independence)
+  - [Definition](#definition-1)
+  - [Problem](#problem)
 
 ---
 
@@ -48,7 +59,7 @@ $$P(B | A) = P(B \cap A) / P(A) \tag{1}$$
 
 $$P(\bigcap^n_{i=1}A_i) = \prod^n_{i=1} P(A_i | \bigcap^{i-1}_{j=1}A_j) \tag{2}$$
 
-> 定義 $$\bigcap^0_{j=1}A_j = \Omega$$。
+> 這裡定義 $$\bigcap^0_{j=1}A_j = \Omega$$。
 
 $$P(A_1 \cap A_2 \cap A_3) = P(A_1)P(A_2|A_1)P(A_3|A_1 \cap A_2) \tag{3}$$
 
@@ -92,7 +103,8 @@ $$A \cap B = \emptyset,\ P(A) = 0$$
 
 若 $$A, B$$ 獨立，則，$$\{A, A^c\} \times \{B, B^c\}$$ 中任一對事件皆獨立。
 
-**Proof**
+**Proof**（舉其中一例）
+
 因為
 
 $$A = (A \cap B) \cup (A \cap B^c)$$
@@ -122,3 +134,41 @@ $$P(A \cap B^c) = P(A)(1 - P(B)) = P(A)P(B^c) \tag*{$\blacksquare$}$$
 Given two unfair coins, $$A$$ and $$B$$: 
 
 $$P(H | A) = 0.9, P(H | B) = 0.1$$
+
+> $$H$$ 代表 head。
+
+We choose either coin with equal probability, and ask
+
+$$P($$ toss $$11 = H$$ \| first $$10$$ tosses are heads $$)$$, 
+
+which can be denoted by
+
+$$P(H_{11} | H_{1-10}).$$
+
+**Solution**
+
+直覺上，由於前十次都要是 head，對於機率只有 $$(0.1)^{10}$$ 的 $$B$$ 來說非常困難，因此可以猜測
+
+$$P(H_{11} | H_{1-10}) \approx P(H|A)。$$
+
+實際計算之前，先嘗試化簡
+
+$$\begin{eqnarray} 
+P(H_{11} | H_{1-10}) &=& {P(H_{11} \cap A \cap H_{1-10}) + P(H_{11} \cap B \cap H_{1-10}) \over P(H_{1-10})} \\
+&=& {P(H_{11}|A \cap H_{1-10})P(A \cap H_{1-10}) \over P(H_{1-10})} + P_B \\
+&=& P(H_{11}|A \cap H_{1-10})P(A|H_{1-10}) + P_B \\
+\end{eqnarray}$$
+
+> $$P_B$$ 和加號左方是相似的，僅 $$A$$ 變成 $$B$$；此為方便只展開 $$A$$。
+
+我們知道，選好硬幣之後，任兩次硬幣投擲間都互相獨立，而且不管哪一次投擲獲得 head 的都機率一樣；也就是說，$$H_{1-10}$$ 的發生與否對 $$H_{11}$$ 而言毫無影響，而且 $$P(H_{11}$$ \| $$A)= P(H$$ \| $$A)$$。於是
+
+$$P(H_{11}|A \cap H_{1-10}) = P(H_{11}|A) = P(H|A)$$
+
+這是已知！統整一下：
+
+$$P(H_{11} | H_{1-10}) = P(H|A)P(A|H_{1-10}) + P(H|B)P(B|H_{1-10})。$$
+
+> 其實不化簡，直接算也不麻煩，但是化簡的過程與結果提供了不同的觀點。
+
+於是我們發現，「在已經投十次 head 的情況下，再投出一次 head 的機率」可以簡潔地以 $$A$$ 和 $$B$$ 個別的觀點表達。
