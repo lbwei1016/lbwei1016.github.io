@@ -260,7 +260,7 @@ $$h(n, k) = {n \choose k}h(n-k, 0) = {n \choose k}(n-k)¡, \tag{1}$$
 
 $$n! = \sum_k h(n, k) = \sum_k {n \choose k}(n-k)¡ = \sum_k {n \choose k}k¡, \tag{2}$$
 
-然後利用 [Inversion](../Binomial-Coefficient-1/#inversion) 可以得到
+然後利用 [Inversion](../Binomial-Coefficient/#inversion) 可以得到
 
 $$n¡ = (-1)^n\sum_k{n \choose k}(-1)^kk!$$
 
