@@ -59,13 +59,19 @@ We claim that $$\phi:\mathbb{R} \to \mathbb{R}_{>0}$$ defined by $$\phi(x) = e^x
 
 1. one-to-one,
 2. onto,
-3. homomorphism
+3. homomorphism.
 
 **Proof of claim 1.**
 
-$$\forall x, y \in \mathbb{R}$$, if $$\phi(x) = \phi(y)$$, then $$e^x = e^y, \ln(e^x) = \ln(e^y)$$, and $$x = y$$.
+For all $$x, y \in \mathbb{R}$$, if $$\phi(x) = \phi(y)$$, then $$e^x = e^y, \ln(e^x) = \ln(e^y)$$, and $$x = y$$.
 
-> claim 2. 和 3. 略
+**Proof of claim 2.**
+
+For all $$y \in \mathbb{R}_{> 0}$$, let $$x = \ln y$$. Then $$\phi(x) = e^{\ln y} = y$$.
+
+**Proof of claim 3.**
+
+For all $$x, y \in \mathbb{R}$$, $$\phi(x+y) = e^{x+y} = e^x \dot{} e^y = \phi(x) \dot{} \phi(y)$$. ◼
 
 ### Example $$\rm II$$
 
