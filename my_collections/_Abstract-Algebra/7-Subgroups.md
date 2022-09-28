@@ -7,6 +7,10 @@ time: 2022/09/26
 ---
 
 **Table of Content**
+- [Definition $$\rm I$$](#definition-rm-i)
+- [Definition $$\rm II$$](#definition-rm-ii)
+- [Theorem $$\rm I$$](#theorem-rm-i)
+- [Theorem $$\rm II$$ (Criterion of Subgroups)](#theorem-rm-ii-criterion-of-subgroups)
 
 ---
 
@@ -38,4 +42,4 @@ Under addition, we have $$\mathbb{Z \leq Q \leq R \leq C}$$.
 2. $$H$$ contains $$e_G$$ .
 3. for all $$a \in H$$, the inverse $$a^{-1}$$ is also in $$H$$.
 
-其實 1. 和 3. imply 2.，但 2. 的必要性在於 $$H$$ 可能是空集合， 不過空集合作為 subgroup 沒什麼意義（是嗎？）。
+其實 1. 和 3. imply 2.，但 2. 的必要性在於防止 $$H$$ 是空集合，不過空集合作為 subgroup 沒什麼意義（是嗎？）。
