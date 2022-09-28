@@ -1,6 +1,6 @@
 ---
 layout: table
-title: Probability Theory
+title: Probability-Theory
 ---
 
 <ul>
