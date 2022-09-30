@@ -13,6 +13,7 @@ time: 2022/09/22
   - [Order 3](#order-3)
   - [Order 4](#order-4)
 - [The Nature of Groups](#the-nature-of-groups)
+  - [Group of Symmetries](#group-of-symmetries)
 
 ---
 
@@ -31,15 +32,15 @@ $$G = \{e, a\}$$, and $$a^{-1} = a$$ (the only choice).
 
 藉由 **table**（如下）的方式，列出所有 element 經過 binary operation 的結果，再經過比對，可以得知 $$G \cong (\mathbb{Z}_2, +)$$。
 
-|$$\dot{}$$|e|a|
-|:---------:|:-:|:-:|
-|**e**       |e|a|
-|**a**       |a|e|
+| $$\dot{}$$ |   e   |   a   |
+| :--------: | :---: | :---: |
+|   **e**    |   e   |   a   |
+|   **a**    |   a   |   e   |
 
-|$$+$$|$$\bar 0$$|$$\bar 1$$|
-|:---------:|:-:|:-:|
-|**$$\bar 0$$**       |$$\bar 0$$|$$\bar 1$$|
-|**$$\bar 1$$**       |$$\bar 1$$|$$\bar 0$$|
+|     $$+$$      | $$\bar 0$$ | $$\bar 1$$ |
+| :------------: | :--------: | :--------: |
+| **$$\bar 0$$** | $$\bar 0$$ | $$\bar 1$$ |
+| **$$\bar 1$$** | $$\bar 1$$ | $$\bar 0$$ |
 
 > $$\bar 0 \to e, \bar 1 \to a$$.
 
@@ -81,5 +82,20 @@ $$G \cong (\mathbb{Z}_4, +)。$$
 $$X = \Delta$$（正三角形）, $$Sym(X) = \{e, a, a^2, b, c, d\}$$
 
 $$a$$ 是旋轉，$$b, c, d$$ 是三種鏡射。
+
+### Group of Symmetries
+Let $$X$$ be a **geometric object** and $$G$$ be the set of **symmetries** of $$X$$.
+Then it is clear that $$G$$ have the following properties.
+- The composition of two symmetries is a **binary operator** on $$G$$,
+which is associative.
+- The **identity** map (the trivial symmetry) is an element in $$G$$ and any symmetry composited with the identity map or the identity composited with any symmetry is equal to itself.
+- The **inverse** map of a symmetry is still a symmetry.
+- The **composition** of a symmetry and its inverse is equal to the identity map.
+
+Therefore, the set of symmetries together with the composition operator form an **abstract group**.
+
+When $$A$$ is just a set, a symmetry on $$A$$ is just a bijective function from $$A$$ to itself. When $$A$$ is finite, its symmetry is also called **a permutation of $$A$$**.
+
+> 見 [Groups of Permutation](../9-Groups-of-Permutation)
 
 > 此處觀念待補。關鍵字：symmetric group
