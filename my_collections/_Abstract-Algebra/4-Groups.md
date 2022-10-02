@@ -42,6 +42,22 @@ time: 2022/09/22
 1. The set $$S$$ is a subset of $$\mathbb{C}$$.（沒人說一定要在 $$\mathbb{C}$$）
 2. The number $$4$$ is an element. 
 
+**Problem**
+
+> Show that the property that *the binary operator is commutative* is a structure property.
+
+**Solution**
+
+To prove the property, we have to show that if $$(S, *)$$ satisfies $$*$$ is commutative, then for any $$(S', *')$$ **isomorphic** to $$(S, *)$$, it also satisfies that $$*'$$ is commutative.
+
+Assume $$*$$ is commutative on $$(S, *)$$. Given $$(S', *')$$ isomorphic to $$(S, *)$$, there exists a isomorphism $$\phi: S \to S'$$. Since $$\phi$$ is **onto**, for any $$a', b' \in S'$$, there exists $$a, b \in S$$ such that $$\phi(a) = a', \phi(b) = b'$$, respectively.
+
+Then we have
+
+$$a' *' b' = \phi(a) *' \phi(b) = \phi(a*b) = \phi(b*a) = \phi(b) *' \phi(a) = b' *' a'.$$
+
+Hence $$*'$$ is commutative on $$(S', *')$$, which implies *the binary operator is commutative* is a structure property. ◼
+
 ---
 
 ## Identity Element
@@ -110,7 +126,7 @@ for all $$s' \in S'.$$
 ### Abelian Group
 > A group $$(G, *)$$ is **abelian** if its binary operation is **commutative**.
 
-> $$+$$ 保留給 commutative binary operation，其他用 $$\dot{}$$ (multiplication)。
+> $$+$$ 保留給 commutative binary operation，其他用 $$\dot{}$$ (multiplication)。(Notation)
 
 ---
 

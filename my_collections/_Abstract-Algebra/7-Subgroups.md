@@ -30,7 +30,7 @@ Under addition, we have $$\mathbb{Z \leq Q \leq R \leq C}$$.
 > The subgroup $$\{e\}$$ is the trivial subgroup of $$G$$. All other subgroups are nontrivial.
 
 ## Theorem $$\rm I$$
-> Let $$H$$ be a subgroup of $$G$$. Then the identity $$e_H$$ of $$H$$ is equal to the identity $$e_G$$ of $$G$$. Moreover, for $$a \in H$$, the inverse of $$a \in H$$ is equal to the inverse of $$a \in G$$.
+> Let $$H$$ be a subgroup of $$G$$. Then the identity $$e_H$$ of $$H$$ is equal to the identity $$e_G$$ of $$G$$. Moreover, for all $$a \in H$$, the inverse of $$a \in H$$ is equal to the inverse of $$a \in G$$.
 
 **Proof**
 
