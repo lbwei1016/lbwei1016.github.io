@@ -25,6 +25,7 @@ time: 2022/09/29
     - [Corollary $$\rm III$$ (number of subgroups)](#corollary-rm-iii-number-of-subgroups)
     - [Corollary $$\rm IV$$ (order of subgroups)](#corollary-rm-iv-order-of-subgroups)
 - [Reference](#reference)
+- [Reference](#reference-1)
 
 ---
 
@@ -171,6 +172,11 @@ For $$d = \gcd(n, s)$$, there exist integers $$x, y$$ such that $$nx + sy = d$$.
 > When $$G = \mathbb{Z}_n$$, every subgroup is equal to $$\langle \bar d \rangle$$ for some $$d$$\|$$n$$. Moreover, the **order** of the subgroup is equal to $$n/d$$.
 
 > $$n/d: \{0, d, 2d, \cdots, (n/d-1)d\}$$.
+
+---
+
+## Reference
+- [How to show a group is cyclic?](https://math.stackexchange.com/questions/838400/how-to-show-a-group-is-cyclic)
 
 ---
 
