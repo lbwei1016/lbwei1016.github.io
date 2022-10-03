@@ -28,9 +28,9 @@ time: 2022/09/28
 
 > $$E$$ 可以是 $$\mathbb{R}$$、$$\mathbb{Z}$$ 等等；*measurable* 的定義之後再補
 
-**Random variable** 的意義在於，「賦予」樣本空間中的每一事件一個可供計算的數值（粗淺來說）；例如，對於 $$\Omega = \{head, tail\}$$，可以定義
+**Random variable** 的意義在於，「賦予」樣本空間中的每一事件一個可供計算的數值（粗淺來說）；例如，對於 $$\Omega = \{\text{head}, \text{tail}\}$$，可以定義
 
-$$X(head) = 1, X(tail) = 0。$$
+$$X(\text{head}) = 1, X(\text{tail}) = 0。$$
 
 $$X(\omega)$$ 這個 function 可以不必是 *one-to-one*、*onto*。
 

@@ -15,14 +15,15 @@ time: 2022/09/29
   - [Theorem (infinite cyclic groups)](#theorem-infinite-cyclic-groups)
   - [Theorem (finite cyclic group)](#theorem-finite-cyclic-group)
     - [Corollary (the order of an element)](#corollary-the-order-of-an-element)
+  - [Problem](#problem)
 - [Theorem (subgroups of cyclic groups)](#theorem-subgroups-of-cyclic-groups)
   - [Proof](#proof)
   - [Corollary](#corollary)
   - [Theorem (subgroups of finite cyclic groups)](#theorem-subgroups-of-finite-cyclic-groups)
-    - [Corollary $$\rm I$$](#corollary-rm-i)
-    - [Corollary $$\rm II$$](#corollary-rm-ii)
-    - [Corollary $$\rm III$$](#corollary-rm-iii)
-    - [Corollary $$\rm IV$$](#corollary-rm-iv)
+    - [Corollary $$\rm I$$ (equality of subgroups)](#corollary-rm-i-equality-of-subgroups)
+    - [Corollary $$\rm II$$ (generators)](#corollary-rm-ii-generators)
+    - [Corollary $$\rm III$$ (number of subgroups)](#corollary-rm-iii-number-of-subgroups)
+    - [Corollary $$\rm IV$$ (order of subgroups)](#corollary-rm-iv-order-of-subgroups)
 
 ---
 
@@ -84,6 +85,13 @@ Next we define $$\phi: G \to \mathbb{Z}$$ by $$\phi(a^k) = \bar k$$.
 #### Corollary (the order of an element)
 > Let $$a$$ be an element of a group $$G$$. Suppose **$$a$$ is of finite order $$n$$**. Then $$a^n = e$$ and $$a^r = a^s \iff r \equiv s \mod n$$.
 
+### Problem
+> Determine whether $$\mathbb{Z}^{\times}_{18} is cyclic.$$
+
+**Solution**
+
+We have $$\mathbb{Z}^{\times}_{18} = {\bsr 1, \bar 5, \bar 7, \bar }$$
+
 ---
 
 ## Theorem (subgroups of cyclic groups)
@@ -126,18 +134,18 @@ It is sufficient to show that $$a^d \in \langle b  \rangle$$ and $$b \in \langle
 
 For $$d = \gcd(n, s)$$, there exist integers $$x, y$$ such that $$nx + sy = d$$. Thus, we have $$a^d = a^{nx+sy} = (a^n)^xa^{sy} = (e)^xa^{sy} = b^y \in \langle b \rangle$$. On the other hand, we cand wirte $$s = ds'$$ for some integer $$s'$$. Then $$b = a^s =  (a^d)^{s'} \in \langle a^d \rangle$$. ◼
 
-#### Corollary $$\rm I$$
+#### Corollary $$\rm I$$ (equality of subgroups)
 > $$\langle a^r \rangle = \langle a^s \rangle$$ if and only if $$\gcd(n, r) = \gcd(n, s)$$.
 
-#### Corollary $$\rm II$$
+#### Corollary $$\rm II$$ (generators)
 > The other generators of $$G$$ are the elements of the form $$a^r$$, where $$\gcd(n ,r) = 1$$.
 
-#### Corollary $$\rm III$$
+#### Corollary $$\rm III$$ (number of subgroups)
 > Every subgroup of $$G$$ is equal to $$\langle a^d \rangle$$ for $$d$$\|$$n$$. Especially, **the number of subgroups** of $$G$$ is equal to **the number of divisors of $$n$$**.
 
 > $$\mathbb{Z}_{12}$$ 有 $$6$$ 個 subgroups。
 
-#### Corollary $$\rm IV$$
+#### Corollary $$\rm IV$$ (order of subgroups)
 > When $$G = \mathbb{Z}_n$$, every subgroup is equal to $$\langle \bar d \rangle$$ for some $$d$$\|$$n$$. Moreover, the **order** of the subgroup is equal to $$n/d$$.
 
 > $$n/d: \{0, d, 2d, \cdots, (n/d-1)d\}$$.
