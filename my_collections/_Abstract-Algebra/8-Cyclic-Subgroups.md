@@ -24,6 +24,7 @@ time: 2022/09/29
     - [Corollary $$\rm II$$ (generators)](#corollary-rm-ii-generators)
     - [Corollary $$\rm III$$ (number of subgroups)](#corollary-rm-iii-number-of-subgroups)
     - [Corollary $$\rm IV$$ (order of subgroups)](#corollary-rm-iv-order-of-subgroups)
+- [Reference](#reference)
 
 ---
 
@@ -86,11 +87,32 @@ Next we define $$\phi: G \to \mathbb{Z}$$ by $$\phi(a^k) = \bar k$$.
 > Let $$a$$ be an element of a group $$G$$. Suppose **$$a$$ is of finite order $$n$$**. Then $$a^n = e$$ and $$a^r = a^s \iff r \equiv s \mod n$$.
 
 ### Problem
-> Determine whether $$\mathbb{Z}^{\times}_{18} is cyclic.$$
+> Determine whether $$\mathbb{Z}^{\times}_{18}$$ is cyclic.
 
 **Solution**
 
-We have $$\mathbb{Z}^{\times}_{18} = {\bsr 1, \bar 5, \bar 7, \bar }$$
+We have $$\mathbb{Z}^{\times}_{18} = \{\bar 1, \bar 5, \bar 7, \overline {-7}, \overline{-5}, \overline{-1}\}$$; the order of this group is $$6$$. Suppose $$G = \langle a \rangle = \{e, g, g^2, g^3, g^4, g^5\}$$, and the order of the elements are $$1, 6, 3, 2, 3, 6$$, respectively. We now show the order of elements in $$\mathbb{Z}^{\times}_{18}$$:
+
+$$
+\begin{align*}
+  \bar 1&: \text{order 1} \\
+  \bar 5 \to \bar 7 \to \overline{-1} \to \overline{-5} \to \overline{-7} \to \bar 1&: \text{order 6}\\
+  \bar 7 \to \overline{-5} \to \bar 1&: \text{order 3} \\
+  \overline{-7} \to \overline{-5} \to \overline{-1} \to \bar 7 \to \bar 5 \to \bar 1&: \text{order 6}\\
+  \overline{-5} \to \bar 7 \to \bar 1&: \text{order 3}\\
+  \overline{-1} \to \bar 1&: \text{order 2}.\\
+\end{align*}
+$$
+
+We can then correspond each element of $$G$$ to that of $$\mathbb{Z}^{\times}_{18}$$:
+
+$$\{e, g, g^2, g^3, g^4, g^5\} \to \{\bar 1, \bar 5, \bar 7 ,\overline{-1}, \overline{-5}, \overline{-7}\}.$$
+
+Hence we have shown that $$\mathbb{Z}^{\times}_{18}$$ is cyclic. ◼
+
+> *Think*: Suppose $$G$$ is of order $$n$$. If for all $$g \in G$$, $$g^n = e$$. Can we say that $$G$$ is cyclic?
+
+Actually this is false. Suppose $$n = 4$$, we have $$G = \{e, a, b, c\}$$ such that $$a^4 = b^4 = c^4 = e$$. If we let $$a^2 = b^2 = c^2 = e$$, we can discover that there is no generator in $$G$$. Thus if for all $$g \in G$$, $$g^n = e$$, $$G$$ is **not necessarily cyclic**. (If $$G$$ is indeed cyclic, this always holds, though.)
 
 ---
 
@@ -112,7 +134,7 @@ Now $$a^r = a^{n - qm} = bc^{-q} \in H$$ because $$b, c \in H$$.
 
 By the assumption that $$m$$ is the smallest positive integer such that $$a^m \in H$$ but $$r < m$$, we must have $$r = 0$$. That is , $$b = c^q \in \langle c \rangle$$; $$H \subseteq \langle c \rangle$$.
 
-Hence we have shown that
+Hence we have shown **that**
 
 $$H = \langle c \rangle. \tag*{$\blacksquare$}$$
 
@@ -149,3 +171,8 @@ For $$d = \gcd(n, s)$$, there exist integers $$x, y$$ such that $$nx + sy = d$$.
 > When $$G = \mathbb{Z}_n$$, every subgroup is equal to $$\langle \bar d \rangle$$ for some $$d$$\|$$n$$. Moreover, the **order** of the subgroup is equal to $$n/d$$.
 
 > $$n/d: \{0, d, 2d, \cdots, (n/d-1)d\}$$.
+
+---
+
+## Reference
+- [How to show a group is cyclic?](https://math.stackexchange.com/questions/838400/how-to-show-a-group-is-cyclic)
