@@ -14,6 +14,8 @@ time: 2022/09/22
   - [Order 4](#order-4)
 - [The Nature of Groups](#the-nature-of-groups)
   - [Group of Symmetries](#group-of-symmetries)
+- [Special Groups](#special-groups)
+- [Reference](#reference)
 
 ---
 
@@ -96,6 +98,15 @@ Therefore, the set of symmetries together with the composition operator form an 
 
 When $$A$$ is just a set, a symmetry on $$A$$ is just a bijective function from $$A$$ to itself. When $$A$$ is finite, its symmetry is also called **a permutation of $$A$$**.
 
-> 見 [Groups of Permutation](../9-Groups-of-Permutation)
+> 見 [Groups of Permutation](../9-Groups-of-Permutation)、[Dihedral Group](../B-n-gons/#dihedral-group)。
 
-> 此處觀念待補。關鍵字：symmetric group
+---
+
+## Special Groups
+
+- **General linear group**: of degree $$n$$ is the set of $$n\times n$$ **invertible matrices**, together with the operation of ordinary matrix multiplication, denote by $$GL_n(\mathbb{R})$$. (general linear group over $$\mathbb{R}.$$)
+
+---
+
+## Reference
+- [Wiki](https://en.wikipedia.org/wiki/General_linear_group)
