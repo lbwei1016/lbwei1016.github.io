@@ -18,6 +18,14 @@ time: 2022/09/28
 - [Variance](#variance)
   - [Definition](#definition-3)
   - [Properties](#properties-1)
+- [Multiple Random Variable](#multiple-random-variable)
+  - [Joint PMFs](#joint-pmfs)
+  - [Functions of Multiple Random Variables](#functions-of-multiple-random-variables)
+- [Special Random Variables](#special-random-variables)
+  - [Bernoulli](#bernoulli)
+  - [Binomial](#binomial)
+  - [Geometric](#geometric)
+    - [Memorylessness](#memorylessness)
 - [Reference](#reference)
 
 ---
@@ -67,13 +75,17 @@ $$\sum_{x \in X(\Omega)}x \dot{}P(X=x).$$
 
 We can give the mean a special name and some alternative notations: Call it the **expected value** and write
 
-$$EX = E(X) = \sum_{\omega \in \Omega}X(\omega)P(\omega) = \mu$$
+$$EX = E(X) = E[X] = \sum_{\omega \in \Omega}X(\omega)P(\omega) = \mu$$
 
 ### Properties
 
 If $$X$$ and $$Y$$ are any two random variable defined on the same probability space $$\Omega$$, then
 
 $$E(X+Y) = \sum_{\omega \in \Omega}(X(\omega) + Y(\omega))P(\omega) = EX + EY. \tag{1}$$
+
+> 可以用來計算 the mean of the binomial（擲硬幣成功的次數的期望值）：
+> 
+> $$E\Big[\sum_i^n X_i\Big] = \sum_i^n E[X_i] = np.$$  
 
 Moreover, if $$X$$ and $$Y$$ are [independent](#independence), 
 
@@ -120,6 +132,73 @@ $$V(X+Y) = VX + VY.$$
 
 > *"The variance of a sum of independent random variables is the sum of their
 variances."* 
+
+---
+
+## Multiple Random Variable
+### Joint PMFs
+Suppose $$X,Y$$ are two random variables associated with the same experiment. The pmf of $$(x,y)$$ is
+
+$$p_{X,Y}(x,y) = P(X=x \text{ and } Y=y) = P(X=x,Y=y),$$
+
+and we have
+
+$$\sum_x \sum_y p_{X,Y}(x,y) = 1.$$
+
+Moreover, the following are called **marginal pmfs**:
+
+$$p_X(x) = \sum_y p_{X,Y}(x,y),\\ p_Y(y) = \sum_x p_{X,Y}(x,y).$$
+
+> 固定自己，sum over 另一個。
+
+> 可以推廣至 $$n$$ 個 random variable。
+
+### Functions of Multiple Random Variables
+
+For $$Z = g(X,Y)$$, we have
+
+$$E[Z] = E[g(X,Y)] = \sum_x \sum_y g(x,y)p_{X,Y}(x,y).$$
+
+> 可用來證明 $$E[X+Y] = E[X] + E[Y]$$。
+
+---
+
+## Special Random Variables
+### Bernoulli
+
+$$X = \begin{cases}
+  1,\ \text{head}, \\
+  0,\ \text{tail}.
+\end{cases}$$
+
+### Binomial
+> $$n$$ 次 Bernoulli expriment。
+
+**PMF**:
+
+$$p_X(x) = {n \choose k}p^k(1-p)^{n-k},\ k \in \mathbb{N}.$$
+
+### Geometric
+
+**PMF**:
+
+$$p_X(x) = (1-p)^{k-1}p,\ k \in \mathbb{Z}^+.$$
+
+#### Memorylessness
+
+$$P(X-1=n|X>1) = P(X=n+1|X>1) = P(X=n)$$
+
+> 換個立足點，重新開始，試驗成功的機率不變（因為獨立）。
+
+用來計算 the mean of the geometric:
+
+$$\begin{align*}
+E[X] &= E[X-1] + 1 \\
+&= 1 + pE[X-1|X=1] + (1-p)E[X-1|X>1] \\ 
+&= 1+ p\times 0 +(1-p)E[X],
+\end{align*}$$
+
+$$\Rightarrow E[X] = {1\over p}.$$
 
 ---
 

@@ -31,6 +31,8 @@ Here in **conditional pmf**, we have
 
 $$p_X(x) = \sum_i P(A_i)p_{X|A_i}(x).$$
 
+> 想像 $$B = \{X=x\}$$.
+
 Moreover, if we multiply both sides with $$x$$ and sum over it, we get
 
 $$\begin{align*}
@@ -44,3 +46,10 @@ $$
 This is called the **total expectation theorem**.
 
 > 將樣本空間拆成數個好計算的 disjoint event spaces，個別計算期望值後再依權重（該 event space 的機率）取和。
+
+---
+
+## Conditioning a Geometric Random Variable
+
+---
+
