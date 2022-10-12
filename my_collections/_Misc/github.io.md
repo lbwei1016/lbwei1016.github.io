@@ -11,20 +11,24 @@ tag: Github page
 
 1. `sudo apt install ruby ruby2.7-dev`
 
-2. `gem install jekyll jekyll-gist jekyll-sitemap jekyll-seo-tag` 
+2. `sudo apt install make`
 
+3. `sudo gem install jekyll jekyll-gist jekyll-sitemap jekyll-seo-tag jekyll-paginate`
    > [doc](https://github.com/poole/poole#usage)
-3. `git clone git@github.com:lbwei1016/lanyon.git` 
 
-4. `git remote add github.io [github.io repo url]` 
+4. `git clone git@github.com:lbwei1016/lanyon.git` 
 
-5. `git add . && git commit -m "init"` 
+   > 這是從官方 fork 過來的
 
-6. `git checkout gh-pages` 
+5. `git remote add github.io [github.io repo url]` 
 
-7. `git branch --set-upstream-to=github.io gh-pages` 
+6. `git add . && git commit -m "init"` 
 
-8. `git push -u github.io gh-pages` 
+7. `git checkout gh-pages` 
+
+8. `git branch --set-upstream-to=github.io gh-pages` 
+
+9.  `git push -u github.io gh-pages` 
 
 ## Step II: Deploy
 
