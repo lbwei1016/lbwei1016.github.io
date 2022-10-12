@@ -34,7 +34,9 @@ $$G_1 = \{g \in G | gx=x\}$$
 
 is also called the **stabilizer** of $$x$$ in $$G$$, denoted by $$\text{Stab}_G(x)$$, which is a subgroup of $$G$$.
 
-> $$G$$-orbit of $$x$$: 將 $$G$$ 內的所有變換加諸於 $$x$$ 身上，所形成的集合；$$G_i$$ 只取可使 $$x$$ 變換成 $$x_i$$ 的部分。
+> $$G$$-orbit of $$x$$: $$x$$ 經過 $$g$$ 變換可以去的地方；收的是 **object**。
+
+> $$G_i$$ 只取可使 $$x$$ 變換成 $$x_i$$ 的部分；收的是 **symmetry**。
 
 > **stabilizer** 使 $$x$$ 保持不變，因此稱其穩。
 
@@ -109,7 +111,7 @@ $$(2)$$ implies that every element in the group can be written as the form
 
 $$\sigma^i \tau^j.$$
 
-Therefore, if a group satisfies the above conditions, it hat **at most $$2n$$ elements**. $$(2)$$ also uniquely determiines a binary structure, i.e. the above conditions **uniquely determined the group structure of $$D_n$$**, and we use the following notation as well:
+Therefore, if a group satisfies the above conditions, it has **at most $$2n$$ elements**. $$(2)$$ also uniquely determiines a binary structure, i.e. the above conditions **uniquely determined the group structure of $$D_n$$**, and we use the following notation as well:
 
 $$D_n = \langle \sigma, \tau | \sigma^n = \tau^2 = e,\ \sigma \tau = \tau \sigma^{-1} \rangle,$$
 

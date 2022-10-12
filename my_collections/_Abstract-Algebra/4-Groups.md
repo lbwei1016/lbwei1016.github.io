@@ -14,7 +14,7 @@ time: 2022/09/22
   - [Theorem (uniqueness)](#theorem-uniqueness)
   - [Theorem (after mapped)](#theorem-after-mapped)
 - [Groups](#groups)
-  - [Definition](#definition-2)
+  - [Definition (group)](#definition-group)
   - [Abelian Group](#abelian-group)
 - [Properties of Groups](#properties-of-groups)
   - [Cancellation Law](#cancellation-law)
@@ -94,7 +94,7 @@ for all $$s' \in S'.$$
 --- 
 
 ## Groups
-### Definition
+### Definition (group)
 
 > A group $$(G, *)$$ is a set $$G$$, with a binary operation $$*$$, such that
 > 1. $$*$$ is **associative**.

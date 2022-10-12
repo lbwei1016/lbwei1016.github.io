@@ -89,3 +89,7 @@ tag: Github page
 7. **MathJax**
 
    * [MathJax](https://alanduan.me/random/mathjax/)
+
+## Note
+
+> 如果不會自動更新頁面，試 `jekyll serve --force-polling`。

@@ -7,6 +7,10 @@ time: 2022/09/22
 ---
 
 **Table of Content**
+- [Order](#order)
+  - [Definition (order of a group)](#definition-order-of-a-group)
+  - [Definition (order of an element)](#definition-order-of-an-element)
+    - [**Remark (order divides order)**](#remark-order-divides-order)
 - [Group of small order](#group-of-small-order)
   - [Order 1](#order-1)
   - [Order 2](#order-2)
@@ -19,10 +23,17 @@ time: 2022/09/22
 
 ---
 
+## Order
+### Definition (order of a group)
+> The cardinality of a group $$G = $$ the order of $$G$$.
+
+### Definition (order of an element)
+> If $$g \in G$$ and for some $$m \in \mathbb{N}$$ such that $$g^m = e$$, then $$m$$ is called *exponent* of $$g$$. The **order** of $$g$$ is the **smallest such *exponent***, denoted by $$\text{ord}(g). In this case we say $$g$$ is of finite order (otherwise infinite).
+
+#### **Remark (order divides order)**
+As a consequence of **Lagrange’s Theorem**, the order of an element $$g$$ of a group $$G$$ **divides** the group order \|$$G$$\| in case $$G$$ is finite.
+
 ## Group of small order
-
-> the cardinality of a group $$G = $$ the order of $$G$$
-
 ### Order 1
 
 $$G = \{e\}$$ is unique and $$G \cong \mathbb{Z}_1 = \{\bar 0\}$$.
@@ -110,3 +121,4 @@ When $$A$$ is just a set, a symmetry on $$A$$ is just a bijective function from 
 
 ## Reference
 - [Wiki](https://en.wikipedia.org/wiki/General_linear_group)
+- [https://page.math.tu-berlin.de/~kant/Algebra/groups.pdf](https://page.math.tu-berlin.de/~kant/Algebra/groups.pdf)
