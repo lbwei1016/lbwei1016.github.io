@@ -113,9 +113,11 @@ $$\sigma^i \tau^j.$$
 
 Therefore, if a group satisfies the above conditions, it has **at most $$2n$$ elements**. $$(2)$$ also uniquely determiines a binary structure, i.e. the above conditions **uniquely determined the group structure of $$D_n$$**, and we use the following notation as well:
 
-$$D_n = \langle \sigma, \tau | \sigma^n = \tau^2 = e,\ \sigma \tau = \tau \sigma^{-1} \rangle,$$
+$$D_n = \langle \sigma, \tau \vert \sigma^n = \tau^2 = e,\ \sigma \tau = \tau \sigma^{-1} \rangle,$$
 
 which **defines a group by generators and relations**.
+
+> $$G_n = \langle \text{generator} \vert \text{relations} \rangle$$.
 
 > 參 [Group of Symmetries](../5-More-on-Groups/#group-of-symmetries)。
 

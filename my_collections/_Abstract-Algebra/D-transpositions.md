@@ -11,6 +11,7 @@ time: 2022/10/12
   - [Definition (transposition)](#definition-transposition)
   - [Theorem (product)](#theorem-product)
     - [Proof](#proof)
+  - [Theorem (generator)](#theorem-generator)
 - [Inversions](#inversions)
   - [Theorem (# of inversions)](#theorem--of-inversions)
   - [Corollary (even permutation)](#corollary-even-permutation)
@@ -48,6 +49,19 @@ Since every cycle is also a product of adjacent transpositions, every permutatio
 **e.g.**
 
 $$(3,4,1,7) = (3,7)(3,1)(3,4)$$
+
+### Theorem (generator)
+
+$$
+\begin{align*}
+S_n &= \Big\langle (i,j) \vert 1 \le i \le j \le n \Big\rangle \\  
+&= \Big\langle (i,i+1) \vert 1 \le i < n \Big\rangle \\ 
+&= \Big\langle (1,j) \vert 1 \le i < n \Big\rangle \\ 
+&= \Big\langle (1,2)(1,2,\cdots,n) \Big\rangle \\
+\end{align*}  
+$$
+
+> [集合表示法見此](../B-n-gons/#dihedral-group)。
 
 ---
 
