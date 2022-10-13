@@ -100,7 +100,7 @@ $$\sum_{0 \leq k \leq n}{k \choose m} = {n+1 \choose m+1},\ m, n \in \mathbb{N}$
 
 ### Binomial Theorem
 
-$$(x+y)^r = \sum_k{r \choose k}x^ry^{r-k},\ r \in \mathbb{N} \lor \bigl| x/y \bigr| < 1$$
+$$(x+y)^r = \sum_k{r \choose k}x^ky^{r-k},\ r \in \mathbb{N} \lor \bigl| x/y \bigr| < 1$$
 
 > 如果 $$r$$ 是任意實數，就要符合第二個條件
 
