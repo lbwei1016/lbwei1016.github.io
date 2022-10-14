@@ -1,12 +1,14 @@
 ---
 layout: page
-title: Conditional PMF & Expectation
+title: Conditioning
 usemathjax: true
-tag: PMF
+tag: COnditional Probability
 time: 2022/10/05
 ---
 
 **Table of Content**
+- [Overview](#overview)
+- [Conditioning a Geometric Random Variable](#conditioning-a-geometric-random-variable)
 
 ---
 

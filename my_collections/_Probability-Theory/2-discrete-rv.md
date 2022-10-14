@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Random Variable & Cumulants
+title: Discrete Random Variables
 usemathjax: true
-tag: Random Variable, PMF, Cumulants
+tag: Discrete, Random Variable, PMF
 time: 2022/09/28
 ---
 
@@ -26,6 +26,7 @@ time: 2022/09/28
   - [Binomial](#binomial)
   - [Geometric](#geometric)
     - [Memorylessness](#memorylessness)
+  - [Poisson](#poisson)
 - [Reference](#reference)
 
 ---
@@ -55,12 +56,14 @@ $$P(X=x \land Y=y) = P(X=x)\dot{}P(Y=y).$$
 
 Let $$X$$ be a random variable on a sample space $$\Omega$$. Then the **pmf** $$p: E \to [0,1]$$ is defined as
 
-$$p_X(\omega) = P(X=\omega), \omega \in \Omega,$$
+$$p_X(x) = P(X=x)$$
 
 which must satisfies two conditions:
 
-$$\sum_\omega p_X(\omega) = 1 \tag{1}$$
-$$p_X(\omega) \ge 0 \tag{2}$$
+$$\sum_x p_X(x) = 1 \tag{1}$$
+$$p_X(x) \ge 0 \tag{2}$$
+
+> 賦予隨機變數值一機率。
 
 ---
 
@@ -75,7 +78,11 @@ $$\sum_{x \in X(\Omega)}x \dot{}P(X=x).$$
 
 We can give the mean a special name and some alternative notations: Call it the **expected value** and write
 
-$$EX = E(X) = E[X] = \sum_{\omega \in \Omega}X(\omega)P(\omega) = \mu$$
+$$\begin{align*}
+EX = E(X) = E[X] &= \sum_{\omega \in \Omega}X(\omega)P(\omega) \\
+&= \sum_{x}x \dot{}p_X(x) \\
+&=  \mu
+\end{align*}$$
 
 ### Properties
 
@@ -85,7 +92,20 @@ $$E(X+Y) = \sum_{\omega \in \Omega}(X(\omega) + Y(\omega))P(\omega) = EX + EY. \
 
 > 可以用來計算 the mean of the binomial（擲硬幣成功的次數的期望值）：
 > 
-> $$E\Big[\sum_i^n X_i\Big] = \sum_i^n E[X_i] = np.$$  
+> $$E\Big[\sum_i^n X_i\Big] = \sum_i^n E[X_i] = np.$$ 
+
+這是期望值的 **linearity** 特性，也可以用 [joint pmf](./#multiple-random-variable) 來證明：
+
+$$
+\begin{align*}
+E[X+Y] &= \sum_x \sum_y (x+y)p_{X,Y}(x,y) \\
+&= \sum_x \sum_y xp_{X,Y}(x,y) + \sum_x \sum_y yp_{X,Y}(x,y) \\
+&= \sum_x x\sum_y p_{X,Y}(x,y) + \sum_y y\sum_x p_{X,Y}(x,y) \\
+&= \sum_x xp_X(x) + \sum_y yp_Y(y) \\
+&= E[X] + E[Y]. \tag*{$\blacksquare$}
+\end{align*}
+$$
+
 
 Moreover, if $$X$$ and $$Y$$ are [independent](#independence), 
 
@@ -95,7 +115,7 @@ $$E(XY) = E(X)E(Y). \tag{2}$$
 
 另外，
 
-$$E(\alpha X) = \alpha EX。 \tag{3}$$
+$$E(\alpha X + \beta) = \alpha E(X) + \beta。 \tag{3}$$
 
 ---
 
@@ -176,13 +196,13 @@ $$X = \begin{cases}
 
 **PMF**:
 
-$$p_X(x) = {n \choose k}p^k(1-p)^{n-k},\ k \in \mathbb{N}.$$
+$$p_X(k) = {n \choose k}p^k(1-p)^{n-k},\ k \in \mathbb{N}.$$
 
 ### Geometric
 
 **PMF**:
 
-$$p_X(x) = (1-p)^{k-1}p,\ k \in \mathbb{Z}^+.$$
+$$p_X(k) = (1-p)^{k-1}p,\ k \in \mathbb{Z}^+.$$
 
 #### Memorylessness
 
@@ -199,6 +219,28 @@ E[X] &= E[X-1] + 1 \\
 \end{align*}$$
 
 $$\Rightarrow E[X] = {1\over p}.$$
+
+### Poisson
+
+**PMF**
+
+$$
+p_X(k) = e^{-\lambda}{\lambda^k \over k!},\ k=0,1,2,\cdots
+$$
+
+This is a PMF since 
+
+$$
+\sum_k e^{-\lambda}{\lambda^k \over k!} = e^{-\lambda}e^\lambda = 1.
+$$
+
+Poisson PMF with parameter $$\lambda$$ is a good **approximation** for a *binomial PMF* with parameters $$n$$ and $$p$$, i.e.,
+
+$$
+e^{-\lambda}{\lambda^k \over k!} \approx {n \choose k}p^k(1-p)^{n-k},\ k \in \mathbb{N}
+$$
+
+provided **$$\lambda = np$$**. We now show that the pmf of a binomail r.v. with parameters $$n$$ and $$p$$ 
 
 ---
 
