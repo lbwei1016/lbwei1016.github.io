@@ -9,13 +9,17 @@ time: 2022/10/05
 **Table of Content**
 - [PDF](#pdf)
   - [Definition](#definition)
+  - [Joint PDF & Marginal PDF](#joint-pdf--marginal-pdf)
 - [Expectation](#expectation)
   - [Definition](#definition-1)
 - [Special Random Variables](#special-random-variables)
   - [Exponential Random Variable](#exponential-random-variable)
+    - [Memoryless](#memoryless)
+  - [Normal Random Variable](#normal-random-variable)
 - [CDF](#cdf)
   - [Problem](#problem)
   - [The Geometric and Exponential CDFs](#the-geometric-and-exponential-cdfs)
+  - [joint CDF](#joint-cdf)
 - [Reference](#reference)
   
 ---
@@ -47,6 +51,25 @@ $$
  
 值得注意：$$f_X > 1$$ 是合法的，因為他不是機率本身（見 $$(1)$$），[PMF](../2-discrete-rv/#probability-mass-function-pmf) 則直接代表機率；這點從 notation 就可以看出端倪：pmf 是 $$p_X$$，而 pdf 是 $$f_X$$（pmf 有 **$$p$$**，pdf 則非）。
 
+### Joint PDF & Marginal PDF 
+
+**joint:**
+
+$$
+f_{X,Y}(x,y), \\
+P((X,Y)\in B) = {\iint}_{(x,y)\in B}f_{X,Y}(x,y)dxdy.
+$$
+
+> 用來算出機率！
+
+**marginal:**
+
+$$
+f_X(x) = \int^{\infty}_{-\infty}f_{X,Y}(x,y)dy.
+$$
+
+> 這是 density！
+
 ---
 
 ## Expectation
@@ -57,6 +80,12 @@ E(X) = \int^{\infty}_{-\infty}xf_X(x)dx.
 $$
 
 > *center of gravity*
+
+$$
+E(g(X,Y)) = \int^{\infty}_{-\infty}\int^{\infty}_{-\infty}g(x,y)f_{X,Y}(x,y)dxdy.
+$$
+
+> *linearity* 依然成立。
 
 ---
 
@@ -91,7 +120,54 @@ $$
 
 > 對比 [geometric r.v.](../2-discrete-rv/#geometric)，可以發現他們的相似性！
 
-> **memorylessness**!
+#### Memoryless
+
+For $$x\ge 0$$,
+
+$$
+\begin{align*}
+P(T>t+x \vert T>t) &= {P(T>t+x \text{ and }T>t) \over P(T > t)} \\
+&= {P(T>t+x) \over P(T > t)} \\
+&= {e^{-\lambda(t+x)} \over e^{-\lambda t}} \\
+&= e^{-\lambda x} = P(T > x).
+\end{align*}
+$$
+
+> 以上討論的是 **CDF**，有別於[離散](../2-discrete-rv#memorylessness)情境下的 **PMF**。
+
+> *Note:* 在 continous r.v. 下，$$P(X=x)$$ 是 $$0$$，也就是說 $$P(T > x) = P(T \ge x)$$.
+
+### Normal Random Variable
+
+A continuous r.v. $$X$$ is said to be **normal** or **Gaussian** if it has a pdf of the form
+
+$$
+f_X(x) = {1 \over \sqrt{2\pi}\sigma}e^{-(x-\mu)^2/2\sigma^2}.
+$$
+
+We denote this distribution as $$N(\mu, \sigma^2)$$, and $$E(X) = \mu, \ var(X) = \sigma^2$$.
+
+A normal r.v. $$Y$$ with $$\mu=0$$ and $$\sigma^2=1$$ is said to be a **standard normal**.
+
+> $$\Phi(y) = P(Y \le y)$$: cdf is denoted by $$\Phi$$.
+
+For any normal r.v. $$X$$ with mean $$\mu$$ and variance $$\sigma$$, we can **standardize** $$X$$ by defining a new random variable $$Y$$ given by
+
+$$Y = {X-\mu \over \sigma}.$$
+
+Then we have
+
+$$E(Y) = {E(X)-\mu \over \sigma} = 0,\ var(Y) = {var(X) \over \sigma^2} = 1.$$
+
+Thus, $$Y$$ is a **standard** normal r.v.
+
+> standard normal 可查表。
+
+The cdf of $$X$$ becomes
+
+$$
+P(X \le x) = \Phi\Big({x-\mu \over \sigma}\Big).
+$$
 
 ---
 
@@ -185,6 +261,26 @@ $$F_{exp}(n\delta) = F_{geo}(n),\ n = 1,2,\cdots.$$
 這裡可以把 $$\delta$$ 想成：每 $$\delta$$ 秒丟一次硬幣。當 $$\delta$$ 很小的時候（$$\delta \ll 1$$），a geometric r.v. with parameter $$p$$ is **a close approximation** to an exponential r.v. with parameter $$\lambda$$！
 
 > 當 $$\delta \to 0$$，離散就變成了連續。
+
+### joint CDF
+
+We define
+
+$$
+F_{X,Y}(x,y) = P(X\le x, Y\le y),
+$$
+
+and then we have
+
+$$
+f_{X,Y}(x,y) = {\partial^2F_{X,Y} \over \partial x \partial y}(x,y),
+$$
+
+since
+
+$$
+P(X\le x, Y \le y) = \int_{-\infty}^x\int_{-\infty}^yf_{X,Y}(x,y)dxdy.
+$$
 
 ---
 

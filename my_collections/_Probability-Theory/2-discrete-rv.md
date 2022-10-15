@@ -206,9 +206,21 @@ $$p_X(k) = (1-p)^{k-1}p,\ k \in \mathbb{Z}^+.$$
 
 #### Memorylessness
 
-$$P(X-1=n|X>1) = P(X=n+1|X>1) = P(X=n)$$
+For $$n \ge 1$$,
+
+$$
+\begin{align*}
+P(X-1=n|X>1) &= {P(X=n+1 \text{ and } X>1) \over P(X>1)} \\
+&= {P(X=n+1) \over P(X>1)} \\
+&= {(1-p)^np \over 1-p} \\
+&= (1-p)^{n-1}p \\
+&= P(X=n)
+\end{align*}
+$$
 
 > 換個立足點，重新開始，試驗成功的機率不變（因為獨立）。
+
+> 見 [exponential r.v.](../4-continous-rv/#memoryless)。
 
 用來計算 the mean of the geometric:
 
