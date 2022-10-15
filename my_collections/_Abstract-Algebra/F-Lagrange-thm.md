@@ -7,6 +7,13 @@ time: 2022/10/15
 ---
 
 **Table of Content**
+- [Lagrange's Theorem](#lagranges-theorem)
+  - [Theorem (order of a subgroup)](#theorem-order-of-a-subgroup)
+  - [Corollary (order of an element)](#corollary-order-of-an-element)
+  - [Corollary (cyclic)](#corollary-cyclic)
+- [Index](#index)
+  - [Definition (index of subgroups)](#definition-index-of-subgroups)
+  - [Theorem (absorb)](#theorem-absorb)
 
 ---
 
@@ -47,3 +54,5 @@ Let $$g \in G,\ g \not = e$$. We have $$\vert \langle g \rangle \vert$$ divides 
 
 ### Theorem (absorb)
 > Suppose $$K \le H \le G$$, and $$[G:H]$$ and $$[H:K]$$ are finite. Then $$[G:K]=[G:H][H:K]$$.
+
+> 依定義展開就可證明。
