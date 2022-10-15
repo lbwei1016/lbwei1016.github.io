@@ -28,10 +28,10 @@ time: 2022/09/22
 > The cardinality of a group $$G = $$ the order of $$G$$.
 
 ### Definition (order of an element)
-> If $$g \in G$$ and for some $$m \in \mathbb{N}$$ such that $$g^m = e$$, then $$m$$ is called *exponent* of $$g$$. The **order** of $$g$$ is the **smallest such *exponent***, denoted by $$\text{ord}(g). In this case we say $$g$$ is of finite order (otherwise infinite).
+> If $$g \in G$$ and for some $$m \in \mathbb{N}$$ such that $$g^m = e$$, then $$m$$ is called *exponent* of $$g$$. The **order** of $$g$$ is the **smallest such *exponent***, denoted by $$\text{ord}(g)$$. In this case we say $$g$$ is of finite order (otherwise infinite).
 
 #### **Remark (order divides order)**
-As a consequence of **Lagrange’s Theorem**, the order of an element $$g$$ of a group $$G$$ **divides** the group order \|$$G$$\| in case $$G$$ is finite.
+As a consequence of [Lagrange’s Theorem](../F-Lagrange-thm/#theorem), the order of an element $$g$$ of a group $$G$$ **divides** the group order \|$$G$$\| in case $$G$$ is finite.
 
 ## Group of small order
 ### Order 1
