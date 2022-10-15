@@ -220,6 +220,8 @@ E[X] &= E[X-1] + 1 \\
 
 $$\Rightarrow E[X] = {1\over p}.$$
 
+> $$var(X) = (1-p)/p^2$$.
+
 ### Poisson
 
 **PMF**
@@ -240,7 +242,28 @@ $$
 e^{-\lambda}{\lambda^k \over k!} \approx {n \choose k}p^k(1-p)^{n-k},\ k \in \mathbb{N}
 $$
 
-provided **$$\lambda = np$$**. We now show that the pmf of a binomail r.v. with parameters $$n$$ and $$p$$ 
+provided **$$\lambda = np$$**. We now show that the pmf of a binomail r.v. with parameters $$n$$ and $$p$$ **approaches** the pmf of a Poisson r.v. with parameter $$\lambda = np$$.
+
+**Solution**
+
+$$
+\begin{align*}
+p_X(k) &= {n \choose k}p^k(1-p)^{n-k} \\
+&= {n(n-1)\cdots(n-k+1) \over n^k} \dot{} {\lambda^k \over k!} \dot{} (1- {\lambda \over n})^{n-k}.
+\end{align*}
+$$
+
+When $$k$$ is fixed and $$n \to \infty$$, we have, for $$j=1,\cdots,k,$$
+
+$$
+{n-k+j \over n} \to 1,\ (1-{\lambda \over n})^{-k} \to 1, (1-{\lambda \over n})^n \to e^{-\lambda}.
+$$
+
+Thus, we obtain
+
+$$p_X(k) \to e^{-\lambda}{\lambda^k \over k!}. \tag*{$\blacksquare$} $$
+
+> Poisson 是極限情況的 binomial！（當某事發生機率極低）
 
 ---
 
@@ -249,3 +272,5 @@ provided **$$\lambda = np$$**. We now show that the pmf of a binomail r.v. with 
 - [ncl.ac.uk](https://www.ncl.ac.uk/webtemplate/ask-assets/external/maths-resources/statistics/distribution-functions/probability-mass-function.html)
 - [Wiki: Probability mass function](https://en.wikipedia.org/wiki/Probability_mass_function)
 - [CMath] (Chapter 8), Concrete Mathematics: A Foundation for Computer Science, by Ronald Graham, Donald Knuth, and Oren Patashni
+- Introduction to Probability, 2/e, by
+Dimitri P. Bertsekas, John N. Tsitsiklis

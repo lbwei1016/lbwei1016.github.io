@@ -2,17 +2,18 @@
 layout: page
 title: Conditioning
 usemathjax: true
-tag: COnditional Probability
+tag: Conditional Probability
 time: 2022/10/05
 ---
 
 **Table of Content**
-- [Overview](#overview)
-- [Conditioning a Geometric Random Variable](#conditioning-a-geometric-random-variable)
+- [Conditioning a Random Variable on an Event](#conditioning-a-random-variable-on-an-event)
+- [Conditioning one Random Variable on Another](#conditioning-one-random-variable-on-another)
+- [Reference](#reference)
 
 ---
 
-## Overview
+## Conditioning a Random Variable on an Event 
 
 $$\begin{align*}
 p_{X|A}(x) &= P(X=x|A), \tag{1} \\
@@ -31,7 +32,9 @@ $$P(B) = \sum_i P(A_i)P(B|A_i).$$
 
 Here in **conditional pmf**, we have
 
-$$p_X(x) = \sum_i P(A_i)p_{X|A_i}(x).$$
+$$p_X(x) = \sum_i P(A_i)p_{X|A_i}(x),$$
+
+and this is called the **total probability theorem**.
 
 > 想像 $$B = \{X=x\}$$.
 
@@ -51,7 +54,38 @@ This is called the **total expectation theorem**.
 
 ---
 
-## Conditioning a Geometric Random Variable
+## Conditioning one Random Variable on Another
+
+Define
+
+$$p_{X\vert Y}(x \vert y) = {p_{X,Y}(x,y) \over p_Y(y)},$$
+
+i.e.
+
+$$p_{X,Y}(x,y) = p_X(x)p_{Y \vert X}(y \vert x) = p_Y(y)p_{X \vert Y}(x \vert y).$$
+
+Moreover,
+
+$$
+E[X \vert Y = y] = \sum_x xp_{X \vert Y}(x \vert y), \\
+E[X] = \sum_yp_Y(y)E[X \vert Y=y].
+$$
+
+For **linearity**, we have
+
+$$
+E[(X+Y) \vert Z] = E[X \vert Z] + E[Y \vert Z].
+$$
+
+For variance, we have
+
+$$
+var(X \vert Y) = E[(X-E[X \vert Y])^2 \vert Y] = E[X^2 \vert Y] - (E[X \vert Y])^2.
+$$
+
+> 展開整理就可證明。
 
 ---
 
+## Reference
+- Introduction to Probability, 2/e, by Dimitri P. Bertsekas, John N. Tsitsiklis
