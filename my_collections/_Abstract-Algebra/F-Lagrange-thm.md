@@ -32,6 +32,8 @@ $$
 
 This proves the theorem.
 
+> 看看[這個 theorem](../G-Direct-Product/#theorem-subgroup-of-order-m)。
+
 ### Corollary (order of an element)
 > The order of an element $$a$$ of a finite group $$G$$ divides the order of $$G$$.
 
