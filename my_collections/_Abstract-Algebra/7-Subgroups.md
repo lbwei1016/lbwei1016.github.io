@@ -43,3 +43,5 @@ Under addition, we have $$\mathbb{Z \leq Q \leq R \leq C}$$.
 3. for all $$a \in H$$, the inverse $$a^{-1}$$ is also in $$H$$.
 
 其實 1. 和 3. imply 2.，但 2. 的必要性在於防止 $$H$$ 是空集合，不過空集合作為 subgroup 沒什麼意義（是嗎？）。
+
+> $$H$$ is closed，但沒有說 for $$g_1,g_2 \not \in H,\ g_1g_2 \in H$$ 是錯的！（外部可闖入；可用 $$\mathbb{Z}_{12}$$ 找例子。）
