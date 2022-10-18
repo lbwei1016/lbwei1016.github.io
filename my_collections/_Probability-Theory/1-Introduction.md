@@ -81,6 +81,8 @@ $$P(A_i|B) \leftrightarrow P(B|A_i)$$
 
 看何者已知，就能求出另一機率。
 
+> 見 [Bayes’ Rule revisted](../5-more-on-conditioning/#bayes-rule-revisted)。
+
 ---
 
 ## Independence

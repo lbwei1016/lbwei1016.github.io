@@ -9,6 +9,7 @@ time: 2022/10/15
 **Table of Content**
 - [Continuous Stuff](#continuous-stuff)
   - [Coditional CDF](#coditional-cdf)
+- [Bayes' Rule *revisted*](#bayes-rule-revisted)
 - [Conditional Expectation and Variance](#conditional-expectation-and-variance)
   - [Problem](#problem)
 
@@ -33,6 +34,48 @@ $$
 > 注意是 under $$Y=y$$！
 
 但是，在 continous r.v. 中，$$P(Y=y)$$ 不是應該要等於 $$0$$ 嗎？的確，$$P(Y=y) = 0$$，不過這裡我們計算的是 r.v. $$X$$，也就是說，我們關注的是**在 $$Y=y$$ 的情況下，$$\forall X \le x$$ 的機率**！也因為這個考量，$$F_{X\vert Y}(x\vert y)$$ 才不寫成 $$P(X\le x, Y=y)/P(Y=y)$$。
+
+---
+
+## Bayes' Rule *revisted*
+
+> 見 [Bayes’ Rule](../1-Introduction#bayes-rule)。
+
+Given a **discrete** r.v. $$K$$ and a **continous** r.v. $$Y$$, the joint probability is
+
+$$
+\begin{align*}
+&P(K=k, y \le Y \le+\delta) \\
+=\ &P(K=k)P(y \le Y \le y+\delta|K=k) \approx p_K(k)f_{Y|K}(y|k)\delta \\
+=\ &P(y\le Y \le y+\delta)P(K=k|y\le Y \le y+\delta) \approx f_Y(y)\delta p_{K|Y}(k|y).
+\end{align*}
+$$
+
+Comparing the right hand side, we have
+
+$$
+p_K(k)f_{Y|K}(y|k) = f_Y(y)p_{K|Y}(k|y).
+$$
+
+From this equation, we can derive two formulae
+
+$$
+\begin{align*}
+p_{K|Y}(k|y) = {p_K(k)f_{Y|K}(y|k) \over f_Y(y)}, \tag{1} \\
+f_{Y|K}(y|k)  = {f_Y(y)p_{K|Y}(k|y) \over p_K(k)}, \tag{2}
+\end{align*}
+$$
+
+where 
+
+$$
+f_Y(y) = \sum_{k'} p_K(k')f_{Y|K}(y|k'), \\
+p_K(k) = \int f_Y(y')p_{K|Y}(k|y')dy'.
+$$
+
+> 可以發現，這 sum 和 integral 分別對應到 $$(1)$$ 和 $$(2)$$ 的分子！
+
+> 解 $$(1)、(2)$$ 的時候，先算出分子再解決分母；一項一項慢慢來。
 
 ---
 
