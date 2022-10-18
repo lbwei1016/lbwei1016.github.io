@@ -9,6 +9,7 @@ time: 2022/10/05
 **Table of Content**
 - [PDF](#pdf)
   - [Definition](#definition)
+  - [Pitfalls](#pitfalls)
   - [Joint PDF & Marginal PDF](#joint-pdf--marginal-pdf)
 - [Expectation](#expectation)
   - [Definition](#definition-1)
@@ -48,8 +49,18 @@ $$
 $$
 
 > 為什麼叫做 *density*？因為上式的 $$f_X(x)\delta$$ 就像密度乘長度。 
- 
-值得注意：$$f_X > 1$$ 是合法的，因為他不是機率本身（見 $$(1)$$），[PMF](../2-discrete-rv/#probability-mass-function-pmf) 則直接代表機率；這點從 notation 就可以看出端倪：pmf 是 $$p_X$$，而 pdf 是 $$f_X$$（pmf 有 **$$p$$**，pdf 則非）。
+
+### Pitfalls
+
+$$f_X > 1$$ 是合法的，因為他不是機率本身（見 $$(1)$$），[PMF](../2-discrete-rv/#probability-mass-function-pmf) 則直接代表機率；這點從 notation 就可以看出端倪：pmf 是 $$p_X$$，而 pdf 是 $$f_X$$（pmf 有 **$$p$$**，pdf 則非）。
+
+另外，若 $$Z=X+Y$$，
+
+$$
+f_Y(y) \not = f_Y(z-x), \text{ i.e. } y \not = z-x,
+$$
+
+因為我們無法拿任意的 $$z$$ 和 $$x$$ 來對應 $$y$$（可能不存在那樣的 $$y$$）。
 
 ### Joint PDF & Marginal PDF 
 
