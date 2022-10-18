@@ -90,6 +90,18 @@ tag: Github page
 
    * [MathJax](https://alanduan.me/random/mathjax/)
 
+## Google Analytics
+
+> 前置：去 GA 設定，開新的串流。
+
+先去 `_config.yml` 修改 `google_analytics_id`，再到 `_includes/head.html` 的尾端（`</head>` 後）加上從 google analytics 複製來的 script：
+
+![](../img/google-analytics.png)
+
+就完成了！
+
 ## Note
 
 > 如果不會自動更新頁面，試 `jekyll serve --force-polling`。
+
+> 如果 `localhost:4000` 跑不出畫面，試 `jekyll server --port 5000`。
