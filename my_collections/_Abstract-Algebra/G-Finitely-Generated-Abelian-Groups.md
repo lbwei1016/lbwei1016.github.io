@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Direct Product
+title: Finitely Generated Abelian Groups
 usemathjax: true
 tag: Abstract Algebra, Group Theory
 time: 2022/10/15
@@ -15,6 +15,9 @@ time: 2022/10/15
   - [Definition (finitely generated abelian groups)](#definition-finitely-generated-abelian-groups)
   - [Theorem  (Fundamental theorem of finitely generated abelian groups)](#theorem--fundamental-theorem-of-finitely-generated-abelian-groups)
   - [Theorem (subgroup of order $$m$$)](#theorem-subgroup-of-order-m)
+  - [$$p$$-torsion Subgroup](#p-torsion-subgroup)
+    - [Determine group structure](#determine-group-structure)
+    - [Theorem (cardinality of $$\mathbb{Z}_m^{\times}$$)](#theorem-cardinality-of-mathbbz_mtimes)
 
 ---
 
@@ -146,3 +149,74 @@ has order $$p_1^{f_1}\cdots p_n^{f_n} = m$$. ◼
 > 連加 $$p_1^{f_1}$$ 次就回到 identity！
 
 > 對比 [Lagrange's Theorem](../F-Lagrange-thm/#lagranges-theorem)。
+
+### $$p$$-torsion Subgroup
+
+Follow from [the fundamental theorem](#theorem--fundamental-theorem-of-finitely-generated-abelian-groups), we can choose any $$p = p_i$$ to obtain a **cyclic subgroup** $$G_p$$, characterized by
+
+$$
+G_p = \{a\in G \vert a^{p^k} = e \text{ for some } k \in \mathbb{N} \},
+$$
+
+and $$G_p$$ is called the **$$p$$-torsion subgroup** of $$G$$.
+
+We can rephrase the above result as
+
+$$
+G = \prod_{p\big\vert \vert G \vert} G_p,
+$$
+
+where $$G_p$$ is isomorphic to a group of the form
+
+$$
+\mathbb{Z}_{p^{r_1}}\times \cdots \mathbb{Z}_{p^{r_k}}.
+$$
+
+Therefore, to determine the **group structure of G**, it is sufficient to determine the **group structure of its p-torsion subgroups**.
+
+#### Determine group structure
+
+For a positive integer $$n$$, consider the following subsets
+
+$$
+G^{(n)} = \{a^n\vert a\in G \},
+$$
+
+which is a subgroup.
+
+**Example**
+
+For a group $$G$$ of order $$16$$, it can be isomorphic to one of the four groups:
+
+$$
+\mathbb{Z}_{16}, \mathbb{Z}_{8}\times \mathbb{Z}_{2}, \mathbb{Z}_{4}\times \mathbb{Z}_{4}, \mathbb{Z}_{4}\times (\mathbb{Z}_{2})^2, (\mathbb{Z}_{2})^4
+$$
+
+After computing these subsets of each posssible structure of $$G$$, we obtain
+
+|    $$G$$    | $$\mathbb{Z}_{16}$$ | $$\mathbb{Z}_{8}\times \mathbb{Z}_{2}$$ | $$\mathbb{Z}_{4}\times \mathbb{Z}_{4}$$ | $$\mathbb{Z}_{4}\times (\mathbb{Z}_{2})^2$$ | $$(\mathbb{Z}_{2})^4$$ |
+| :---------: | :-----------------: | :-----------------: | :-----------------: | :-----------------: | :-----------------: |
+| $$G^{(2)}$$ | $$\mathbb{Z}_{8}$$ | $$\mathbb{Z}_{4}$$ | $$\mathbb{Z}_{2}\times \mathbb{Z}_{2}$$ | $$\mathbb{Z}_{2}$$ | $$\{e\}$$ |
+| $$G^{(4)}$$ | $$\mathbb{Z}_{4}$$ | $$\mathbb{Z}_{2}$$ | $$\{e\}$$ | $$\{e\}$$ | $$\{e\}$$ |
+
+which implies the following results:
+
+- If $$G^{(2)}$$ contains $$8$$ elements, then $$G \cong \mathbb{Z}_{16}$$;
+- If $$G^{(2)}$$ contains $$4$$ elements, and $$G^{(4)}$$ contains $$2$$ elements, then $$G \cong \mathbb{Z}_{8}\times\mathbb{Z}_{2}$$;
+- $$\cdots$$.
+
+> 以此類推，用以上表格就可以唯一決定 $$G$$ 的 structure！
+
+*Note:* For a group $$T \cong \mathbb{Z}_{mn} $$, we have $$T^{(n)} \cong n\mathbb{Z}_{mn}\cong \mathbb{Z}_m $$. 也就是說，$$n\mathbb{Z}_n = \{e\}$$，消失了！
+
+綜合以上，對於任意 group $$G$$，我們可以用一演算法來決定其結構：
+
+1. Find the cardinality of $$G$$.
+2. List all possible group structures by the [ fundamental theorem of finite abelian groups](#theorem--fundamental-theorem-of-finitely-generated-abelian-groups).
+3. For each prime $$p\big\vert \vert G \vert$$, compute $$\vert G^{(p)} \vert, \vert G^{(p^2)} \vert,\cdots $$ to determine the $$p$$-torsion subgroup of $$G$$.
+
+關於 cardinality，補一個 theorem：
+
+#### Theorem (cardinality of $$\mathbb{Z}_m^{\times}$$)
+
+> $$\vert \mathbb{Z}_m^{\times} \vert = m\prod_p(1-1/p) $$, where $$p$$ runs through all prime divisors of $$m$$.
