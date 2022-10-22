@@ -52,7 +52,7 @@ Let $$g \in G,\ g \not = e$$. We have $$\vert \langle g \rangle \vert$$ divides 
 
 ## Index
 ### Definition (index of subgroups)
-> Let $$H$$ be a subgroup of a group $$G$$. The number of left cosets of $$H$$ is the **index** of $$H$$ in $$G$$, which is denoted by $$[G:H]$$.
+> Let $$H$$ be a subgroup of a group $$G$$. The **number of left cosets** of $$H$$ is the **index** of $$H$$ in $$G$$, which is denoted by $$[G:H]$$.
 
 ### Theorem (absorb)
 > Suppose $$K \le H \le G$$, and $$[G:H]$$ and $$[H:K]$$ are finite. Then $$[G:K]=[G:H][H:K]$$.
