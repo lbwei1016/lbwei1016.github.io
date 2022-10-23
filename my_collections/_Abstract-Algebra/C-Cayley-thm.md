@@ -16,7 +16,7 @@ time: 2022/10/12
 
 ## Theorem
 
-> Every group is isomorphic to a [group of permutations](../9-Groups-of-Permutation). More percisely, every group $$G$$ is isomorphic to **a subset of $$S_G$$** given by the map $$\lambda: a\to \lambda_a$$, where $$\lambda_a(g) = ag$$.
+> Every group is isomorphic to a [group of permutation](../9-Groups-of-Permutation). More percisely, every group $$G$$ is isomorphic to **a subset of $$S_G$$** given by the map $$\lambda: a\to \lambda_a$$, where $$\lambda_a(g) = ag$$.
 
 > $$S_G$$: $$G$$ 的 permutation group。
 >

@@ -58,7 +58,7 @@ We can see that $$\sigma = \sigma_1\sigma_2 = \sigma_2\sigma_1 = (12)(345)$$.
 ### Theorem (cycle notation)
 > In a permutation group,
 > 1. every permutation can be written as a **product of disjoint cycles**;
-> 2. two disjoint cycles commute.
+> 2. two **disjoint** cycles **commute**.
 
 > A cycle of length $$d$$ is of order $$d$$.
 
