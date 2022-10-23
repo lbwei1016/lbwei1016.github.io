@@ -22,6 +22,8 @@ time: 2022/10/13
 >
 > is called the **left coset** of $$H$$ containing $$a$$, and $$Ha$$ is called the **right coset** of $$H$$ containing $$a$$. The set of left cosets of $$H$$ in $$G$$ is denoted by $$G/H$$, and the set of right cosets of $$H$$ in $$G$$ is denoted by $$H\backslash G$$.
 
+Right coset 的 notation $$H\backslash G$$ 怎麼看？和「$$G$$ 除以 $$H$$（$$G/H$$ ）」的 quotient 想法相同（注意除號的方向），只是把 $$G$$ 擺在右邊而已！
+
 ### Theorem (left coset)
 
 For two left cosets $$aH$$ and $$bH$$, the following hold:
@@ -32,6 +34,12 @@ For two left cosets $$aH$$ and $$bH$$, the following hold:
 4. $$G$$ can be written as a disjoint union of left cosets of $$H$$, i.e.
   
 $$G = \bigsqcup_{gH \in G/H} gH.$$
+
+由於 coset 的 disjoint 性質，coset 其實隱含了一 equivalence relation：
+
+$$
+g_1 \sim g_2, \text{ if } g_1 \text{ and } g_2 \text{ are in the same left coset.} 
+$$
 
 **Proof**
 

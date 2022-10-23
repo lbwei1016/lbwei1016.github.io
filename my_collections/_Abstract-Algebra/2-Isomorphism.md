@@ -23,7 +23,7 @@ time: 2022/09/19
 In general, when we define a function or an operator on
 equivalence classes, if the expression of the function or the operator **depends on the representatives of equivalence classes**, then one have to show the result is indeed *independent* of the choice of representatives. This is so called the **well-definedness**.
 
-> 和 representative 無關
+> 和 representative 無關, i.e. equivalent 的元素經過運算後的結果要相同（如下舉例）。
 
 **e.g.**
 
@@ -32,6 +32,8 @@ For $$\bar a, \bar b \in \mathbb{Z}_n$$, define
 $$\bar a + \bar b := \overline{a+b}.$$
 
 It can be shown that $$+$$ is **well-defined**. (Let $$\bar c = \bar a$$ and $$\bar d = \bar b$$, and show $$\overline{c+d} = \overline{a+b}$$.)
+
+> Show **well-definedness** 看起來就像 *one-to-one*，只是順序相反。
 
 ---
 
