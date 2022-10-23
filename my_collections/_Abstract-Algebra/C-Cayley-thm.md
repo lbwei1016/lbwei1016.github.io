@@ -16,15 +16,24 @@ time: 2022/10/12
 
 ## Theorem
 
-> Every group is isomorphic to a [group of permutation](../9-Groups-of-Permutation). More percisely, every group $$G$$ is isomorphic to **a subset of $$S_G$$** given by the map $$\lambda: a\to \lambda_a$$, where $$\lambda_a(g) = ag$$.
-
 > $$S_G$$: $$G$$ 的 permutation group。
 >
-> We have
->
-> $$S_G \cong S_{|G|}.$$
+> We have $$S_G \cong S_{\vert G\vert }$$.
 
-> $$a\in G$$; $$\lambda_a \in S_G$$，是一個 permutation。
+Every group is isomorphic to a [group of permutation](../9-Groups-of-Permutation). More percisely, every group $$G$$ is isomorphic to **a subgroup of $$S_G$$** given by:
+ 
+$$
+\begin{align*}
+\lambda_a &: G \to G, \text{ defined by } \lambda_a(g) = ag, \tag{1} \\
+  \phi &: G \to S_G, \text{ defined by } \phi(g) =  \lambda_g, \tag{2}
+\end{align*}
+$$
+
+for all $$a, g \in G$$. Since $$\phi$$ is **injective**, $$G$$ must be isomorphic to a subgroup of $$S_G$$.
+
+**Remark**
+
+$$\lambda_a$$ 在 $$(1)$$ 作為一個 mapping，其實也是一 permutation（底下會證明 $$\lambda_a$$ 是 permutation）。permutation 本來就是一 image 和 preimage 相同的 one-to-one、onto mapping！（想想 permutation 總是以 composition 進行運算。）
 
 ### Example
 
@@ -37,7 +46,7 @@ $$
 \end{pmatrix}.
 $$
 
-> 全部元素乘上 $$\bar 3$$。 
+> 全部元素乘上 $$\bar 3$$。 $$\lambda_{\bar 3}(\bar 5) = \bar 3\cdot\bar 5 = \bar 7$$。
 
 Cayley's theorem states that $$G\cong \{\lambda_{\bar 1},\lambda_{\bar 3},\lambda_{\bar 5},\lambda_{\bar 7}\} \le S_G$$.
 
