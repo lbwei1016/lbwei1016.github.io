@@ -24,11 +24,12 @@ time: 2022/10/20
   - [Theorem (equivalent conditions)](#theorem-equivalent-conditions)
 - [Quotient Groups](#quotient-groups)
   - [Theorem (quotient group)](#theorem-quotient-group)
+  - [Quotient Group Computation](#quotient-group-computation)
 - [Homomorphism and Normal Groups](#homomorphism-and-normal-groups)
   - [Theorem (homomorphism and normal subgroups)](#theorem-homomorphism-and-normal-subgroups)
   - [Theorem (the first isomorphism theorem)](#theorem-the-first-isomorphism-theorem)
-- [Theorem (quotient group of $$\mathbb{Z}^n$$)](#theorem-quotient-group-of-mathbbzn)
-  - [Remark](#remark-1)
+  - [Theorem (quotient group of $$\mathbb{Z}^n$$)](#theorem-quotient-group-of-mathbbzn)
+    - [Remark](#remark-1)
 
 ---
 
@@ -250,6 +251,68 @@ $$
 
 於是，$$D_4$$ 的 quotient group is of order $$4$$，和 $$\mathbb{Z}_4$$ 或 $$\mathbb{Z}_2\times \mathbb{Z}_2$$ 同構。再來，因為 $$D_4/N$$ 的每一元素都是 order $$2$$，所以 $$D_4/N \cong \mathbb{Z}_2\times \mathbb{Z}_2$$。
 
+### Quotient Group Computation
+
+試著找出一個 group $$G'$$ isomorphic to the **quotient group** $$G/H$$，因為 quotient group 不易處理和計算！
+
+**Some facts**
+
+1. $$G/\{e\} \cong G$$.
+2. $$G/G$$ is isomorphic to the trivial group with one element.
+3. If $$G$$ is cyclic, then $$G/H$$ is also cyclic.
+4. If $$G=G_1\times G_2$$, then $$G/(\{e\})\times G_2 \cong G_1$$.
+5. If $$G=G_1 \times G_2$$, $$H_1\triangleleft G_1$$, and $$H_2 \triangleleft G_2$$, then $$G/(H_1\times H_2)$$ is isomorphic to $$(G_1/H_1 \times (G_2/H_2))$$. 
+
+**Proof of 3.**
+
+If $$G = \langle a \rangle$$, then every coset of $$H$$ is of the form $$a^kH = (aH)^k$$ for some integer $$k$$. Thus, $$G/H = \langle aH \rangle$$. ◼
+
+> $$H = \langle a^d \rangle$$, $$d \vert n$$.
+
+
+要證明 quotient group 和某 group isomorphic，可以用 [the first isomorphism theorem](#theorem-the-first-isomorphism-theorem)：
+
+Construct $$\rho: G \to G'$$, and then $$G/\text{ker} (\rho) \cong \rho(G) = G'$$.
+
+**Proof of 4.** 
+
+Let $$\phi: G_1\times G_2 \to G_1$$ be defined by $$\phi(g_1, g_2) = g_1$$. Then we have $$\text{ker}(\phi) = \{e_1\}\times G_2$$. We complete the proof by the first isomorphism theorem. ◼
+
+**Proof of 5.**
+
+Let $$\phi: G_1\times G_2 \to (G_1/H_1)\times (G_2/H_2)$$ defined by $$\phi(g_1, g_2) = (g_1H_1, g_2H_2)$$. By apply the first isomorphism theorem, we obtained the desired result. ◼
+
+**Question**
+
+> Classify the quotient group $$\mathbb{Z}_4\times \mathbb{Z}_2/\langle (2,0)\rangle$$.
+
+(Guess that the answer is $$\mathbb{Z}_2\times\mathbb{Z}_2$$.)
+
+Define a function $$\phi: \mathbb{Z}_4\times \mathbb{Z}_2 \to \mathbb{Z}_2\times \mathbb{Z}_2$$ by 
+
+$$
+\phi(a \text{ mod } 4, b \text{ mod } 2) = (a \text{ mod } 2, b \text{ mod } 2),
+$$
+
+which is *well-defined* since $$2\vert 4$$. We can also see that $$\phi$$ is a homomorphism.
+
+The kernel is $$\{(\bar 0, \bar 0),(\bar 2, \bar 0) \} = H$$. Moreover $$\phi$$ is onto since 
+
+$$
+(\bar 1, \bar 0) = \phi(\bar 1, \bar 0),\\
+(\bar 0, \bar 1) = \phi(\bar 0, \bar 1).
+$$
+
+> generator 都 map 到了！於是 onto。
+
+Therefore, by the first isomorphism theorem we have 
+
+$$
+\mathbb{Z}_4\times \mathbb{Z}_2/\langle (2,0)\rangle \cong \mathbb{Z}_2\times\mathbb{Z}_2.
+$$
+
+> 先猜，然後建 isomorphism，最後用 theorem！
+
 ---
 
 ## Homomorphism and Normal Groups
@@ -310,7 +373,7 @@ For all $$g' \in \psi(G)$$, we have some $$g \in G$$ such that $$\psi(g) = g'$$.
 
 By the fourth statement of [this theorem](#theorem-equivalent-conditions). ◼
 
-## Theorem (quotient group of $$\mathbb{Z}^n$$)
+### Theorem (quotient group of $$\mathbb{Z}^n$$)
 > Every **abelian group** with **$$n$$ generators** is isomorphic to a **quotient group of $$\mathbb{Z}^n$$.**
 
 **Proof**
@@ -323,6 +386,6 @@ $$
 
 defined by $$\rho((a_1,\cdots,a_n)) = \sum a_ig_i$$, which is a surjective group homomorphism. By [the first isomorphism theorem](#theorem-first-isomorphism-theorem), $$G$$ is isomorphic to $$\mathbb{Z}^n/\text{ker}(\rho)$$. ◼
 
-### Remark
+#### Remark
 
 According to [the first isomorphism theorem](#theorem-first-isomorphism-theorem), $$\mathbb{Z}^n/\text{ker}(\rho) \cong \rho(\mathbb{Z}^n)$$. However, since $$\rho$$ is **surjective**, we have $$\rho(\mathbb{Z}^n) = G$$. Thus the result follows.
