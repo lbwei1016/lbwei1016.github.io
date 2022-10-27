@@ -39,7 +39,7 @@ Let $$\phi$$ be a homomorphism of a group $$G$$ into a group $$G'$$.
 
 - $$\phi(e) = e'$$.
 - $$\phi(a^{-1})=\phi{(a)}^{-1} \text{ for all } a \in G$$.
-- If $$H$$ is a subgroup of $$G$$, then $$phi(H)$$ is a subgroup of $$G'$$.
+- If $$H$$ is a subgroup of $$G$$, then $$\phi(H)$$ is a subgroup of $$G'$$.
 
 > $$\phi(H)$$ is the **image** of $$H$$.
 
