@@ -12,6 +12,7 @@ time: 2022/10/20
 - [Facts](#facts)
   - [fact $$\rm I$$](#fact-rm-i)
   - [fact $$\rm II$$](#fact-rm-ii)
+  - [Question (all the homomorphism)](#question-all-the-homomorphism)
 - [Kernel](#kernel)
   - [Definition (kernel)](#definition-kernel)
   - [Theorem (kernel and coset)](#theorem-kernel-and-coset)
@@ -30,6 +31,7 @@ time: 2022/10/20
   - [Theorem (the first isomorphism theorem)](#theorem-the-first-isomorphism-theorem)
   - [Theorem (quotient group of $$\mathbb{Z}^n$$)](#theorem-quotient-group-of-mathbbzn)
     - [Remark](#remark-1)
+- [Reference](#reference)
 
 ---
 
@@ -97,7 +99,35 @@ $$
 
 which means that $$n$$ is one. Thus for all $$\phi(g)$$ in $$G'$$, the order of them are one, i.e. $$\phi$$ is a **trivial homomorphism**.
 
+### Question (all the homomorphism)
 
+Describe **all** the homomorphism from $$\mathbb{Z}_6$$ to $$\mathbb{Z}_8$$.
+
+**Solution**
+
+Let $$\phi$$ be a homomorphism from $$\mathbb{Z}_6$$ to $$\mathbb{Z}_8$$. Suppose $$\phi(\bar 1) = k$$ for some $$k \in \mathbb{Z}_8$$. Then since $$\phi$$ is a homomorphism, we have, for all $$\bar m \in \mathbb{Z}_6$$, $$\phi(\bar m) = \phi(\bar 1+\bar 1+\cdots+\bar 1) = m\phi(\bar 1) = mk$$. In particular, we have $$\bar 6k = \phi(\bar 6) = \phi(\bar 0) = \bar 0$$, which means that $$6k \equiv 0 \text{ mod } 8 $$, i.e. $$k \equiv 0 \text{ mod }4 $$. Thus, $$\phi(\bar 1) = \bar 0, \bar 4$$, each of which uniquely determines a homomorphism.
+
+In terms of kernel, if $$\phi(\bar 1) = \bar 0$$, then $$\text{ker}(\phi) = \mathbb{Z}_6$$; otherwise, $$\text{ker}(\phi) = \{\bar 0, \bar 2, \bar 4\} = \langle \bar 2 \rangle$$.
+
+To generalize, **what is the number of all possible homomorphisms from $$\mathbb{Z}_n$$ to $$\mathbb{Z}_m $$**? From the above result, we see that
+
+$$
+nk \equiv 0 \text{ mod m},
+$$
+
+which is to say
+
+$$
+k \equiv 0 \text{ mod }(m/\gcd(n,m)).
+$$
+
+Therefore, 
+
+$$
+k = 0, {m\over \gcd(n,m)}, {2m\over \gcd(n,m)}, \cdots, {(\gcd(n,m)-1)m\over \gcd(n,m)},
+$$
+
+which means that there are **$$\gcd(n, m)$$ homomorphisms**.
 
 ---
 
@@ -332,6 +362,8 @@ For the second part, we know that $$g \in \text{ker}(\gamma)$$ iff $$gN=eN$$. Th
 
 > $$G/\text{ker}(\psi) \cong \psi(G) = \text{the image of }\psi = \text{Im}(\psi)$$.
 
+> 也稱作 the **fundamental homomorphism theorem**。
+
 $$G/\text{ker}(\psi)$$ 的 order 正是 left coset 的數量，又 isomorphic groups 的 order 必相等。因此
 
 $$
@@ -389,3 +421,9 @@ defined by $$\rho((a_1,\cdots,a_n)) = \sum a_ig_i$$, which is a surjective group
 #### Remark
 
 According to [the first isomorphism theorem](#theorem-first-isomorphism-theorem), $$\mathbb{Z}^n/\text{ker}(\rho) \cong \rho(\mathbb{Z}^n)$$. However, since $$\rho$$ is **surjective**, we have $$\rho(\mathbb{Z}^n) = G$$. Thus the result follows.
+
+---
+
+## Reference
+
+- [Describe all the group homomorphism...](https://math.stackexchange.com/questions/2207900/describe-all-the-group-homomorphisms-from-mathbbz-24-to-mathbbz-18)
