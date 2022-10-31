@@ -26,7 +26,7 @@ where we interpret $$n/b$$ to mean either $$\lfloor n/b \rfloor$$ or $$\lceil n/
 2. If $$f(n) = \Theta(n^{\log_ba})$$, then $$T(n) = \Theta(n^{\log_ba}\lg n)$$.
 3. If $$f(n) = \Omega(n^{\log_ba+\epsilon}) $$ for some constant $$\epsilon > 0$$, and if $$af(n/b) \le cf(n)$$ for some constant $$c < 1$$ and all sufficiently large $$n$$, then $$T(n) = \Theta(f(n))$$.
 
-注意，$$f(n)$$ 必須 **aymptoticlly** larger or smaller than $$n^{\log_b a}$$（要差 $$n^\epsilon$$），否則 **master theorem** 無法使用；$$3.$$ 有額外的限制也要小心。
+注意，$$f(n)$$ 必須 **polynomially** larger or smaller than $$n^{\log_b a}$$（要差 $$n^\epsilon$$），否則 **master theorem** 無法使用；$$3.$$ 有額外的限制也要小心。
 
 ---
 

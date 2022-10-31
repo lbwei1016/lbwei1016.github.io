@@ -9,6 +9,7 @@ time: 2022/10/20
 **Table of Content**
 - [Properties](#properties)
   - [Corollary (injective homomorphism)](#corollary-injective-homomorphism)
+  - [Corollary (one-to-one)](#corollary-one-to-one)
 - [Facts](#facts)
   - [fact $$\rm I$$](#fact-rm-i)
   - [fact $$\rm II$$](#fact-rm-ii)
@@ -16,7 +17,7 @@ time: 2022/10/20
 - [Kernel](#kernel)
   - [Definition (kernel)](#definition-kernel)
   - [Theorem (kernel and coset)](#theorem-kernel-and-coset)
-  - [Corollary (one-to-one)](#corollary-one-to-one)
+  - [Corollary (one-to-one)](#corollary-one-to-one-1)
 - [Normal Subgroups](#normal-subgroups)
   - [Definition (normal subgroup)](#definition-normal-subgroup)
     - [Remark](#remark)
@@ -55,6 +56,9 @@ Let $$\phi$$ be a homomorphism of a group $$G$$ into a group $$G'$$.
 > Let $$\phi: G\to G'$$ be a group homomorphism. If $$\phi$$ is **one-to-one** then $$G$$ and $$\phi(G)$$ are **isomorphic**. 
 
 > 顯然 $$\phi: G \to \phi(G) $$ 已經 onto。
+
+### Corollary (one-to-one)
+> Homoporphism $$\rho$$ is **one-to-one** iff $$\ker{\rho} = \{e\}$$.
 
 ## Facts
 
