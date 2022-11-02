@@ -7,6 +7,14 @@ time: 2022/10/26
 ---
 
 **Table of Content**
+- [Discrete R.V. (monotonic)](#discrete-rv-monotonic)
+- [Continuous R.V.](#continuous-rv)
+  - [The Linear Funcition of a Normal R.V.](#the-linear-funcition-of-a-normal-rv)
+  - [General Version (monotonic)](#general-version-monotonic)
+- [The PDF of a function of Multiple R.V.s](#the-pdf-of-a-function-of-multiple-rvs)
+- [Simulation](#simulation)
+- [The Distribution of $$X+Y$$](#the-distribution-of-xy)
+- [Reference](#reference)
 
 ---
 
@@ -62,6 +70,21 @@ Generate sample $$X$$ with given CDF $$F_X(\cdot)$$.
 > 已經知道 CDF 了，利用 uniform distribution $$u$$ 求出 $$g(u)$$ such that $$x = g(u)$$. 
 
 > 為甚麼要這樣做？為了用 uniform distribution 表示其他 distribution？
+
+---
+
+## The Distribution of $$X+Y$$
+
+Let $$X, Y$$ be **independent**, known PMFs/PDFs, and $$Z=X+Y$$. Then we have
+
+$$
+p_Z(z) = \sum_xp_X(x)p_Y(z-x), \\
+f_Z(z) = \int^{\infty}_{-\infty}f_X(x)f_Y(z-x)dx.
+$$
+
+> 這是 [**convolution**](../../Concrete-Math/Generating-Functions/#multiplication)！
+
+如果 $$X$$ 和 $$Y$$ 都是 *normal r.v.*，則 $$Z$$ 也是 *normal*。（代入即可證明）
 
 ---
 
