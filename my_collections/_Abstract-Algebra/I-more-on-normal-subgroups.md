@@ -17,6 +17,12 @@ time: 2022/10/27
   - [Remark (center and commutator)](#remark-center-and-commutator)
   - [Example (find the center and the commutator)](#example-find-the-center-and-the-commutator)
 - [Normal Core](#normal-core)
+- [Normal Subgroup and Homomorphism](#normal-subgroup-and-homomorphism)
+  - [Interlude: Automorphism](#interlude-automorphism)
+- [Simple Groups](#simple-groups)
+  - [Definition](#definition)
+  - [Normal Series](#normal-series)
+  - [Theorem (classification of simple groups)](#theorem-classification-of-simple-groups)
 
 ---
 
@@ -119,3 +125,71 @@ $$
 
 ## Normal Core 
 
+When $$H$$ is **not** normal, 
+
+$$
+\bigcap_{g\in G} gHg^{-1}
+$$
+
+is called the **normal core** of $$H$$, which is the **largest** normal subgroup contained in $$H$$.
+
+> 改成 $$\bigcup$$ 就不是 subgroup 了！
+
+---
+
+## Normal Subgroup and Homomorphism
+
+From [this theorem](../H-homomorphism/#theorem-homomorphism-and-normal-subgroups), we know that every normal subgroup $$N$$ of $$G$$ is a kernel of some group homomorphism $$\rho$$. To gain more insight of $$N$$, we shall look for a more *canonical* homomorphism.
+
+**e.g.**
+
+- Consider $$\rho: G\to \text{Aut}(G)$$ given by $$\rho_g(x)=gxg^{-1} $$, and then $$\text{ker}(\rho) = Z(G)$$.
+- Consider $$\rho: G\to S_{G/H} $$ given by $$\rho_g(xH) = gxH$$, and then $$\text{ker}(\rho) = \bigcap_{g\in G}gHg^{-1}$$.
+
+> The second one is called the **generalized [Caley theorem](../C-Cayley-thm)**.
+
+這兩種 homomorphism 的 kernel 都是特殊的 normal subgroup。
+
+### Interlude: Automorphism
+
+Given
+
+$$
+\text{Aut}(G) = \{\rho:G\to G \vert \rho \text{ is an isomorphism}\},
+$$
+
+then $$\text{Aut}(G)$$ is called the group of **automorphism** on $$G$$.
+
+> 也就是 $$G$$ 自己的對稱群。（有待補充）
+
+---
+
+## Simple Groups
+
+### Definition
+> A group $$G$$ is **simple** if $$\{e\}$$ and $$G$$ are the **only two distinct normal subgroups** of $$G$$.
+
+**e.g.**
+
+If $$p$$ is a prime, then $$\mathbb{Z}_p$$ is a simple group.
+
+For $$n\ge 5$$, the alternating group $$A_n$$ is a simple group.
+
+### Normal Series
+
+A **normal series** of a finite group $$G$$ is a sequence of subgroups $$G_i$$ of $$G$$ satisfies
+
+$$
+G_0 = \{e\} \triangleleft G_1 \triangleleft \cdots \triangleleft G_k = G.
+$$
+
+Note that $$G_i$$ is only *normal* in $$G_{i+1}$$ instead of $$G$$, and $$G_i/G_{i+1}$$ is *simple* for all $$i$$.
+
+### Theorem (classification of simple groups)
+> Every finite simple groups is isomorphic to one of the following groups:
+> - a member of one of three infinite classes of such, namely:
+>   - $$\mathbb{Z}_p$$ for all prime $$p$$.
+>   - $$A_n$$ for $$n\ge 5$$.
+>   - the groups of Lie type. (Certain matrix groups over finite fields.)
+> - one of $$26$$ groups called the *sporadic groups*.
+> - the *Tits group* (sometimes considered a $$27$$th sporadic group.)
