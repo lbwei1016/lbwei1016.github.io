@@ -7,6 +7,14 @@ time: 2022/11/02
 ---
 
 **Table of Content**
+- [Covariance](#covariance)
+  - [Definition](#definition)
+  - [Properties](#properties)
+    - [The variance of a sum of r.v.s](#the-variance-of-a-sum-of-rvs)
+- [Correlation Coefficient](#correlation-coefficient)
+  - [Definition](#definition-1)
+  - [Theorem: $$\vert \rho \vert \le 1$$](#theorem-vert-rho-vert-le-1)
+  - [Interpretation](#interpretation)
 
 ---
 

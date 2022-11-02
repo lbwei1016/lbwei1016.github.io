@@ -22,6 +22,7 @@ time: 2022/09/28
   - [Joint PMFs](#joint-pmfs)
   - [Functions of Multiple Random Variables](#functions-of-multiple-random-variables)
 - [Special Random Variables](#special-random-variables)
+  - [Uniform](#uniform)
   - [Bernoulli](#bernoulli)
   - [Binomial](#binomial)
   - [Geometric](#geometric)
@@ -184,6 +185,32 @@ $$E[Z] = E[g(X,Y)] = \sum_x \sum_y g(x,y)p_{X,Y}(x,y).$$
 ---
 
 ## Special Random Variables
+
+### Uniform 
+
+大家分配到的機率都一樣。
+
+**Variance**
+
+Suppose $$X$$ is uniformly distributed between $$[1, n]$$. We have
+
+$$
+E[X] = (1 + n) / 2, \\
+E[X^2] = \sum_x x^2 \cdot {1\over n} = (n+1)(2n+1)/6.
+$$
+
+Then
+
+$$
+var(X) = (n^2 - 1)/12.
+$$
+
+Now suppose $$Y$$ is uniformly distributed among $$[a, b]$$, where $$b-a+1 = n$$. We can easily seen that the distribution of $$Y$$ is only the shifted one of $$X$$; thus $$var(Y) = var(X)$$, which means
+
+$$
+var(Y) = {(b-a+1)^2 - 1\over 12} = {(b-a)(b-a+2)\over 12}.
+$$
+
 ### Bernoulli
 
 $$X = \begin{cases}
