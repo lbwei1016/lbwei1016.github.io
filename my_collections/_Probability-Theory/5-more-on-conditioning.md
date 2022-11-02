@@ -10,8 +10,13 @@ time: 2022/10/15
 - [Continuous Stuff](#continuous-stuff)
   - [Coditional CDF](#coditional-cdf)
 - [Bayes' Rule *revisted*](#bayes-rule-revisted)
-- [Conditional Expectation and Variance](#conditional-expectation-and-variance)
+- [Conditional Expectation and Variance *revisited*](#conditional-expectation-and-variance-revisited)
+  - [Conditional expectation as a r.v.](#conditional-expectation-as-a-rv)
+    - [Law of iterated expectations](#law-of-iterated-expectations)
+  - [Conditional variance as a r.v.](#conditional-variance-as-a-rv)
+    - [Law of total variance](#law-of-total-variance)
   - [Problem](#problem)
+- [Reference](#reference)
 
 ---
 
@@ -83,7 +88,65 @@ $$
 
 ---
 
-## Conditional Expectation and Variance
+## Conditional Expectation and Variance *revisited*
+
+> 見 [Conditioning](3-Conditioning/#conditioning-one-random-variable-on-another)。
+
+### Conditional expectation as a r.v.
+
+**Define:**
+
+$$ E[X\vert Y] = g(Y).$$
+
+> 是 $$Y$$ 的 function。
+
+#### Law of iterated expectations
+
+> $$E\big[E[X\vert Y]\big] = E[X]$$.
+
+$$
+\begin{align*}
+E\big[E[X\vert Y]\big] &= E[g(Y)] \\
+&= \sum_y g(y)p_Y(y) \\
+&= \sum_y E[X\vert Y=y]p_Y(y) \\
+&= E[X], \text{ by total expectation thm.}
+\end{align*}
+$$
+
+在使用時，先將 $$Y$$ 代入象徵性的 $$y$$，即 $$Y=y$$，算好後再把 $$y$$ 替換成 $$Y$$。
+
+### Conditional variance as a r.v.
+#### Law of total variance
+
+$$
+var(X) = E\Big[var(X\vert Y)\Big] + var\Big(E[X\vert Y]\Big).
+$$
+
+**Proof**
+
+$$
+\begin{align*}
+var(X\vert Y=y) &= E[X^2\vert Y=y] - \Big(E[X\vert Y=y] \Big)^2,\text{ for all } y. \\
+var(X\vert Y) &= E[X^2\vert Y] - \Big(E[X\vert Y] \Big)^2 \\
+E\Big[var(X\vert Y)\Big] &= E\Big[E[X^2\vert Y]\Big] - E\bigg[\Big(E[X\vert Y] \Big)^2\bigg] \\
+&= E[X^2] - E\bigg[\Big(E[X\vert Y] \Big)^2\bigg] \\
+var\Big(E[X\vert Y]\Big) &= E\bigg[\Big(E[X\vert Y] \Big)^2\bigg] - \bigg(E\Big[E[X\vert Y] \Big] \bigg)^2 \\
+&= E\bigg[\Big(E[X\vert Y] \Big)^2\bigg] - (E[X])^2.
+\end{align*} 
+$$
+
+Hence 
+
+$$
+E\Big[var(X\vert Y)\Big] + var\Big(E[X\vert Y]\Big) = E[X^2] - (E[X])^2 = var(X). \tag*{$\blacksquare$}
+$$
+
+> $$var(X) = $$ (average variability **within** sections) $$+$$ (variability **between** sections)
+
+
+> $$var(X) = $$（每個區間 var. 的平均）$$+$$（區間平均的 var.）
+
+> 區間指的是每個 $$Y=y$$。
 
 ### Problem
 > A rat in a maze has only two paths to go. If the rat goes right, it will return to the starting point after $$3$$ minutes. If the rat goes left, there is a $$2\over 3$$ chance of returning to the starting point after $$5$$ minutes, and a $$1\over 3$$ chance of exiting the maze after $$2$$ minutes. Find the average time that the rat is in the maze if the probability of the rat going left and right is equal.
@@ -113,3 +176,9 @@ $$
 E[E(T|X)] = {1\over 2}(3+E(T)) + {1\over 2}({2\over 3}(5 + E(T)) + {1\over 3}\cdot 2) = E(T), \\
 \therefore E(T) = 21.
 $$
+
+---
+
+## Reference
+
+- [MIT OCW](https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/pages/part-i-the-fundamentals/)

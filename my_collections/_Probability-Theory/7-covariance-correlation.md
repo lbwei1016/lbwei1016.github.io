@@ -15,6 +15,7 @@ time: 2022/11/02
   - [Definition](#definition-1)
   - [Theorem: $$\vert \rho \vert \le 1$$](#theorem-vert-rho-vert-le-1)
   - [Interpretation](#interpretation)
+- [Reference](#reference)
 
 ---
 
@@ -107,3 +108,9 @@ If $$\vert\rho\vert = 1$$, then $$X=Y$$ or $$X=-Y$$.
 假如 $$\rho(X,Y) \not = 0$$，並不代表 $$X$$ 如何發生會改變 $$Y$$ 的分布，而是存在一潛在因子 $$Z$$ 同時影響著 $$X$$ 和 $$Y$$，也就是說，
 
 > Correlation often reflects **underlying, common, hidden factor**.
+
+---
+
+## Reference
+
+- [MIT OCW](https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/pages/part-i-the-fundamentals/)
