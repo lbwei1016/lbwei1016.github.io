@@ -31,6 +31,8 @@ $$
 
 If $$X$$ and $$Y$$ are independent, $$cov(X, Y) = 0$$ (this is shown in $$(1)$$).
 
+> covariance 為 $$0$$ **不**表示 $$X$$ 和 $$Y$$ independent！
+
 
 #### The variance of a sum of r.v.s
 
@@ -49,10 +51,51 @@ var\Big(\sum_{i=1}^n X_i\Big) &= \sum_{i=1}^nvar(X_i) + \sum_{i\not = j}cov(X_i,
 \end{align*}
 $$
 
-從 [Properties](#properties) 的第二點可以發現 covariance 和 variance 的關係，於是此處等號 $$(3)$$ 成立；共 $$n^2$$ 項。
+從 [Properties](#properties) 的第二點可以發現 covariance 和 variance 的關係，於是此處等式 $$(3)$$ 成立；共 $$n^2$$ 項。
+
+等式 $$(3)$$ 並沒有實質上計算的好處，只是符號統一而已。
 
 ---
 
 ## Correlation Coefficient
 ### Definition
 > $$\rho(X,Y) = {cov(X,Y) \over \sigma_X\sigma_Y}.$$
+
+**Correlation coefficient** 是 *dimensionless version of* covariance，也可以說是標準化的 covariance，代表 r.v. 之間的關聯程度。因為 correlation coefficient 有固定的值域 （$$-1\le \rho \le 1$$，稍後證明），因此比起 covariance 是更能顯示 r.v. 之間的關聯性究竟有多高。
+
+> correlation coefficient: 相關係數。
+
+### Theorem: $$\vert \rho \vert \le 1$$
+
+**Proof**
+
+$$
+\rho(X,Y) = E\bigg[{X-E[X]\over \sigma_X}\cdot {Y-E[Y]\over \sigma_Y}\bigg] 
+$$
+
+Suppose $$X$$ and $$Y$$ are of zero means and unit variances, so that $$\rho(X,Y) = E[XY]$$.
+
+> 這是為了簡化計算。
+
+And we have
+
+$$
+\begin{align*}
+E\Big[(X-\rho Y)^2 \Big] &= E[X^2] - 2\rho E[XY] + \rho^2E[Y^2] \\
+&= 1 - 2\rho^2 + \rho^2 = 1 - \rho^2.
+\end{align*}
+$$
+
+Since $$(X-\rho Y)^2$$ is always nonnegative, $$E\Big[(X-\rho Y)^2 \Big]$$ and $$1-\rho^2$$ must also be nonnegative. Hence,
+
+$$
+1-\rho^2 \ge 0,\ \vert \rho\vert \le 1. \tag*{$\blacksquare$}
+$$
+
+If $$\vert\rho\vert = 1$$, then $$X=Y$$ or $$X=-Y$$.
+
+### Interpretation
+
+假如 $$\rho(X,Y) \not = 0$$，並不代表 $$X$$ 如何發生會改變 $$Y$$ 的分布，而是存在一潛在因子 $$Z$$ 同時影響著 $$X$$ 和 $$Y$$，也就是說，
+
+> Correlation often reflects **underlying, common, hidden factor**.

@@ -77,6 +77,10 @@ $$
 
 > 解 $$(1)、(2)$$ 的時候，先算出分子再解決分母；一項一項慢慢來。
 
+這裡，$$p_K(k)$$ 稱為 *prior probability*（事前機率），指在沒有任何額外資訊下，*the belief on $$K$$*；而 $$p_{K\vert Y}(k\vert y)$$ 稱為 *posterior probability*（事後機率），則是多了 $$Y=y$$ 的資訊。
+
+> 後來發生的事件 $$Y=y$$ 改變了我們對 $$K$$ 的看法。
+
 ---
 
 ## Conditional Expectation and Variance
