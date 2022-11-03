@@ -10,7 +10,8 @@ time: 2022/10/13
 - [Coset](#coset)
   - [Definition (coset)](#definition-coset)
   - [Theorem (left coset)](#theorem-left-coset)
-  - [Example](#example)
+  - [Example $$\rm I$$](#example-rm-i)
+  - [Example $$\rm II$$](#example-rm-ii)
 
 ---
 
@@ -57,7 +58,7 @@ $$aH = ah_1H = bh_2H = bH.$$
 
 > right coset 的 properties 自行想像。
 
-### Example
+### Example $$\rm I$$
 
 Let $$G=\mathbb{Z}_{12}$$ and $$H = \{\bar 0, \bar 3\}$$. We have
 
@@ -71,3 +72,13 @@ $$
 > 因為 $$+$$ 可交換，所以 left coset 和 right coset 相同。
 
 > 要找出所有 left coset，首先寫出 $$H$$，再找出一個 $$g$$ 使得 $$g\in G$$ 但 $$g \not \in H$$，然後乘上 $$H$$；重複直到全部找出來。
+
+### Example $$\rm II$$
+
+$$
+\begin{align*}
+\mathbb{Z}_n &= \mathbb{Z}/n\mathbb{Z}, \\
+\mathbb{Z} &= n\mathbb{Z} \bigsqcup (1 + n\mathbb{Z})\bigsqcup  \cdots \bigsqcup((n-1)+ n\mathbb{Z}) \\
+&= \bar 0 \bigsqcup \bar 1 \bigsqcup \cdots \bigsqcup \overline{n-1}.
+\end{align*}
+$$

@@ -10,6 +10,7 @@ time: 2022/10/20
 - [Properties](#properties)
   - [Corollary (injective homomorphism)](#corollary-injective-homomorphism)
   - [Corollary (one-to-one)](#corollary-one-to-one)
+  - [Corollary (onto)](#corollary-onto)
 - [Facts](#facts)
   - [fact $$\rm I$$](#fact-rm-i)
   - [fact $$\rm II$$](#fact-rm-ii)
@@ -58,7 +59,12 @@ Let $$\phi$$ be a homomorphism of a group $$G$$ into a group $$G'$$.
 > 顯然 $$\phi: G \to \phi(G) $$ 已經 onto。
 
 ### Corollary (one-to-one)
-> Homoporphism $$\rho$$ is **one-to-one** iff $$\ker{\rho} = \{e\}$$.
+> Homoporphism $$\rho$$ is **one-to-one** if $$\ker{\rho} = \{e\}$$.
+
+### Corollary (onto)
+> Homomorphism $$\rho$$ is **onto** if $$\rho(G)$$ contains a set of **generators** of $$G'$$.
+
+> one-to-one 的 corollary 比較好用。
 
 ## Facts
 

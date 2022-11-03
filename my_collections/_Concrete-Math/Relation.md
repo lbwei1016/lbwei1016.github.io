@@ -74,6 +74,8 @@ time: 2022/08/19
 
 > 與底下的 **poset** 比較
 
+> 定義集合上的 equivalence relation 是為了建構出 **[partition](#partition-and-cell)**。
+
 **Example**
 
 對於任意非空集合 $$S$$，$$(S, =)$$ 是 **equivalence relation**。
@@ -124,7 +126,7 @@ A **partition** of a set $$S$$ is a collection of nonempty subsets of $$S$$ such
 
 > 想想貝氏定理的分割圖（或任何分割圖）
 
-$$\bar x$$：指包含 $$x$$ 的 cell，稱作 *the equivalence class containing* $$x$$；而 $$x$$ 叫做 *a representative of the cell*。
+$$\bar x$$：指包含 $$x$$ 的 cell，稱作 *the equivalence class containing* $$x$$；而 $$x$$ 叫做 *a representative of the cell*（代表元）。
 
 ### Disjoint Union
 

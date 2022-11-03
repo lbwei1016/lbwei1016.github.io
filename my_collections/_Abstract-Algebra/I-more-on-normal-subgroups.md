@@ -146,11 +146,41 @@ From [this theorem](../H-homomorphism/#theorem-homomorphism-and-normal-subgroups
 - Consider $$\rho: G\to \text{Aut}(G)$$ given by $$\rho_g(x)=gxg^{-1} $$, and then $$\text{ker}(\rho) = Z(G)$$.
 - Consider $$\rho: G\to S_{G/H} $$ given by $$\rho_g(xH) = gxH$$, and then $$\text{ker}(\rho) = \bigcap_{g\in G}gHg^{-1}$$.
 
-> The second one is called the **generalized [Caley theorem](../C-Cayley-thm)**.
-
 這兩種 homomorphism 的 kernel 都是特殊的 normal subgroup。
 
+第一例中的 $$\rho$$ 其實是 isomorphism，可以試著驗證看看；底下證明 $$\text{ker}(\rho) = Z(G)$$。
+
+**Proof**
+
+For all $$g \in \text{ker}(\rho)$$, we have
+
+$$
+\begin{align*}
+&\rho_g(x) = x,\ \forall x \in G \\
+\Rightarrow\ &gxg^{-1} = x \\
+\Rightarrow\ &gx = xg,\ \forall x \in G.
+\end{align*}
+$$
+
+Thus, $$g \in Z(G)$$. ◼
+
+> $$\rho_g(x) = x$$ 是什麼意思？參考[這裡](../C-Cayley-thm/#theorem)的 $$\lambda_e$$。
+
+> $$e_{\text{Aut}(G)}$$.
+
+第二個例子稱作 **generalized [Caley theorem](../C-Cayley-thm)**。$$S_{G/H}$$ 相較於 Cayley theorem 的 $$S_G$$，是較小的群，因此比較容易[應用](../C-Cayley-thm/#application)，但這是有代價的：Cayley theorem 中的 $$\text{ker}(\phi) = \{e\}$$，而此處 $$\text{ker}(\rho) = \bigcap_{g\in G}gHg^{-1}$$，也就是說，$$\rho$$ 不是 **one-to-one**！
+
+> 事實上，Cayley theorem 是 $$H = \{e\}$$ 時的特例。
+
+> Generalized Caley theorem 的應用待補。
+
 ### Interlude: Automorphism
+
+What is an **automorphism**? An **automorphism** is an *isomorphism* with the same domain and codomain.
+
+> $$\rho: G\to G$$，如果 $$\rho$$ 是 isomorphism，則 $$\rho$$ 又被稱為 **automorphism**。
+
+**Automorphism group**
 
 Given
 
@@ -160,7 +190,7 @@ $$
 
 then $$\text{Aut}(G)$$ is called the group of **automorphism** on $$G$$.
 
-> 也就是 $$G$$ 自己的對稱群。（有待補充）
+> The set of all isomorphisms of $$G$$.
 
 ---
 

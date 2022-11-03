@@ -14,11 +14,14 @@ time: 2022/10/12
 
 ---
 
-## Theorem
 
 > $$S_G$$: $$G$$ 的 permutation group。
 >
 > We have $$S_G \cong S_{\vert G\vert }$$.
+
+## Theorem
+
+> 參考 [Generalized Cayley Theorem](../I-more-on-normal-subgroups/#normal-subgroup-and-homomorphism)。
 
 Every group is isomorphic to a [group of permutation](../9-Groups-of-Permutation). More percisely, every group $$G$$ is isomorphic to **a subgroup of $$S_G$$** given by:
  

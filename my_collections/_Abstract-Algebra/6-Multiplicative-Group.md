@@ -8,8 +8,8 @@ time: 2022/09/26
 
 **Table of Content**
 - [Multiplicative Group $$\mathbb{Z}_n$$](#multiplicative-group-mathbbz_n)
-  - [Theorem](#theorem)
-  - [Theorem](#theorem-1)
+  - [Theorem (inverse)](#theorem-inverse)
+  - [Theorem (making a group)](#theorem-making-a-group)
 - [Reference](#reference)
 
 ---
@@ -18,7 +18,7 @@ time: 2022/09/26
 
 A **multiplicative group** is a group whose group operation is identified with multiplication. 但這裡主要討論的是 $$\mathbb{Z}_n$$。
 
-### Theorem
+### Theorem (inverse)
 > For $$\bar a \in \mathbb{Z}_n$$, $$\bar a$$ has the **multiplicative inverse** if and only if $$a$$ and $$n$$ are *coprime*.
 
 **Proof**
@@ -41,7 +41,7 @@ a contradiction occurs since $$a' = {a \over \gcd(a, n)}, n' = {n \over \gcd(a, 
 
 Thus we can conclude that $$a$$ and $$n$$ must be coprime. ◼
 
-### Theorem
+### Theorem (making a group)
 > Let $$(S, *)$$ be an associative binary structure with identity and $$S'$$ be a subset of $$S$$ consisting **all elements with inverse**. Then $$(S', *)$$ is a group.
 
 > 在「差點形成」（有 identity element 且 $$*$$ is associative） group 的 binary structure $$(S, *)$$ 中，只取出 $$S$$ 中有 inverse 的元素成為一 subset $$S'$$，則 $$(S', *)$$ 為一 group。

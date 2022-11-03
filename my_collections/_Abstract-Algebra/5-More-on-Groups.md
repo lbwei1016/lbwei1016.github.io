@@ -16,6 +16,7 @@ time: 2022/09/22
   - [Order 2](#order-2)
   - [Order 3](#order-3)
   - [Order 4](#order-4)
+  - [Order 8](#order-8)
 - [The Nature of Groups](#the-nature-of-groups)
   - [Group of Symmetries](#group-of-symmetries)
 - [Special Groups](#special-groups)
@@ -85,6 +86,18 @@ $$G \cong \mathbb{Z}_2 \times \mathbb{Z}_2。$$
 $$G \cong (\mathbb{Z}_4, +)。$$
 
 > 注意！$$G$$ 的 order 到 $$4$$ 的時候終於出現非唯一的群！
+
+### Order 8
+
+如果 $$G$$ 可交換，則 $$G$$ 和 
+
+$$
+\mathbb{Z}_8, \mathbb{Z}_4\times\mathbb{Z}_2, (\mathbb{Z}_2)^3
+$$
+
+之一 isomorphic；如果不可交換，則和 $$D_4$$ 或 $$Q_8$$ isomorphic。
+
+> $$Q_8 = \{\pm 1, \pm i, \pm j, \pm k \}$$.
 
 ---
 
