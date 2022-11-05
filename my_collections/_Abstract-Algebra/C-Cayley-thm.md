@@ -34,6 +34,20 @@ $$
 
 for all $$a, g \in G$$. Since $$\phi$$ is **injective**, $$G$$ must be isomorphic to a subgroup of $$S_G$$.
 
+**Note:**
+
+We can also say that the mapping is given by
+
+$$
+\phi: a \mapsto \lambda_a,
+$$
+
+where $$\lambda_a(g) = ag$$.
+
+> $$\to$$ 和 $$\mapsto$$ 是不一樣的！$$ f: A\to B$$ 代表 $$A$$ 是 function 的 domain 而 $$B$$ 是 codomain，用來定義 function；$$f: x \mapsto y$$ 說明了 $$f$$ 究竟如何 map input ($$x$$) to output ($$y$$)，例如 $$f: x \mapsto x^2$$ 相當於 $$f(x) = x^2$$。
+
+> 可參 [MathStackExchange](https://math.stackexchange.com/questions/3575628/what-is-this-symbol-mapsto)。
+
 **Remark**
 
 $$\lambda_a$$ 在 $$(1)$$ 作為一個 mapping，其實也是一 permutation（底下會證明 $$\lambda_a$$ 是 permutation）。permutation 本來就是一 image 和 preimage 相同的 one-to-one、onto mapping！（想想 permutation 總是以 composition 進行運算。）

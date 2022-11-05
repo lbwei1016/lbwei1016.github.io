@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Homomorphism
+title: Homomorphism & Normal Subgroups
 usemathjax: true
 tag: Abstract Algebra, Group Theory
 time: 2022/10/20
@@ -32,6 +32,7 @@ time: 2022/10/20
   - [Theorem (homomorphism and normal subgroups)](#theorem-homomorphism-and-normal-subgroups)
   - [Theorem (the first isomorphism theorem)](#theorem-the-first-isomorphism-theorem)
   - [Theorem (quotient group of $$\mathbb{Z}^n$$)](#theorem-quotient-group-of-mathbbzn)
+    - [Question](#question)
     - [Remark](#remark-1)
 - [Reference](#reference)
 
@@ -206,6 +207,8 @@ Let $$\psi: \mathbb{Z} \to \mathbb{Z}_n $$ defined by $$\psi(a) = \bar a$$; then
 看到 $$gH=Hg$$，我們可能會想到 abelian group：$$gx = xg$$；事實上，*being normal* 是比 *being abelian* 弱的性質，因為 abelian 要求一一對應，而 normal 只需要「整個集合」一樣就好了（像是 $$g_1H = Hg_2$$）。
 
 另外，檢查一 subgroup $$H$$ 是否 normal 只需看原 group 的 generator(s) 就好，因對於所有 $$h\in H$$，$$h$$ 都可以用 generator(s) 來表示：如果 generator(s) 可以在 $$H$$ 左右移動，則任意 $$h$$ 拆成 generator(s) 之後也必可以在 $$H$$ 左右移動。
+
+> 非常好用！尤其在處理 [permutaiton group](../9-Groups-of-Permutation/#theorem-generator) 的時候。
 
 ### Corollary (kernel is normal)
 > If $$\psi: G\to G'$$ is a group homomorphism, then $$\text{ker}(\psi)$$ is a normal subgroup.
@@ -427,6 +430,26 @@ $$
 $$
 
 defined by $$\rho((a_1,\cdots,a_n)) = \sum a_ig_i$$, which is a surjective group homomorphism. By [the first isomorphism theorem](#theorem-first-isomorphism-theorem), $$G$$ is isomorphic to $$\mathbb{Z}^n/\text{ker}(\rho)$$. ◼
+
+#### Question
+
+> Let $$G=D_6$$ and $$H_1 = \langle \sigma^2,\tau \rangle$$. Find a group homomorphism from $$G$$ with kernel equal to $$H_1$$.
+
+**Solution**
+
+設該 homomorphism 為 $$\phi$$，利用本定理，$$G/H_1 \cong \phi(G)$$，也就是說，
+
+$$
+\phi(G) \cong \{H_1, \sigma H_1\}。
+$$
+
+從上式可以看出，for all $$g\in \text{ker}(\phi)$$, $$\phi(g) = H_1$$（因為 $$H_1$$ 是 identity！）所以若定義 $$\phi(g) = gH_1$$，則
+
+$$
+gH_1 = H_1 \iff g \in H_1,
+$$
+
+說明了 $$\text{ker}(\phi) = H_1$$！
 
 #### Remark
 

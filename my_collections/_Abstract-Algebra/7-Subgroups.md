@@ -11,6 +11,7 @@ time: 2022/09/26
 - [Definition $$\rm II$$](#definition-rm-ii)
 - [Theorem $$\rm I$$](#theorem-rm-i)
 - [Theorem $$\rm II$$ (Criterion of Subgroups)](#theorem-rm-ii-criterion-of-subgroups)
+  - [Question (prove subgroup)](#question-prove-subgroup)
 
 ---
 
@@ -45,3 +46,43 @@ Under addition, we have $$\mathbb{Z \leq Q \leq R \leq C}$$.
 其實 1. 和 3. imply 2.，但 2. 的必要性在於防止 $$H$$ 是空集合，不過空集合作為 subgroup 沒什麼意義（是嗎？）。
 
 > $$H$$ is closed，但沒有說 for $$g_1,g_2 \not \in H,\ g_1g_2 \in H$$ 是錯的！（外部可闖入；可用 $$\mathbb{Z}_{12}$$ 找例子。）
+
+### Question (prove subgroup)
+
+**Q1:**
+
+Let $$G = \mathbb{Z}\times\mathbb{Z}, H = \langle(2,1),(1,2)\rangle,$$ and $$N = \langle(3, 0), (0, 3) \rangle$$. Show that $$N \le H$$.
+
+**Solution**
+
+It is obivous that $$H\le G$$ and $$N\le G$$ since they are [defined as groups](../B-n-gons/#dihedral-group). Thus it suffices to show that $$N$$ is a subset of $$H$$: For all $$h \in H$$, $$h = (2a+b, a+2b)$$, where $$a,b \in \mathbb{Z}$$; for all $$g\in N$$, $$g=(3c, 3d)$$, where $$c,d\in \mathbb{Z}$$. To show that for all $$g\in N$$, $$g$$ is also in $$H$$, we have
+
+$$
+2a+b = 3c, a+2b = 3d,
+$$
+
+which means that $$a=2c-d$$ and $$b=2d-c$$ and they are both integers. Thus $$N\subseteq H$$ and $$N\le H$$. ◼
+
+**Q2:**
+
+Let $$g$$ be an element if a group $$G$$. Show that the following is a subgroup:
+
+$$
+C_G(g) = \{x\in G\vert gx=xg\}.
+$$
+
+**Solution**
+
+**closedness**
+
+For all $$x,y \in C_G(g)$$, $$gx = xg$$ and $$gy = yg$$. Then $$gxy = xgy = xyg$$, which means that $$xy \in C_G(g)$$.
+
+**identity**
+
+Since $$eg = e = ge$$, $$e\in C_G(g)$$.
+
+**inverse**
+
+For all $$x \in C_G(g)$$, $$gx = xg$$. Multiply both sides of the equation by $$x^{-1}$$ from both left and right, we obtain $$x^{-1}g = gx^{-1}$$. We conclude that $$x^{-1}\in C_G(g)$$.
+
+Combing the above results, $$C_G(g)$$ is a subgroup. ◼

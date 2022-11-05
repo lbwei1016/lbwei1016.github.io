@@ -114,6 +114,10 @@ $$\{e, g, g^2, g^3, g^4, g^5\} \to \{\bar 1, \bar 5, \bar 7 ,\overline{-1}, \ove
 
 Hence we have shown that $$\mathbb{Z}^{\times}_{18}$$ is cyclic. ◼
 
+事實上，$$\vert \mathbb{Z}_{18}^{\times}\vert = 6$$，而且 $$\mathbb{Z}_{18}^{\times}$$ 有 order 為 $$6$$ 的 element，因此 $$\mathbb{Z}_{18}^{\times} \cong \mathbb{Z}_6$$；已知 $$\mathbb{Z}_6$$ cyclic，於是所求也是 cyclic。
+
+> 用這方法，只需找到一個 order 為 6 的 element，不需找出全部的 order。
+
 > *Think*: Suppose $$G$$ is of order $$n$$. If for all $$g \in G$$, $$g^n = e$$. Can we say that $$G$$ is cyclic?
 
 Actually this is false. Suppose $$n = 4$$, we have $$G = \{e, a, b, c\}$$ such that $$a^4 = b^4 = c^4 = e$$. If we let $$a^2 = b^2 = c^2 = e$$, we can discover that there is no generator in $$G$$. Thus if for all $$g \in G$$, $$g^n = e$$, $$G$$ is **not necessarily cyclic**. (If $$G$$ is indeed cyclic, this always holds, though.)
