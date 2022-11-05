@@ -19,6 +19,8 @@ time: 2022/10/27
 - [Normal Core](#normal-core)
 - [Normal Subgroup and Homomorphism](#normal-subgroup-and-homomorphism)
   - [Interlude: Automorphism](#interlude-automorphism)
+    - [Automorphism group](#automorphism-group)
+    - [Inner Automorphism](#inner-automorphism)
 - [Simple Groups](#simple-groups)
   - [Definition](#definition)
   - [Normal Series](#normal-series)
@@ -143,8 +145,8 @@ From [this theorem](../H-homomorphism/#theorem-homomorphism-and-normal-subgroups
 
 **e.g.**
 
-- Consider $$\rho: G\to \text{Aut}(G)$$ given by $$\rho_g(x)=gxg^{-1} $$, and then $$\text{ker}(\rho) = Z(G)$$.
-- Consider $$\rho: G\to S_{G/H} $$ given by $$\rho_g(xH) = gxH$$, and then $$\text{ker}(\rho) = \bigcap_{g\in G}gHg^{-1}$$.
+- Consider $$\rho: G\to \text{Aut}(G)$$ given by $$\rho(g) = \rho_g$$, where $$\rho_g: G\to G$$ is defined as $$\rho_g(x)=gxg^{-1} $$, and then $$\text{ker}(\rho) = Z(G)$$.
+- Consider $$\rho: G\to S_{G/H} $$ given by $$\rho(g) = \rho_g$$, where $$\rho_g: G\to G$$ is defined as $$\rho_g(xH) = gxH$$, and then $$\text{ker}(\rho) = \bigcap_{g\in G}gHg^{-1}$$.
 
 這兩種 homomorphism 的 kernel 都是特殊的 normal subgroup。
 
@@ -156,17 +158,14 @@ For all $$g \in \text{ker}(\rho)$$, we have
 
 $$
 \begin{align*}
-&\rho_g(x) = x,\ \forall x \in G \\
+&\rho(g) = I_G, \text{where } I_G \text{ is the identity automorphism on } G. \\
+\Rightarrow\ &\rho_g(x) = I_G(x) = x,\ \forall x \in G \\
 \Rightarrow\ &gxg^{-1} = x \\
 \Rightarrow\ &gx = xg,\ \forall x \in G.
 \end{align*}
 $$
 
 Thus, $$g \in Z(G)$$. ◼
-
-> $$\rho_g(x) = x$$ 是什麼意思？參考[這裡](../C-Cayley-thm/#theorem)的 $$\lambda_e$$。
-
-> $$e_{\text{Aut}(G)}$$.
 
 第二個例子稱作 **generalized [Caley theorem](../C-Cayley-thm)**。$$S_{G/H}$$ 相較於 Cayley theorem 的 $$S_G$$，是較小的群，因此比較容易[應用](../C-Cayley-thm/#application)，但這是有代價的：Cayley theorem 中的 $$\text{ker}(\phi) = \{e\}$$，而此處 $$\text{ker}(\rho) = \bigcap_{g\in G}gHg^{-1}$$，也就是說，$$\rho$$ 不是 **one-to-one**！
 
@@ -180,7 +179,7 @@ What is an **automorphism**? An **automorphism** is an *isomorphism* with the sa
 
 > $$\rho: G\to G$$，如果 $$\rho$$ 是 isomorphism，則 $$\rho$$ 又被稱為 **automorphism**。
 
-**Automorphism group**
+#### Automorphism group
 
 Given
 
@@ -191,6 +190,12 @@ $$
 then $$\text{Aut}(G)$$ is called the group of **automorphism** on $$G$$.
 
 > The set of all isomorphisms of $$G$$.
+
+#### Inner Automorphism
+
+
+- [Wolfram MathWorld](https://mathworld.wolfram.com/InnerAutomorphism.html)
+- [Proof Wiki](https://proofwiki.org/wiki/Mapping_from_Group_Element_to_Inner_Automorphism_is_Homomorphism)
 
 ---
 

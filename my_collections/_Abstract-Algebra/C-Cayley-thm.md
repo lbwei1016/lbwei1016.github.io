@@ -52,6 +52,8 @@ where $$\lambda_a(g) = ag$$.
 
 $$\lambda_a$$ 在 $$(1)$$ 作為一個 mapping，其實也是一 permutation（底下會證明 $$\lambda_a$$ 是 permutation）。permutation 本來就是一 image 和 preimage 相同的 one-to-one、onto mapping！（想想 permutation 總是以 composition 進行運算。）
 
+> 見 [Automorphism](../I-more-on-normal-subgroups/#interlude-automorphism)。
+
 ### Example
 
 Let $$G=\mathbb{Z}^{\times}_8 = \{\bar 1, \bar 3, \bar 5, \bar 7 \}.$$ Then
