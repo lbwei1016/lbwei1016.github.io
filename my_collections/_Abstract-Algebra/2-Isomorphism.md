@@ -53,7 +53,7 @@ The function $$\phi: S \to S'$$ is an isomorphism between $$(S, *)$$ and $$(S', 
 
 ### Example $$\rm I$$
 
-> Prove taht the binary structure $$(\mathbb{R}, +)$$ is isomorphic to $$(\mathbb{R}_{>0}, \dot{})$$.
+> Prove that the binary structure $$(\mathbb{R}, +)$$ is isomorphic to $$(\mathbb{R}_{>0}, \dot{})$$.
 
 **Proof**
 
