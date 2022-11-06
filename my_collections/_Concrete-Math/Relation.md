@@ -17,6 +17,7 @@ time: 2022/08/19
   - [Definition $$\rm VI$$ (power)](#definition-rm-vi-power)
 - [Some Relations](#some-relations)
   - [Equivalence Relation](#equivalence-relation)
+    - [Question](#question)
 - [Partial Orderings](#partial-orderings)
   - [Definition $$\rm I$$ (partial ordering)](#definition-rm-i-partial-ordering)
   - [Definition $$\rm II$$ (compare)](#definition-rm-ii-compare)
@@ -79,6 +80,39 @@ time: 2022/08/19
 **Example**
 
 對於任意非空集合 $$S$$，$$(S, =)$$ 是 **equivalence relation**。
+
+#### Question
+
+> Define a relation on $$\mathbb{R}^2$$ as follows: 
+> 
+> For any $$\vec{v} = (v_1, v_2), \vec{u} = (u_1, u_2) \in \mathbb{R}^2$$, 
+> 
+> $$
+>   \vec{v} \sim \vec{u} \text{ if } v_1-u_1 = v_2-u_2.
+> $$
+>
+> 1. Show that this is an equivalence relation.
+> 2. Find a complete **set of representatives** of equivalence classes.
+
+**Solution**
+
+**1.**
+
+To show this is an equivalence relation, we have to verify whether it is *relexive, symmetric, and transitive*.
+
+**2.**
+
+We claim that $$S = \{(x, 0)\vert x\in \mathbb{R} \}$$ is the desired set.
+
+For any $$\vec{v} = (v_1, v_2) \in \mathbb{R}^2$$, let $$x=v_1-v_2$$. Then $$v_1-x = v_2 = v_2 - 0$$. Therefore, $$\vec{v} \sim (x, 0)$$. On the other hand, if $$(x, 0)\sim (y, 0)$$, then $$x-y = 0 - 0 = 0$$, which means that $$x = y$$ and $$(x, 0) = (y, 0)$$. 
+
+Thus, $$S$$ is a complete set of represnetatives of the equivalence classes.
+
+**Remark**
+
+對於第二題，先驗證所有 $$\vec{v} \in \mathbb{R}^2$$ 都和 $$S$$ 的其中一個 element equivalent，然後再說明 represnetative 之間沒有重疊！
+
+其實可以驗證 $$S$$ 是 $$\mathbb{R}^2$$ 的 [subgroup](../../Abstract-Algebra/7-Subgroups) 。
 
 ---
 

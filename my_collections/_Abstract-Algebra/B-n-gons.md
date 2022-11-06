@@ -34,13 +34,11 @@ $$G_1 = \{g \in G | gx=x\}$$
 
 is also called the **stabilizer** of $$x$$ in $$G$$, denoted by $$\text{Stab}_G(x)$$, which is a subgroup of $$G$$.
 
-> $$G$$-orbit of $$x$$: $$x$$ 經過 $$g$$ 變換可以去的地方；收的是 **object**。
+> $$G_x$$：$$x$$ 經過 $$g$$ 變換可以變成的 **object** set；不論有多少 $$g$$ 使得 $$gx = x_i$$，$$x_i$$ 在 $$G_x$$ 只 **count $$1$$**！
 
-> $$G_i$$ 只取可使 $$x$$ 變換成 $$x_i$$ 的部分；收的是 **symmetry**。
+> $$G_i$$ 只取可使 $$x$$ 變換成 $$x_i$$ 的 **symmetry** set。
 
-> **stabilizer** 使 $$x$$ 保持不變，因此稱其穩。
-
-> $$g_ix = x_i$$.
+> **Stabilizer** 收集所有使 $$x$$ 保持不變的 **symmetry**。
 
 ### Lemma (stabilizer)
 > $$g_iG_1 = G_i$$ for all $$i$$.

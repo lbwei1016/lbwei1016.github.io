@@ -28,11 +28,12 @@ time: 2022/10/20
 - [Quotient Groups](#quotient-groups)
   - [Theorem (quotient group)](#theorem-quotient-group)
   - [Quotient Group Computation](#quotient-group-computation)
+    - [Question](#question)
 - [Homomorphism and Normal Groups](#homomorphism-and-normal-groups)
   - [Theorem (homomorphism and normal subgroups)](#theorem-homomorphism-and-normal-subgroups)
   - [Theorem (the first isomorphism theorem)](#theorem-the-first-isomorphism-theorem)
   - [Theorem (quotient group of $$\mathbb{Z}^n$$)](#theorem-quotient-group-of-mathbbzn)
-    - [Question](#question)
+    - [Question](#question-1)
     - [Remark](#remark-1)
 - [Reference](#reference)
 
@@ -315,7 +316,7 @@ If $$G = \langle a \rangle$$, then every coset of $$H$$ is of the form $$a^kH = 
 
 要證明 quotient group 和某 group isomorphic，可以用 [the first isomorphism theorem](#theorem-the-first-isomorphism-theorem)：
 
-Construct $$\rho: G \to G'$$, and then $$G/\text{ker} (\rho) \cong \rho(G) = G'$$.
+Construct $$\rho: G \to G'$$, and then $$G/\text{ker} (\rho) \cong \rho(G)$$.
 
 **Proof of 4.** 
 
@@ -325,7 +326,7 @@ Let $$\phi: G_1\times G_2 \to G_1$$ be defined by $$\phi(g_1, g_2) = g_1$$. Then
 
 Let $$\phi: G_1\times G_2 \to (G_1/H_1)\times (G_2/H_2)$$ defined by $$\phi(g_1, g_2) = (g_1H_1, g_2H_2)$$. By apply the first isomorphism theorem, we obtained the desired result. ◼
 
-**Question**
+#### Question
 
 > Classify the quotient group $$\mathbb{Z}_4\times \mathbb{Z}_2/\langle (2,0)\rangle$$.
 
@@ -373,14 +374,14 @@ For the second part, we know that $$g \in \text{ker}(\gamma)$$ iff $$gN=eN$$. Th
 ### Theorem (the first isomorphism theorem)
 > Let $$\psi: G\to G'$$ be a group homomorphism with kernel $$N$$. Then $$G/N$$ and $$\psi(G)$$ are isomorphic. The **canonical isomorphism** $$\mu: G/N \to \psi(G) $$ is given by $$\mu(gN) = \psi(g)$$.
 
-> $$G/\text{ker}(\psi) \cong \psi(G) = \text{the image of }\psi = \text{Im}(\psi)$$.
+> $$G/\text{ker}(\psi) \cong \psi(G) = \text{the image of }G = \text{Im}(G)$$.
 
 > 也稱作 the **fundamental homomorphism theorem**。
 
 $$G/\text{ker}(\psi)$$ 的 order 正是 left coset 的數量，又 isomorphic groups 的 order 必相等。因此
 
 $$
-\vert G \vert = \vert \text{ker}(\psi) \vert \cdot \vert \text{Im}(\psi) \vert.
+\vert G \vert = \vert \text{ker}(\psi) \vert \cdot \vert \text{Im}(G) \vert.
 $$
 
 **Proof**

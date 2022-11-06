@@ -66,6 +66,8 @@ $$
 
 > 對於 $$S_n$$ 來說，commutator 一定是 **even permutation**！
 
+> *Prove that $$[S_n, S_n] = A_n$$.*
+
 #### Remark (when $$G/N$$ is abelian?)
 
 Suppose that $$N$$ is a normal subgroup of $$G$$ such that $$G/N$$ is *abelian*. Then we have $$(aN)(bN) = (bN)(aN)$$, or equivalently, 
@@ -91,7 +93,7 @@ Thus $$N$$ must contain all the commutators.
 
 We first show that $$[G,G]$$ is a normal subgroup of $$G$$, i.e. $$[G,G]\triangleleft G$$. It suffices to prove that the generators (commutators) satisfy $$g^{-1}(a^{-1}b^{-1}ab)g \in [G,G]$$ for all $$a,b,g \in G $$.
 
-> 見 [remark](../H-homomorphism/#remark)。
+> 見 [remark](../H-homomorphism-and-normal-groups/#remark)。
 
 We have
 
@@ -146,7 +148,7 @@ From [this theorem](../H-homomorphism/#theorem-homomorphism-and-normal-subgroups
 **e.g.**
 
 - Consider $$\rho: G\to \text{Aut}(G)$$ given by $$\rho(g) = \rho_g$$, where $$\rho_g: G\to G$$ is defined as $$\rho_g(x)=gxg^{-1} $$, and then $$\text{ker}(\rho) = Z(G)$$.
-- Consider $$\rho: G\to S_{G/H} $$ given by $$\rho(g) = \rho_g$$, where $$\rho_g: G\to G$$ is defined as $$\rho_g(xH) = gxH$$, and then $$\text{ker}(\rho) = \bigcap_{g\in G}gHg^{-1}$$.
+- Consider $$\rho: G\to S_{G/H} $$ given by $$\rho(g) = \lambda_g$$, where $$\lambda_g: G\to G$$ is defined as $$\lambda_g(xH) = gxH$$, and then $$\text{ker}(\rho) = \bigcap_{g\in G}gHg^{-1}$$.
 
 這兩種 homomorphism 的 kernel 都是特殊的 normal subgroup。
 
@@ -168,6 +170,24 @@ $$
 Thus, $$g \in Z(G)$$. ◼
 
 第二個例子稱作 **generalized [Caley theorem](../C-Cayley-thm)**。$$S_{G/H}$$ 相較於 Cayley theorem 的 $$S_G$$，是較小的群，因此比較容易[應用](../C-Cayley-thm/#application)，但這是有代價的：Cayley theorem 中的 $$\text{ker}(\phi) = \{e\}$$，而此處 $$\text{ker}(\rho) = \bigcap_{g\in G}gHg^{-1}$$，也就是說，$$\rho$$ 不是 **one-to-one**！
+
+底下證明 $$\text{ker}(\rho) = \bigcap_{g\in G}gHg^{-1}$$：
+
+**Proof**
+
+For all $$g \in \text{ker}(\rho)$$, we have $$\rho(g) = \lambda_e$$, i.e.
+
+$$
+\rho_g(x) = \lambda_e(xH) \iff gxH = xH.
+$$
+
+That is to say
+
+$$
+x^{-1}gxH = H \iff x^{-1}gx \in H \iff g \in xHx^{-1},\forall x \in H.
+$$
+
+This means that $$\text{ker}(\rho) = \bigcap_{x\in G}xHx^{-1}$$. ◼
 
 > 事實上，Cayley theorem 是 $$H = \{e\}$$ 時的特例。
 

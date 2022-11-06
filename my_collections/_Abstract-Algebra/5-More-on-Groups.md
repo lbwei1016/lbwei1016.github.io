@@ -176,7 +176,8 @@ When $$A$$ is just a set, a symmetry on $$A$$ is just a bijective function from 
 
 ## Special Groups
 
-- **General linear group**: of degree $$n$$ is the set of $$n\times n$$ **invertible matrices**, together with the operation of ordinary matrix multiplication, denote by $$GL_n(\mathbb{R})$$. (general linear group over $$\mathbb{R}.$$)
+- **General linear group**: of degree $$n$$ is the set of $$n\times n$$ **invertible matrices**, together with the operation of ordinary matrix multiplication, denote by $$\text{GL}_n(\mathbb{R})$$. (general linear group over $$\mathbb{R}.$$)
+- **Special linear group**: $$\text{SL}_n(\mathbb{R})$$ is a group containing all $$n \times n$$ real matrices with **determinant** equal to one.
 
 ---
 
