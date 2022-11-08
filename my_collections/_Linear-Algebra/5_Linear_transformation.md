@@ -27,13 +27,15 @@ time: 2022/09/17
 > A **linear transformation** is a transformation $$T: \mathbb{R}^n \to \mathbb{R}^m$$ satisfying
 >
 >$$\begin{eqnarray}
-    T(\boldsymbol{u}+\boldsymbol{v}) &=& T(\boldsymbol{u}) + T(\boldsymbol{v}) \tag{1}　\\
-    T(c\boldsymbol{u}) &=& cT(\boldsymbol{u}) \tag{2}
+    T(\vec{u}+\vec{v}) &=& T(\vec{u}) + T(\vec{v}) \tag{1}　\\
+    T(c\vec{u}) &=& cT(\vec{u}) \tag{2}
 >\end{eqnarray}$$
 >
-> for all vectors $$\boldsymbol{u}, \boldsymbol{v} \in \mathbb{R}^n$$ and all scalars $$c$$.
+> for all vectors $$\vec{u}, \vec{v} \in \mathbb{R}^n$$ and all scalars $$c$$.
 
 $$T(0) = 0$$ 是 **linear transformation** 的結論，可以用來快速檢驗某 transformation 是否 linear。於是任何有**常數**的 transformation 都不 linear；如 $$T(x) = x + 1$$ is non-linear for $$T(0) \not = 0$$.
+
+> 加上平移叫做 **affine**。
 
 > 問題：找出符合 *property of linearity* $$(1)$$ 但不符合 $$(2)$$ 的 transformation。（目前無解）
 
@@ -45,10 +47,10 @@ $$T(0) = 0$$ 是 **linear transformation** 的結論，可以用來快速檢驗�
 
 >Let $$T: \mathbb{R}^n \to \mathbb{R}^m$$ be a *linear transformation*. Let $$A$$ be the $$m \times n$$ matrix
 > 
->$$A = \Big(T(\boldsymbol{e_1})\ T(\boldsymbol{e_2})\ \cdots\ T(\boldsymbol{e_n})\Big).$$
+>$$A = \Big(T(\vec{e_1})\ T(\vec{e_2})\ \cdots\ T(\vec{e_n})\Big).$$
 >
->（$$\boldsymbol{e_i}$$ 是單位向量（standard vector）；$$T(\boldsymbol{e_i})$$ 是 column vector）
-> Then $$T$$ is the *matrix transformation* associated with $$A$$, i.e. $$T(\boldsymbol{x}) = A\boldsymbol{x}$$.
+>（$$\vec{e_i}$$ 是單位向量（standard vector）；$$T(\vec{e_i})$$ 是 column vector）
+> Then $$T$$ is the *matrix transformation* associated with $$A$$, i.e. $$T(\vec{x}) = A\vec{x}$$.
 
 **Proof**
 
@@ -56,8 +58,8 @@ $$\begin{eqnarray}
 T\begin{pmatrix}
     x \\ y \\ z
 \end{pmatrix} &:=& T\Big(x\begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix} + y\begin{pmatrix}0 \\ 1 \\ 0\end{pmatrix} + z\begin{pmatrix}0 \\ 0 \\ 1\end{pmatrix}\Big) \\
-&=& xT(\boldsymbol{e_1}) + yT(\boldsymbol{e_2}) + zT(\boldsymbol{e_3}) \\
-&=& \Big(T(\boldsymbol{e_1})\ T(\boldsymbol{e_2})\ \cdots\ T(\boldsymbol{e_n})\Big)\begin{pmatrix}x \\ y \\ z\end{pmatrix} \\
+&=& xT(\vec{e_1}) + yT(\vec{e_2}) + zT(\vec{e_3}) \\
+&=& \Big(T(\vec{e_1})\ T(\vec{e_2})\ \cdots\ T(\vec{e_n})\Big)\begin{pmatrix}x \\ y \\ z\end{pmatrix} \\
 &=& A\begin{pmatrix}x \\ y \\ z\end{pmatrix} \tag*{$\blacksquare$}
 \end{eqnarray}$$
 
@@ -73,15 +75,15 @@ Define $$T:\mathbb{R}^2 \to \mathbb{R}^3$$ by the formula
 
 $$T\begin{pmatrix}x \\ y\end{pmatrix} = \begin{pmatrix}3x-y \\ y \\ x\end{pmatrix}$$.
 
-已知 $$A = \Big(T(\boldsymbol{e_1})\ T(\boldsymbol{e_2})\ \cdots\ T(\boldsymbol{e_n})\Big)$$，因此我們只需依序對 $$T$$ 帶入 $$\boldsymbol{e_1}, \boldsymbol{e_2}$$，就能求出相應的 matrix $$A$$：
+已知 $$A = \Big(T(\vec{e_1})\ T(\vec{e_2})\ \cdots\ T(\vec{e_n})\Big)$$，因此我們只需依序對 $$T$$ 帶入 $$\vec{e_1}, \vec{e_2}$$，就能求出相應的 matrix $$A$$：
 
-$$T(\boldsymbol{e_1}) = \begin{pmatrix}3(1)-0 \\ 0 \\ 1\end{pmatrix}$$
+$$T(\vec{e_1}) = \begin{pmatrix}3(1)-0 \\ 0 \\ 1\end{pmatrix}$$
 
-$$T(\boldsymbol{e_2}) = \begin{pmatrix}3(0)-1 \\ 1 \\ 0\end{pmatrix}$$
+$$T(\vec{e_2}) = \begin{pmatrix}3(0)-1 \\ 1 \\ 0\end{pmatrix}$$
 
 所以 $$A = \begin{pmatrix}3 & -1 \\ 0 & 1 \\ 1 & 0\end{pmatrix}$$。
 
-> [更多範例](https://textbooks.math.gatech.edu/ila/linear-transformations.html)
+> [更多範例](https://textbooks.math.gatech.edu/ila/linear-transformations.html)。
 
 --- 
 
@@ -94,11 +96,13 @@ $$T(\boldsymbol{e_2}) = \begin{pmatrix}3(0)-1 \\ 1 \\ 0\end{pmatrix}$$
 若 $$A$$ 符合以下等價條件：
 
 - $$A$$ 是 *full column rank*，即 $$\dim(N(A)) = 0$$。
-- $$\forall b \in \mathbb{R}^m$$，$$T(x) = \boldsymbol{b}$$ 只有**一個以下**的解。
+- $$\forall b \in \mathbb{R}^m$$，$$T(x) = \vec{b}$$ 只有**一個以下**的解。
 
 則 $$T$$ is *injective*。 
 
-進一步解釋：*Full column rank* 代表 $$A$$ 的 columns 是 linearly independent，所以 $$A\boldsymbol{x} = A\boldsymbol{y} \iff \boldsymbol{x} = \boldsymbol{y}$$；這就是 *one-to-one*。然後，**wide matrices** ($$m < n$$) 不可能造就 *one-to-one* transformation，也就是「大打到小」不可能 *one-to-one*。
+> $$\text{dim(N(A))} = 0$$ 相當於 $$\text{ker}(T) = \{I\}$$。
+
+進一步解釋：*Full column rank* 代表 $$A$$ 的 columns 是 linearly independent，所以 $$A\vec{x} = A\vec{y} \iff \vec{x} = \vec{y}$$；這就是 *one-to-one*。然後，**wide matrices** ($$m < n$$) 不可能造就 *one-to-one* transformation，也就是「大打到小」不可能 *one-to-one*。
 
 ### Surjection
 
@@ -116,6 +120,8 @@ $$T(\boldsymbol{e_2}) = \begin{pmatrix}3(0)-1 \\ 1 \\ 0\end{pmatrix}$$
 
 ## {Homo, Iso}morphism
 
+> 見 [Homomorphism & Normal Subgroups](../../Abstract-Algebra/H-homomorphism-and-normal-groups)。
+
 ### Homomorphism
 
 > "Homomorphism" comes from the greek homo (same) and morphus (form or shape).<br>
@@ -123,9 +129,7 @@ $$T(\boldsymbol{e_2}) = \begin{pmatrix}3(0)-1 \\ 1 \\ 0\end{pmatrix}$$
 
 *Linear transformation* 本身就 *preserve the vector space structure*（參照 [Vector Spaces and Subspaces](../4-1_Vector-Spaces-and-Subspaces) 和 [linear trans. 的定義](#definition)）；*homomorphisms of vector spaces* 和 *linear trans.* 其實意義相同！
 
-> 更多 **homomorphism** 見 [StackExchange](https://math.stackexchange.com/questions/29944/difference-between-linear-map-and-homomorphism)
-
-> **homomorphism** 的簡陋定義可見 [Abstract Algebra](../../Abstract-Algebra/2-Isomorphism/#isomorphism)
+> 更多 **homomorphism** 見 [StackExchange](https://math.stackexchange.com/questions/29944/difference-between-linear-map-and-homomorphism)。
 
 ### Isomorphism
 
@@ -149,7 +153,7 @@ between them.
  
 為什麼這裡沒看到 **homomorphism**？因為[這裡](#homomorphism)已經說明，linear map 本身就是 **homomorphism**！
 
-> 見 [Isomorphism](../../Algebra/Isomorphism)
+> 見 [Isomorphism](../../Algebra/Isomorphism)。
 
 ---
 
