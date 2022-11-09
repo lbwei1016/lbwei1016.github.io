@@ -47,7 +47,7 @@ is also called the **stabilizer** of $$x$$ in $$G$$, denoted by $$\text{Stab}_G(
 
 Consider the map $$\phi_i: G_1 \to G_i$$, given by $$\phi_i(g) = g_ig$$. We have for all $$g \in G_1$$, $$\phi_i(g)x = g_igx = g_ix = x_i$$. Therefore, $$\phi_i(g) \in G_i$$.
 
-On the other hand, let $$\rho_i: G_i \to G_1$$ given by $$\rho_i(g) = g_1^{-1}g$$. Since both $$\rho_i \circ \phi_i$$ and $$\phi_i \circ \rho_i$$ are equal to the identity map, $$\rho_i$$ is the inver map of $$\phi_i$$.
+On the other hand, let $$\rho_i: G_i \to G_1$$ given by $$\rho_i(g) = g_i^{-1}g$$. Since both $$\rho_i \circ \phi_i$$ and $$\phi_i \circ \rho_i$$ are equal to the identity map, $$\rho_i$$ is the inverse map of $$\phi_i$$.
 
 Hence, $$\phi_i$$ is a bijection, which implies that
 
@@ -64,7 +64,7 @@ and $$G_i = g_iG_1$$. ◼
 >
 > and
 > 
-$$G = \bigsqcup_{i=1}^{n-1}g_i\text{Stab}_G(x).$$ 
+$$G = \bigsqcup_{i=1}^{n}g_i\text{Stab}_G(x).$$ 
 
 ---
 

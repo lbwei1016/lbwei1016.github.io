@@ -44,9 +44,9 @@ $$
 
 **Proof**
 
-1 . By [Cayley's Theorem](../C-Cayley-thm)
+1 . By [Cayley's Theorem](../C-Cayley-thm) we konw $$\lambda_a$$ is a bijection. Since $$aH = \lambda_a(H)$$, 
 
-2 . Suppose $$ah_1 = bh_2$$ for some $$h1,h_2 \in H$$. Since $$hH = H$$ for all $$h \in H$$, we have
+2 . Suppose $$ah_1 = bh_2$$ for some $$h1,h_2 \in H$$. Since $$hH = H$$ for all $$h \in H$$, $$H$$ and $$aH$$ have the same cardinality.
 
 $$aH = ah_1H = bh_2H = bH.$$
 

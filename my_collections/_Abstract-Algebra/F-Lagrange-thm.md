@@ -24,7 +24,7 @@ time: 2022/10/15
 
 **Proof**
 
-Since $$G$$ is equal to the disjoin union of left cosets of $$H$$ and every left coset has the same cardinality as $$H$$, we have
+Since $$G$$ is equal to the disjoint union of left cosets of $$H$$ and every left coset has the same cardinality as $$H$$, we have
 
 $$
 \vert G \vert = \vert H \vert \times (\text{# of left cosets}).
@@ -32,7 +32,7 @@ $$
 
 This proves the theorem.
 
-> 看看[這個 theorem](../G-Direct-Product/#theorem-subgroup-of-order-m)。
+> 看看[這個 theorem](../G-Finitely-Generated-Abelian-Groups/#theorem-subgroup-of-order-m)。
 
 ### Corollary (order of an element)
 > The order of an element $$a$$ of a finite group $$G$$ divides the order of $$G$$.
@@ -55,6 +55,6 @@ Let $$g \in G,\ g \not = e$$. We have $$\vert \langle g \rangle \vert$$ divides 
 > Let $$H$$ be a subgroup of a group $$G$$. The **number of left cosets** of $$H$$ is the **index** of $$H$$ in $$G$$, which is denoted by $$[G:H]$$.
 
 ### Theorem (absorb)
-> Suppose $$K \le H \le G$$, and $$[G:H]$$ and $$[H:K]$$ are finite. Then $$[G:K]=[G:H][H:K]$$.
+> Suppose $$K \le H \le G$$, and $$[G:H]$$ and $$[H:K]$$ are *finite*. Then $$[G:K]=[G:H][H:K]$$.
 
 > 依定義展開就可證明。

@@ -40,7 +40,9 @@ $$\rho(A) = (0.a_1a_2a_3\cdots)_2,\ a_i = [i \in A].$$
 
 This is a bijection. ◼
 
-> *Note:* $$\mathbb{R}$$ 和 $$[0, 1)$$ 之間存在 bijection。
+> *Note:* $$\mathbb{R}$$ 和 $$[0, 1)$$ 之間存在 bijection；
+
+> 甚至 $$\vert \mathbb{R}\times\mathbb{R}\times\cdots\times\mathbb{R}\vert = \vert\mathbb{R}\vert$$，不論多少（finite?）$$\mathbb{R}$$ 乘在一起。
 
 ---
 

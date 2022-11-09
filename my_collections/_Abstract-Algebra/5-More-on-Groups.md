@@ -50,7 +50,7 @@ $$G = \{e, a\}$$, and $$a^{-1} = a$$ (the only choice).
 
 藉由 **table**（如下）的方式，列出所有 element 經過 binary operation 的結果，再經過比對，可以得知 $$G \cong (\mathbb{Z}_2, +)$$。
 
-| $$\dot{}$$ |   e   |   a   |
+| $$\cdot$$ |   e   |   a   |
 | :--------: | :---: | :---: |
 |   **e**    |   e   |   a   |
 |   **a**    |   a   |   e   |
@@ -95,7 +95,7 @@ $$G \cong (\mathbb{Z}_4, +)。$$
 
 ### Order 6
 
-$$G \cong \mathbb{Z}_{6}$$ or $$G \cong S_3 = D_3$$.
+$$G \cong \mathbb{Z}_{6}$$ or $$G \cong S_3 \cong D_3$$.
 
 ### Order 8
 
@@ -145,7 +145,7 @@ Thus we can conclude that $$a$$ and $$n$$ must be coprime. ◼
 
 
 **Remark**
-> Denote $$\mathbb{Z}_n^{\times}$$ the subset of $$\mathbb{Z}_n$$ consisting all elements with **multiplicative inverse**. $$(\mathbb{Z}_n^{\times}, \dot{})$$ is a *group*.
+> Denote $$\mathbb{Z}_n^{\times}$$ the subset of $$\mathbb{Z}_n$$ consisting all elements with **multiplicative inverse**. $$(\mathbb{Z}_n^{\times}, \cdot)$$ is a *group*.
 
 ---
 
@@ -177,7 +177,7 @@ When $$A$$ is just a set, a symmetry on $$A$$ is just a bijective function from 
 ## Special Groups
 
 - **General linear group**: of degree $$n$$ is the set of $$n\times n$$ **invertible matrices**, together with the operation of ordinary matrix multiplication, denote by $$\text{GL}_n(\mathbb{R})$$. (general linear group over $$\mathbb{R}.$$)
-- **Special linear group**: $$\text{SL}_n(\mathbb{R})$$ is a group containing all $$n \times n$$ real matrices with **determinant** equal to one.
+- **Special linear group**: $$\text{SL}_n(\mathbb{R})$$ is a group containing all $$n \times n$$ real matrices with **determinant equal to one**.
 
 ---
 

@@ -111,22 +111,22 @@ for all $$s' \in S'.$$
 
 **e.g. (not a group)**
 
-- $$(\mathbb{Z}, \dot{})$$, only $$a = \pm 1$$ has an inverse; 
-- $$(\mathbb{Z}_n, \dot{})$$, inverse of $$\bar 0$$ doesn't exist;
+- $$(\mathbb{Z}, \cdot)$$, only $$a = \pm 1$$ has an inverse; 
+- $$(\mathbb{Z}_n, \cdot)$$, inverse of $$\bar 0$$ doesn't exist;
 - $$(\mathbb{Z}_{>0}, +)$$, no identity element; ...
 
 再舉一個大例子：
 
-> The set $$GL(n, \mathbb{R})$$ of all invertible $$n \times n$$ matrices under matrix multiplication *is a group*. ($$GL$$ stands for general linear.)
+> The set $$\text{GL}(n, \mathbb{R})$$ of all invertible $$n \times n$$ matrices under matrix multiplication *is a group*. ($$\text{GL}$$ stands for general linear.)
 
-要驗證 $$GL$$ 是不是 group，除了[定義](#definition)的三個條件之外，還要確認 $$GL$$ 是不是 **closed under multiplication**！（因為 $$GL$$ 只是某 binary structure 的子集）
+要驗證 $$\text{GL}$$ 是不是 group，除了[定義](#definition)的三個條件之外，還要確認 $$\text{GL}$$ 是不是 **closed under multiplication**！（因為 $$\text{GL}$$ 只是某 binary structure 的子集）
 
-> 利用 $$det(AB) = det(A)det(B)$$ 驗證。
+> 利用 $$\text{det}(AB) = \text{det}(A)\text{det}(B)$$ 驗證。
 
 ### Abelian Group
 > A group $$(G, *)$$ is **abelian** if its binary operation is **commutative**.
 
-> $$+$$ 保留給 commutative binary operation，其他用 $$\dot{}$$ (multiplication)。(Notation)
+> $$+$$ 保留給 commutative binary operation，其他用 $$\cdot$$ (multiplication)。(Notation)
 
 ---
 

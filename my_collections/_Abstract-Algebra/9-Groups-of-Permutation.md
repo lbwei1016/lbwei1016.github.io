@@ -28,7 +28,7 @@ time: 2022/10/12
 
 ---
 
-> 參 [More on Groups](../5-More-on-Groups/#the-nature-of-groups)
+> 參 [More on Groups](../5-More-on-Groups/#the-nature-of-groups)。
 
 ## Theorem
 > Let $$A$$ be a nonempty set. Then the set $$S_A$$ of all permutations of $$A$$ is **a group under composition**.
@@ -76,7 +76,7 @@ We can see that $$\sigma = \sigma_1\sigma_2 = \sigma_2\sigma_1 = (12)(345)$$.
 > A cycle of length $$d$$ is of order $$d$$.
 
 #### Corollary (order)
-> If a permutation can be written as a product of disjoint cycles of length $$d_1, \cdots, d_k$$ . Then its order is equal to $$lcm(d_1, \cdots, d_k)$$.
+> If a permutation can be written as a product of disjoint cycles of length $$d_1, \cdots, d_k$$ . Then its order is equal to $$\text{lcm}(d_1, \cdots, d_k)$$.
 
 > $$\sigma$$ is of order $$n$$: $$\sigma^n = e$$.
 

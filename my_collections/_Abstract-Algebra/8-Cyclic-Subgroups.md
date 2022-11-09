@@ -120,7 +120,7 @@ Hence we have shown that $$\mathbb{Z}^{\times}_{18}$$ is cyclic. ◼
 
 > *Think*: Suppose $$G$$ is of order $$n$$. If for all $$g \in G$$, $$g^n = e$$. Can we say that $$G$$ is cyclic?
 
-Actually this is false. Suppose $$n = 4$$, we have $$G = \{e, a, b, c\}$$ such that $$a^4 = b^4 = c^4 = e$$. If we let $$a^2 = b^2 = c^2 = e$$, we can discover that there is no generator in $$G$$. Thus if for all $$g \in G$$, $$g^n = e$$, $$G$$ is **not necessarily cyclic**. (If $$G$$ is indeed cyclic, this always holds, though.)
+Actually this is false. Suppose $$n = 4$$, we have $$G = \{e, a, b, c\}$$ such that $$a^4 = b^4 = c^4 = e$$. If we let $$a^2 = b^2 = c^2 = e$$, we can discover that there is no single generator in $$G$$. Thus if for all $$g \in G$$, $$g^n = e$$, $$G$$ is **not necessarily cyclic**. (If $$G$$ is indeed cyclic, this always holds, though.)
 
 ---
 
@@ -173,12 +173,12 @@ For $$d = \gcd(n, s)$$, there exist integers $$x, y$$ such that $$nx + sy = d$$.
 > The other generators of $$G$$ are the elements of the form $$a^r$$, where $$\gcd(n ,r) = 1$$.
 
 #### Corollary $$\rm III$$ (number of subgroups)
-> Every subgroup of $$G$$ is equal to $$\langle a^d \rangle$$ for $$d$$\|$$n$$. Especially, **the number of subgroups** of $$G$$ is equal to **the number of divisors of $$n$$**.
+> Every subgroup of $$G$$ is equal to $$\langle a^d \rangle$$ for $$d$$\vert$$n$$. Especially, **the number of subgroups** of $$G$$ is equal to **the number of divisors of $$n$$**.
 
 > $$\mathbb{Z}_{12}$$ 有 $$6$$ 個 subgroups。
 
 #### Corollary $$\rm IV$$ (order of subgroups)
-> When $$G = \mathbb{Z}_n$$, every subgroup is equal to $$\langle \bar d \rangle$$ for some $$d$$\|$$n$$. Moreover, the **order** of the subgroup is equal to $$n/d$$.
+> When $$G = \mathbb{Z}_n$$, every subgroup is equal to $$\langle \bar d \rangle$$ for some $$d$$\vert$$n$$. Moreover, the **order** of the subgroup is equal to $$n/d$$.
 
 > $$n/d: \{0, d, 2d, \cdots, (n/d-1)d\}$$.
 
