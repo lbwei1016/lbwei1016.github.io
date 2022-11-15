@@ -3,7 +3,7 @@ layout: page
 title: Rings and Fields
 usemathjax: true
 tag: Abstract Algebra, Ring, Field
-time: 2022/11/32
+time: 2022/11/03
 ---
 
 **Table of Content**
@@ -12,6 +12,7 @@ time: 2022/11/32
   - [Examples](#examples)
   - [Some Little Definitions](#some-little-definitions)
 - [Definition (about multiplication)](#definition-about-multiplication)
+- [Field](#field)
   - [Remark](#remark)
 - [Subrings and Subfields](#subrings-and-subfields)
 - [Homomorphism](#homomorphism)
@@ -60,7 +61,10 @@ Let $$R$$ be a ring with unity $$1\not = 0$$.
 
 1. An element $$u$$ of $$R$$ is a **unit** if it has a multiplicative inverse.
 2. If every nonzero element of $$R$$ is a unit, then $$R$$ is a **division ring** (or **skew field**).
-3. A *commutative division ring* is a **field**.
+
+## Field
+
+A *commutative division ring* is a **field**.
 
 > **Field** 在這裡終於出現了！
 
@@ -104,7 +108,7 @@ The function $$\phi: \mathbb{Z}\to \mathbb{Z}_n$$ defined by $$\phi(a) = \bar a$
 
 #### Example $$\rm II$$
 
-Let $$\mathbb{Q}[x]$$ be *the set of all polynimails* over $$\mathbb{Q}$$. Given $$a\in \mathbb{R}$$, define $$\phi_a:\mathbb{Q}[x]\to \mathbb{R} $$ by
+Let $$R = \mathbb{Q}[x]$$ be *the set of all polynimails* over $$\mathbb{Q}$$. Given $$a\in \mathbb{R}$$, define $$\phi_a:\mathbb{Q}[x]\to \mathbb{R} $$ by
 
 $$
 \phi_a(f(x)) = f(a).
