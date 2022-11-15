@@ -130,13 +130,13 @@ $$
 which is to say
 
 $$
-k \equiv 0 \text{ mod }(m/\gcd(n,m)).
+k \equiv (n/\gcd(n, m))^{-1} \text{ mod }(m/\gcd(n,m)).
 $$
 
-Therefore, 
+Let $$(n/\gcd(n, m))^{-1} = a$$. Therefore, 
 
 $$
-k = 0, {m\over \gcd(n,m)}, {2m\over \gcd(n,m)}, \cdots, {(\gcd(n,m)-1)m\over \gcd(n,m)},
+k = a, a+{m\over \gcd(n,m)}, a+{2m\over \gcd(n,m)}, \cdots, a+{(\gcd(n,m)-1)m\over \gcd(n,m)},
 $$
 
 which means that there are **$$\gcd(n, m)$$ homomorphisms**.
@@ -181,7 +181,7 @@ One-to-one 本來就會使 $$\text{ker}(\psi) = \{e\}$$；而當 $$\text{ker}(\p
 
 **Proof of the theorem** 
 
-We first show that $$aH \subseteq \psi^{-1}(\{\psi(a)\})$$: Let $$x=ah\in H$$. Since $$\psi$$ is a homomorphism, we ahve $$\psi(x) = \psi(a)\psi(h) = \psi(a)e' = \psi(a)$$. Therefore, $$x \in \psi^{-1}(\{\psi(a)\})$$.
+We first show that $$aH \subseteq \psi^{-1}(\{\psi(a)\})$$: Let $$x=ah\in aH$$. Since $$\psi$$ is a homomorphism, we ahve $$\psi(x) = \psi(a)\psi(h) = \psi(a)e' = \psi(a)$$. Therefore, $$x \in \psi^{-1}(\{\psi(a)\})$$.
 
 Then, we are to show that $$\psi^{-1}(\{\psi(a)\}) \subseteq aH$$ : Suppose that $$x \in \psi^{-1}(\{\psi(a)\})$$. We have $$\psi(x) = \psi(a)$$, and thus $$\psi(a)^{-1}\psi(x) = e'$$. Then $$\psi(a^{-1})\psi(x) = \psi(a^{-1}x) = e'$$, which implies that $$a^{-1}x \in H$$. We see that $$x \in aH$$.
 
@@ -207,7 +207,25 @@ Let $$\psi: \mathbb{Z} \to \mathbb{Z}_n $$ defined by $$\psi(a) = \bar a$$; then
 
 看到 $$gH=Hg$$，我們可能會想到 abelian group：$$gx = xg$$；事實上，*being normal* 是比 *being abelian* 弱的性質，因為 abelian 要求一一對應，而 normal 只需要「整個集合」一樣就好了（像是 $$g_1H = Hg_2$$）。
 
-另外，檢查一 subgroup $$H$$ 是否 normal 只需看原 group 的 generator(s) 就好，因對於所有 $$h\in H$$，$$h$$ 都可以用 generator(s) 來表示：如果 generator(s) 可以在 $$H$$ 左右移動，則任意 $$h$$ 拆成 generator(s) 之後也必可以在 $$H$$ 左右移動。
+另外，檢查一 subgroup $$H$$ 是否 normal 只需看 group  $$G$$ 和 subgroup $$H$$ 的 generator(s) 就好，因對於所有 $$g\in G$$，$$g$$ 都可以用 generator(s) 來表示：如果 generator(s) 可以在 $$H$$ 左右移動，則任意 $$h$$ 拆成 generator(s) 之後也必可以在 $$H$$ 左右移動；演示如下：
+
+If $$G = \langle g_1, \cdots,g_n\rangle$$, and let $$g = g_1^{k_1}\cdots g_n^{k_n}$$. Then
+
+$$
+\begin{align*}
+(g_1^{k_1}\cdots g_n^{k_n})h(g_1^{k_1}\cdots g_n^{k_n})^{-1} &= (g_1^{k_1}\cdots g_n^{k_n})h(g_n^{k_n})^{-1}\cdots(g_1^{k_1})^{-1} \\
+&= (g_1^{k_1}\cdots g_{n-1}^{k_{n-1}})h'(g_{n-1}^{k_{n-1}})^{-1}\cdots(g_1^{k_1})^{-1} \\
+&= \cdots \in H.
+\end{align*} 
+$$
+
+If $$H = \langle h_1,\cdots, h_m\rangle$$, and let $$h = h_1^{i_1}\cdotsh__m^{i_m}$$. Then
+
+$$
+\begin{align*}
+g(h_1^{i_1}\cdots h_m^{i_m})g^{-1} = (gh_1^{i_1}g^{-1})\cdots(gh_m^{i_m}g^{-1}) \in H.
+\end{align*}
+$$
 
 > 非常好用！尤其在處理 [permutaiton group](../9-Groups-of-Permutation/#theorem-generator) 的時候。
 

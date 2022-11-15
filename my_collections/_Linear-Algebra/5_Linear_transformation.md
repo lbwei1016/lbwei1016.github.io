@@ -65,6 +65,8 @@ T\begin{pmatrix}
 
 此處 $$A$$ 稱作 the **standard matrix** for $$T$$。從本 theorem 也可以看出，*matrix transformation 和 linear transformation 是等價的*。
 
+> 見 [Rings and Fields](../../Abstract-Algebra/J-rings-and-fields/#example-rm-ii-1)。
+
 ---
 
 ## Find the Standard Matrix for $$T$$
