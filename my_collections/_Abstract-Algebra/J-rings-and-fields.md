@@ -51,7 +51,7 @@ $$
 
 - By convention we set $$0 \cdot a = 0_R$$, where the $$0$$ on the left-hand side is the integer $$0$$, while $$0_R$$ on the right is the **additive identity** element of $$R$$.
 
-- A ring with a multiplicative identity is a **ring with unity**.
+- A ring with a multiplicative identity $$1_R$$ is a **ring with unity**.
 
 ---
 
@@ -72,6 +72,15 @@ A *commutative division ring* is a **field**.
 
 1. multiplicative **identity** element and **inverse(s)** are both **unique**.
 2. For a ring $$R$$ with unity, the set of units forms a multiplicative group, denoted by $$R^{\times}$$, called **the group of units**.
+
+What if $$1_R = 0_R$$? If that is the case, let $$1_R=0_R=e$$. For any $$a\in R$$, we have 
+
+$$
+a + e = a\cdot e = a, \\
+a = a\cdot e = a(e-e) = e.
+$$
+
+Thus $$R = \{e\}$$, which is trivial.
 
 ---
 
