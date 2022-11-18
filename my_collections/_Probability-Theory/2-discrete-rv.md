@@ -118,6 +118,14 @@ $$E(XY) = E(X)E(Y). \tag{2}$$
 
 $$E(\alpha X + \beta) = \alpha E(X) + \beta。 \tag{3}$$
 
+還有還有，
+
+$$
+E[X] = \sum_{x=1}^n xP(X=x) = \sum_{x=1}^nP(X\ge x).
+$$
+
+> 這是在分析演算法時遇到的。
+
 ---
 
 ## Variance

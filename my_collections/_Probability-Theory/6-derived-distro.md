@@ -86,6 +86,8 @@ $$
 
 如果 $$X$$ 和 $$Y$$ 都是 *normal r.v.*，則 $$Z$$ 也是 *normal*。（代入即可證明）
 
+> 見 [tranforms](../7-transform)。
+
 ---
 
 ## Reference
