@@ -123,7 +123,7 @@ $$
 \phi_a(f(x)) = f(a).
 $$
 
-Then $$\phi_a$$ is an **evalutation homomorphism**.
+Then $$\phi_a$$ is an [evalutation homomorphism](../M-rings-of-polynomials/#evaluation-homomorphism).
 
 For $$a=\sqrt{2}$$, we have
 
@@ -132,6 +132,8 @@ $$
 $$
 
 which is a **subring** of $$\mathbb{R}$$.
+
+> $$\mathbb{Q}[\sqrt{2}]$$ 不再是多項式的集合，而是數值的集合。
 
 ---
 
