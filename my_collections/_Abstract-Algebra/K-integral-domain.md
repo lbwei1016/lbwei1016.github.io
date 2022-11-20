@@ -16,6 +16,7 @@ time: 2022/11/15
     - [Remark](#remark)
 - [Definition (integral domain)](#definition-integral-domain)
   - [Reamrk](#reamrk)
+  - [Theorem (subrings with unity of a field)](#theorem-subrings-with-unity-of-a-field)
   - [Theorem (fields are integral domain)](#theorem-fields-are-integral-domain)
   - [Theorem (finite integral domains are fields)](#theorem-finite-integral-domains-are-fields)
     - [Corollary ($$\mathbb{Z}_p$$ is a field)](#corollary-mathbbz_p-is-a-field)
@@ -80,6 +81,9 @@ $$(\Leftarrow)$$ Assume that $$R$$ has no zero divisors. If $$ab=ac$$ and $$a\no
 - The direct product $$R\times S$$ of two nonzero rings $$R$$ and $$S$$ is never an integral domain since $$(r,0)(0,s)=(0,0) $$ for all $$r\in R$$ and $$ s\in S$$.
 
 > 第二項 remark 說明了，我們難以用 direct product 的方式建構出性質良好的 ring，不像 [groups](../G-Finitely-Generated-Abelian-Groups)。
+
+### Theorem (subrings with unity of a field)
+> *Every* **subring** $$R$$ of a field containing the **unity** is an integral domain.
 
 ### Theorem (fields are integral domain)
 > *Every* field $$F$$ is an integral domain.
@@ -167,4 +171,4 @@ which can be shown to be an isomorphism.
 應該將 $$\mathbb{Z}_n$$ 視為 quotient ring $$\mathbb{Z}/n\mathbb{Z}$$。因此，當 $$n=0$$，$$\mathbb{Z}/0\mathbb{Z} \cong \mathbb{Z}$$。這就是將 characteristic 定義為 $$0$$ 而非 **infinity** 的原因之一。
 
 #### Corollary (subring)
-> *Every* ring with **unity** contains $$\mathbb{Z}$$ or $$\mathbb{Z}_n$$ is a **subring**.
+> *Every* ring with **unity** contains $$\mathbb{Z}$$ or $$\mathbb{Z}_n$$ as its **subring**.

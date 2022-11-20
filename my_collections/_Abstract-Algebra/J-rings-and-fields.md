@@ -131,7 +131,7 @@ $$
 \mathbb{Q}[\sqrt{2}] := \phi_{\sqrt{2}}(\mathbb{Q}[x]) = \{f(\sqrt{2})\vert f[x]\in\mathbb{Q}[x] \},
 $$
 
-which is a **subring** of $$\mathbb{R}$$.
+which is a **subring** of $$R$$.
 
 > $$\mathbb{Q}[\sqrt{2}]$$ 不再是多項式的集合，而是數值的集合。
 
