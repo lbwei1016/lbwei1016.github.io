@@ -10,7 +10,8 @@ time: 2022/11/20
 - [Definition (polynomial)](#definition-polynomial)
 - [Theorem (operation)](#theorem-operation)
   - [Corollary (integral domain)](#corollary-integral-domain)
-    - [Proof](#proof)
+    - [Proof $$\rm I$$](#proof-rm-i)
+    - [Proof $$\rm II$$](#proof-rm-ii)
   - [Remark $$\rm I$$](#remark-rm-i)
   - [Remark $$\rm II$$](#remark-rm-ii)
   - [Remark $$\rm III$$](#remark-rm-iii)
@@ -21,6 +22,8 @@ time: 2022/11/20
   - [Ring Extension (finitely generated commutative ring)](#ring-extension-finitely-generated-commutative-ring)
   - [Zeros of a Polynomial](#zeros-of-a-polynomial)
     - [Definition (zeros)](#definition-zeros)
+- [Division Algorithm of Polynomials](#division-algorithm-of-polynomials)
+  - [Theorem (division algorithm for $$F[x]$$)](#theorem-division-algorithm-for-fx)
 
 ---
 
@@ -54,7 +57,7 @@ $$
 ### Corollary (integral domain)
 > If $$D$$ is an integral domain, then so is $$D[x]$$.
 
-#### Proof
+#### Proof $$\rm I$$
 
 For two polynomials $$f(x),g(x)\in D$$, if $$f(x)g(x) = 0$$, then
 
@@ -79,6 +82,20 @@ S_{i+j} = a_ib_j = 0.
 $$
 
 However, this violates the fact that $$D$$ is an integral domain since both $$a_i$$ and $$b_j$$ are in $$D$$. This contradiction means that either $$f$$ or $$g$$ is zero, i.e. $$D[x]$$ is an integral domain. ◼
+
+#### Proof $$\rm II$$
+
+First define that the degree of the zero polynomial is $$-\infty$$. 
+
+Suppose $$\deg f(x)=n$$ and $$\deg g(x)=m$$. Then by [this theorem](#theorem-degree), we have
+
+$$
+\deg f(x)g(x) = \deg f(x) + \deg g(x),
+$$
+
+which holds even for the zero polynomial.
+
+Now we can see that $$f(x)g(x)$$ is the zero polynomial only if at least one of them is the zero polynomial. Thus the statement holds. ◼
 
 ### Remark $$\rm I$$
 
@@ -105,7 +122,7 @@ The addition and multiplication defined above still work well for polynomials of
 For $$f(x), g(x)\in\mathbb{R}[x]$$, we have
 
 $$
-\text{deg}f(x)g(x) = \text{deg}f(x) + \text{deg}g(x);
+\deg f(x)g(x) = \deg f(x) + \deg g(x);
 $$
 
 however when $$R = \mathbb{Z}_4$$, the above equation is not necessarily valid. 
@@ -114,14 +131,14 @@ however when $$R = \mathbb{Z}_4$$, the above equation is not necessarily valid.
 > If $$R$$ is an integral domain, then 
 
 $$
-\text{deg}f(x)g(x) = \text{deg}f(x) + \text{deg}g(x)
+\deg f(x)g(x) = \deg f(x) + \deg g(x)
 $$
 
 > for all $$f(x), g(x)\in R[x]$$.
 
 **Proof**
 
-Suppose $$\text{deg}f(x) = n$$ and $$\text{deg}g(x) = m$$. This means that $$a_n\not=0$$ and $$b_m\not=0$$, where $$a_n$$ and $$b_n$$ are the coefficients of $$f(x)$$ and $$g(x)$$, respectively. Since $$R$$ is an integral domain, $$a_nb_m \not=0$$, and thus the equation holds. ◼
+Suppose $$\deg f(x) = n$$ and $$\deg g(x) = m$$. This means that $$a_n\not=0$$ and $$b_m\not=0$$, where $$a_n$$ and $$b_n$$ are the coefficients of $$f(x)$$ and $$g(x)$$, respectively. Since $$R$$ is an integral domain, $$a_nb_m \not=0$$, and thus the equation holds. ◼
 
 ---
 
@@ -146,6 +163,16 @@ $$
 
 > 為什麼 $$R$$ 要是 $$R'$$ 的 subring？因為這樣 $$a_0+a_1\alpha +\cdots+a_n\alpha^n$$ 才保證在 $$R'$$ 中。
 
+**Example**
+
+Let $$R'$$ be a commutative ring with unity and characteristic $$n$$, and let $$R = \mathbb{Z}_n \cong \langle 1_{R'} \rangle$$. Then
+
+$$
+\mathbb{Z}_n/\text{ker}\phi_\alpha \cong \langle 1_{R'}, \alpha \rangle.
+$$
+
+> 見[此](../K-integral-domain/#theorem-subring-generated-by-the-unity)。
+
 ### Ring Extension (finitely generated commutative ring)
 
 One can regard $$R[\alpha]$$ as an *extension* of $$R$$ by plugging in an element $$\alpha$$ from a larger ring $$R'$$. Then the above result just shows that *every ring extension of $$R$$ by a single element* is isomorphic to $$R[x]/I$$ for some ideal $$I$$ of $$R[x]$$. In general, a **finitely generated commutative ring** with unity and characteristic $$n$$ is isomorphic to
@@ -164,3 +191,12 @@ where $$I$$ is an ideal of $$\mathbb{Z}_n[x_1,\cdots,x_m]$$.
 **Example**
 
 Let $$F=\mathbb{Q}, E=\mathbb{R}$$ and $$f(x)=x^2-2$$. Then $$\pm\sqrt{2}$$ are zeros of $$f(x)$$ in $$\mathbb{R}$$.
+
+--- 
+
+## Division Algorithm of Polynomials
+### Theorem (division algorithm for $$F[x]$$)
+> Let $$F$$ be a field, and $$f(x)$$ and $$g(x)$$ be polynomials in $$F[x]$$. Suppose that $$g(x)$$ is not the zero polynomial. Then there exist unique polynomials $$q(x)$$ and $$r(x)$$ such that 
+> 
+>1. $$f(x) = g(x)q(x) + r(x)$$,
+>2. $$r(x)=0$$, or $$\deg  r(x) < \deg  g(x)$$.
