@@ -7,7 +7,7 @@ time: 2022/11/15
 ---
 
 **Table of Content**
-- [Preface](#preface)
+- [Motivation](#motivation)
 - [Definition (zero divisor)](#definition-zero-divisor)
   - [Example](#example)
   - [Theorem (zero divisors of $$\mathbb{Z}_n$$)](#theorem-zero-divisors-of-mathbbz_n)
@@ -28,7 +28,7 @@ time: 2022/11/15
 
 ---
 
-## Preface
+## Motivation
 > Do $$ab=0$$ always imply $$a=0$$ or $$b=0$$? 
 
 ## Definition (zero divisor)
@@ -167,4 +167,4 @@ which can be shown to be an isomorphism.
 應該將 $$\mathbb{Z}_n$$ 視為 quotient ring $$\mathbb{Z}/n\mathbb{Z}$$。因此，當 $$n=0$$，$$\mathbb{Z}/0\mathbb{Z} \cong \mathbb{Z}$$。這就是將 characteristic 定義為 $$0$$ 而非 **infinity** 的原因之一。
 
 #### Corollary (subring)
-> *Every* ring with **unity** contains $$\mathbb{Z}$$ or $$\mathbb{Z}_n$$ as a **subring**.
+> *Every* ring with **unity** contains $$\mathbb{Z}$$ or $$\mathbb{Z}_n$$ is a **subring**.
