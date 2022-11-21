@@ -34,6 +34,8 @@ time: 2022/11/03
 > - Multiplication is associative.
 > - For all $$a,b,c\in R$$, the **left distributive law** $$a\cdot(b+c) = (a\cdot b)+(a\cdot c)$$ and the **right distributive law** $$(a+b)\cdot c = (a\cdot c) + (b\cdot c)$$ hold. 
 
+> Ring 可以**沒有**乘法單位元素（unity）！如果有，叫 *a ring with unity*。
+
 ### Examples
 
 - $$\mathbb{Z}_n$$ is a ring with $$\bar a + \bar b = \overline{a+b}$$ and $$\bar a \cdot \bar b = \overline{a\cdot b} $$.
@@ -86,7 +88,13 @@ Thus $$R = \{e\}$$, which is trivial.
 
 ## Subrings and Subfields
 
-> 可從 [subgroup](../7-Subgroups) 的定義延伸，但是 denoted by $$S < R$$（$$S$$ 是 $$R$$ 的 subring/subfield）。
+Let $$R$$ be a ring. A subset $$S$$ of $$R$$ is a subring of $$R$$ if
+
+1. $$S$$ is closed under $$+_R$$ and $$\times_R$$,
+2. for $$a$$ in $$S$$, $$-a$$ is also in $$S$$,
+3. $$0\in S$$, (or equivalently, $$S$$ is non-empty)
+
+which is denoted by $$S<R$$.
 
 ---
 
