@@ -84,7 +84,7 @@ $$
 
 > 這是 [**convolution**](../../Concrete-Math/Generating-Functions/#multiplication)！
 
-如果 $$X$$ 和 $$Y$$ 都是 *normal r.v.*，則 $$Z$$ 也是 *normal*。（代入即可證明）
+如果 $$X$$ 和 $$Y$$ 都是 *normal r.v.*，則 $$Z$$ 也是 *normal*（代入即可證明），而且 $$Z\sim N(\mu_x+\mu_y, \sigma_x^2 + \sigma_y^2)$$。
 
 > 見 [tranforms](../7-transform)。
 

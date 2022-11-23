@@ -15,7 +15,10 @@ time: 2022/10/15
     - [Law of iterated expectations](#law-of-iterated-expectations)
   - [Conditional variance as a r.v.](#conditional-variance-as-a-rv)
     - [Law of total variance](#law-of-total-variance)
-  - [Problem](#problem)
+- [Problems](#problems)
+  - [Rat in a maze](#rat-in-a-maze)
+  - [Professor and Student](#professor-and-student)
+    - [Remark](#remark)
 - [Reference](#reference)
 
 ---
@@ -148,7 +151,10 @@ $$
 
 > 區間指的是每個 $$Y=y$$。
 
-### Problem
+---
+
+## Problems
+### Rat in a maze
 > A rat in a maze has only two paths to go. If the rat goes right, it will return to the starting point after $$3$$ minutes. If the rat goes left, there is a $$2\over 3$$ chance of returning to the starting point after $$5$$ minutes, and a $$1\over 3$$ chance of exiting the maze after $$2$$ minutes. Find the average time that the rat is in the maze if the probability of the rat going left and right is equal.
 
 **Solution**
@@ -176,6 +182,66 @@ $$
 E[E(T|X)] = {1\over 2}(3+E(T)) + {1\over 2}({2\over 3}(5 + E(T)) + {1\over 3}\cdot 2) = E(T), \\
 \therefore E(T) = 21.
 $$
+
+### Professor and Student
+> Introduction to Probability, 2nd, by Dimitri P. Bertsekas and John N. Tsitsiklis. **Problem 4.24 (p.251, 252)**.
+
+**Solution**
+
+Let $$T$$ be the amount of time the professor will spend with the student, and $$F$$ be the event that the student finds the professor. Then 
+
+$$
+E[T] = P(F)E[T\vert F] + P(F^c)E[T\vert F^c]. \tag{1}
+$$
+
+We then need to find out $$P(F)$$. Let
+
+$$
+\begin{align*}
+W &= \text{ length of time between 9 a.m. and arrival of the Ph.D. student (uniformly distributed);} \\
+X &= \text{ amount of time the professor devotes to his task (exponentially distributed);} \\
+Y &= \text{ length of time between 9 a.m. and arrival of the professor(uniformly distributed).} 
+\end{align*}
+$$
+
+We have
+
+$$
+P(F) = P(Y\le W\le X+Y).
+$$
+
+We konw that $$W$$ can be between $$0$$ and $$8$$, but $$X+Y$$ can be **arbitrarily large**. That is to say, we may overestimate $$P(W\le X+Y)$$. Hence we should write
+
+$$
+P(Y\le W\le X+Y) = 1 - \Big(P(W<Y) + P(W > X+Y) \Big).
+$$
+
+We have 
+
+$$
+\begin{align*}
+P(W < Y=y) &= F_W(y) = \int_0^{y}f_W(w)dw. \\
+P(W < Y) &= \int^4_0 f_Y(y) F_W(y) dy. \tag{2}
+\end{align*}
+$$
+
+> $$Y$$ is uniformly distributed between $$0$$ and $$4$$.
+
+#### Remark
+
+記錄這題的重點有二：
+
+1. 善用 **total expectation theorem**；不只在大量 summation。
+2. **隨機變數間直接比較**的計算方法。一般化如下：
+
+$$
+\begin{align*}
+  P(X<Y) &= \int_Y F_X(y)f_Y(y)dy \\
+  &= \int_Y \Big(\int_{-\infty}^y f_X(x)dx\Big)f_Y(y)dy \\
+  &= \int_Y\int_{-\infty}^y f_X(x)f_Y(y)dxdy 
+\end{align*}
+$$
+
 
 ---
 
