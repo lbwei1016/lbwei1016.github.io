@@ -2,11 +2,19 @@
 layout: page
 title: Zeros of Polynomials
 usemathjax: true
-tag: Abstract Algebra, Ring, Field
+tag: Abstract Algebra, Polynomial, Field
 time: 2022/11/20
 ---
 
 **Table of Content**
+- [Theorem (zero and factor)](#theorem-zero-and-factor)
+  - [Corollary (distinct zeros)](#corollary-distinct-zeros)
+  - [Corollary (the multiplicative group of a field)](#corollary-the-multiplicative-group-of-a-field)
+- [Irreducible Polynomials](#irreducible-polynomials)
+  - [Definition (irreducible polynomials)](#definition-irreducible-polynomials)
+    - [Remarks](#remarks)
+  - [Theorem (degree $$2$$ or $$3$$)](#theorem-degree-2-or-3)
+
 
 ---
 
@@ -41,3 +49,29 @@ Note that $$G$$ contains a subgroup $$H$$ isomorphic to $$\mathbb{Z}_{p_1}\times
 Therefore, all $$p_i$$ are distinct and by [this theorem](../G-Finitely-Generated-Abelian-Groups/#theorem-cyclic-abelian-groups), $$G$$ is cyclic.
 
 > $$p^2$$ 個解哪裡來？例如 $$x=(a,b,1,\cdots,1)$$，而 $$a$$ 和 $$b$$ 各有 $$p$$ 種選擇使 $$x^p = 1$$。
+
+---
+
+## Irreducible Polynomials
+### Definition (irreducible polynomials)
+> A *nonconstant* polynomial $$f(x) \in \mathbb{F}[x]$$ is **irreducible over $$\mathbb{F}$$** or is an **irreducible polynomial in $$\mathbb{F}[x]$$** if $$f(x)$$ cannot be expressed as a product $$g(x)h(x)$$ of two polynoials in $$\mathbb{F}[x]$$ with $$0< \deg{g(x)},\deg{h(x)} < \deg{f(x)}$$ simultaneously.
+>
+> If a polynomial $$f(x)\in\mathbb{F}[x]$$ is *nonconstant* and is not irreducible over $$\mathbb{F}$$, then it is reducible over $$\mathbb{F}$$.
+
+**Examples**
+
+- $$x^2+1$$ is irreducible over $$\mathbb{R}$$.
+- $$x^2+1$$ is **reducible** over $$\mathbb{C}$$.
+
+> 是否 reducible 端視 over 哪個 field！
+
+#### Remarks
+
+The definition of irreducible polynomials can also be given as 
+
+> $$f(x)$$ is irreducible over $$\mathbb{F}$$ if for any factorization $$f(x)=g(x)h(x)$$ in $$\mathbb{F}[x]$$, one of $$g(x)$$ and $$h(x)$$ is a **unit**.
+
+> 因為 $$g$$ 或 $$h$$ 其中必有一 constant polynomial，而  $$\mathbb{F}[x]$$ 中只有 constants 是 unit。
+
+### Theorem (degree $$2$$ or $$3$$)
+> Suppose that $$f(x)\in\mathbb{F}[x]$$ is of degree $$2$$ or $$3$$. Then $$f(x)$$ is rducible over $$\mathbb{F}$$ iff $$f(x)$$ has a zero in $$\mathbb{F}$$.

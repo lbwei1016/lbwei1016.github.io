@@ -2,7 +2,7 @@
 layout: page
 title: Rings of Polynomials
 usemathjax: true
-tag: Abstract Algebra, Ring, Field
+tag: Abstract Algebra, Polynomial, Field
 time: 2022/11/20
 ---
 
@@ -10,12 +10,12 @@ time: 2022/11/20
 - [Definition (polynomial)](#definition-polynomial)
 - [Theorem (operation)](#theorem-operation)
   - [Corollary (integral domain)](#corollary-integral-domain)
-    - [Proof $$\rm I$$](#proof-rm-i)
-    - [Proof $$\rm II$$](#proof-rm-ii)
-  - [Remark $$\rm I$$](#remark-rm-i)
-  - [Remark $$\rm II$$](#remark-rm-ii)
-  - [Remark $$\rm III$$](#remark-rm-iii)
-  - [Remark $$\rm IV$$](#remark-rm-iv)
+    - [Proof $$\\rm I$$](#proof-rm-i)
+    - [Proof $$\\rm II$$](#proof-rm-ii)
+  - [Remark $$\\rm I$$](#remark-rm-i)
+  - [Remark $$\\rm II$$](#remark-rm-ii)
+  - [Remark $$\\rm III$$](#remark-rm-iii)
+  - [Remark $$\\rm IV$$](#remark-rm-iv)
     - [Theorem (degree)](#theorem-degree)
 - [Theorem (First Ring Isomorphism Theorem)](#theorem-first-ring-isomorphism-theorem)
   - [Evaluation Homomorphism](#evaluation-homomorphism)
@@ -23,7 +23,7 @@ time: 2022/11/20
   - [Zeros of a Polynomial](#zeros-of-a-polynomial)
     - [Definition (zeros)](#definition-zeros)
 - [Division Algorithm of Polynomials](#division-algorithm-of-polynomials)
-  - [Theorem (division algorithm for $$F[x]$$)](#theorem-division-algorithm-for-fx)
+  - [Theorem (division algorithm for $$F\[x\]$$)](#theorem-division-algorithm-for-fx)
 
 ---
 
