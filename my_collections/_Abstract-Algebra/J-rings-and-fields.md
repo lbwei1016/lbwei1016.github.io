@@ -18,12 +18,12 @@ time: 2022/11/03
 - [Homomorphism](#homomorphism)
   - [Definition (homomorphism)](#definition-homomorphism)
   - [Theorem (subring)](#theorem-subring)
-    - [Example $$\rm I$$](#example-rm-i)
-    - [Example $$\rm II$$](#example-rm-ii)
+    - [Example $$I$$](#example-i)
+    - [Example $$II$$](#example-ii)
 - [Isomorphism](#isomorphism)
-  - [Example $$\rm I$$](#example-rm-i-1)
-  - [Example $$\rm II$$](#example-rm-ii-1)
-  - [Example $$\rm III$$](#example-rm-iii)
+  - [Example $$I$$](#example-i-1)
+  - [Example $$II$$](#example-ii-1)
+  - [Example $$III$$](#example-iii)
 
 ---
 
@@ -92,9 +92,11 @@ Let $$R$$ be a ring. A subset $$S$$ of $$R$$ is a subring of $$R$$ if
 
 1. $$S$$ is closed under $$+_R$$ and $$\times_R$$,
 2. for $$a$$ in $$S$$, $$-a$$ is also in $$S$$,
-3. $$0\in S$$, (or equivalently, $$S$$ is non-empty)
+3. $$0_R\in S$$, (or equivalently, $$S$$ is non-empty)
 
 which is denoted by $$S<R$$.
+
+> 可以先說明 the additive identity of $$R$$ is ...（例如零矩陣 $$O$$），再說明 $$O$$ 在 $$S$$ 中。
 
 ---
 
@@ -117,13 +119,13 @@ $$\text{ker}(\phi) = \{a\in R\vert \phi(a) = 0\}.$$
 ### Theorem (subring)
 > Let $$\phi: R\to R'$$ be a ring homomorphism. Then $$\phi(R)$$ is a **subring** of $$R'$$.
 
-#### Example $$\rm I$$
+#### Example $$I$$
 
 The function $$\phi: \mathbb{Z}\to \mathbb{Z}_n$$ defined by $$\phi(a) = \bar a$$ is a ring homomorphism.
 
 > 加法和乘法都要檢查！
 
-#### Example $$\rm II$$
+#### Example $$II$$
 
 Let $$R = \mathbb{Q}[x]$$ be *the set of all polynimails* over $$\mathbb{Q}$$. Given $$a\in \mathbb{R}$$, define $$\phi_a:\mathbb{Q}[x]\to \mathbb{R} $$ by
 
@@ -152,7 +154,7 @@ which is a **subring** of $$R$$.
 2. one-to-one
 3. onto
 
-### Example $$\rm I$$
+### Example $$I$$
 
 $$
 \rho: \mathbb{Z}_{mn} \to \mathbb{Z}_n\times \mathbb{Z}_m
@@ -160,7 +162,7 @@ $$
 
 given by $$\rho(\bar a) = (\bar a, \bar a)$$ is a **group isomorphism** and is also a **ring isomorphism**.
 
-### Example $$\rm II$$
+### Example $$II$$
 
 Let $$\alpha$$ be a basis of $$n$$-dimensional vector space $$V$$ over $$F$$. Then the matrix representation $$\text{Rep}_\alpha:\text{End}(V) \to M_n(F) $$ is a ring isomorphism.
 
@@ -168,7 +170,7 @@ Let $$\alpha$$ be a basis of $$n$$-dimensional vector space $$V$$ over $$F$$. Th
 
 > 任意 linear trans. 都可以用矩陣表示！
 
-### Example $$\rm III$$
+### Example $$III$$
 
 Regard $$\mathbb{C}$$ as a vector space over $$\mathbb{R}$$ with the basis $$\alpha = \{1, i\}$$. Consider the map 
 
