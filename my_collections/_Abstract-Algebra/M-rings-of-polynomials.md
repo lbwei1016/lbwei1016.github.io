@@ -10,12 +10,12 @@ time: 2022/11/20
 - [Definition (polynomial)](#definition-polynomial)
 - [Theorem (operation)](#theorem-operation)
   - [Corollary (integral domain)](#corollary-integral-domain)
-    - [Proof $$\\rm I$$](#proof-rm-i)
-    - [Proof $$\\rm II$$](#proof-rm-ii)
-  - [Remark $$\\rm I$$](#remark-rm-i)
-  - [Remark $$\\rm II$$](#remark-rm-ii)
-  - [Remark $$\\rm III$$](#remark-rm-iii)
-  - [Remark $$\\rm IV$$](#remark-rm-iv)
+    - [Proof A](#proof-a)
+    - [Proof B](#proof-b)
+  - [Remark A](#remark-a)
+  - [Remark B](#remark-b)
+  - [Remark C](#remark-c)
+  - [Remark D](#remark-d)
     - [Theorem (degree)](#theorem-degree)
 - [Theorem (First Ring Isomorphism Theorem)](#theorem-first-ring-isomorphism-theorem)
   - [Evaluation Homomorphism](#evaluation-homomorphism)
@@ -23,7 +23,7 @@ time: 2022/11/20
   - [Zeros of a Polynomial](#zeros-of-a-polynomial)
     - [Definition (zeros)](#definition-zeros)
 - [Division Algorithm of Polynomials](#division-algorithm-of-polynomials)
-  - [Theorem (division algorithm for $$F\[x\]$$)](#theorem-division-algorithm-for-fx)
+  - [Theorem (division algorithm)](#theorem-division-algorithm)
 
 ---
 
@@ -57,7 +57,7 @@ $$
 ### Corollary (integral domain)
 > If $$D$$ is an integral domain, then so is $$D[x]$$.
 
-#### Proof $$\rm I$$
+#### Proof A
 
 For two polynomials $$f(x),g(x)\in D$$, if $$f(x)g(x) = 0$$, then
 
@@ -83,7 +83,7 @@ $$
 
 However, this violates the fact that $$D$$ is an integral domain since both $$a_i$$ and $$b_j$$ are in $$D$$. This contradiction means that either $$f$$ or $$g$$ is zero, i.e. $$D[x]$$ is an integral domain. ◼
 
-#### Proof $$\rm II$$
+#### Proof B
 
 First define that the degree of the zero polynomial is $$-\infty$$. 
 
@@ -97,7 +97,7 @@ which holds even for the zero polynomial.
 
 Now we can see that $$f(x)g(x)$$ is the zero polynomial only if at least one of them is the zero polynomial. Thus the statement holds. ◼
 
-### Remark $$\rm I$$
+### Remark A
 
 The ring $$R[x_1,\cdots,x_n]$$ of polynomials in $$n$$ indetreminates over $$R$$ can be defined as:
 
@@ -107,17 +107,17 @@ $$
 f(x_1,\cdots x_n) = \sum_{i \ge 0}a_i\Big(\sum_{d_1+\cdots+d_n=i}x_1^{d_1}\cdots x_n^{d_n} \Big).
 $$
 
-### Remark $$\rm II$$
+### Remark B
 
 Let $$F$$ be a field. The set $$F[x]$$ is not a field since the inverse of $$x$$, $$1/x$$, is not in $$F[x]$$. On the other hand, we can construct a field containing $$F[x]$$ as a subdomain: The [field of quotients](../L-fields-of-quotients) of $$F[x]$$ is $$F(x) = \{f(x)/g(x): f(x),g(x)\in F[x], g(x)\not=0 \}$$, called the **field of rational functions** in $$x$$ over $$F$$.
 
 > 注意 notation！$$F(x)$$ 是 field，而 $$F[x]$$ 只是 integral domain（因為 $$F$$ 是 integral domain；by [theorem](../K-integral-domain/#theorem-fields-are-integral-domain) and [corollary](#corollary-integral-domain)）。
 
-### Remark $$\rm III$$
+### Remark C
 
 The addition and multiplication defined above still work well for polynomials of **infinite degree**, which are called **formal power series**.
 
-### Remark $$\rm IV$$
+### Remark D
 
 For $$f(x), g(x)\in\mathbb{R}[x]$$, we have
 
@@ -195,7 +195,7 @@ Let $$F=\mathbb{Q}, E=\mathbb{R}$$ and $$f(x)=x^2-2$$. Then $$\pm\sqrt{2}$$ are 
 --- 
 
 ## Division Algorithm of Polynomials
-### Theorem (division algorithm for $$F[x]$$)
+### Theorem (division algorithm)
 > Let $$F$$ be a field, and $$f(x)$$ and $$g(x)$$ be polynomials in $$F[x]$$. Suppose that $$g(x)$$ is not the zero polynomial. Then there exist unique polynomials $$q(x)$$ and $$r(x)$$ such that 
 > 
 >1. $$f(x) = g(x)q(x) + r(x)$$,

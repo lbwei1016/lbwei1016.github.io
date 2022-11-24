@@ -7,7 +7,12 @@ time: 2022/11/24
 ---
 
 **Table of Content**
-
+- [Definition (content)](#definition-content)
+  - [Theorem (product of primitive)](#theorem-product-of-primitive)
+- [Gauss's Lemma](#gausss-lemma)
+  - [Theorem (Gauss's Lemma)](#theorem-gausss-lemma)
+  - [Corollary (irreducible)](#corollary-irreducible)
+  - [Corollary (zero format)](#corollary-zero-format)
 
 ---
 
@@ -21,4 +26,38 @@ time: 2022/11/24
 
 **Proof**
 
-> 代補
+Suppose not, let $$p$$ be a prime factor of $$\text{Con}(fg)$$. Then every coefficient of $$f(x)g(x)$$  must be congruent to zero modulo $$p$$. In other words, $$\bar{f}(x)\bar{g}(x)$$ is equal to zero in $$\mathbb{Z}_p[x]$$. 
+
+On the other hand, since $$\text{Con}(f) = \text{Con}(g) = 1$$, there are some coefficients of $$f(x)$$ and $$g(x)$$ not divided by $$p$$. In other words, $$\bar{f}(x)$$ and $$\bar{g}(x)$$ are both not equal to zero in $$\mathbb{Z}_p[x]$$. Therefore, $$\bar{f}(x)$$ and $$\bar{g}(x)$$ are zero divisors of $$\mathbb{Z}_p[x]$$, which is a contradiction, since the polynomial ring over an integral domain is still an integral domain. ◼
+
+---
+
+## Gauss's Lemma
+### Theorem (Gauss's Lemma)
+> Let $$f(x)$$ be a nonzero **primitive** integer polynomial. If $$f(x) = g(x)h(x) $$ for some $$g(x)$$ and $$h(x)$$ in $$\mathbb{Q}[x]$$, then there exist some $$a\in \mathbb{Q}^\times$$ such that $$\tilde{g}(x)=ag(x) $$ and $$\tilde{h}(x) = a^{-1}h(x) $$ are integer polynomials. Especially, $$f(x)$$ can be **factorized over $$\mathbb{Z}[x]$$** as a product of $$\tilde{f}(x)$$ and $$\tilde{g}(x)$$.
+
+> 只要把 $$f(x)$$ 的係數的公因數提出來，$$f(x)$$ 就變成 primitive 了。
+
+**Proof**
+
+Suppose $$f(x)=g(x)h(x)$$. Let $$a$$ and $$b$$ be the rational numbers such that $$\tilde{g}(x)=ag(x)$$ and $$\tilde{h}(x)=bh(x)$$ are primitive integer polynomials. It remains to show that $$ab=1$$. Write $$ab=r/s$$, where $$r$$ and $$s$$ are coprime integers. Then
+
+$$
+f(x) = {1\over a}\tilde{g}(x)\cdot {1\over b}\tilde{h}(x) = {s\over r}\tilde{g}(x)\tilde{h}(x).
+$$
+
+Since $$\tilde{g}(x)$$ and $$\tilde{h}(x)$$ are primitive, $$\tilde{g}(x)\tilde{h}(x)$$ is also primitive. Therefore, 
+
+$$
+r = \text{Con}(rf(x)) = \text{Con}(s\tilde{g}(x)\tilde{h}(x)) = s,
+$$
+
+which means $$ab=1$$. ◼
+
+### Corollary (irreducible)
+> A primitive integer polynomial is irreducible over $$\mathbb{Q}[x]$$ iff it is irreducible over $$\mathbb{Z}[x]$$.
+
+> 從有理數縮減至整數！
+
+### Corollary (zero format)
+> For $$f(x) = a_nx^n+\cdots+a_0 \in \mathbb{Z}[x]$$, the zeros of $$f(x)$$ are of the form $$b/c$$ with $$b\vert a_0$$ and $$c\vert a_n$$.
