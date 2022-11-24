@@ -17,6 +17,10 @@ time: 2022/11/24
   - [Lemma (reduction modulo a number)](#lemma-reduction-modulo-a-number)
   - [Theorem (irreducible or not)](#theorem-irreducible-or-not)
   - [Theorem (Eisenstein criterion)](#theorem-eisenstein-criterion)
+  - [Remark](#remark)
+  - [Corollary (p-th cyclotomic polynomial)](#corollary-p-th-cyclotomic-polynomial)
+    - [Remark](#remark-1)
+  - [More on cyclotomic polynomials](#more-on-cyclotomic-polynomials)
 
 ---
 
@@ -81,7 +85,110 @@ which means $$ab=1$$. ◼
 > If $$\bar{f}(x)$$ is irreducible over $$\mathbb{Z}_p$$, then $$f(x)$$ is irreducible over $$\mathbb{Q}$$. However, even if $$\bar{f}(x)$$ is reducible over $$\mathbb{Z}_p$$, $$f(x)$$ may still be **irreducible** over $$\mathbb{Q}$$.
 
 ### Theorem (Eisenstein criterion)
-> For a polynomial $$f(x) = a_nx^n+\cdots+a_0\in \mathbb{Z}[x]$$. Suppoe there exists a prime $$p$$ such that
+> For a polynomial $$f(x) = a_nx^n+\cdots+a_0\in \mathbb{Z}[x]$$. Suppose there exists a prime $$p$$ such that
 >
 > - $$a_n \not \equiv 0 \text{ mod } p$$;
-> 
+> - $$a_i \equiv 0 \text { mod } p,\ \forall 0\le i <n$$;
+> - $$a_0 \not \equiv \text { mod } p^2$$.
+>
+> Then $$f(x)$$ is irreducible over $$\mathbb{Q}$$.
+
+存在一個 $$p$$ 就夠了。雖然這個方法可以方便建構 irreducible polynomials，但是只能驗證特定的 polynomial。
+
+**Example**
+
+$$x^2-2$$ is irreducible over $$\mathbb{Q}$$ by the Eisenstein criterion for $$p=2$$. This show that $$\sqrt{2}$$ is an *irrational* number.
+
+**Proof**
+
+Proof by contradiction, along with Gauss's Lemma.
+
+### Remark
+
+Over a finite field, verifying a given polynomial is irreducible or not is easy, but there is no general method to construct an irreducible polynomial of given degree.
+
+Over $$\mathbb{Q}$$, construct (with Eisenstein criterion) is easier than verifying.
+
+### Corollary (p-th cyclotomic polynomial)
+> Let $$p$$ be a prime, Then the polynomial
+>
+> $$
+> \Phi_p(x)=x^{p-1}+\cdots+x_1+1 = {x^p - 1\over x-1}
+> $$
+>
+> is **irreducible** over $$\mathbb{Q}$$.
+
+#### Remark
+
+- $$\Phi_p(x)$$ is called the **p-th cyclotomic polynomial**.
+
+- Let $$\zeta=e^{2\pi i\over p}$$, then $$\zeta^p = e^{2\pi i} = 1$$, which means that $$\zeta$$ is a zero of $$x^p-1$$. Moreover, $$\zeta,\zeta^2,\cdots,\zeta^p $$ are distinct zeros of $$x^p-1$$. Hence,
+
+$$
+x^p-1 = \prod^p_{k=1}(x-\zeta^k).
+$$
+
+**Proof**
+
+A polynomial $$f(x) \in \mathbb{F}[x]$$ is irreducible over $$\mathbb{F}$$ iff $$f(x+1)$$ is irreducible over $$\mathbb{F}$$. Thus, it suffices to prove that $$\Phi_p(x+1)$$ is irreducible over $$\mathbb{Q}$$.
+
+We have 
+
+$$
+\Phi_p(x+1) = {(x+1)^p-1\over x},
+$$
+
+where
+
+$$
+(x+1)^p-1 = x^p + {p\choose 1}x^{p-1}+\cdots+px.
+$$
+
+Hence, 
+
+$$
+\Phi_p(x+1) = x^{p-1} + {p\choose 1}x^{p-2}+\cdots+p.
+$$
+
+By [Eisenstein criterion](#theorem-eisenstein-criterion), $$\Phi_p(x)$$ is irreducible over $$\mathbb{Q}$$. ◼
+
+> $$f(x+1)$$ 平移！
+
+### More on cyclotomic polynomials
+> 中文稱為分圓多項式。
+
+In general, **$$n$$-th cyclotomic polynomial** is defined to be
+
+$$
+\Phi_p(x) = \prod_{0\le k\le n-1 \\ \gcd(k,n)=1}(x-\zeta^k_n) = \prod_{\ \ \ \ a\in\mathbb{C}^\times \\ \text{ord}(a) = n} (x-a)
+$$
+
+where $$\zeta_n = e^{2\pi i\over n}$$. For example, we have
+
+$$
+\begin{align*}
+  \Phi_1(x) &= x - \zeta_1 = x-1 \\
+  \Phi_2(x) &= x - \zeta_2 = x+1 \\
+  \Phi_3(x) &= (x-\zeta_3)(x-\zeta^2_3) = x^2+x+1 \\
+  \Phi_4(x) &= (x-\zeta_4)(x-\zeta^3_4) = x^2+1 \\
+\end{align*}
+$$
+
+Observe that 
+
+$$
+x^n-1 = \prod_{a\in\mathbb{C}^\times \\ a^n=1} (x-a) = \prod_{d\vert n}\prod_{\ \ \ \ a\in\mathbb{C}^\times \\ \text{ord}(a) = d}(x-a) = \prod_{d\vert n}\Phi_d(x).
+$$
+
+
+By the way, we know that
+
+$$
+\langle \zeta_n \rangle \cong \mathbb{Z}_n,
+$$
+
+and 
+
+$$
+\langle \zeta_n^k \rangle \cong \langle \zeta_n \rangle \iff \gcd(k,n)=1.
+$$
