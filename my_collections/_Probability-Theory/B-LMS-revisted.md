@@ -7,7 +7,9 @@ time: 2022/11/23
 ---
 
 **Table of Content**
-
+- [Mean Squared Error (MSE)](#mean-squared-error-mse)
+  - [Performance](#performance)
+- [LMS Properties](#lms-properties)
 
 ---
 
@@ -50,4 +52,18 @@ To make everything abstract, with [law of iterated expectations](5-more-on-condi
 
 $$
 E\Big[(\Theta-E[\Theta\vert X])^2 \Big] = E\Big[var(\Theta\vert X)\Big].
+$$
+
+---
+
+## LMS Properties
+
+Let the estimator $$\hat{\Theta}=E[\Theta\vert X]$$, and the error $$\tilde \Theta=\hat{\Theta}-\Theta$$. We have 
+
+$$
+\begin{align*}
+&E[\tilde{\Theta}\vert X=x]=0, \tag{1}\\
+&cov(\tilde{\Theta}, \hat{\Theta}) = 0, \tag{2} \\
+&var(\Theta) = var(\hat{\Theta}) + var(\tilde{\Theta}). \tag{3}
+\end{align*}
 $$

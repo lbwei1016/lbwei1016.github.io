@@ -66,7 +66,7 @@ $$
 
 > $$\hat{\theta} = E\big[\Theta\vert X=x\big] $$.
 
-> 上面是 *conditional mean*。見。
+> 上面是 *conditional mean*。見 [LMS revisted](../B-LMS-revisted) 。
 
 藉由 **MAP**，我們可以得到最小的 *conditional prob. of error*
 
