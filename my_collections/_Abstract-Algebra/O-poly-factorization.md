@@ -35,7 +35,10 @@ time: 2022/11/24
 - [Ring of Residue Classes](#ring-of-residue-classes)
   - [Definition (ring of residue classes)](#definition-ring-of-residue-classes)
   - [Theorem (irreducible and field)](#theorem-irreducible-and-field)
+  - [Example](#example)
   - [Remark](#remark-2)
+  - [Question ($$x^4+1$$)](#question-x41)
+- [Reference](#reference)
 
 ---
 
@@ -104,7 +107,7 @@ which means $$ab=1$$. ◼
 >
 > - $$a_n \not \equiv 0 \text{ mod } p$$;
 > - $$a_i \equiv 0 \text { mod } p,\ \forall 0\le i <n$$;
-> - $$a_0 \not \equiv \text { mod } p^2$$.
+> - $$a_0 \not \equiv 0\text { mod } p^2$$.
 >
 > Then $$f(x)$$ is irreducible over $$\mathbb{Q}$$.
 
@@ -345,14 +348,14 @@ $$
 
 Under the two binary operations, the residue classes modulo $$f(x)$$ forms a **ring**, denoted by **$$\mathbb{F}[x]/f\mathbb{F}[x]$$**, which is always a **commutative ring** with **unity**.
 
-> $$\mathbb{F}[x]/f\mathbb{F}[x]$$ 是所有除以 $$f(x)$$ 的餘式的集合。
+> $$\mathbb{F}[x]/f\mathbb{F}[x]$$ 是所有除以 $$f(x)$$ 的**餘式**的集合。
 
 ### Theorem (irreducible and field)
 > A polynomial $$f(x)$$ is **irreducible** over $$\mathbb{F}[x]$$ iff $$\mathbb{F}[x]/f\mathbb{F}[x]$$ is a **field**.
 
 有點像是：
 
-> An integer $$p$$ is prime iff $$\mathbb{Z}_p \cong \mathbb{Z}_p^\times$$
+> An integer $$p>1$$ is prime iff $$\mathbb{Z}_p^\times \cong \mathbb{Z}_{p-1}$$
 
 **Proof**
 
@@ -368,10 +371,103 @@ $$(\Leftarrow)$$:
 - Find the inverse for everyone.
 - [Euclidean algorithm](#theorem-euclidean-algorithm)
 
+### Example
+
+In $$\mathbb{Z}_2[x]$$, let $$f(x) = x^2 + x + 1$$. Since $$f(0) = f(1) = 1$$, $$f(x)$$ is irreducible. Then by the above theorem, we have
+
+$$
+\mathbb{Z}_2[x]\Big/f\mathbb{Z}_2[x] = \{\bar 0, \bar 1, \bar x, \overline{x+1}  \} = F_4,
+$$
+
+which is a field with four elements.
+
+As an additive group, $$F_4 \cong \mathbb{Z}_2 \times \mathbb{Z}_2$$. As a multiplicative group, $$F_4 \cong \langle \bar x \rangle \cong \mathbb{Z}_3$$.
+
+> $${\bar x}^2 = \overline{x^2} = \overline{-x-1} = \overline{x+1}$$. (In $$\mathbb{Z}_2$$, $$-1 = 1$$.)
+
 ### Remark
 
+Suppose $$\deg{f}(x) = n$$. We have
+
 $$
--x-1 \equiv x+1 \text{ mod } (x^2+x+1)
+\Big\vert \mathbb{Z}_p[x] \big/ f\mathbb{Z}_p[x]\Big\vert = p^n.
 $$
 
-???
+This is because all the elements in $$\mathbb{Z}_p[x] \big/ f\mathbb{Z}_p[x]$$ must be of the form:
+
+$$
+a_{n-1}x^{n-1}+\cdots+a_0,
+$$
+
+where $$a_i \in \mathbb{Z}_p$$. Hence there are $$p$$ choice for each $$a_i$$.
+
+### Question ($$x^4+1$$)
+
+**Q1:**
+
+> Is $$x^4 + 1$$ reducible over $$\mathbb{Q}[x]$$?
+
+**A1:**
+
+No, just use [Eisenstein criterion](#theorem-eisenstein-criterion) for $$p=2$$.
+
+**Q2:**
+
+> Is $$x^4+1$$ reducible over $$\mathbb{Z}_p[x]$$ for all primes $$p$$?
+
+**A2:**
+
+Yes. Suppose 
+
+$$
+\begin{align*}
+f(x) = x^4+1 &= (x^2+ax+b)(x^2+cx+d) \\
+&= x^4 + (a+c)x^3 + (ac+b+d)x^2 + (ad+bc)x + bd.
+\end{align*}.
+$$ 
+
+Then we have
+
+$$
+\begin{cases}
+  a \equiv -c, \\
+  ac + b + d \equiv 0, \\
+  ad + bc \equiv 0,\\
+  b = d^{-1}.
+\end{cases}
+$$
+
+If $$a\equiv c \equiv 0$$, $$d+d^{-1}\equiv 0$$, which means that $$d^2 \equiv -1$$. If not, we have $$d\equiv d^{-1}$$, which implies $$d\equiv \pm 1$$, and thus $$a^2\equiv \mp 2$$. To sum up, $$f(x)$$ is reducible over $$\mathbb{Z}_p[x]$$ if at least one of $$-2, -1$$ and $$2$$ is a [quadratic residue modulo $$p$$](https://brilliant.org/wiki/quadratic-residues/).
+
+If $$d^2 \equiv -1$$, we have 
+
+$$
+\begin{align*}
+  x^4 + 1 = x^4 - d^2 = (x^2+d)(x^2-d).
+\end{align*}
+$$
+
+If $$a^2 \equiv 2$$, we have
+
+$$
+x^4+1 = (x^2+1)^2 - (ax)^2 = (x^2-ax+1)(x^2+ax+1).
+$$
+
+If neither $$-1$$ nor $$2$$ is a quadratic residue, then their product $$-2$$ must be one, since 
+
+$$
+\Big({ab\over p} \Big) = \Big({a\over p} \Big)\Big({b\over p} \Big).
+$$
+
+Thus $$f(x)$$ must be reducible over $$\mathbb{Z}_p[x]$$ for all primes $$p$$. ◼
+
+> $$(-1)(-1) = 1$$. See **Legendre symbol**.
+
+---
+
+## Reference
+
+- [Quadratic Residue](https://brilliant.org/wiki/quadratic-residues/)
+- [Legendre Symbol](https://brilliant.org/wiki/legendre-symbol/)
+- [Law of Quadratic Reciprocity](https://brilliant.org/wiki/law-of-quadratic-reciprocity/)
+- [StackExchange](https://math.stackexchange.com/questions/77155/irreducible-polynomial-which-is-reducible-modulo-every-prime)
