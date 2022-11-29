@@ -78,7 +78,7 @@ $$
 \hat{\theta}_{MAP} = \hat{\theta}_{LMS} = E[\Theta\vert X=x] = {\sum_{i=1}^n{x_i\over \sigma_i^2} \over \sum_{i=0}^n{1\over \sigma_i^2}}.
 $$
 
-> $$\hat{\theta}$$ 可以看成是 *the weight sum of $$x$$*。
+> $$\hat{\theta}$$ 可以看成是 *the weighted sum of $$x$$*。
 
 #### The mean square error
 

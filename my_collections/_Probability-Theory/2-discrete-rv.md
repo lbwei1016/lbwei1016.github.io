@@ -229,9 +229,12 @@ $$X = \begin{cases}
 ### Binomial
 > $$n$$ 次 Bernoulli expriment。
 
-**PMF**:
-
 $$p_X(k) = {n \choose k}p^k(1-p)^{n-k},\ k \in \mathbb{N}.$$
+
+$$
+E[X] = np,\ var(X) = np(1-p).
+$$
+
 
 ### Geometric
 

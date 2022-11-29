@@ -48,7 +48,7 @@ $$
 
 > 關於 prior distribution 的問題，見[這裡](https://fukamilab.github.io/BIO202/05-B-Bayesian-priors.html)和[那裡](https://github.com/stan-dev/stan/wiki/Prior-Choice-Recommendations)。
 
-有了這新資訊，我們就可以引入新方法：**MAP** 和 **LMS**。金入主題之前，先定義符號：
+有了這新資訊，我們就可以引入新方法：**MAP** 和 **LMS**。進入主題之前，先定義符號：
 
 $$
 \hat{\theta}=g(x) \text{: estimate}, \\
@@ -85,4 +85,4 @@ $$
 
 也就是說，在 **hypothesis testing** 下，**MAP** 總是可以得到**最佳** estimate。至於 **LMS** 留待另外一篇再來說明。
 
-> 觀察到 $$X=x$$ 後，猜 $$\Theta=\hat\theta_{MAP}$$。
+> **MAP**: 觀察到 $$X=x$$ 後，猜 $$\Theta=\hat\theta_{MAP}$$ 是最佳的。
