@@ -274,8 +274,6 @@ $$\Rightarrow E[X] = {1\over p}.$$
 
 ### Poisson
 
-**PMF**
-
 $$
 p_X(k) = e^{-\lambda}{\lambda^k \over k!},\ k=0,1,2,\cdots
 $$
@@ -284,6 +282,12 @@ This is a PMF since
 
 $$
 \sum_k e^{-\lambda}{\lambda^k \over k!} = e^{-\lambda}e^\lambda = 1.
+$$
+
+Moreover, we have
+
+$$
+E[X] = \lambda = var(X).
 $$
 
 Poisson PMF with parameter $$\lambda$$ is a good **approximation** for a *binomial PMF* with parameters $$n$$ and $$p$$, i.e.,
