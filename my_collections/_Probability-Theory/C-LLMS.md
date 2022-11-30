@@ -1,6 +1,6 @@
 ---
 layout: page
-title: LLMS
+title: Linear LMS
 usemathjax: true
 tag: Probability
 time: 2022/11/29
@@ -12,6 +12,7 @@ time: 2022/11/29
   - [**Remark**](#remark)
   - [Exercise](#exercise)
 - [Different Data Represnetations](#different-data-represnetations)
+- [Reference](#reference)
 
 ---
 
@@ -89,3 +90,8 @@ $$
 where $$g_i(X)$$ can be any well-defined function.
 
 > 越複雜的 estimator 越難計算，但或許效果比較好，視問題而定。
+
+---
+
+## Reference
+- [MIT OCW](https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/pages/part-ii-inference-limit-theorems/)

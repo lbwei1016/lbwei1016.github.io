@@ -14,6 +14,7 @@ time: 2022/11/23
     - [The mean square error](#the-mean-square-error)
   - [Multiple parameters](#multiple-parameters)
 - [Misc](#misc)
+- [Reference](#reference)
 
 ---
 
@@ -114,3 +115,8 @@ $$
 ## Misc
 
 - Bayesian confidence interval
+
+---
+
+## Reference
+- [MIT OCW](https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/pages/part-ii-inference-limit-theorems/)

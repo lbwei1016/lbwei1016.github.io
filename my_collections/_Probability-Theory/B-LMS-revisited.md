@@ -11,6 +11,7 @@ time: 2022/11/23
   - [**Remark**](#remark)
   - [Performance](#performance)
 - [LMS Properties](#lms-properties)
+- [Reference](#reference)
 
 ---
 
@@ -78,3 +79,8 @@ $$
 $$
 
 > 這樣的方法可以用來證明 [law of total variance](../5-more-on-conditioning/#law-of-total-variance)。
+
+---
+
+## Reference
+- [MIT OCW](https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/pages/part-ii-inference-limit-theorems/)

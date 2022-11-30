@@ -12,6 +12,7 @@ time: 2022/11/18
   - [Framework](#framework)
   - [MAP (Maximum a posterioi probability)](#map-maximum-a-posterioi-probability)
   - [LMS (Least Mean Squares)](#lms-least-mean-squares)
+- [Reference](#reference)
 
 ---
 
@@ -86,3 +87,8 @@ $$
 也就是說，在 **hypothesis testing** 下，**MAP** 總是可以得到**最佳** estimate。至於 **LMS** 留待另外一篇再來說明。
 
 > **MAP**: 觀察到 $$X=x$$ 後，猜 $$\Theta=\hat\theta_{MAP}$$ 是最佳的。
+
+---
+
+## Reference
+- [MIT OCW](https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/pages/part-ii-inference-limit-theorems/)
