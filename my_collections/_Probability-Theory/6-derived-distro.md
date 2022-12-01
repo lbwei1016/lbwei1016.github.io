@@ -86,6 +86,8 @@ $$
 
 如果 $$X$$ 和 $$Y$$ 都是 *normal r.v.*，則 $$Z$$ 也是 *normal*（代入即可證明），而且 $$Z\sim N(\mu_x+\mu_y, \sigma_x^2 + \sigma_y^2)$$。
 
+Poisson 加起來也還是 Poisson，而且 $$Z\sim \text{Poi}(\lambda_x + \lambda_y)$$.
+
 > 見 [tranforms](../7-transform)。
 
 ---
