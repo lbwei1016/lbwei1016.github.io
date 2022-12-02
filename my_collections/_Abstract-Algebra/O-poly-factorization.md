@@ -399,7 +399,7 @@ $$
 a_{n-1}x^{n-1}+\cdots+a_0,
 $$
 
-where $$a_i \in \mathbb{Z}_p$$. Hence there are $$p$$ choice for each $$a_i$$.
+where $$a_i \in \mathbb{Z}_p$$. Hence there are $$p$$ choices for each $$a_i$$.
 
 ### Question ($$x^4+1$$)
 

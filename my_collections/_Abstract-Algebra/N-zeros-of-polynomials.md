@@ -7,14 +7,24 @@ time: 2022/11/20
 ---
 
 **Table of Content**
+- [Definition (zeros)](#definition-zeros)
 - [Theorem (zero and factor)](#theorem-zero-and-factor)
   - [Corollary (distinct zeros)](#corollary-distinct-zeros)
-  - [Corollary (the multiplicative group of a field)](#corollary-the-multiplicative-group-of-a-field)
+  - [**Corollary (the multiplicative group of a field)**](#corollary-the-multiplicative-group-of-a-field)
 - [Irreducible Polynomials](#irreducible-polynomials)
   - [Definition (irreducible polynomials)](#definition-irreducible-polynomials)
     - [Remarks](#remarks)
   - [Theorem (degree $$2$$ or $$3$$)](#theorem-degree-2-or-3)
 
+
+---
+
+## Definition (zeros)
+> Let $$F$$ be a subfield of a field $$E$$. Let $$f(x)\in F[x]$$. Suppose that $$\alpha\in E$$ is an element such that $$f(\alpha)=0$$. Then $$\alpha$$ is a **zero** of $$f(x)$$ in $$E$$.
+
+**Example**
+
+Let $$F=\mathbb{Q}, E=\mathbb{R}$$ and $$f(x)=x^2-2$$. Then $$\pm\sqrt{2}$$ are zeros of $$f(x)$$ in $$\mathbb{R}$$.
 
 ---
 
@@ -35,7 +45,7 @@ Use the [division algorithm](../M-rings-of-polynomials/#division-algorithm-of-po
 - If $$f(b)=0$$ and $$b\not=a$$, then $$(b-a)q(b)=0$$.
   - Since $$\mathbb{F}$$ has no zero divisors and $$a\not=b$$, $$q(b)=0$$.
 
-### Corollary (the multiplicative group of a field)
+### **Corollary (the multiplicative group of a field)**
 > Let $$\mathbb{F}$$ be a field. If $$G$$ is a **finite subgroup** of the multiplicative group $$\mathbb{F}^\times$$, then $$G$$ is **cyclic**. In particular, if $$\mathbb{F}$$ is a **finite field**, then $$\mathbb{F}^{\times}$$ is **cyclic**.
 
 > $$G$$ 當然是 abelian。

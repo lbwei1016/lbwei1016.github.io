@@ -20,8 +20,6 @@ time: 2022/11/20
 - [Theorem (First Ring Isomorphism Theorem)](#theorem-first-ring-isomorphism-theorem)
   - [Evaluation Homomorphism](#evaluation-homomorphism)
   - [Ring Extension (finitely generated commutative ring)](#ring-extension-finitely-generated-commutative-ring)
-  - [Zeros of a Polynomial](#zeros-of-a-polynomial)
-    - [Definition (zeros)](#definition-zeros)
 - [Division Algorithm of Polynomials](#division-algorithm-of-polynomials)
   - [Theorem (division algorithm)](#theorem-division-algorithm)
 
@@ -182,15 +180,6 @@ $$
 $$
 
 where $$I$$ is an ideal of $$\mathbb{Z}_n[x_1,\cdots,x_m]$$.
-
-### Zeros of a Polynomial
-
-#### Definition (zeros)
-> Let $$F$$ be a subfield of a field $$E$$. Let $$f(x)\in F[x]$$. Suppose that $$\alpha\in E$$ is an element such that $$f(\alpha)=0$$. Then $$\alpha$$ is a **zero** of $$f(x)$$ in $$E$$.
-
-**Example**
-
-Let $$F=\mathbb{Q}, E=\mathbb{R}$$ and $$f(x)=x^2-2$$. Then $$\pm\sqrt{2}$$ are zeros of $$f(x)$$ in $$\mathbb{R}$$.
 
 --- 
 
