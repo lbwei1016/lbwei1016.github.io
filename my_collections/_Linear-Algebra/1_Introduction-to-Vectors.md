@@ -37,3 +37,5 @@ tag: Linear Algebra
   >
   > 1. $$x+y\in V$$ whenever $$x, y \in V$$
   > 2. $$\alpha x\in V$$ whenever $$\alpha \in F$$ 
+
+> 見 [Algebraic Extension](../../Abstract-Algebra/Q-algebraic-extension/#vector-space)。

@@ -19,7 +19,7 @@ time: 2022/11/29
     - [Proposition (factor)](#proposition-factor)
   - [Definition (monic irreducible)](#definition-monic-irreducible)
     - [Remark](#remark-1)
-- [Theorem (algebraic extension)](#theorem-algebraic-extension)
+- [Theorem (more than a ring)](#theorem-more-than-a-ring)
   - [Theorem (unique expression)](#theorem-unique-expression)
     - [Proof](#proof)
     - [Exercises](#exercises)
@@ -134,14 +134,14 @@ $$\text{Irr}(\alpha, F) = \text{Irr}(\alpha, F)(x) $$, and that $$\text{Irr}(\al
 
 如何找出 $$\text{Irr}(\alpha, F)$$？先找到 $$f(x)$$ 使得 $$f(\alpha)=0$$，再驗證 $$f(x)$$ is irreducible！ 
 
-如果 $$\deg{(\alpha, F)} = n$$ 而且 $$\vert F\vert = m$$，則 $$\vert F(\alpha)\vert = n^m$$. 
+如果 $$\deg{(\alpha, F)} = n$$ 而且 $$\vert F\vert = m$$，則 $$\vert F(\alpha)\vert = m^n$$.
+
+> 從這裡大小的比較可以看出，$$F(\alpha)$$ 的確是 $$F$$ 的**擴張**！
 
 ---
 
-## Theorem (algebraic extension)
-> Let $$F(\alpha)$$ be an **algebraic** extension field of $$F$$. Then **$$F(\alpha) = F[\alpha]$$**.
-
-> **algebraic** extension: $$\exists f(x)\in F[x]$$ such that $$f(\alpha)=0$$.
+## Theorem (more than a ring)
+> If $$\alpha$$ is algebraic over $$F$$, then **$$F(\alpha) = F[\alpha]$$**.
 
 **Proof**
 
@@ -160,7 +160,7 @@ $$
 $$
 
 ### Theorem (unique expression)
-> Let $$F(\alpha)$$ be an **algebraic** extension field of $$F$$. Then any $$\beta\in F(\alpha)$$ can be **uniquely** expressed in the form **$$\beta=b_0+b_1\alpha+\cdots+b_{n-1}\alpha^{n-1}$$**, where $$n=\deg(\text{Irr}(\alpha, F))$$.
+> If $$\alpha$$ is algebraic over $$F$$, then any $$\beta\in F(\alpha)$$ can be **uniquely** expressed in the form **$$\beta=b_0+b_1\alpha+\cdots+b_{n-1}\alpha^{n-1}$$**, where $$n=\deg(\text{Irr}(\alpha, F))$$.
 
 #### Proof
 
