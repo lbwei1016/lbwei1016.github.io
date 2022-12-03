@@ -7,6 +7,24 @@ time: 2022/12/02
 ---
 
 **Table of Content**
+- [Vector Space](#vector-space)
+  - [Definition (vector space over a field)](#definition-vector-space-over-a-field)
+    - [Lemma (extension field is a vector space)](#lemma-extension-field-is-a-vector-space)
+  - [Definition (linear independence)](#definition-linear-independence)
+  - [Theorem (basis)](#theorem-basis)
+- [Definition (algebraic extension)](#definition-algebraic-extension)
+  - [Exercise](#exercise)
+- [Definition (finite extension; degree)](#definition-finite-extension-degree)
+  - [Remark](#remark)
+  - [Theorem (finite to algebraic)](#theorem-finite-to-algebraic)
+  - [Theorem (series of finite extension)](#theorem-series-of-finite-extension)
+    - [Corollary (more series)](#corollary-more-series)
+    - [Corollary (degree divides)](#corollary-degree-divides)
+    - [**Corollary (degree constriants)**](#corollary-degree-constriants)
+  - [Exercise 1](#exercise-1)
+  - [**Exercise 2**](#exercise-2)
+    - [Remark](#remark-1)
+
 
 ---
 
@@ -36,7 +54,7 @@ time: 2022/12/02
 ### Definition (linear independence)
 > 見 [Linear Independence](../../Linear-Algebra/4-0_Linear-Independence)。
 
-### Theorem (basis for $$F(\alpha)$$)
+### Theorem (basis)
 > Let $$\alpha\in E$$, where $$E$$ is a field extension of $$F$$.
 >
 > 1. If $$\alpha$$ is **algebraic over $$F$$** with $$\deg(\alpha, F) = n$$, then $$F(\alpha)$$ is a **finite-dimensional vector space over $$F$$**, with basis $$\{1, \alpha, \cdots, \alpha^{n-1} \}$$. This means that $$\dim(F(\alpha)) = n$$. 
@@ -112,8 +130,140 @@ where $$\sum_{j=1}^n f_{ij}\beta_j \in E$$. Since $$\{\alpha_i\}$$ are linearly 
 
 Since $$\beta\in F(\alpha)$$, $$F(\alpha, \beta) = F(\alpha)$$. Let $$E=F(\beta)$$ and $$K=F(\alpha, \beta)$$. Then by the above theorem, this corollary has been proved. ◼
 
-## Corollary (degree constriants)
+#### **Corollary (degree constriants)**
 > Assume that $$E=F(\alpha, \beta)$$ is an algebraic extension of $$F$$. Let $$n=\deg(\alpha, F)$$ and $$m=\deg(\beta, F)$$. Then
 >
 > - $$[E:F]\le mn$$,
 > - $$\text{lcm}(m,n)\big\vert [E:F]$$.
+
+**Proof**
+
+[Here](https://math.stackexchange.com/questions/2405616/the-degree-of-a-field-extension-is-smaller-than-the-product-of-the-degrees-of-fi) goes two nice proofs.
+
+### Exercise 1
+
+We have $$x^3 - 2 = (x-\sqrt[3]{2})(x-\sqrt[3]{2}\omega)(x - \sqrt[3]{2}\omega^2) $$, where $$\omega=e^{2\pi i\over 3}$$ is a zero of $$x^2+x+1$$. Then apparently, $$[\Bbb Q(\sqrt[3]{2}): \Bbb Q] = [\Bbb Q(\sqrt[3]{2}\omega):\Bbb Q] = 3$$. How about $$[\Bbb Q(\sqrt[3]{2}\omega, \sqrt[3]{2}):\Bbb Q(\sqrt[3]{2})]$$? 
+
+First notice that $$\Bbb Q(\sqrt[3]{2}\omega, \sqrt[3]{2}) = \Bbb Q(\sqrt[3]{2}, \omega)$$. Since we have already know $$\deg(\omega, \Bbb Q(\sqrt[3]{2})) = 2$$, the desired value is therefore $$2$$.
+
+### **Exercise 2**
+
+**2.1**
+
+Let $$F = [\Bbb Q(\sqrt{2}, \sqrt{3})]$$. We can see that $$[\Bbb Q(\sqrt{2}): \Bbb Q] = [\Bbb Q(\sqrt{3}): \Bbb Q] = 2 $$, but what about $$[F:\Bbb Q(\sqrt{2})]$$?
+
+Note that by this [corollary](#corollary-degree-constriants), $$[F:\Bbb Q]=2$$ or $$4$$. Suppose $$[F:\Bbb Q] = 2$$; this means that $$[F:\Bbb Q(\sqrt{2})] = 1$$, and that there exists $$a_0$$ and $$a_1$$ in $$\Bbb Q$$ such that 
+
+$$
+\sqrt{3} = a_0 + a_1\sqrt{2}, 
+$$
+
+which is impossible. Therefore, $$[F:\Bbb Q]=4$$ and $$[F:\Bbb Q(\sqrt{2})] = 2$$.
+
+**2.2**
+
+> Let $$\alpha =\sqrt{2} + \sqrt{3}$$. Show that $$\Bbb Q(\sqrt{2}, \sqrt 3) = \Bbb Q(\alpha)$$.
+
+It is clear that $$\Bbb Q(\alpha)\subset \Bbb Q(\sqrt 2, \sqrt 3) $$, so it remains to show that $$\Bbb Q(\alpha) \supset \Bbb Q(\sqrt 2, \sqrt 3) $$, or equivalently, $$[\Bbb Q(\alpha): \Bbb Q]=4$$.
+
+**Solution $$\rm I$$**: show that $$\deg(\alpha, \Bbb Q) = 4$$.
+
+Note that 
+
+$$
+3 = (\alpha-\sqrt{2})^2 = \alpha^2 - 2\sqrt{2}\alpha + 2, \\
+(2\sqrt{2}\alpha)^2 = (\alpha^2-1)^2, \\
+\alpha^4 - 10\alpha^2 + 1 = 0.
+$$
+
+Thus we only need to show that $$x^4 - 10x^2 + 1$$ is irreducible.
+
+**Solution $$\rm II$$**: show that $$\{1, \alpha, \alpha^2, \alpha^3\}$$ are linearly independent, i.e., $$[\Bbb Q(\alpha): \Bbb Q]\ge 4$$.
+
+Note that a basis of $$\Bbb Q(\sqrt 2, \sqrt 3)$$ is 
+
+$$
+\beta = \{1, \sqrt 2\} \cdot \{1, \sqrt 3\} = \{1, \sqrt 2, \sqrt 3, \sqrt 6\}.
+$$
+
+Then
+
+$$
+\begin{align*}
+[1]_\beta^T &= (1, 0, 0, 0), \\
+[\alpha]^T_\beta &= [\sqrt{2} + \sqrt{3}]_\beta = (0, 1, 1, 0), \\
+[\alpha^2]_\beta^T &= [5 + 2\sqrt 6]_\beta = (5, 0, 0, 6), \\
+[\alpha^3]_\beta^T &= [11\sqrt 2 + 9\sqrt 3]_\beta = (0, 11, 9, 0).
+\end{align*}
+$$
+
+We now have a matrix and 
+
+$$
+\det \begin{pmatrix}
+   1 & 0 & 5 & 0 \\
+   0 & 1 & 0 & 11 \\
+   0 & 1 & 0 & 9 \\
+   0 & 0 & 6 & 0 \\ 
+\end{pmatrix} \not = 0.
+$$
+
+Thus $$\{1, \alpha, \alpha^2, \alpha^3\}$$ are linearly independent. 
+
+**2.3**
+
+> Let $$\gamma = \sqrt{2} + \sqrt{3} - \sqrt{6}$$. Find $$\text{Irr}(\gamma, \Bbb Q)$$.
+
+**Solution**
+
+There is no easy way to directly *see* a possible $$f(x)\in \Bbb Q$$ such that $$f(x) = \text{Irr}(\gamma, \Bbb Q)$$, unlike the case when $$\alpha = \sqrt 2 + \sqrt 3$$. Thus, we regard $$\gamma$$ as a vector of $$\Bbb Q(\sqrt 2, \sqrt 3)$$ over $$\Bbb Q$$. Then we have
+
+$$
+a_0 + a_1\gamma + \cdots + a_n\gamma^n \iff a_0[1]_\beta
+ + a_1[\gamma]_\beta + \cdots + a_n[\gamma^n]_\beta = \vec{0},
+$$
+
+and
+
+$$
+\begin{align*}
+[1]_\beta^T &= (1, 0, 0, 0), \\
+[\gamma]^T_\beta &= (0, 1, 1, -1), \\
+[\gamma]^T_\beta &= (11, -6, -4, 2), \\
+[\gamma^3]_\beta^T &= (-36, 29, 27, -21), \\
+[\gamma^4]_\beta^T &= (265, 180, -136, 92).
+\end{align*}
+$$
+
+Note that $$\det[1, \gamma, \gamma^2, \gamma^3] \not = 0$$, and
+
+$$
+[\gamma^4]_\beta = 23[1]_\beta - 48[\gamma]_\beta + 22[\gamma^2]_\beta.
+$$
+
+Therefore, 
+
+$$
+\text{Irr}(\gamma, \Bbb Q) = x^4 - 22x^2 + 48 - 23.
+$$
+
+> 找到最大的 $$n$$ 使得 $$\{1, \cdots, \gamma^n\}$$ 線性獨立，而 $$\text{Irr}$$ 就可以從第 **$$n+1$$ 個向量的線性組合**得到！
+
+#### Remark
+
+如果要找 $$a_i$$ 使得
+
+$$
+a_0 + a_1\gamma + \cdots + a_n\gamma^n = 0，
+$$
+
+不如將 $$\gamma$$ 視為向量，檢查
+
+$$
+a_0[1]_\beta
+ + a_1[\gamma]_\beta + \cdots + a_n[\gamma^n]_\beta
+$$
+
+是否線性獨立。如此一來就有好多線性代數工具可以使用！
+
+> **Q:** How to determine if a set of vectors are linearly independent?
