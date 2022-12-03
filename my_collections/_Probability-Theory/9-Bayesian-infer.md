@@ -153,7 +153,7 @@ $$
 \end{align*}
 $$
 
-which is a little bit weird since $$(-1)^\beta$$ shouldn't be there: Our integral is expected to be positive. This is the **flaw** mentioned. ◼
+which is a little bit weird since $$(-1)^\beta$$ shouldn't be there: Our integral is expected to be positive, for all $$\beta$$. This is the **flaw** mentioned. ◼
 
 #### Remark
 
