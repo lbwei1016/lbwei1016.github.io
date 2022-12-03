@@ -106,7 +106,7 @@ where $$B(\alpha, \beta)$$ is the [Beta function](https://en.wikipedia.org/wiki/
 
 ### Properties
 #### Integration (beta function)
-> $$\int_0^1x^\alpha x^{\beta}dx = {\alpha!\beta!\over (\alpha+\beta+1)!} .$$
+> $$\int_0^1x^\alpha x^{\beta}dx = {\alpha!\beta!\over (\alpha+\beta+1)!}, \alpha,\beta\ge 0.$$
 
 **Proof** (flawed)
 
@@ -153,7 +153,7 @@ $$
 \end{align*}
 $$
 
-which is a little bit weird since $$(-1)^\beta$$ shouldn't be there: Our integral is expected to be positive. This is the **flaw** mentioned. ◼
+which is a little bit weird since $$(-1)^\beta$$ shouldn't be there: Our integral is expected to be positive, for all $$\beta$$. This is the **flaw** mentioned. ◼
 
 #### Remark
 
