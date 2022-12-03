@@ -12,6 +12,10 @@ time: 2022/11/18
   - [Framework](#framework)
   - [MAP (Maximum a posterioi probability)](#map-maximum-a-posterioi-probability)
   - [LMS (Least Mean Squares)](#lms-least-mean-squares)
+- [Beta Distribution](#beta-distribution)
+  - [Properties](#properties)
+    - [Integration (beta function)](#integration-beta-function)
+    - [Remark](#remark)
 - [Reference](#reference)
 
 ---
@@ -87,6 +91,76 @@ $$
 也就是說，在 **hypothesis testing** 下，**MAP** 總是可以得到**最佳** estimate。至於 **LMS** 留待另外一篇再來說明。
 
 > **MAP**: 觀察到 $$X=x$$ 後，猜 $$\Theta=\hat\theta_{MAP}$$ 是最佳的。
+
+---
+
+## Beta Distribution
+
+Let $$X \sim \mathcal{Be}(\alpha, \beta) $$. Then 
+
+$$
+f_X(x) = {1\over B(\alpha, \beta)}x^{\alpha-1}(1-x)^{\beta-1},
+$$
+
+where $$B(\alpha, \beta)$$ is the [Beta function](https://en.wikipedia.org/wiki/Beta_function).
+
+### Properties
+#### Integration (beta function)
+> $$\int_0^1x^\alpha x^{\beta}dx = {\alpha!\beta!\over (\alpha+\beta+1)!} .$$
+
+**Proof** (flawed)
+
+$$
+\begin{align*}
+\int_0^1x^\alpha(1-x)^\beta dx &= \int_0^1x^\alpha \sum_{k=0}^\beta {\beta\choose k}(-1)^{\beta-k}x^k dx \\
+&= \int_0^1\sum_{k=0}^\beta {\beta\choose k}(-1)^{\beta-k}x^{\alpha+k} dx\\
+\end{align*}
+$$
+
+Since 
+
+$$
+\lim_{\beta\to\infty} \sum_{k=0}^\beta {\beta\choose k}(-1)^{\beta-k}x^k = \lim_{\beta\to\infty}(1-x)^\beta =0,\ x \in [0, 1],
+$$
+
+the integral and the summation can interchange by [the dominated convergence theorem](https://math.stackexchange.com/q/3056731). Thus, we have
+
+$$
+\begin{align*}
+\int_0^1\sum_{k=0}^\beta {\beta\choose k}(-1)^{\beta-k}x^{\alpha+k} dx &= \sum_{k=0}^\beta{\beta\choose k}(-1)^{\beta-k}\int_0^1 x^{\alpha+k}dx. \\
+&= \sum_{k=0}^\beta{\beta\choose k}(-1)^{\beta-k}{1\over \alpha+1+k} \\
+\end{align*}
+$$
+
+Reconginzing this [pattern](../../Concrete-Math/Binomial-Coefficient/#difference), we let $$f(x) = 1/(\alpha+1+x)$$, and we have
+
+$$
+\sum_{k=0}^\beta{\beta\choose k}(-1)^{\beta-k}{1\over \alpha+1+k} = \Delta^\beta f(0).
+$$
+
+After some observation, we derive that 
+
+$$
+\Delta^nf(x) = {(-1)^nn!\over (\alpha+n+1)^\underline{n+1}}.
+$$
+
+Therefore, our integral becomes
+
+$$
+\begin{align*}
+\int_0^1x^\alpha (1-x)^\beta dx &= {(-1)^\beta \beta!\over (\alpha+\beta+1)^\underline{\beta+1}} \\
+&= {(-1)^\beta \alpha! \beta!\over (\alpha+\beta+1)!},
+\end{align*}
+$$
+
+which is a little bit weird since $$(-1)^\beta$$ shouldn't be there: Our integral is expected to be positive. This is the **flaw** mentioned. ◼
+
+#### Remark
+
+The proof above should be scrutinized. Besides the above URLs, the sites below deserve taking a look:
+
+- [the dominated convergence theorem](https://en.wikipedia.org/wiki/Dominated_convergence_theorem)
+- [integral and summation interchange](https://math.stackexchange.com/questions/2237279/integral-of-alternating-series)
 
 ---
 
