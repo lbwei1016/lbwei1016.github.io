@@ -85,7 +85,7 @@ which is a *random variable*. Further, we have
 
 $$
 E[M_n] = {E[{X_1+\cdots+X_n}]\over n} = {n\mu\over n} = \mu, \\
-var(M_n) = {var(X_1+\cdots+X_n)\over n} = {n\sigma^2\over n^2} = {\sigma^2\over n}.
+var(M_n) = {var(X_1+\cdots+X_n)\over n^2} = {n\sigma^2\over n^2} = {\sigma^2\over n}.
 $$
 
 By the Chebyshev inequality, we have
