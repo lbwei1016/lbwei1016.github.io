@@ -98,6 +98,8 @@ which is denoted by $$S<R$$.
 
 > 可以先說明 the additive identity of $$R$$ is ...（例如零矩陣 $$O$$），再說明 $$O$$ 在 $$S$$ 中。
 
+> Subfield 多說明 $$a^{-1}$$ 也在其中。
+
 ---
 
 ## Homomorphism

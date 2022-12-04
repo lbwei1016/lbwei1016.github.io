@@ -121,7 +121,7 @@ $$
 f(x) = p_\alpha(x)q(x) + r(x).
 $$
 
-Since $$f(\alpha) = 0$$, $$r(\alpha) = 0$$, which means that $$p_\alpha(x) \mid f(x)$$. ◼
+Since $$f(\alpha) = 0$$, $$r(\alpha) = 0$$. However, $$\deg r(x) < \deg p_\alpha(x)$$, but $$p_\alpha(x)$$ is the monic polynomial in $$I_\alpha$$ with minimal degree. Thus $$r(x) = 0$$ and this means that $$p_\alpha(x) \mid f(x)$$. ◼
 
 > This proposition implies that $$p_\alpha(x)$$ is **the only monic irreducible** polynomial in $$I_\alpha$$.
 
