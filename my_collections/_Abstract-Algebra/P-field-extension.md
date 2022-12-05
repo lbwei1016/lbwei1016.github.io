@@ -19,6 +19,7 @@ time: 2022/11/29
     - [Proposition (factor)](#proposition-factor)
   - [Definition (monic irreducible)](#definition-monic-irreducible)
     - [Remark](#remark-1)
+  - [Exercise](#exercise-1)
 - [Theorem (more than a ring)](#theorem-more-than-a-ring)
   - [Theorem (unique expression)](#theorem-unique-expression)
     - [Proof](#proof)
@@ -136,8 +137,21 @@ $$\text{Irr}(\alpha, F) = \text{Irr}(\alpha, F)(x) $$, and that $$\text{Irr}(\al
 
 如果 $$\deg{(\alpha, F)} = n$$ 而且 $$\vert F\vert = m$$，則 $$\vert F(\alpha)\vert = m^n$$.
 
-> 從這裡大小的比較可以看出，$$F(\alpha)$$ 的確是 $$F$$ 的**擴張**！
+> 從這裡大小的比較可以看出，$$F(\alpha)$$ 的確是 $$F$$ 的**extension**！
 
+### Exercise
+> Let $$F_1\subset F_2 \subset F_3$$ be three fields. Suppose $$\alpha \in F_3$$ is algebraic over $$F_1$$. Show that $$\text{Irr}(\alpha, F_2)\big\vert \text{Irr}(\alpha, F_1) $$.
+
+**Solution**
+
+Let $$I_{\alpha, i} = \{f(x)\in F_i[x]\mid f(\alpha)=0 \}$$. Since $$I_{\alpha, 1} \subseteq I_{\alpha, 2}$$, we have $$\deg{(\alpha, F_1)} \ge \deg{(\alpha, F_2)}$$. By the division algorithm, 
+
+$$
+\text{Irr}(\alpha, F_1) = \text{Irr}(\alpha, F_2)q(x) + r(x),
+$$
+
+where $$q(x), r(x)\in F_2[x]$$. Since $$\text{Irr}(\alpha, F_1)(\alpha) = \text{Irr}(\alpha, F_2)(\alpha) = 0$$, $$r(\alpha) = 0$$. This means that $$r(x)$$ must be the zero polynomial, and therefore the statement is proved. ◼
+ 
 ---
 
 ## Theorem (more than a ring)

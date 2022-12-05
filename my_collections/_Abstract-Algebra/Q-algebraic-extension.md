@@ -214,7 +214,7 @@ Thus $$\{1, \alpha, \alpha^2, \alpha^3\}$$ are linearly independent.
 
 > Let $$\gamma = \sqrt{2} + \sqrt{3} - \sqrt{6}$$. Find $$\text{Irr}(\gamma, \Bbb Q)$$.
 
-**Solution**
+**Solution $$\rm I$$**
 
 There is no easy way to directly *see* a possible $$f(x)\in \Bbb Q$$ such that $$f(x) = \text{Irr}(\gamma, \Bbb Q)$$, unlike the case when $$\alpha = \sqrt 2 + \sqrt 3$$. Thus, we regard $$\gamma$$ as a vector of $$\Bbb Q(\sqrt 2, \sqrt 3)$$ over $$\Bbb Q$$. Then we have
 
@@ -248,6 +248,20 @@ $$
 $$
 
 > 找到最大的 $$n$$ 使得 $$\{1, \cdots, \gamma^n\}$$ 線性獨立，而 $$\text{Irr}$$ 就可以從第 **$$n+1$$ 個向量的線性組合**得到！
+
+> 這種方法得到的 polynomail 一定 irreducible，不須再檢查。
+
+**Solution $$\rm II$$**
+
+$$
+\begin{align*}
+&\gamma + \sqrt{6} = \sqrt{2} + \sqrt{3} \\
+\implies &\gamma^2 + 2\sqrt{6}\gamma + 6 = 5 + 2\sqrt 6 \\ 
+\implies &(\gamma^2 + 1)^2 = (2\sqrt{6}(1 - \gamma))^2
+\end{align*}
+$$
+
+This way, we can obtain a quartic polynomial, but we still need to check whether it is **irreducible**.
 
 #### Remark
 
