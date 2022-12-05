@@ -12,8 +12,8 @@ time: 2022/10/20
   - [Corollary (one-to-one)](#corollary-one-to-one)
   - [Corollary (onto)](#corollary-onto)
 - [Facts](#facts)
-  - [fact $$\rm I$$](#fact-rm-i)
-  - [fact $$\rm II$$](#fact-rm-ii)
+  - [fact $$\\rm I$$](#fact-rm-i)
+  - [fact $$\\rm II$$](#fact-rm-ii)
   - [Question (all the homomorphism)](#question-all-the-homomorphism)
 - [Kernel](#kernel)
   - [Definition (kernel)](#definition-kernel)
@@ -32,7 +32,7 @@ time: 2022/10/20
 - [Homomorphism and Normal Groups](#homomorphism-and-normal-groups)
   - [Theorem (homomorphism and normal subgroups)](#theorem-homomorphism-and-normal-subgroups)
   - [Theorem (the first isomorphism theorem)](#theorem-the-first-isomorphism-theorem)
-  - [Theorem (quotient group of $$\mathbb{Z}^n$$)](#theorem-quotient-group-of-mathbbzn)
+  - [Theorem (quotient group of $$\\mathbb{Z}^n$$)](#theorem-quotient-group-of-mathbbzn)
     - [Question](#question-1)
     - [Remark](#remark-1)
 - [Reference](#reference)
@@ -219,7 +219,7 @@ $$
 \end{align*} 
 $$
 
-If $$H = \langle h_1,\cdots, h_m\rangle$$, and let $$h = h_1^{i_1}\cdotsh__m^{i_m}$$. Then
+If $$H = \langle h_1,\cdots, h_m\rangle$$, and let $$h = h_1^{i_1}\cdots h_m^{i_m}$$. Then
 
 $$
 \begin{align*}
