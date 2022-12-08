@@ -127,7 +127,33 @@ $$
 利用上述這些等式，就能看出第一段所說的性質為何成立了！
 
 
-此外，計算反矩陣時，利用 **Cramer's Rule**，**算第一 column 就夠了**，因為 $$n$$ 個矩陣的第一 column 線性獨立。
+此外，計算反矩陣時，利用 **Cramer's Rule**，**算第一 column 就夠了**，因為 $$n$$ 個矩陣的第一 column 組合起來正是單位矩陣。
+
+**Note**
+
+上述方法只適用於 *simple extension*，也就是當 basis 為 cyclic 的時候。如果是 $$\Bbb{Q}(\sqrt{2}, \sqrt{3})$$、 basis 為 $$\beta = \{1, \sqrt{2}, \sqrt{3}, \sqrt{6} \}$$，我們就只能一個一個算出 $$[L_1]_\beta, [L_\sqrt{2}]_\beta\cdots $$ 了！例如 
+
+$$
+[L_\sqrt{2}]_\beta = \begin{pmatrix}
+  0 & 2 & 0 & 0 \\
+  1 & 0 & 0 & 0 \\
+  0 & 0 & 0 & 2 \\
+  0 & 0 & 1 & 0
+\end{pmatrix},
+$$
+
+因為左乘 $$\sqrt{2}$$ 後，
+
+$$
+\begin{align*}
+  1 &\to \sqrt{2} \\
+  \sqrt{2} &\to 2 \\
+  \sqrt{3} &\to \sqrt{6} \\
+  \sqrt{6} &\to 2\sqrt{3}.
+\end{align*}
+$$
+
+
 
 ---
 
