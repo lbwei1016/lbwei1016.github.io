@@ -10,12 +10,14 @@ time: 2022/11/29
 - [Some Inequalities](#some-inequalities)
   - [Markov inequality](#markov-inequality)
   - [Chebyshev inequality](#chebyshev-inequality)
+    - [Remark](#remark)
   - [Example](#example)
 - [Weak Law of Large Numbers (WLLN)](#weak-law-of-large-numbers-wlln)
 - [Convergence](#convergence)
   - [Definition (convergence in probability)](#definition-convergence-in-probability)
   - [Properties](#properties)
   - [Reamrk](#reamrk)
+  - [Exercise](#exercise)
 - [More Inequalities](#more-inequalities)
   - [Jensen's inequality](#jensens-inequality)
   - [Hoeffiding's inequality](#hoeffidings-inequality)
@@ -52,6 +54,12 @@ P\big(\vert X-\mu\vert \ge c \big) = P\big((X-\mu)^2 \ge c^2 \big) \le {E[(X-\mu
 $$
 
 with the help of the Markov inequality. ◼
+
+#### Remark
+
+When $$X$$ is known to take values in a range $$[a, b]$$, we claim that **$$\sigma^2 \le (b-a)^2/4$$**. We can use this bound when $$\sigma^2$$ is unknown.
+
+The equality $$\sigma^2 = (b-a)^2/4$$ is satisfied when $$X$$ only takes two extreme values $$a$$ and $$b$$, with equal probability $$1/2$$.
 
 ### Example
 
@@ -98,7 +106,15 @@ Now we can state the **WLLN**:
 
 >For $$\epsilon > 0$$, $$P\big(\vert M_n-\mu\vert \ge \epsilon \big) \rightarrow 0$$ as $$n\rightarrow \infty$$.
 
-Assume there is an event $$A$$ with $$p=P(A)$$. Let $$X_i$$ be the indicator of the evnet $$A$$, i.e., $$X_i=1$$ if $$A$$ occurs, otherwise $$X_i=0$$; the mean of $$X_i$$ equals to $$p$$. Then the **sample mean** $$M_n$$ now becomes the **empirical frequency** of the event $$A$$, since $$M_n$$ counts how many times that $$A$$ happened on average. By **WLLN**, we can see that $$P\big(\vert M_n-p\vert \ge \epsilon \big) \rightarrow 0$$ as $$n\rightarrow \infty$$, which means that **probability can be regarded as frequency** when experiments are conducted for a large number of times.
+Assume there is an event $$A$$ with $$p=P(A)$$. Let $$X_i$$ be the indicator of the evnet $$A$$, i.e., $$X_i=1$$ if $$A$$ occurs, otherwise $$X_i=0$$; the mean of $$X_i$$ equals to $$p$$. Then the **sample mean** $$M_n$$ now becomes the **empirical frequency** of the event $$A$$, since $$M_n$$ counts how many times that $$A$$ happened on average. By **WLLN**, we can see that $$P\big(\vert M_n-p\vert \ge \epsilon \big) \to 0$$ as $$n\to \infty$$, which means that **probability can be regarded as frequency** when experiments are conducted for a large number of times.
+
+By the way, in this case we can show that 
+
+$$
+P\big(\vert M_n-p\vert \ge \epsilon \big) \le {p(1-p)\over n\epsilon^2} \le {1\over 4n\epsilon^2},
+$$
+
+since $$p(1-p) \le 1/4$$. 
 
 ---
 
@@ -135,6 +151,71 @@ However, $$E[X_n]$$ **need not** converge to $$a$$.
 - 要知道 $$X_n$$ 收斂到哪裡，就是先猜然後驗證；注意要考量到 $$P(X_n) = 0$$ 的地方。
 
 - $$M_n$$ converges to $$\mu$$.
+
+### Exercise
+
+> Let $$X_1, X_2\cdots$$ be independent r.v.s that are uniformly distributed over $$[-1, 1]$$. Show that the sequence $$Y_1, Y_2, \cdots$$ converges in probability to some limit.
+
+> From Introduction to Probability (bertsekas, 2nd, 2008), problem 5.5.
+
+1. $$Y_n = (X_n)^n$$,
+2. $$Y_n = X_1\cdots X_n$$,
+3. $$Y_n = \text{max}(X_1, \cdots, X_n)$$.
+
+**Solution**
+
+**1.**
+
+First guess that $$Y_n$$ converges to $$0$$. For all $$\epsilon \in (0, 1)$$, we have
+
+$$
+\begin{align*}
+\mathbf{P}\big(\vert Y_n\vert\ge \epsilon \big) &= \mathbf{P}\big(\vert X_n\vert^n \ge \epsilon \big) \\
+&= \mathbf{P}\big(X_n\ge \epsilon^{1/n} \big) + \mathbf{P}\big(X_n\le -\epsilon^{1/n} \big) \\
+&= {1\over 2}\big[(1-\epsilon^{1/n}) + (-\epsilon^{1/n}-(-1)) \big] \\
+&= 1 - \epsilon^{1/n},
+\end{align*}
+$$
+
+which converges to $$0$$.
+
+**2.**
+
+Since all $$X_i$$ are independent, we have 
+
+$$
+E[Y_n] = E[X_1]\cdots E[X_n] = 0.
+$$
+
+Also
+
+$$
+var(Y_n) = E[Y_n^2] = E[X_1^2]\cdots E[X_n^2] = var(X_1)^n = ({4\over 12})^n,
+$$
+
+and hence $$var(Y_n)\to 0$$. Then by [Chebyshev's inequality](#chebyshev-inequality), we have
+
+$$
+\mathbf{P}(\vert Y_n-0\vert \ge \epsilon) \le ({4\over 12})^n \cdot {1\over \epsilon^2}, 
+$$
+
+and thus $$Y_n$$ converges to $$0$$.
+
+**3.**
+
+First guess that $$Y_n$$ converges to $$1$$. Then
+
+$$
+\begin{align*}
+\mathbf{P}\big(\vert\text{max}(X_1, \cdots, X_n)-1\vert \ge \epsilon\big) &= \mathbf{P}\big(1-\text{max}(X_1, \cdots, X_n) \ge \epsilon\big) \\
+&= \mathbf{P}\big(\text{max}(X_1, \cdots, X_n) \le 1-\epsilon\big) \\
+&= \prod_{i=1}^n \mathbf{P}(X_i\le 1-\epsilon) \\
+&= \Big(\int_{-1}^{1-\epsilon}{1\over 2}dx\Big)^n \\
+&= (1-\epsilon/2)^n,
+\end{align*}
+$$
+
+which converges to $$0$$. ◼
 
 ---
 

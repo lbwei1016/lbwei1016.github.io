@@ -24,6 +24,8 @@ time: 2022/11/29
 
 ## Solve the LLMS problem
 
+> $$\Theta$$ 是 prior、$$X$$ 是 observation。 
+
 我們的 estimator 是線性的，即 $$\hat \Theta = aX+b$$。所以要最小化的目標是 $$ E\big[(\Theta-aX-b)^2 \big]$$。
 
 假設 $$a$$ 已知，我們可以將 $$\Theta-aX$$ 視為一全新的 r.v. $$Y$$；使 $$E\big[(Y-b)^2 \big]$$ [最小化的 $$b$$ 正是 $$E[Y]$$](../B-LMS-revisited/#mean-squared-error-mse) 。於是 $$b = E[\Theta - aX]$$。
