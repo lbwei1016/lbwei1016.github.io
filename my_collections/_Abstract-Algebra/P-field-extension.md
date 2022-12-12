@@ -26,6 +26,8 @@ time: 2022/11/29
     - [Exercises](#exercises)
   - [Remark](#remark-2)
 - [Extension Fields and Residue Classes](#extension-fields-and-residue-classes)
+  - [Construction of algebraic field extension](#construction-of-algebraic-field-extension)
+    - [Remark](#remark-3)
 
 ---
 
@@ -271,7 +273,25 @@ $$
 F[x]\big/\text{Irr}(\alpha, F)F[x] \cong F[\alpha]=F(\alpha).
 $$
 
-Therefore, there are two equivalent ways to construct a **simple algebraic field extension** of $$F$$:
+### Construction of algebraic field extension
+
+Therefore, there are two equivalent ways to construct a **algebraic field extension** of $$F$$:
 
 - **add some element** from a larger field containing $$F$$
 - consider the **residue classes** of $$F[x]$$ modulo some irreducible polynomials.
+
+#### Remark
+
+第一種方法的好處是，我們比較容易同時觀察好幾個 algebraic field extension，因為他們都在同一**代數閉包**（[algebraic closure](../S-algebraic-closure)）之中；第二種方法的好處是，建構過程只牽涉到 $$F$$。
+
+Let $$\alpha$$ and $$\beta$$ be two distinct zeros of an irreducible polynomials $$f(x)$$ over $$F$$, then we have
+
+$$
+F(\alpha) \cong F[x]\Big/f(x)F[x] \cong F(\beta).
+$$
+
+Therefore, the map $$\tau: F(\alpha) \to F(\beta) $$ ,given by $$\tau(g(\alpha)) = g(\beta)$$ for all $$g(x) \in F[x]$$, is a **field isomorphism**. In other words, for $$F$$ itself, it **cannot tell the difference** between $$\alpha$$ and $$\beta$$. 
+
+> 對於同一個 irreducible polynomial，不管加入哪個 zero 結果都一樣！
+
+> $$\Bbb{Q}(\sqrt[3]{2}) \cong \Bbb{Q}(\sqrt[3]{2}\omega) $$, where $$\omega = e^{2\pi i/3}$$.
