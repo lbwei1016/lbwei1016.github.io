@@ -10,6 +10,7 @@ time: 2022/10/15
 - [Lagrange's Theorem](#lagranges-theorem)
   - [Theorem (order of a subgroup)](#theorem-order-of-a-subgroup)
   - [Corollary (order of an element)](#corollary-order-of-an-element)
+    - [Remark](#remark)
   - [Corollary (cyclic)](#corollary-cyclic)
 - [Index](#index)
   - [Definition (index of subgroups)](#definition-index-of-subgroups)
@@ -39,7 +40,16 @@ This proves the theorem.
 
 **Proof**
 
-Let $$H=\langle a \rangle$$, and apply Lagrange's Thm.
+Let $$H=\langle a \rangle$$, and apply Lagrange's Thm. ◼
+
+#### Remark
+
+於是 $$g$$ 是 $$G$$ 的 generator 的充分必要條件就是：For all $$d$$ divides $$n$$ and $$d\not = n$$,
+
+$$
+g^d \not = 1.
+$$
+
 
 ### Corollary (cyclic)
 > Every group $$G$$ of prime order is cyclic.

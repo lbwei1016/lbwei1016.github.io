@@ -61,6 +61,8 @@ Therefore, $$F(\alpha, \beta)$$ is a finite extension of $$F$$. ◼
 
 An **algebraically closed** field $$F$$ can be characterized by the property that every polynomail $$f(x)$$ in $$F[x]$$ factors into a product if **linear factors** over $$F$$. 
 
+> 用 division algorithm 驗證 linear factor 的存在性！
+
 This means that if $$F$$ is algebraically closed, then we will **not** get anything new by **joining zeros** of polynomials in $$F[x]$$ to $$F$$.
 
 > 所以才說 **closed**！
