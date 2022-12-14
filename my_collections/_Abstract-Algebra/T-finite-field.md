@@ -19,8 +19,11 @@ time: 2022/12/12
     - [Definition (derivation)](#definition-derivation)
       - [Lemma (operations)](#lemma-operations)
     - [**Proof**](#proof)
+    - [Theorem (also a zero; power)](#theorem-also-a-zero-power)
   - [Remark](#remark-1)
   - [Theorem (Galois fields)](#theorem-galois-fields)
+- [Cyclotomic Polynomials over Finite Fields](#cyclotomic-polynomials-over-finite-fields)
+  - [Question](#question)
 
 
 ---
@@ -149,13 +152,13 @@ $$0^{p^n} = 0$$. Thus $$0 \in S$$.
 
 Let $$\alpha$$ and $$\beta$$ be two elements in $$S$$.
 
-Recall that $$p \mid {p \choose k}$$ for all $$1\le k \le p-1$$. Thus for $$k$$ in that range,
+Recall that $$p \mid {p \choose k}$$ for all $$1\le k \le p-1$$. Since $$p\cdot 1 = p = 0$$, for $$k$$ in that range we have
 
 $$
-{p\choose k}u^kv^{p-k} = ap\cdot v^p u^kv^{-k} = a(p\cdot v^p) u^kv^{-k} = 0,
+{p\choose k}u^kv^{p-k} = 0,
 $$
 
-for all $$u, v \in \overline{\Bbb Z}_p$$ since $$v^p=1$$ and $$p\cdot 1 = 0$$. This means that $$(u+v)^p = u^p + v^p$$ for all $$u, v \in \overline{\Bbb Z}_p$$, and thus
+for all $$u, v \in \overline{\Bbb Z}_p$$. This means that $$(u+v)^p = u^p + v^p$$ for all $$u, v \in \overline{\Bbb Z}_p$$, and thus
 
 $$
 (\alpha+\beta)^{p^n} = ((\alpha+\beta)^p)^{p^{n-1}} = (\alpha^p + \beta^p)^{p^{n-1}} = \cdots = a^{p^n} + \beta^{p^n} = \alpha + \beta.
@@ -175,9 +178,131 @@ $$
 
 which means $$-\alpha\in S$$. ◼
 
+#### Theorem (also a zero; power)
+> Let $$\alpha \in \Bbb{Z}_p$$ be a zero of $$f(x)$$ in $$\overline{\Bbb Z}_p$$. Then $$\alpha^p$$ is also a zero of $$f(x)$$.
+
+**Proof**
+
+Let $$f(x) = \sum_{i=0}^n a_ix^i$$, where $$a_i\in \Bbb{Z}_p$$. This means that $$a_i^p = a_i$$ for all $$i \in \{0, 1, \cdots, (n-1)\}$$. Then
+
+$$
+0 = \big(f(\alpha) \big)^p = \Big(\sum_{i=0}^n a_i\alpha^i\Big)^p.
+$$
+
+By the same argument of the <ins>closed</ins> part in the previous proof, we have
+
+$$
+\Big(\sum_{i=0}^n a_i\alpha^i\Big)^p = \sum_{i=0}^n a_i^p\alpha^{pi} = \sum_{i=0}^n a_i\alpha^{pi} = f(\alpha^p) = 0. \tag*{$\blacksquare$}
+$$
+
 ### Remark
 
 綜合以上兩 theorem，對於任意 prime power $$p^n$$，存在**唯一**的 finite field，其包含 $$p^n$$ 個 $$\overline{\Bbb Z}_p$$ 中的元素，稱為 the **Galois field**，以 $$\Bbb{F}_{p^n}$$ 或 $$GF(p^n)$$ 表示。
 
 ### Theorem (Galois fields)
-> Let $$F$$ be a field of $$p^n$$ elements. then $$F \cong \Bbb{F}_{p^n}$$.
+> Let $$F$$ be a field of $$p^n$$ elements. Then $$F \cong \Bbb{F}_{p^n}$$.
+
+**Proof**
+
+Let $$\alpha$$ be a generator of $$F^\times$$ and $$\alpha'$$ be a zero of $$f(x) = \text{Irr}(\alpha, \Bbb{Z}_p)$$ in $$\overline{\Bbb Z}_p$$. Then
+
+$$
+F = \Bbb{Z}_p(\alpha) \cong \Bbb{Z}_p[x]\Big/f(x)\Bbb{Z} _p[x] \cong \Bbb{Z}_p(\alpha') = GF(p^n). ◼
+$$
+
+> 參考 [Field extension](../P-field-extension/#remark-3)。
+
+---
+
+## Cyclotomic Polynomials over Finite Fields
+
+> See [More on cyclotomic polynomials](../O-poly-factorization/#more-on-cyclotomic-polynomials).
+
+Recall that $$n$$-th cyclotomic polynomial is defined to be
+
+$$
+\Phi_p(x) = \prod_{\ \ \ \ a\in\mathbb{C}^\times \\ \text{ord}(a) = n} (x-a),
+$$
+
+which can be computed inductively using the formula
+
+$$
+x^n - 1 = \prod_{d\mid n}\Phi_d(x).
+$$
+
+If we replace $$\Bbb C$$ by $$\overline{\Bbb Z}_p$$ in the definition of $$\Phi_n(x)$$ (and denote the resulted function as $$\Phi_{n,p}(x)$$), then the above formula still **holds if $$p\not \mid n$$**. Especially, the above formula shows that when $$\text{char}(F)=p$$, then $$\Phi_{n, p}(x) \in \Bbb{Z}_p[x]$$. Moreover, we also have $$\Phi_n(x) \equiv \Phi_{n,p}(x) \pmod p $$, given $$p\not \mid n$$.
+
+> What if $$p \mid n$$?
+
+Let us denote $$\Phi_{n, p}(x)$$ still by $$\Phi_n(x)$$ for short. For $$GF(16)^\times$$, its elements are zeros of $$x^{15}-1$$. By the above formula, we have
+
+$$
+x^{15}-1 = \Phi_1(x)\Phi_3(x)\Phi_5(x)\Phi_{15}(x).
+$$
+
+Moreover, over $$\Bbb{Z}_2$$, we have
+
+$$
+\begin{align*}
+\Phi_1(x) &= x - 1 \\
+\Phi_3(x) &= x^2 + x + 1\\
+\Phi_5(x) &= x^4 + x^3 + x^2 + x + 1 \\
+\Phi_{15}(x) &= (x^4+x+1)(x^4+x^3+1) .
+\end{align*}
+$$
+
+Therefore, there are exactly **three** irreducible monic polynomials of degree $$4$$. Besides, zeros of $$x^4 + x^3 + x^2 + x + 1$$ are of multiplicative order $$5$$, and zeros of $$x^4+x+1$$ and $$x^4+x^3+1$$ are of multiplicative order $$15$$.
+
+> How to find the order of those zeros?
+
+Now if $$\alpha$$ is a zero of $$x^4+x+1$$, then
+
+$$
+\Bbb{Z}_2(\alpha)^\times = \{1, \alpha, \cdots, \alpha^{14}\} \cong \Bbb{Z}_{15}.
+$$
+
+The elements of order $$3$$ are $$\alpha^5$$ and $$\alpha^{10}$$, which implies that 
+
+$$
+x^2 + x + 1 = (x-\alpha^5)(x-\alpha^{10}).
+$$
+
+Similarly, the elements of order $$5$$ are $$\alpha^3, \alpha^6, \alpha^9$$ and $$\alpha^{12}$$, which implies that 
+
+$$
+x^4+x^3+x^2+x+1 = (x-\alpha^3) (x-\alpha^6) (x-\alpha^9 )(x-\alpha^{12}).
+$$
+
+For elements of order $$15$$, they are $$\{1,2,4,7,8,11,13,14 \}$$, and they can be divided into two subsets: $$\{1,2,4,8 \}$$ and $$\{7, 14, 13, 11\}$$. We can see that 
+
+$$
+1 \xrightarrow[]{\times 2}2 \xrightarrow[]{\times 2}4 \xrightarrow[]{\times 2}8,
+$$
+
+and
+
+$$
+7 \xrightarrow[]{\times 2}14 \xrightarrow[]{\times 2}13 \xrightarrow[]{\times 2}11,
+$$
+
+modulo $$15$$. Then
+
+$$
+x^4+x+1 = (x-\alpha)(x-\alpha^2)(x-\alpha^4)(x-\alpha^8), \\
+x^4+x^3+1 = (x-\alpha^7)(x-\alpha^{14})(x-\alpha^{13})(x-\alpha^{11}).
+$$
+
+But how are they factored?
+
+### Question
+
+綜合以上定義與觀察，回答
+
+- What if $$p \mid n$$?
+- How to find the order of those zeros?
+- But how they are factored?
+  - Why different irreducible polynomials have **distinct** linear factors?
+
+並試圖歸納以上理論！
+
+---
