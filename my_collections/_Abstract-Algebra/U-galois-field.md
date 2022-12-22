@@ -7,6 +7,10 @@ time: 2022/12/14
 ---
 
 **Table of Content**
+- [Theorem (subfield)](#theorem-subfield)
+  - [Corollary (product of irr. poly.)](#corollary-product-of-irr-poly)
+  - [Remark](#remark)
+- [Summary](#summary)
 
 ---
 

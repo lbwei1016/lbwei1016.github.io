@@ -161,7 +161,7 @@ $$
 for all $$u, v \in \overline{\Bbb Z}_p$$. This means that $$(u+v)^p = u^p + v^p$$ for all $$u, v \in \overline{\Bbb Z}_p$$, and thus
 
 $$
-(\alpha+\beta)^{p^n} = ((\alpha+\beta)^p)^{p^{n-1}} = (\alpha^p + \beta^p)^{p^{n-1}} = \cdots = a^{p^n} + \beta^{p^n} = \alpha + \beta.
+(\alpha+\beta)^{p^n} = ((\alpha+\beta)^p)^{p^{n-1}} = (\alpha^p + \beta^p)^{p^{n-1}} = \cdots = \alpha^{p^n} + \beta^{p^n} = \alpha + \beta.
 $$
 
 Therefore, $$\alpha+\beta \in S$$.
