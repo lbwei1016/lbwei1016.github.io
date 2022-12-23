@@ -14,6 +14,7 @@ time: 2022/12/12
   - [Remark](#remark)
 - [Structure of Finite Fields](#structure-of-finite-fields)
   - [Theorem (finite makes simple)](#theorem-finite-makes-simple)
+  - [Theorem (finite is never closed)](#theorem-finite-is-never-closed)
   - [Theorem (zero; closure)](#theorem-zero-closure)
   - [Theorem (exsistence)](#theorem-exsistence)
     - [Definition (derivation)](#definition-derivation)
@@ -81,6 +82,19 @@ We know that $$\Bbb{Z}_p$$ is of characteristic $$p$$. Since $$\Bbb{Z}_p$$ is cy
 **Proof**
 
 Let $$\alpha$$ be a generator of the multiplicative group $$E^\times$$. Then $$E=F(\alpha)$$. ◼
+
+### Theorem (finite is never closed)
+> **No** finite field is be algebraically closed.
+
+**Proof**
+
+Suppose $$F$$ and $$E$$ are two finite fields, and $$F\le E$$. We have
+
+$$
+[E:\Bbb Z_p] = [E:F][F:\Bbb Z_p].
+$$
+
+Since $$F, E$$ are both finite, $$[E:\Bbb Z_p]$$ and $$[F:\Bbb Z_p]$$ are finite, which implies that $$[E:F]$$ is finite as well. By this [lemma](../S-algebraic-closure/#lemma-finite-degree-implies-algebraic), there exists $$\alpha \in E$$ such that $$\alpha$$ is algebraic over $$F$$. Hence, $$F$$ is not algebraically closed. ◼
 
 ### Theorem (zero; closure)
 > Let $$E$$ be a field of $$p^n$$ elements contained in $$\overline{\Bbb{Z}}_p$$. Then the elements of $$E$$ are **precisely** the **zeros of $$x^{p^n}-x$$** in $$\overline{\Bbb{Z}}_p$$.

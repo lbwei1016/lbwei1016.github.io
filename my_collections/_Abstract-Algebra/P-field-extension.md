@@ -32,7 +32,7 @@ time: 2022/11/29
 ---
 
 ## Definition (field extension)
-> A field $$E$$ is an **extension field** of a field $$F$$ if $$F\le E$$.
+> A field $$E$$ is an **extension field** of a field $$F$$ if $$F\le E$$, denoted by $$E/F$$.
 
 ### Definition (simple extension)
 > Let $$F\le E$$. If there exists $$\alpha\in E$$ such that $$E=F(\alpha)$$, then $$E=F(\alpha)$$ is a **simple extension** of $$F$$.
@@ -180,7 +180,7 @@ $$
 
 #### Proof
 
-By [this theorem](#theorem-algebraic-extension), we have $$F(\alpha)=F[\alpha]$$ since $$\alpha$$ is algebraic over $$F$$. Thus $$\beta=f(\alpha)$$ for some $$f(x)\in F[x]$$.
+By [this theorem](#theorem-more-than-a-ring), we have $$F(\alpha)=F[\alpha]$$ since $$\alpha$$ is algebraic over $$F$$. Thus $$\beta=f(\alpha)$$ for some $$f(x)\in F[x]$$.
 
 **existence**
 

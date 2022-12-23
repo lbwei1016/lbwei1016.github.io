@@ -69,7 +69,7 @@ If $$\alpha$$ is transcendental over $$F$$, then the vectors $$1, \alpha, \alpha
 ---
 
 ## Definition (algebraic extension)
-> An extension field $$E$$ of a field $$F$$ is an **algebraic extension of $$F$$** is **every** element in $$E$$ is algebraic over $$F$$.
+> An extension field $$E$$ of a field $$F$$ is an **algebraic extension of $$F$$** if **every** element in $$E$$ is algebraic over $$F$$.
 
 ### Exercise
 > Show that $$F(\alpha)$$ is an algebraic extension of $$F$$, when $$\alpha$$ is algebraic over $$F$$.
@@ -146,6 +146,8 @@ We have $$x^3 - 2 = (x-\sqrt[3]{2})(x-\sqrt[3]{2}\omega)(x - \sqrt[3]{2}\omega^2
 
 First notice that $$\Bbb Q(\sqrt[3]{2}\omega, \sqrt[3]{2}) = \Bbb Q(\sqrt[3]{2}, \omega)$$. Since we have already know $$\deg(\omega, \Bbb Q(\sqrt[3]{2})) = 2$$, the desired value is therefore $$2$$.
 
+> 因為 $$\omega^2+\omega+1 = 0$$，所以能得到上述 degree 為 $$2$$ 的結果。
+
 ### **Exercise 2**
 
 **2.1**
@@ -210,6 +212,10 @@ $$
 
 Thus $$\{1, \alpha, \alpha^2, \alpha^3\}$$ are linearly independent. 
 
+> 以 $$\{1, \sqrt{2}, \sqrt{3}, \sqrt{6}\}$$ 為基底，驗證 $$\{1, \alpha, \alpha^2, \alpha^3\}$$ 是否線性獨立。因為 $$\Bbb Q(\alpha) \subset \Bbb Q(\sqrt{2}, \sqrt{3})$$，因此我們可以用 $$\Bbb Q(\sqrt{2}, \sqrt{3})$$ 的基底來表示 $$\Bbb Q(\alpha)$$ 的元素。
+
+> 知道 $$\{1, \alpha, \alpha^2, \alpha^3\}$$ 線性獨立後，我們[也就知道](../Q-algebraic-extension/#theorem-basis) $$\Bbb Q(\alpha)$$ over $$\Bbb Q$$ 的 degree 至少是 $$4$$！
+
 **2.3**
 
 > Let $$\gamma = \sqrt{2} + \sqrt{3} - \sqrt{6}$$. Find $$\text{Irr}(\gamma, \Bbb Q)$$.
@@ -229,7 +235,7 @@ $$
 \begin{align*}
 [1]_\beta^T &= (1, 0, 0, 0), \\
 [\gamma]^T_\beta &= (0, 1, 1, -1), \\
-[\gamma]^T_\beta &= (11, -6, -4, 2), \\
+[\gamma^2]^T_\beta &= (11, -6, -4, 2), \\
 [\gamma^3]_\beta^T &= (-36, 29, 27, -21), \\
 [\gamma^4]_\beta^T &= (265, 180, -136, 92).
 \end{align*}

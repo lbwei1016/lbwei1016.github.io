@@ -12,8 +12,8 @@ time: 2022/10/20
   - [Corollary (one-to-one)](#corollary-one-to-one)
   - [Corollary (onto)](#corollary-onto)
 - [Facts](#facts)
-  - [fact $$\\rm I$$](#fact-rm-i)
-  - [fact $$\\rm II$$](#fact-rm-ii)
+  - [fact I](#fact-i)
+  - [fact II](#fact-ii)
   - [Question (all the homomorphism)](#question-all-the-homomorphism)
 - [Kernel](#kernel)
   - [Definition (kernel)](#definition-kernel)
@@ -32,7 +32,7 @@ time: 2022/10/20
 - [Homomorphism and Normal Groups](#homomorphism-and-normal-groups)
   - [Theorem (homomorphism and normal subgroups)](#theorem-homomorphism-and-normal-subgroups)
   - [Theorem (the first isomorphism theorem)](#theorem-the-first-isomorphism-theorem)
-  - [Theorem (quotient group of $$\\mathbb{Z}^n$$)](#theorem-quotient-group-of-mathbbzn)
+  - [Theorem (quotient group of integer modulo $$n$$)](#theorem-quotient-group-of-integer-modulo-n)
     - [Question](#question-1)
     - [Remark](#remark-1)
 - [Reference](#reference)
@@ -72,7 +72,7 @@ Let $$\phi$$ be a homomorphism of a group $$G$$ into a group $$G'$$.
 
 Let $$\phi: G\to G'$$ be a group homomorphism.
 
-### fact $$\rm I$$
+### fact I
 
 For $$a \in G$$, suppose its order is $$n$$. Since $$\phi$$ is homomorphism, we have
 
@@ -86,7 +86,7 @@ $$
 \text{ord}(\phi(a))\big\vert n.
 $$
 
-### fact $$\rm II$$
+### fact II
 
 If $$\gcd(\vert G \vert, \vert G' \vert) = 1$$, for all $$g$$ in $$G$$, we let $$n = \text{ord}(\phi(g))$$ and $$m = \text{ord}(g)$$.
 
@@ -437,7 +437,7 @@ For all $$g' \in \psi(G)$$, we have some $$g \in G$$ such that $$\psi(g) = g'$$.
 
 By the fourth statement of [this theorem](#theorem-equivalent-conditions). ◼
 
-### Theorem (quotient group of $$\mathbb{Z}^n$$)
+### Theorem (quotient group of integer modulo $$n$$)
 > Every **abelian group** with **$$n$$ generators** is isomorphic to a **quotient group of $$\mathbb{Z}^n$$.**
 
 **Proof**
