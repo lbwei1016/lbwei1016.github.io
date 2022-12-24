@@ -193,7 +193,7 @@ $$
 which means $$-\alpha\in S$$. ◼
 
 #### Theorem (also a zero; power)
-> Let $$\alpha \in \Bbb{Z}_p$$ be a zero of $$f(x)$$ in $$\overline{\Bbb Z}_p$$. Then $$\alpha^p$$ is also a zero of $$f(x)$$.
+> Let $$\alpha$$ be a zero of $$f(x)\in \Bbb Z_p[x]$$ in $$\overline{\Bbb Z}_p$$. Then $$\alpha^p$$ is also a zero of $$f(x)$$.
 
 **Proof**
 
@@ -265,7 +265,7 @@ $$
 \end{align*}
 $$
 
-Therefore, there are exactly **three** irreducible monic polynomials of degree $$4$$. Besides, zeros of $$x^4 + x^3 + x^2 + x + 1$$ are of multiplicative order $$5$$, and zeros of $$x^4+x+1$$ and $$x^4+x^3+1$$ are of multiplicative order $$15$$.
+Therefore, there are exactly **three** irreducible monic polynomials of degree $$4$$ over $$\Bbb Z_2$$. Besides, zeros of $$x^4 + x^3 + x^2 + x + 1$$ are of multiplicative order $$5$$, and zeros of $$x^4+x+1$$ and $$x^4+x^3+1$$ are of multiplicative order $$15$$.
 
 > How to find the order of those zeros?
 
@@ -314,8 +314,9 @@ But how are they factored?
 
 - What if $$p \mid n$$?
 - How to find the order of those zeros?
-- But how they are factored?
+- But how are they factored?
   - Why different irreducible polynomials have **distinct** linear factors?
+  - Because $$x^{p^n}-x$$ has no repeated root, and cyclotomic polynomials are factors of $$x^{p^{n-1}}-1$$. (See the proof of this [theorem](#theorem-exsistence).)
 
 並試圖歸納以上理論！
 
