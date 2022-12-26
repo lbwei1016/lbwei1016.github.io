@@ -29,6 +29,7 @@ time: 2022/12/12
   - [Corollary (factorization)](#corollary-factorization)
     - [Exercise I](#exercise-i)
     - [Exercise II](#exercise-ii)
+    - [Exercise III](#exercise-iii)
     - [Remark](#remark-2)
 - [Summary](#summary)
 
@@ -271,15 +272,21 @@ $$
 \end{align*}
 $$
 
-Therefore, there are exactly **three** irreducible monic polynomials of degree $$4$$ over $$\Bbb Z_2$$. Besides, zeros of $$x^4 + x^3 + x^2 + x + 1$$ are of multiplicative order $$5$$, and zeros of $$x^4+x+1$$ and $$x^4+x^3+1$$ are of multiplicative order $$15$$.
+> Because of this [corollary](#corollary-factorization), $$\Phi_{15}(x)$$ must be factored into irreducible polynomials of degree $$1, 2$$ or $$4$$.
 
-> How to find the order of those zeros?
+Therefore, there are exactly [three](#exercise-i) irreducible monic polynomials of degree $$4$$ over $$\Bbb Z_2$$. Besides, zeros of $$x^4 + x^3 + x^2 + x + 1$$ are of multiplicative order $$5$$, and zeros of $$x^4+x+1$$ and $$x^4+x^3+1$$ are of multiplicative order $$15$$.
+
+> Q: How to find the order of those zeros?
+> 
+> A: This is by [definition](../O-poly-factorization/#more-on-cyclotomic-polynomials). (See the substack of $$\prod$$.) To it state explicitly: All the zeros of $$\Phi_n(x)$$ are of degree $$n$$. (any [exceptions](#exercise-iii)?)
 
 Now if $$\alpha$$ is a zero of $$x^4+x+1$$, then
 
 $$
 \Bbb{Z}_2(\alpha)^\times = \{1, \alpha, \cdots, \alpha^{14}\} \cong \Bbb{Z}_{15}.
 $$
+
+> 因為 $$\alpha$$ 的 order 是 $$15$$，所以他是 $$\Bbb Z_2(\alpha)^\times$$ 的 generator！
 
 The elements of order $$3$$ are $$\alpha^5$$ and $$\alpha^{10}$$, which implies that 
 
@@ -320,9 +327,10 @@ But how are they factored?
 
 - What if $$p \mid n$$?
 - How to find the order of those zeros?
+  - By definition.
 - But how are they factored?
   - Why different irreducible polynomials have **distinct** linear factors?
-  - Because $$x^{p^n}-x$$ has no repeated root, and cyclotomic polynomials are factors of $$x^{p^{n-1}}-1$$. (See the proof of this [theorem](#theorem-exsistence).)
+    - Because $$x^{p^n}-x$$ has no repeated root, and cyclotomic polynomials are factors of $$x^{p^{n-1}}-1$$. (See the proof of this [theorem](#theorem-exsistence).)
 
 並試圖歸納以上理論！
 
@@ -385,20 +393,7 @@ $$
 #### Exercise II
 > Show that $$\Phi_{11}(x)$$ is irreducible over $$\Bbb Z_3$$.
 
-Suppose $$\alpha$$ is a zero of $$\Phi_{11}(x)$$, which means that 
-
-$$
-\Phi_{11}(\alpha) = \alpha^{10} + \cdots + 1 = 0.
-$$
-
-If we multiply both sides by $$\alpha$$, we obtain
-
-$$
-\alpha^{11} + \alpha^{10} \cdots + \alpha = 0, \\
-\alpha^{11} =  -(\alpha^{10} \cdots + \alpha) = 1,
-$$
-
-which implies that the order of $$\alpha$$ is $$11$$.
+Suppose $$\alpha$$ is a zero of $$\Phi_{11}(x)$$. By definition, the order of $$\alpha$$ is $$11$$.
 
 Then, suppose $$[\Bbb Z_3(\alpha):\Bbb Z_3] = d$$, which can only be one of $$1, 2, 5$$ and $$10$$, since [all the irreducible factors of a cyclotomic polynomial have the same degree](https://math.stackexchange.com/questions/3945405/showing-that-the-irreducible-factors-of-the-cyclotomic-polynomial-in-mathbbq). By Lagrange's Theorem, $$\vert \langle \alpha \rangle\vert$$ divides $$\vert \Bbb{Z}_3(\alpha)^\times\vert$$, which is to say
 
@@ -410,29 +405,28 @@ After some calculation, we can discover that only when $$d=10$$, $$11$$ is a fac
 
 > In general, $$\Phi_{n}(x)$$ is irreducible over $$\Bbb Z_p$$ iff **$$p$$ is a generator of $$\Bbb Z_n^\times$$**.
 
+#### Exercise III
+> Check whether $$\Phi_9(x)$$ is irreducible over $$\Bbb Z_3$$.
+
+First note that $$\deg\Phi_9(x) = 6$$. Suppose $$\alpha$$ is a zero of $$\Phi_9(x)$$, and suppose $$[\Bbb Z_3(\alpha): \Bbb Z_3] = d$$. Then by Lagrange's Theorem, we have $$9 \mid 3^d - 1$$, where $$d=1, 2, 3$$ or $$6$$. Unfortunately, none of the values fit. How? Let's then try to factorize $$\Phi_9(x)$$ over $$\Bbb Z_3$$.
+
+$$\Phi_9(x) = x^6 + x^3 + 1 = x^6 -2x^3 + 1$$. After some more calculations, we have
+
+$$
+\Phi_9(x) = (x-1)^6,
+$$
+
+which yields that $$\alpha = 1\in \Bbb Z_3$$! It turns out that our belief in "$$\text{ord}(\alpha) = 9$$" is incorrect. Actually, $$1$$ and $$-1$$ are two possible roots of a cyclotomic polynomial, whose orders are $$1$$ and $$2$$, respectively. Therefore, if none of the possible degrees $$d$$ work, we should check $$1$$ and $$-1$$.
+
+In this case, $$\Phi_9(x)$$ is indeed reducible over $$\Bbb Z_3$$. ◼
+
 #### Remark
 
 在[這裡](../P-field-extension/#remark-2)，我們說明了對於 field extension，加入 generator 是比較好的。但是如何找到 a zero $$\alpha$$ of an irreducible polynomial $$f(x)$$，使得 $$\alpha$$ 是 generator？
 
-如果 $$\alpha$$ 是 generator，則 $$\alpha$$ 的 order 必須是 $$p^n-1$$，等同於，$$\alpha$$ 是 $$\Phi_{p^n-1}(x)$$ 的 zero 之一；也就是說，$$f(x)$$ 必須是 $$\Phi_{p^n-1}(x)$$ 的不可約因式之一。例如：
+如果 $$\alpha$$ 是 generator，則 $$\alpha$$ 的 order 必須是 $$p^n-1$$，等同於，$$\alpha$$ 是 $$\Phi_{p^n-1}(x)$$ 的 zero 之一；也就是說，$$f(x)$$ 必須是 $$\Phi_{p^n-1}(x)$$ 的不可約因式之一。
 
-Let $$\alpha$$ be a zero of $$x^2+1$$ over $$\Bbb Z_3[x]$$ in $$\overline{\Bbb Z_3}$$. We can see that $$\vert \Bbb Z_3(\alpha)^\times\vert = 3^2-1 = 8$$, and 
-
-$$
-\Phi_8(x) = {x^8-1\over (x-1)(x+1)(x^2+1)} = x^4 + 1.
-$$ 
-
-Let's guess that $$\alpha+1$$ is a generator, so that $$(\alpha+1)^4 + 1$$ must equal to zero. To verify it, 
-
-$$
-\begin{align*}
-(\alpha+1)^4 + 1 &= \alpha^4 + 4\alpha^3 + 6\alpha^2 + 4\alpha + 1 + 1 \\
-&= \alpha^2(\alpha^2+1) + 5\alpha^2 + 4\alpha(\alpha^2+1) + 2 \\
-&= 2\alpha^2 + 2 = 0.
-\end{align*}
-$$
-
-Indeed, $$\alpha+1$$ is a generator of $$\Bbb Z_3(\alpha)^\times$$. However, should we always make a guess, or is there a better way that leads to an answer? Can we [**factorize** cyclotomic polynomials over finite fields](#question)?
+於是，做體擴張的時候都選 $$\Phi_{p^n-1}(x)$$ 的 zero 加入，就保證是 generator 了！
 
 ---
 
