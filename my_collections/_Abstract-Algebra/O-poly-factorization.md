@@ -113,6 +113,8 @@ which means $$ab=1$$. ◼
 
 存在一個 $$p$$ 就夠了。雖然這個方法可以方便建構 irreducible polynomials，但是只能驗證特定的 polynomial。
 
+> 注意 $$a_0 \not\equiv 0 \pmod{p^2}$$ 但 $$a_0 \equiv 0 \pmod p$$！
+
 **Example**
 
 $$x^2-2$$ is irreducible over $$\mathbb{Q}$$ by the Eisenstein criterion for $$p=2$$. This show that $$\sqrt{2}$$ is an *irrational* number.
