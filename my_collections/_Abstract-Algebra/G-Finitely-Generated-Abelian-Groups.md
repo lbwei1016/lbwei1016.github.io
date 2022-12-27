@@ -17,7 +17,7 @@ time: 2022/10/15
   - [Theorem (subgroup of order $$m$$)](#theorem-subgroup-of-order-m)
   - [$$p$$-torsion Subgroup](#p-torsion-subgroup)
     - [Determine group structure](#determine-group-structure)
-    - [Theorem (cardinality of $$\mathbb{Z}_m^{\times}$$)](#theorem-cardinality-of-mathbbz_mtimes)
+    - [Theorem (cardinality of $$\\mathbb{Z}\_m^{\\times}$$)](#theorem-cardinality-of-mathbbz_mtimes)
 
 ---
 
@@ -172,7 +172,7 @@ $$
 \mathbb{Z}_{p^{r_1}}\times \cdots \mathbb{Z}_{p^{r_k}}.
 $$
 
-Therefore, to determine the **group structure of G**, it is sufficient to determine the **group structure of its p-torsion subgroups**.
+Therefore, to determine the **group structure of $$G$$**, it is sufficient to determine the **group structure of its p-torsion subgroups**.
 
 #### Determine group structure
 
