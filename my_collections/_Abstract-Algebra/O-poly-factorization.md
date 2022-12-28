@@ -32,6 +32,7 @@ time: 2022/11/24
   - [Irreducible polynomials](#irreducible-polynomials)
     - [Theorem (like prime)](#theorem-like-prime)
     - [Theorem (unique factorization)](#theorem-unique-factorization)
+    - [Theorem (irreducibility and square)](#theorem-irreducibility-and-square)
 - [Ring of Residue Classes](#ring-of-residue-classes)
   - [Definition (ring of residue classes)](#definition-ring-of-residue-classes)
   - [Theorem (irreducible and field)](#theorem-irreducible-and-field)
@@ -323,6 +324,24 @@ p_1(x)\cdots p_r(x) = (u_1p_1(x))q_2(x)\cdots q_s(x).
 $$
 
 Canceling $$p_1(x)$$, we get $$p_2(x)\cdots p_r(x) = u_1q_2(x)\cdots q_s(x)$$. Repeating the above procedure, we can eventually obtain that the two factorizations are exactly equal. ◼
+
+#### Theorem (irreducibility and square)
+> Let $$F=\Bbb Z_p(\alpha) $$, where $$\alpha$$ is a zero of $$f(x) = x^2+ax+b$$ in $$\overline{\Bbb Z}_p$$, and $$p$$ is a prime. Then $$f(x^2) = x^4+ax^2+b$$ is reducible over $$\Bbb Z_p$$ iff $$\alpha$$ is a square in $$F$$.
+
+**Proof**
+
+If $$\alpha$$ is a square in $$F$$, then for $$\beta^2=\alpha$$, $$\beta \in F$$. Suppose for contradiction that $$f(x^2)$$ is irreducible over $$\Bbb Z_p$$. Since $$f(\alpha) = 0$$, $$f(\beta^2) = \beta^4 + a\beta^2 + b = 0$$, which implies that $$\deg(\beta, \Bbb Z_p) = 4$$. However, since $$\beta \in F$$ and $$\deg(\alpha, \Bbb Z_p)$$ is only $$2$$, we have a contradiction. Therefore, $$f(x^2)$$ is reducible.
+
+Now if $$\alpha$$ is not a square in $$F$$, then for $$\beta^2=\alpha$$, $$\beta \not\in F$$. Suppose for contradiction that $$f(x^2)$$ is reducible over $$\Bbb Z_p$$. Again, $$f(\beta^2) = 0$$ and since $$f(x^2)$$ is reducible, $$\beta$$ is also a zero of some quadratic polynomial over $$\Bbb Z_p$$, say $$x^2+cx+d$$. Then,
+
+$$
+\begin{align*}
+&\beta^2 = \alpha = -c\beta-d, \\
+\implies &\beta = (-c)^{-1}(\alpha + d) \in F,  
+\end{align*}
+$$
+
+which is a contradiction. Therefore $$f(x^2)$$ must be irreducible. ◼
 
 ---
 
