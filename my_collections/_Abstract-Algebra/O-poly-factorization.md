@@ -444,7 +444,7 @@ $$
 \begin{align*}
 f(x) = x^4+1 &= (x^2+ax+b)(x^2+cx+d) \\
 &= x^4 + (a+c)x^3 + (ac+b+d)x^2 + (ad+bc)x + bd.
-\end{align*}.
+\end{align*}
 $$ 
 
 Then we have

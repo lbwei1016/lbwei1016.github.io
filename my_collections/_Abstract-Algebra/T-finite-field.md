@@ -91,7 +91,7 @@ We know that $$\Bbb{Z}_p$$ is of characteristic $$p$$. Since $$\Bbb{Z}_p$$ is cy
 Let $$\alpha$$ be a generator of the multiplicative group $$E^\times$$. Then $$E=F(\alpha)$$. ◼
 
 ### Theorem (finite is never closed)
-> **No** finite field is be algebraically closed.
+> **No** finite field is algebraically closed.
 
 **Proof**
 
