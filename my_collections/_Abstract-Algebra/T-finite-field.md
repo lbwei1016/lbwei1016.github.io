@@ -416,7 +416,7 @@ $$
 \Phi_9(x) = (x-1)^6,
 $$
 
-which yields that $$\alpha = 1\in \Bbb Z_3$$! It turns out that our belief in "$$\text{ord}(\alpha) = 9$$" is incorrect. Actually, $$1$$ and $$-1$$ are two possible roots of a cyclotomic polynomial, whose orders are $$1$$ and $$2$$, respectively. Therefore, if none of the possible degrees $$d$$ work, we should check $$1$$ and $$-1$$.
+which yields that $$\alpha = 1\in \Bbb Z_3$$! It turns out that our belief in "$$\text{ord}(\alpha) = 9$$" is incorrect. This is because $$3\mid 9$$, which violates our assumption that $$p\not \mid n$$ [here](#cyclotomic-polynomials-over-finite-fields).
 
 In this case, $$\Phi_9(x)$$ is indeed reducible over $$\Bbb Z_3$$. ◼
 

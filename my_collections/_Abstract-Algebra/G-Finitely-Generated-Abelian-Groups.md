@@ -17,7 +17,7 @@ time: 2022/10/15
   - [Theorem (subgroup of order $$m$$)](#theorem-subgroup-of-order-m)
   - [$$p$$-torsion Subgroup](#p-torsion-subgroup)
     - [Determine group structure](#determine-group-structure)
-    - [Theorem (cardinality of $$\\mathbb{Z}\_m^{\\times}$$)](#theorem-cardinality-of-mathbbz_mtimes)
+    - [Theorem (cardinality)](#theorem-cardinality)
 
 ---
 
@@ -217,6 +217,6 @@ which implies the following results:
 
 關於 cardinality，補一個 theorem：
 
-#### Theorem (cardinality of $$\mathbb{Z}_m^{\times}$$)
+#### Theorem (cardinality)
 
 > $$\vert \mathbb{Z}_m^{\times} \vert = m\prod_p(1-1/p) $$, where $$p$$ runs through all prime divisors of $$m$$.
