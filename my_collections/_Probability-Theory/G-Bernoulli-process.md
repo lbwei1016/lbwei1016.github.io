@@ -33,6 +33,8 @@ time: 2022/01/04
 ### Definition
 > A **Bernoulli process** is a sequence of **independent** Bernoulli trials, $$X_i$$, where $$X_i \sim \text{Ber}(p)$$.
 
+> Independence and time homogeneity are the assumptions.
+
 ### Properties
 #### Fresh start
 
