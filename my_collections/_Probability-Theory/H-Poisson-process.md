@@ -10,6 +10,9 @@ time: 2022/01/04
 - [Definition](#definition)
 - [Time of the $$k$$-th arrival](#time-of-the-k-th-arrival)
 - [Fresh Start Property](#fresh-start-property)
+- [Properties](#properties)
+  - [Sum of independent Poisson r.v.s](#sum-of-independent-poisson-rvs)
+  - [Merging and Splitting](#merging-and-splitting)
 
 ---
 
@@ -36,6 +39,8 @@ P(k, \tau) = e^{-\lambda\tau}{(\lambda\tau)^k\over k!},\ k\in \Bbb N.
 $$
 
 Note that a Taylor series expansion of $$P(k, \tau)$$ exactly yields the **small interval probabilities**, with a negligible $$O(\tau^2)$$ term.
+
+> $$\lambda$$ 被稱為 arrival rate。
 
 ---
 
@@ -67,3 +72,20 @@ Let $$T_k = Y_k - Y_{k-1}$$, which is the $$k$$-th inter-arrival time. Then $$T_
 We can also define a Poisson process as a sum of i.i.d exponential r.v.s, which is equivalent to our former definition.
 
 > 新定義？具體一點？
+
+---
+
+## Properties
+### Sum of independent Poisson r.v.s
+
+The sum of two independent Poisson r.v.s, with parameter $$\lambda$$ and $$\mu$$ respectively, is a Poisson r.v. with parameter $$\lambda + \mu$$.
+
+> 從 convolution 或是 Poisson process（同一 process 切出兩區間，獨立）來看都可以。
+
+### Merging and Splitting
+
+**Merge**: merged process: $$\text{Poisson}(\lambda_1+\lambda_2)$$
+
+**Split**: resulting streams are $$\text{Poisson}(\lambda q)$$ and $$\text{Poisson}\lambda(1-q)$$.
+
+> The two resulting streams are **independent**! Unlike those in the case of Bernoulli process.
