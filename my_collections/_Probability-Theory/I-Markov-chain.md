@@ -7,7 +7,12 @@ time: 2022/01/06
 ---
 
 **Table of Content**
-
+- [Discrete-Time Finite State Markov Chains](#discrete-time-finite-state-markov-chains)
+  - [Transition probabilities](#transition-probabilities)
+    - [Multiplicative rule](#multiplicative-rule)
+  - [Steady-state propabilities](#steady-state-propabilities)
+- [Misc](#misc)
+- [Reference](#reference)
 
 ---
 
