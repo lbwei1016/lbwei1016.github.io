@@ -242,7 +242,7 @@ $$
 Recall that $$n$$-th cyclotomic polynomial is defined to be
 
 $$
-\Phi_p(x) = \prod_{\ \ \ \ a\in\mathbb{C}^\times \\ \text{ord}(a) = n} (x-a),
+\Phi_p(x) = \prod_{\substack{a\in\mathbb{C}^\times \\ \text{ord}(a) = n}} (x-a),
 $$
 
 which can be computed inductively using the formula
