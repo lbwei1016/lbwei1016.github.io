@@ -28,6 +28,10 @@ time: 2022/09/28
   - [Geometric](#geometric)
     - [Memorylessness](#memorylessness)
   - [Poisson](#poisson)
+  - [Pascal](#pascal)
+    - [Definition](#definition-4)
+    - [Properties](#properties-2)
+  - [Negative binomial](#negative-binomial)
 - [Reference](#reference)
 
 ---
@@ -318,6 +322,42 @@ Thus, we obtain
 $$p_X(k) \to e^{-\lambda}{\lambda^k \over k!}. \tag*{$\blacksquare$} $$
 
 > Poisson 是極限情況的 binomial！（當某事發生機率極低）
+
+### Pascal
+#### Definition
+> Let $$X$$ be the r.v. of the **number of trials before $$n$$ successes**, with probability $$p$$ to a success. Then $$X$$ is said to have **Pascal distribuion** with parameter $$n$$ and $$p$$, i.e. $$X \sim \text{Pascal}(n, p)$$. We also say that $$X$$ is a Pascal r.v. of **order $$n$$**.
+
+#### Properties
+
+**PMF**
+
+$$
+p_X(m) = {m-1\choose n-1}p^n(1-p)^{m-n}.
+$$
+
+**Mean & Variance**
+
+To derive its mean, we can simply use the brute-force method. Alternatively, we can harness the concept of a [Bernoulli process](../G-Bernoulli-process):
+
+![pascal.png](../img/pascal.png)
+
+We divide the process into $$n$$ segments (ignore the trailing one), and the length of them are geometric r.v.s with parameter $$p$$. By the **fresh-start property**, those segments are all independent. Thus, the expected length of the sum of those segments is $$n \cdot 1/p$$, which is exactly the mean of $$X$$. To sum up, we have
+
+$$
+E[X] = {n \over p}.
+$$
+
+By the same argument, the variance is 
+
+$$
+\text{var}(X) = {n(1-p)\over p^2}.
+$$
+
+### Negative binomial
+
+Let $$Y$$ be a Pascal r.v. with parameter $$n$$ and $$p$$. Let $$X$$ be the **number of failures** before the $$n$$th success, so $$X=Y-n$$. $$X$$ is called a **negative binomial** r.v.
+
+> 有些人把 Pascal 稱為 negative binomial。
 
 ---
 

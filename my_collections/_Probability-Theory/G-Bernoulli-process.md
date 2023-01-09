@@ -56,6 +56,8 @@ $$
 
 > 在 $$t-1$$ 個 slots 中選 $$k-1$$ 個；保留一次成功給 $$t$$。
 
+> 見 [Pascal r.v.](../2-discrete-rv/#pascal)。
+
 ### Merging and Splitting processes
 #### Merge
 

@@ -18,17 +18,17 @@ time: 2022/01/04
 
 ## Definition
 
-If an process is called a Poisson process, it has **small interval probabilities**, stated as: The probabilities $$P(k, \tau)$$ satisfy
+If an process is called a Poisson process, it has **small interval probabilities**, stated as: For small $$\delta$$, the probabilities $$P(k, \delta)$$ satisfy
 
 $$
 \begin{align*}
-P(0, \tau) &\approx 1 - \lambda\tau,  \\
-P(1, \tau) &\approx \lambda\tau, \\
-P(k, \tau) &\approx 0, &\text{for } k=2, 3,\cdots,
+P(0, \delta) &\approx 1 - \lambda\delta,  \\
+P(1, \delta) &\approx \lambda\delta, \\
+P(k, \delta) &\approx 0, &\text{for } k=2, 3,\cdots,
 \end{align*}
 $$
 
-where $$P(k, \tau)$$ is the prob. of $$k$$ arrivals in interval of duration $$\tau$$.
+where $$P(k, \delta)$$ is the prob. of $$k$$ arrivals in interval of duration $$\delta$$.
 
 Let us approximate a Poisson process with a Bernoulli process. For a time interval $$\tau$$, divide it into $$n$$ *slots* such that each slot is of length $$\delta$$. Thus $$n = \tau / \delta$$. According to our definition, the prob. of an arrival within time $$\delta$$ is $$P(1, \delta) \approx \lambda\delta = p$$, where $$p$$ is the parameter of a Bernoulli r.v. We know that the expected number of arrivals in $$n$$ slots is $$np$$, which in our case is $$\lambda\tau$$. When $$n\to \infty$$ and $$\delta\to 0$$, $$np = \lambda\tau$$ remains constant. From [the discussion here](../2-discrete-rv/#poisson), we see that a **binomial PMF** ($$n$$ slots Bernoulli) **converges to a Poisson PMF**, here, with parameter $$\lambda\tau$$. To conclude, we have
 
@@ -38,7 +38,7 @@ P(k, \tau) = e^{-\lambda\tau}{(\lambda\tau)^k\over k!},\ k\in \Bbb N.
 \end{align*}
 $$
 
-Note that a Taylor series expansion of $$P(k, \tau)$$ exactly yields the **small interval probabilities**, with a negligible $$O(\tau^2)$$ term.
+Note that a Taylor series expansion of $$P(k, \tau)$$ exactly yields the **small interval probabilities**, with a negligible $$O(\tau^2)$$ term when $$\tau$$ is small.
 
 > $$\lambda$$ 被稱為 arrival rate。
 
@@ -80,7 +80,13 @@ We can also define a Poisson process as a sum of i.i.d exponential r.v.s, which 
 
 The sum of two independent Poisson r.v.s, with parameter $$\lambda$$ and $$\mu$$ respectively, is a Poisson r.v. with parameter $$\lambda + \mu$$.
 
-> 從 convolution 或是 Poisson process（同一 process 切出兩區間，獨立）來看都可以。
+> 從 convolution 或是 Poisson process（同一 process 切出兩獨立區間，並令 $$\lambda=1$$）來看都可以。
+
+Since $$P(k, \tau) \sim \text{Poisson}(\lambda\tau)$$, the *concatenation* of two independent Poisson processes, with arrival rate $$\lambda_1, \lambda_2$$ and duration $$\tau_1, \tau_2$$, is 
+
+$$
+\text{Poisson}(\lambda_1\tau_1 + \lambda_2\tau_2).
+$$
 
 ### Merging and Splitting
 

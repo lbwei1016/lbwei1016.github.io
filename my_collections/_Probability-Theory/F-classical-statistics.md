@@ -49,7 +49,7 @@ then we say $$\widehat \Theta_n$$ is **consistent**.
 ## Confidence Intervals (CIs)
 
 ### Definition (CI)
-> An $$1-\alpha$$ **confidence interval** is an interval $$[\widehat\Theta_n^{-}, \widehat\Theta_n^{+}]$$, such twidehat for all $$\theta$$,
+> An $$1-\alpha$$ **confidence interval** is an interval $$[\widehat\Theta_n^{-}, \widehat\Theta_n^{+}]$$, such that for all $$\theta$$,
 >
 > $$
 > P(\widehat\Theta_n^{-} \le \theta \le \widehat\Theta_n^{+}) \ge 1-\alpha
@@ -63,22 +63,33 @@ Confidence interval 的意義是：根據 $$n$$ 次觀測，我們得到兩隨�
 
 ### CI estimation
 
-By [CLT](../E-clt)，we can obtain
+Let our estimator be the sample mean of $$n$$ i.i.d. r.v.s, i.e. 
 
 $$
-P\Big({\widehat\Theta_n  \theta \over \sigma/\sqrt{n} } \le 1.96\Big) \approx 0.95;
+\widehat{\Theta}_n = {X_1+\cdots+X_n\over n},
+$$
+
+where $$E[X_i]=\theta$$ and $$\text{var}(X_i)=\sigma^2$$. By the [CLT](../E-clt), we can obtain
+
+$$
+P\Big({\vert\widehat\Theta_n - \theta\vert \over \sigma/\sqrt{n} } \le 1.96\Big) \approx 0.95;
 $$
 
 after repharsing, we have
 
 $$
-P\Big(\widehat\Theta_n - {1.96\sigma\over\sqrt{n}} \le \theta \le \widehat\Theta_n + {1.96\sigma\over\sqrt{n}} \Big) \approx 0.95.
+P\Big(\widehat\Theta_n - {1.96\sigma\over\sqrt{n}} \le \theta \le \widehat\Theta_n + {1.96\sigma\over\sqrt{n}} \Big) \approx 0.95, \\
+
+\widehat\Theta_n^{-} = \widehat\Theta_n - {1.96\sigma\over\sqrt{n}},\\
+\widehat\Theta_n^{+} = \widehat\Theta_n + {1.96\sigma\over\sqrt{n}}.
 $$
 
-If the variance $$\sigma^2 = E[(X_i - \theta^2)] $$ is unknown, we can approximate it by sample mean, according to the [WLLN](../D-WLLN), i.e.
+> 為什麼要取絕對值？為了對稱。
+
+If the variance $$\sigma^2 = E[(X_i - \theta)^2] $$ is unknown, we can approximate it by **sample mean**, according to the [WLLN](../D-WLLN), i.e.
 
 $$
-{1\over n}\sum^n_{i=1}(X_i-\theta)^2 \to E[(X_i - \theta^2)] = \sigma^2.
+{1\over n}\sum^n_{i=1}(X_i-\theta)^2 \to E[(X_i - \theta)^2] = \sigma^2.
 $$
 
 However, $$\theta$$ is also unknown. To approximate it, we use our estimator:
@@ -88,6 +99,8 @@ $$
 $$
 
 by the fact that $$\widehat\Theta_n \to \theta$$ when $$n$$ is large. 
+
+> 因為 sample mean **consistent**！
 
 #### Remark
 
@@ -116,3 +129,5 @@ Divide it by $$(n-1)$$ would yield the result. ◼
 $$
 \hat\theta_{ML} = \arg \max_\theta p_X(x; \theta).
 $$
+
+> x 可能是 vector。

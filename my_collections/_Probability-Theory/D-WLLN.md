@@ -106,6 +106,8 @@ Now we can state the **WLLN**:
 
 >For $$\epsilon > 0$$, $$P\big(\vert M_n-\mu\vert \ge \epsilon \big) \rightarrow 0$$ as $$n\rightarrow \infty$$.
 
+> sample mean 趨近真正的 mean！
+
 Assume there is an event $$A$$ with $$p=P(A)$$. Let $$X_i$$ be the indicator of the evnet $$A$$, i.e., $$X_i=1$$ if $$A$$ occurs, otherwise $$X_i=0$$; the mean of $$X_i$$ equals to $$p$$. Then the **sample mean** $$M_n$$ now becomes the **empirical frequency** of the event $$A$$, since $$M_n$$ counts how many times that $$A$$ happened on average. By **WLLN**, we can see that $$P\big(\vert M_n-p\vert \ge \epsilon \big) \to 0$$ as $$n\to \infty$$, which means that **probability can be regarded as frequency** when experiments are conducted for a large number of times.
 
 By the way, in this case we can show that 

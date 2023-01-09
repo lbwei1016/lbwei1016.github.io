@@ -31,11 +31,11 @@ p_{ij} &= \text{P}(X_{1}=j\mid X_0=i) \\
 \end{align*}
 $$
 
-> **Markov property**: Given current state, *the past before previous state* doesn't matter.
+> **Markov property**: Given the current state, *the past before the previous state* doesn't matter.
 
 > 只和前一 state 有關。
 
-**$$n$$-step**
+**$$n$$-step (Chapman-Kolmogorov Equation)**
 
 $$
 \begin{align*}
