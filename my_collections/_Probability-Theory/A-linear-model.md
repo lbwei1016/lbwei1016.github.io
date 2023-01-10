@@ -51,7 +51,7 @@ $$
 \hat{\theta}_{MAP} = \hat{\theta}_{LMS} = E[\Theta\vert X=x]，
 $$
 
-因為 distribution 的最高點就在 mean。
+因為 **distribution 的最高點就在 mean**。
 
 ### Multiple observations
 
@@ -76,7 +76,7 @@ $$
 再經過運算和[係數比較](#recognizing-normal-pdfs) ，可以得到
 
 $$
-\hat{\theta}_{MAP} = \hat{\theta}_{LMS} = E[\Theta\vert X=x] = {\sum_{i=1}^n{x_i\over \sigma_i^2} \over \sum_{i=0}^n{1\over \sigma_i^2}}.
+\hat{\theta}_{MAP} = \hat{\theta}_{LMS} = E[\Theta\vert X=x] = {\sum_{i=0}^n{x_i\over \sigma_i^2} \over \sum_{i=0}^n{1\over \sigma_i^2}}.
 $$
 
 > $$\hat{\theta}$$ 可以看成是 *the weighted sum of $$x$$*。
@@ -99,7 +99,7 @@ $$
 其中最後一個等式由[係數比較](#recognizing-normal-pdfs)得到。再兩邊取期望值：
 
 $$
-E\Big[(\Theta- \hat{\Theta})^2] = 1/\sum_{i=0}^n{1\over \sigma_i^2}。
+E\Big[(\Theta- \hat{\Theta})^2\Big] = 1/\sum_{i=0}^n{1\over \sigma_i^2}。
 $$
 
 ### Multiple parameters

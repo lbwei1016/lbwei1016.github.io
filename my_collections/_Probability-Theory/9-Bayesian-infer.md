@@ -10,7 +10,7 @@ time: 2022/11/18
 - [Introduction](#introduction)
 - [Bayesian Inference](#bayesian-inference)
   - [Framework](#framework)
-  - [MAP (Maximum a posterioi probability)](#map-maximum-a-posterioi-probability)
+  - [MAP (Maximum a posteriori probability)](#map-maximum-a-posteriori-probability)
   - [LMS (Least Mean Squares)](#lms-least-mean-squares)
 - [Beta Distribution](#beta-distribution)
   - [Properties](#properties)
@@ -60,7 +60,7 @@ $$
 \hat{\Theta}=g(X) \text{: estimator}. 
 $$
 
-### MAP (Maximum a posterioi probability)
+### MAP (Maximum a posteriori probability)
 
 > Find a $$\theta$$ such that $$p_{\Theta\vert X}(\theta\vert x)$$ is maximized. Then the *estimator* $$\hat{\theta}$$ is equal to such $$\theta$$. 
 
