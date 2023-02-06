@@ -8,21 +8,21 @@ time: 2022/08/19
 
 **Table of Content**
 - [Basics](#basics)
-  - [Definition $$\rm I$$ (binary relation)](#definition-rm-i-binary-relation)
-  - [Definition $$\rm II$$ (on a set)](#definition-rm-ii-on-a-set)
-  - [Definition $$\rm III$$ (reflexive)](#definition-rm-iii-reflexive)
-  - [Definition $$\rm III$$ (symmetric)](#definition-rm-iii-symmetric)
-  - [Definition $$\rm IV$$ (transitive)](#definition-rm-iv-transitive)
-  - [Definition $$\rm V$$ (composition)](#definition-rm-v-composition)
-  - [Definition $$\rm VI$$ (power)](#definition-rm-vi-power)
+  - [Definition $$\\rm I$$ (binary relation)](#definition-rm-i-binary-relation)
+  - [Definition $$\\rm II$$ (on a set)](#definition-rm-ii-on-a-set)
+  - [Definition $$\\rm III$$ (reflexive)](#definition-rm-iii-reflexive)
+  - [Definition $$\\rm III$$ (symmetric)](#definition-rm-iii-symmetric)
+  - [Definition $$\\rm IV$$ (transitive)](#definition-rm-iv-transitive)
+  - [Definition $$\\rm V$$ (composition)](#definition-rm-v-composition)
+  - [Definition $$\\rm VI$$ (power)](#definition-rm-vi-power)
 - [Some Relations](#some-relations)
   - [Equivalence Relation](#equivalence-relation)
     - [Question](#question)
 - [Partial Orderings](#partial-orderings)
-  - [Definition $$\rm I$$ (partial ordering)](#definition-rm-i-partial-ordering)
-  - [Definition $$\rm II$$ (compare)](#definition-rm-ii-compare)
-  - [Definition $$\rm III$$ (total ordering)](#definition-rm-iii-total-ordering)
-  - [Definition $$\rm IV$$ (well-ordered)](#definition-rm-iv-well-ordered)
+  - [Definition $$\\rm I$$ (partial ordering)](#definition-rm-i-partial-ordering)
+  - [Definition $$\\rm II$$ (compare)](#definition-rm-ii-compare)
+  - [Definition $$\\rm III$$ (total ordering)](#definition-rm-iii-total-ordering)
+  - [Definition $$\\rm IV$$ (well-ordered)](#definition-rm-iv-well-ordered)
   - [Theorem (induction)](#theorem-induction)
     - [**The Principle of Well-Ordered Induction**](#the-principle-of-well-ordered-induction)
 - [Some Definitions on Sets](#some-definitions-on-sets)
@@ -124,7 +124,7 @@ Thus, $$S$$ is a complete set of represnetatives of the equivalence classes.
 > 證明 $$\geq$$ 在 $$\mathbb{Z}$$ 上是 *reflexive, antisymmetric, and transitive*。
 
 ### Definition $$\rm II$$ (compare)
->The elements $$a$$ and $$b$$ of a poset $$(S, \preceq)$$ are called ***comparable*** if either $$a \preceq b$$ of $$b \preceq a$$. Otherwise, $$a$$ and $$b$$ are called ***incomparable***.
+>The elements $$a$$ and $$b$$ of a poset $$(S, \preceq)$$ are called ***comparable*** if either $$a \preceq b$$ or $$b \preceq a$$. Otherwise, $$a$$ and $$b$$ are called ***incomparable***.
 
 **Example:** In the poset $$(\mathbb{Z}^{+}, \mid)$$, $$5$$ and $$7$$ are **incomparable**.
 
