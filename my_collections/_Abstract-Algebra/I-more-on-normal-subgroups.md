@@ -8,7 +8,7 @@ time: 2022/10/27
 
 **Table of Content**
 - [Theorem (correspondence of normal subgroups)](#theorem-correspondence-of-normal-subgroups)
-- [Center & Commutator](#center--commutator)
+- [Center \& Commutator](#center--commutator)
   - [Definition (center)](#definition-center)
   - [Proposition (normal subgroup)](#proposition-normal-subgroup)
   - [Definition (commutator subgroup)](#definition-commutator-subgroup)
@@ -207,12 +207,11 @@ $$
 \text{Aut}(G) = \{\rho:G\to G \vert \rho \text{ is an isomorphism}\},
 $$
 
-then $$\text{Aut}(G)$$ is called the group of **automorphism** on $$G$$.
+then $$\text{Aut}(G)$$ is called the group of **automorphism** on $$G$$, which is in fact a **subgroup of $$S_G$$**.
 
 > The set of all isomorphisms of $$G$$.
 
 #### Inner Automorphism
-
 
 - [Wolfram MathWorld](https://mathworld.wolfram.com/InnerAutomorphism.html)
 - [Proof Wiki](https://proofwiki.org/wiki/Mapping_from_Group_Element_to_Inner_Automorphism_is_Homomorphism)
