@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://lbwei1016.github.io/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/about/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Linear-Algebra/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Misc/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Theory-of-Computation/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/1-Introduction/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/2-Isomorphism/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/3-Binary-Operations/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/4-Groups/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/5-More-on-Groups/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/7-Subgroups/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/8-Cyclic-Subgroups/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/9-Groups-of-Permutation/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/A-interlude/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/B-n-gons/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/C-Cayley-thm/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/E-coset/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/F-Lagrange-thm/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/G-Finitely-Generated-Abelian-Groups/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/H-homomorphism-and-normal-groups/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/I-more-on-normal-subgroups/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/J-rings-and-fields/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/K-integral-domain/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/L-fields-of-quotients/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/M-rings-of-polynomials/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/N-zeros-of-polynomials/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/O-poly-factorization/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/P-field-extension/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/Q-algebraic-extension/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/R-matrix-rep-of-extension/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/S-algebraic-closure/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/T-finite-field/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/U-group-action/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Abstract-Algebra/V-more-group-action/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/Bernoulli-numbers/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/Binomial-Coefficient/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/Continuant/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/Eulerian-numbers/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/Fibonacci-numbers/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/Finite-Calculus/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/Generating-Functions/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/Harmonic-numbers/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/Master-thm/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/Number-thm-1/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/Relation/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/Stirling-numbers/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/extgcd/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/hypergeometric_func-1/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/hypergeometric_func-2/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/solving-recurrence-1/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Concrete-Math/solving-recurrence-2/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Linear-Algebra/1_Introduction-to-Vectors/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Linear-Algebra/2_Solving-Linear-Equations/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Linear-Algebra/3-1_Matrix/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Linear-Algebra/3-2_LDU-factorization/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Linear-Algebra/4-0_Linear-Independence/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Linear-Algebra/4-1_Vector-Spaces-and-Subspaces/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Linear-Algebra/4-2_Basis/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Linear-Algebra/5_Linear_transformation/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Linear-Algebra/6_Orthogonality/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Linear-Algebra/7-1_Projection/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Linear-Algebra/7-2_Least-Square-Approximation/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Linear-Algebra/9_Orthogonality-More/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Linear-Algebra/A-isometry/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Linear-Algebra/Fundamental-Subspaces/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Misc/github.io/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/1-Introduction/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/2-discrete-rv/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/3-Conditioning/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/4-continous-rv/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/5-more-on-conditioning/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/6-derived-distro/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/7-transform/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/8-covariance-correlation/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/9-Bayesian-infer/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/A-linear-model/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/B-LMS-revisited/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/C-LLMS/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/D-WLLN/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/E-clt/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/F-classical-statistics/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/G-Bernoulli-process/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/H-Poisson-process/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Probability-Theory/I-Markov-chain/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lbwei1016.github.io/Theory-of-Computation/P_NP/</loc>
+  <lastmod>2023-02-17T06:14:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
