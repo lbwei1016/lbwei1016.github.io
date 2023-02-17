@@ -8,21 +8,21 @@ time: 2022/08/19
 
 **Table of Content**
 - [Basics](#basics)
-  - [Definition $$\\rm I$$ (binary relation)](#definition-rm-i-binary-relation)
-  - [Definition $$\\rm II$$ (on a set)](#definition-rm-ii-on-a-set)
-  - [Definition $$\\rm III$$ (reflexive)](#definition-rm-iii-reflexive)
-  - [Definition $$\\rm III$$ (symmetric)](#definition-rm-iii-symmetric)
-  - [Definition $$\\rm IV$$ (transitive)](#definition-rm-iv-transitive)
-  - [Definition $$\\rm V$$ (composition)](#definition-rm-v-composition)
-  - [Definition $$\\rm VI$$ (power)](#definition-rm-vi-power)
+  - [Definition  (binary relation)](#definition--binary-relation)
+  - [Definition  (on a set)](#definition--on-a-set)
+  - [Definition  (reflexive)](#definition--reflexive)
+  - [Definition  (symmetric)](#definition--symmetric)
+  - [Definition  (transitive)](#definition--transitive)
+  - [Definition  (composition)](#definition--composition)
+  - [Definition  (power)](#definition--power)
 - [Some Relations](#some-relations)
   - [Equivalence Relation](#equivalence-relation)
     - [Question](#question)
 - [Partial Orderings](#partial-orderings)
-  - [Definition $$\\rm I$$ (partial ordering)](#definition-rm-i-partial-ordering)
-  - [Definition $$\\rm II$$ (compare)](#definition-rm-ii-compare)
-  - [Definition $$\\rm III$$ (total ordering)](#definition-rm-iii-total-ordering)
-  - [Definition $$\\rm IV$$ (well-ordered)](#definition-rm-iv-well-ordered)
+  - [Definition  (partial ordering)](#definition--partial-ordering)
+  - [Definition  (compare)](#definition--compare)
+  - [Definition  (total ordering)](#definition--total-ordering)
+  - [Definition  (well-ordered)](#definition--well-ordered)
   - [Theorem (induction)](#theorem-induction)
     - [**The Principle of Well-Ordered Induction**](#the-principle-of-well-ordered-induction)
 - [Some Definitions on Sets](#some-definitions-on-sets)
@@ -35,33 +35,33 @@ time: 2022/08/19
 
 ## Basics
 
-### Definition $$\rm I$$ (binary relation)
+### Definition  (binary relation)
 > Let $$A$$ and $$B$$ be sets. A *binary relation from $$A$$ to $$B$$* is a subset of $$A \times B$$.
 
 **Relation**，是數個集合的成員之間的關係，類似 **Function**，但沒有不能一對多的限制。**Reation** 本身也是一集合 $$R$$；如果 $$(a, b) \in R$$，寫做 $$a\ R\ b$$，讀做 $$a$$ is related to $$b$$ by $$R$$。
 
 > **Fuction** 事實上是 **Relation** 的特例。
 
-### Definition $$\rm II$$ (on a set)
+### Definition  (on a set)
 > *A relation on a set $$A$$* is a relation from $$A$$ to $$A$$。
 
-### Definition $$\rm III$$ (reflexive)
+### Definition  (reflexive)
 > A relation $$R$$ on a set $$A$$ is called *reflexive* if $$(a, a) \in R$$, $$\forall a \in A$$.
 
-### Definition $$\rm III$$ (symmetric)
+### Definition  (symmetric)
 > **symmetric**: $$(a, b) \in R$$ 和 $$(b, a) \in R$$ 同時成立，$$\forall a, b \in A$$ <br>
 > **antisymmetric**: 如果 $$(a, b) \in R$$ 和 $$(b, a) \in R$$，則 $$a = b$$ <br>
 > **asymmetric**: $$(a, b) \in R$$ 和 $$(b, a) \in R$$ 不同時成立，也就是 $$(a, a) \not\in R$$
 
-### Definition $$\rm IV$$ (transitive)
+### Definition  (transitive)
 > $$R$$ on a set $$A$$ is *transitive* if $$\forall a\forall b \forall c(((a,b) \in R \land (b, c) \in R) \implies (a, c) \in R)$$.
 
-### Definition $$\rm V$$ (composition)
+### Definition  (composition)
 > Let $$R$$ be a relation from a set $$A$$ to a set $$B$$ and $$S$$ a relation from $$B$$ to a set $$C$$. $$(a, c) \in S \circ R$$, for which $$\exists b \in B$$ such that $$(a, b) \in R$$ and $$(b, c) \in S$$. ($$a \in A, c \in C$$)
 
 > 想想 *function*
 
-### Definition $$\rm VI$$ (power)
+### Definition  (power)
 > $$R^1 = R$$ and $$R^{n+1} = R^n \circ R$$.
 
 ---
@@ -117,25 +117,25 @@ Thus, $$S$$ is a complete set of represnetatives of the equivalence classes.
 ---
 
 ## Partial Orderings
-### Definition $$\rm I$$ (partial ordering)
+### Definition  (partial ordering)
 > A relation $$R$$ on a set $$S$$ is called a ***partial ordering*** or ***partial order*** if it is *reflexive, antisymmetric, and transitive*. And $$(S, R)$$ is called a ***partially ordered set***, or ***poset***. Members of $$S$$ are called *elements* of the poset.
 
 **Example:** $$(\mathbb{Z}, \geq)$$ is a *poset*
 > 證明 $$\geq$$ 在 $$\mathbb{Z}$$ 上是 *reflexive, antisymmetric, and transitive*。
 
-### Definition $$\rm II$$ (compare)
+### Definition  (compare)
 >The elements $$a$$ and $$b$$ of a poset $$(S, \preceq)$$ are called ***comparable*** if either $$a \preceq b$$ or $$b \preceq a$$. Otherwise, $$a$$ and $$b$$ are called ***incomparable***.
 
 **Example:** In the poset $$(\mathbb{Z}^{+}, \mid)$$, $$5$$ and $$7$$ are **incomparable**.
 
-> *Note $$\rm I$$:* $$\preceq$$ is used to denote the relation in *any* poset. <br>
-> *Note $$\rm II$$:* $$a \prec b$$ 讀做 "$$a$$ precedes $$b$$" 或 "$$a$$ is less than $$b$$"
+> *Note :* $$\preceq$$ is used to denote the relation in *any* poset. <br>
+> *Note :* $$a \prec b$$ 讀做 "$$a$$ precedes $$b$$" 或 "$$a$$ is less than $$b$$"
 
 
-### Definition $$\rm III$$ (total ordering)
+### Definition  (total ordering)
 > 若 $$(S, \preceq)$$ 是 poset 且 $$S$$ 的任兩元素皆 *comparable*，則 $$S$$ 稱為 ***totally ordered set*** 或 ***linearly ordered set***，而 $$\preceq$$ 稱為 a ***total order*** 或 a ***linear order***。
 
-### Definition $$\rm IV$$ (well-ordered)
+### Definition  (well-ordered)
 > $$(S, \preceq)$$ is a ***well-ordered set*** if it is a poset such that $$\preceq$$ is a *total ordering* and every nonempty subset of $$S$$ has a ***least element***.
 
 **Example:** $$(\mathbb{Z}^{+}, \leq)$$ is well-ordered, while $$(\mathbb{Z}, \leq)$$ is not.
