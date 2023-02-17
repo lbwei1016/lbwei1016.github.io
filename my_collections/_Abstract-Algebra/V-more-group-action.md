@@ -15,6 +15,10 @@ time: 2023/02/17
   - [Class equation](#class-equation)
     - [Definition (centralizer)](#definition-centralizer)
   - [Theorem (order $$p^2$$)](#theorem-order-p2)
+  - [Definition (invariant)](#definition-invariant)
+  - [Theorem (Cauchy's theorem)](#theorem-cauchys-theorem)
+    - [**Proof**](#proof)
+  - [**Remark**](#remark-1)
 
 ---
 
@@ -113,3 +117,42 @@ b(b^ia^j) = b^i(ba^j) = (b^ia^j)b,
 $$
 
 since $$a\in Z(G)$$. Thus we can conclude that $$b$$ is also contained in $$Z(G)$$, which is a contradiction. ◼
+
+### Definition (invariant)
+> Let $$X$$ be a $$G$$-set. A subset $$Y$$ of $$X$$ is called **$$G$$-invariant** if for all $$g\in G$$, $$gY \subset Y$$.
+>
+> In particular, $$Y$$ is also a $$G$$-set.
+
+### Theorem (Cauchy's theorem)
+> Suppose that the order of a group $$G$$ is **divisible** by a **prime** $$p$$. Then $$G$$ has an element of order $$p$$.
+
+#### **Proof**
+
+Suppose that the order of $$G$$ is divisible by a prime $$p$$. Consider the $$p$$-th power of $$G$$,
+
+$$
+G^p = \{(g_1, \cdots, g_p)\mid g_i \in G \},
+$$
+
+and let $$\sigma = (1, \cdots, p) \in S_p$$. The group $$P = \langle \sigma \rangle$$ acts on $$G^p$$ by permuting the elements of $$(g_1, \cdots, g_p)$$.
+
+Let $$Y = \{(g_1, \cdots, g_p)\in G^p \mid g_1\cdots g_p=e \}$$, where $$e$$ is the identity element of $$G$$. We observe that:
+
+- $$\vert Y\vert  = \vert G\vert^{p-1}$$, since even if $$g_1, g_2,\cdots, g_{p-1}$$ are arbitrarily chosen, choose $$g_p = (g_1g_2\cdots g_{p-1})^{-1}$$ would  suffice.
+- $$Y$$ is $$P$$-invariant, which means that $$Y$$ is a $$P$$-set.
+
+By this [theorem](#theorem-order-modulo), we have
+
+$$
+\vert Y^P\vert \equiv \vert Y\vert = \vert G\vert^{p-1}\equiv 0 \pmod p.
+$$
+
+Note that $$y\in Y^P$$ iff $$y = (g,g,\cdots,g)$$ for some $$g\in G$$ with $$g^p = e$$, since $$Y^P \subset Y$$. Because $$\vert Y^P\vert \equiv 0\pmod p$$ and $$(e, e, \cdots, e) \in Y^P$$, $$Y^P$$ must contain at least $$p$$ elements. Then for any $$(g,\cdots, g)\in Y^P$$ with $$g\not = e$$, the order of $$g$$ is $$p$$, which satisfies the conclusion of this theorem. ◼
+
+> 只有形如 $$(g, g, \cdots, g)$$ 這樣的 element 才不會被任何 $$\sigma_i \in P$$ 影響！
+
+### **Remark**
+
+[Lagrange's theorem](../F-Lagrange-thm) 指出，若有 order 為 $$n$$ 的 element，則 group size 可被 $$n$$ 整除。反過來成立嗎？若 $$G$$ 是交換群，根據 [the fundamental theorem of finitely generated abelian groups](../G-Finitely-Generated-Abelian-Groups/#theorem--fundamental-theorem-of-finitely-generated-abelian-groups)，$$G$$ 可以被拆為數個 $$\Bbb Z_{p_i^{e_i}}$$ 的 direct product，其中 $$p_i$$ 是 $$\vert G \vert$$ 的質因數且 $$e_i \in \Bbb N$$。可以觀察到，$$\Bbb Z_{p^k} = \langle 1 \rangle$$ 所有元素的 order 涵括了 $$p^k$$ 的所有因數：$$\langle p^i\rangle$$ 的 order 正是 $$p^{k-i}$$。於是對於 abelian group，Lagrange's theorem 的逆定理是成立的。
+
+但若不是交換群呢？柯西定理就派上用場了，只不過多了質數的限制。

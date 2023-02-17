@@ -38,6 +38,8 @@ This proves the theorem.
 ### Corollary (order of an element)
 > The order of an element $$a$$ of a finite group $$G$$ divides the order of $$G$$.
 
+> 見 [Cauchy's theorem](V-more-group-action/#theorem-cauchys-theorem)。
+
 **Proof**
 
 Let $$H=\langle a \rangle$$, and apply Lagrange's Thm. ◼
