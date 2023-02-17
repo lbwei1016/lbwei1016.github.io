@@ -196,11 +196,12 @@ Let $$\psi: \mathbb{Z} \to \mathbb{Z}_n $$ defined by $$\psi(a) = \bar a$$; then
 ## Normal Subgroups
 ### Definition (normal subgroup)
 
-> A subgroup $$H$$ of a group $$G$$ is **normal** if its left cosets and right cosets concide, that is, if 
+> A subgroup $$H$$ of a group $$G$$ is **normal** if its left cosets and right cosets coincide, that is, if 
 >
 >$$
 > gH = Hg,\ \text{for all } g \in G.
 >$$
+>
 > If $$H$$ is a normal subgroup of $$G$$, we denoted it as $$H \triangleleft G $$.
 
 #### Remark

@@ -8,7 +8,7 @@ time: 2022/10/27
 
 **Table of Content**
 - [Theorem (correspondence of normal subgroups)](#theorem-correspondence-of-normal-subgroups)
-- [Center \& Commutator](#center--commutator)
+- [Center and Commutator](#center-and-commutator)
   - [Definition (center)](#definition-center)
   - [Proposition (normal subgroup)](#proposition-normal-subgroup)
   - [Definition (commutator subgroup)](#definition-commutator-subgroup)
@@ -36,7 +36,7 @@ time: 2022/10/27
 
 ---
 
-## Center & Commutator
+## Center and Commutator
 ### Definition (center)
 > Let $$G$$ be a group. Then the subgroup
 >
