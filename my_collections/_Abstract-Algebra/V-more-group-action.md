@@ -44,6 +44,8 @@ time: 2023/02/17
 
 為什麼？因為 $$X^G$$ 是 $$X^g$$ 的聯集，代表 $$X^G$$ 含有「**對所有 $$g\in G$$，不受 $$g$$ 影響的 $$x$$**」。
 
+> 所以說，$$X^g$$ 就是那些經過 $$g$$ action 也不改變的 $$x$$，而 $$X^G$$ 就是經過所有 $$g$$ 都不改變的 $$x$$。
+
 另外要注意的是，此處使用的 group action 是「左乘」，但我們也可以設 group action 為 *conjugation*；也就是說，
 
 $$
@@ -51,6 +53,9 @@ X^g = \{x\in X \mid gxg^{-1}=x\}
 $$
 
 也是合法的定義。（見 [Examples](../U-group-action/#examples) 的最末項。）
+
+最後，$$g$$-fixed subset 可以和 stabilizer 相對應：一個收 $$x$$，另一個收 $$g$$。
+
 
 ### Theorem (order modulo)
 > Let $$p$$ be a **prime** and let $$G$$ be a finite **$$p$$-group** (i.e., the order of $$G$$ is a power of $$p$$) that acts on a finite set $$X$$. Then it holds that **$$\vert X\vert \equiv \vert X^G\vert \pmod p $$**, where $$X^G$$ is the fixed subset of $$X$$ under the action of $$G$$.
@@ -104,6 +109,10 @@ $$
 > $$
 
 > Under conjugacy, stabilizer becomes centralizer!
+
+> 針對某一 $$x$$，收集所有使得 $$x$$ 可以交換的 $$g$$；也就是說，**the centralizer of $$x$$ 使 $$x$$ 彷彿置身 [center](../I-more-on-normal-subgroups/#definition-center)！**
+
+> $$gx = xg,\  \forall g \in C_G(x)$$.
 
 ### Theorem (order $$p^2$$)
 > Let $$G$$ be a group of order $$p^2$$, where $$p$$ is a prime. Then $$G$$ is **abelian**. Consequently, every group of order $$p^2$$ is isomorphic to $$\Bbb Z_p\times \Bbb Z_p$$ or $$\Bbb Z_{p^2}$$.

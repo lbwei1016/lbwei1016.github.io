@@ -18,6 +18,7 @@ time: 2023/02/13
   - [Definition (stabilizer)](#definition-stabilizer)
   - [Theorem (eq. relation)](#theorem-eq-relation)
     - [Remark](#remark-2)
+    - [Corollary (disjoint union of orbits)](#corollary-disjoint-union-of-orbits)
   - [Theorem (the orbit-stabilizer theorem)](#theorem-the-orbit-stabilizer-theorem)
 
 ---
@@ -130,6 +131,9 @@ Below $$G$$s act on $$X$$s, repsectively.
 The equivalence relation defined above defines a partition of $$X$$, and the cell of $$x\in X$$ is exaclty the **$$G$$-orbit** of $$x$$. Hence, $$X$$ can be written as a **disjoint union of $$G$$-orbits**.
 
 為什麼是 $$G$$-orbit？因為 $$G$$-orbit 收集 $$gx$$，而如果 $$gx = x'$$，那麼 $$x\sim x'$$！
+
+#### Corollary (disjoint union of orbits)
+> $$X$$ can be written as a **disjoint union of $$G$$-orbits**.
 
 ### Theorem (the orbit-stabilizer theorem)
 > For all $$x\in X$$, where $$X$$ is a $$G$$-set, we have $$\vert G_x\vert = [G:\text{Stab}_G(x)]$$. If $$\vert G\vert$$ is finite, we have
