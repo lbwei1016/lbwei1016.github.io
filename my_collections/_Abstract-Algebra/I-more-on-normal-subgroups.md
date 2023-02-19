@@ -152,7 +152,7 @@ From [this theorem](../H-homomorphism/#theorem-homomorphism-and-normal-subgroups
 
 這兩種 homomorphism 的 kernel 都是特殊的 normal subgroup。
 
-第一例中的 $$\rho$$ 其實是 isomorphism，可以試著驗證看看；底下證明 $$\text{ker}(\rho) = Z(G)$$。
+第一例中的 $$\rho$$ 其實是 homomorphism，可以試著驗證看看；底下證明 $$\text{ker}(\rho) = Z(G)$$。
 
 **Proof**
 

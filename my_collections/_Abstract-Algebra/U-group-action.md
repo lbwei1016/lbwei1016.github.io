@@ -33,9 +33,10 @@ time: 2023/02/13
 > 1. $$ex = x$$ for all $$x\in X$$.
 > 2. $$g_1(g_2x) = (g_1g_2)x$$ for all $$x\in X$$ and all $$g_1, g_2 \in G$$.
 
+> Under these conditions, $$X$$ is referred to as a **$$G$$-set**.
+
 ### Remark
 
-- Here, $$X$$ is referred to as a **$$G$$-set**.
 - We say *$$G$$ acts on $$X$$*.
 - The second condition has **nothing** to do with *associativity*, since $$g_i$$ and $$x$$ belong to different sets.
 
@@ -46,6 +47,10 @@ time: 2023/02/13
 > 2. For all $$y\in X$$, there exists $$x\in X$$ such that $$gx = y$$.
 
 **Proof** (Ignored.)
+
+> **Q:** Do we must have $$gx \in X$$ for any $$g\in G, x\in X$$?
+>
+> **A**: Certainly! Since the range of the mapping $$*$$ is $$X$$.
 
 #### Remark
 
