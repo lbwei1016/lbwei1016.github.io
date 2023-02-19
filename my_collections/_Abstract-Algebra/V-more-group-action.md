@@ -10,12 +10,14 @@ time: 2023/02/17
 - [$$p$$-Groups](#p-groups)
   - [Definition (fixed subset)](#definition-fixed-subset)
     - [Remark](#remark)
+  - [Lemma (fixed subset and stabilizer)](#lemma-fixed-subset-and-stabilizer)
   - [Theorem (order modulo)](#theorem-order-modulo)
   - [Theorem (center of $$p$$-groups)](#theorem-center-of-p-groups)
   - [Class equation](#class-equation)
     - [Definition (centralizer)](#definition-centralizer)
   - [Theorem (order $$p^2$$)](#theorem-order-p2)
   - [Definition (invariant)](#definition-invariant)
+    - [Proof ($$Y$$ is a $$G$$-set)](#proof-y-is-a-g-set)
   - [Theorem (Cauchy's theorem)](#theorem-cauchys-theorem)
     - [**Proof**](#proof)
   - [**Remark**](#remark-1)
@@ -46,7 +48,7 @@ time: 2023/02/17
 
 > 所以說，$$X^g$$ 就是那些經過 $$g$$ action 也不改變的 $$x$$，而 $$X^G$$ 就是經過所有 $$g$$ 都不改變的 $$x$$。
 
-另外要注意的是，此處使用的 group action 是「左乘」，但我們也可以設 group action 為 *conjugation*；也就是說，
+另外要注意的是，此處使用的 group action 是「左乘」，但我們也可以設 group action 為 *conjugation*（group $$G$$ acts on $$X$$ *by conjugation*）；也就是說，
 
 $$
 X^g = \{x\in X \mid gxg^{-1}=x\}
@@ -56,6 +58,23 @@ $$
 
 最後，$$g$$-fixed subset 可以和 stabilizer 相對應：一個收 $$x$$，另一個收 $$g$$。
 
+### Lemma (fixed subset and stabilizer)
+> Let $$G$$ be a group and $$X$$ a $$G$$-set. Then we have
+> 
+> $$\sum_{g\in G}\vert X^g\vert = \sum_{x\in X}\vert\text{Stab}_G(x)\vert.$$
+
+**Proof**
+
+Define a matrix $$M$$, whose rows are indexed by $$g\in G$$ and columns are indexed by $$x\in X$$, with entries 
+
+$$
+m_{g, x} = \begin{cases}
+  1, &\text{if } gx = x, \\
+  0, &\text{otherwise}.
+\end{cases}
+$$
+
+If we count the number of $$1$$s in $$M$$ by the rows, we obtain the left hand side of the equation; on the other hand, if we count it by the columns, we exactly obtain the right hand side. By the *double counting principle*, the equation is valid. ◼
 
 ### Theorem (order modulo)
 > Let $$p$$ be a **prime** and let $$G$$ be a finite **$$p$$-group** (i.e., the order of $$G$$ is a power of $$p$$) that acts on a finite set $$X$$. Then it holds that **$$\vert X\vert \equiv \vert X^G\vert \pmod p $$**, where $$X^G$$ is the fixed subset of $$X$$ under the action of $$G$$.
@@ -131,6 +150,16 @@ since $$a\in Z(G)$$. Thus we can conclude that $$b$$ is also contained in $$Z(G)
 > Let $$X$$ be a $$G$$-set. A subset $$Y$$ of $$X$$ is called **$$G$$-invariant** if for all $$g\in G$$, $$gY \subset Y$$.
 >
 > In particular, $$Y$$ is also a $$G$$-set.
+
+#### Proof ($$Y$$ is a $$G$$-set)
+
+To prove this, we have to show that 
+
+1. For all $$g\in G$$ and for all $$y\in Y$$, $$gy \in Y$$.
+2. Let $$e$$ be the identiy of $$G$$. Then $$ey = y$$ for all $$y\in Y$$.
+3. For all $$y\in Y$$ and for all $$g_1, g_2 \in G$$, $$g1(g2y) = (g1g2)y$$.
+
+Since for all $$g\in G$$, $$gY\subset Y$$, **(1.)** is satisfied. **(2.)** and **(3.)** are trivially satisfied since $$Y$$ is a subset of a $$X$$, which is a $$G$$-set. ◼
 
 ### Theorem (Cauchy's theorem)
 > Suppose that the order of a group $$G$$ is **divisible** by a **prime** $$p$$. Then $$G$$ has an element of order $$p$$.

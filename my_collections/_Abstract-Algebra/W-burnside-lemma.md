@@ -9,6 +9,7 @@ time: 2023/02/18
 **Table of Content**
 - [Theorem (Burnside's Lemma)](#theorem-burnsides-lemma)
   - [Proof](#proof)
+  - [Corollary (transitive action)](#corollary-transitive-action)
 - [Painting Problem](#painting-problem)
   - [Example ($$k=6$$)](#example-k6)
   - [Remark](#remark)
@@ -60,6 +61,19 @@ Therefore,
 $$
 \vert X/G\vert = r = {1\over \vert G\vert }\sum_{g\in G}\vert X^g\vert. \tag*{$\blacksquare$}
 $$
+
+### Corollary (transitive action)
+> If a finite group $$G$$ acts **transitively** on $$X$$, then
+>
+> $$
+> \sum_{g\in G}\vert X^g\vert = \vert G\vert.
+> $$
+
+**Proof**
+
+By this [lemma](../U-group-action/#lemma-transitive-and-orbit), we have $$\vert X/G\vert = 1$$, which proves this corollary. ◼
+
+> See also this [lemma](../V-more-group-action/#lemma-fixed-subset-and-stabilizer).
 
 ---
 

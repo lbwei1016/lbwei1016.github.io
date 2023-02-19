@@ -9,12 +9,14 @@ time: 2023/02/13
 **Table of Content**
 - [Definition (Group action)](#definition-group-action)
   - [Remark](#remark)
+  - [Example (prove to be a $$G$$-set)](#example-prove-to-be-a-g-set)
   - [Proposition (Group actions as permutations)](#proposition-group-actions-as-permutations)
     - [Remark](#remark-1)
   - [Examples](#examples)
   - [Definition (faithful and transitive)](#definition-faithful-and-transitive)
 - [Orbit and Stabilizer](#orbit-and-stabilizer)
   - [Definition (orbit)](#definition-orbit)
+    - [Lemma (transitive and orbit)](#lemma-transitive-and-orbit)
   - [Definition (stabilizer)](#definition-stabilizer)
   - [Theorem (eq. relation)](#theorem-eq-relation)
     - [Remark](#remark-2)
@@ -39,6 +41,10 @@ time: 2023/02/13
 
 - We say *$$G$$ acts on $$X$$*.
 - The second condition has **nothing** to do with *associativity*, since $$g_i$$ and $$x$$ belong to different sets.
+
+### Example (prove to be a $$G$$-set)
+
+See [this](../V-more-group-action/#proof-y-is-a-g-set).
 
 ### Proposition (Group actions as permutations)
 > Suppose that a group $$G$$ acts on a set $$X$$. Then for a given $$g\in G$$, **the function $$X\to X$$ represented by $$g$$** is **one-to-one** and **onto**, that is:
@@ -120,6 +126,20 @@ Below $$G$$s act on $$X$$s, repsectively.
 > $$
 
 > See [Symmetry Groups on N-gons](../B-n-gons/#the-order-of-the-symmetry-group). Note that $$G$$-orbit itself is a $$G$$-set.
+
+令 $$H$$ 為 $$G$$ 的 subgroup。若 $$H$$ 作用在 $$G$$ 上，則對於任意 $$g\in G$$，$$H$$-orbit of $$g$$ 就是 $$H$$ 的 [right coset](../E-coset/#definition-coset)！也就是說，$$H_g = Hg$$。
+
+#### Lemma (transitive and orbit)
+
+>If an action of $$G$$ on $$X$$ is **transitive**, then for any $$x\in X$$, 
+>
+>$$
+>G_x = X.
+>$$
+
+**Proof**
+
+By the [definition](#definition-faithful-and-transitive) of transitivity.
 
 ### Definition (stabilizer)
 > Let $$X$$ be a $$G$$-set. The set $$\text{Stab}_G(x) = \{g\in G\mid gx = x\}$$ for all $$x \in X$$, is called the stabilizer of $$x$$ in $$G$$.
