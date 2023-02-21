@@ -7,7 +7,7 @@ time: 2022/10/12
 ---
 
 **Table of Content**
-- [Theorem](#theorem)
+- [Theorem (permutation group)](#theorem-permutation-group)
 - [Cycle Notations](#cycle-notations)
   - [Cyclic Permutation](#cyclic-permutation)
   - [Theorem (cycle notation)](#theorem-cycle-notation)
@@ -25,12 +25,18 @@ time: 2022/10/12
   - [Theorem (even permutation forms a subgroup)](#theorem-even-permutation-forms-a-subgroup)
   - [Proof](#proof-1)
   - [Definition (alternating groups)](#definition-alternating-groups)
+- [Conjugate and Commute](#conjugate-and-commute)
+  - [**Lemma (conjugate)**](#lemma-conjugate)
+  - [Theorem (subgroup; elements that commute)](#theorem-subgroup-elements-that-commute)
+  - [Remark](#remark)
+  - [Example](#example)
+- [Reference](#reference)
 
 ---
 
 > 參 [More on Groups](../5-More-on-Groups/#the-nature-of-groups)。
 
-## Theorem
+## Theorem (permutation group)
 > Let $$A$$ be a nonempty set. Then the set $$S_A$$ of all permutations of $$A$$ is **a group under composition**.
 
 Let $$S_n$$ denote the group of all permutations of the set $$\{1, 2, \cdots n\}$$ of $$n$$ elements. The group $$S_n$$ is called the **symmetric group on $$n$$ letters**. For $$\sigma \in S_n$$, we express $$\sigma$$ in the form
@@ -205,3 +211,60 @@ If $$\sigma \in B_n$$ is an odd permutation, then $$(1,2)\sigma$$ is even and we
 
 ### Definition (alternating groups)
 > The subgroup of $$S_n$$ consisting of the **even permutations** of $$n$$ letters is the **alternating group $$A_n$$** on $$n$$ letters.
+
+---
+
+## Conjugate and Commute
+### **Lemma (conjugate)**
+> Let $$\sigma$$ and $$\tau$$ be two elements in $$S_n$$. Suppose that $$\sigma = (a_1, a_2 \cdots, a_k)(b_1, b_2\cdots,b_l)\cdots$$. Then the conjugate of $$\sigma$$ by $$\tau$$ is
+>
+> $$
+> \tau\sigma\tau^{-1} = (\tau(a_1), \tau(a_2) \cdots, \tau(a_k))(\tau(b_1), \tau(b_2)\cdots,\tau(b_l))\cdots .
+> $$
+
+**[Proof (MIT math)](https://math.mit.edu/~mckernan/Teaching/12-13/Spring/18.703/l_6.pdf)** 
+
+
+### Theorem (subgroup; elements that commute)
+> Let $$\pi \in S_n$$. Then **all the elements in $$S_n$$ that commute with $$\pi$$ form a subgroup**, and we denote it by $$H_\pi$$ here. In particular, we have $$\langle \pi \rangle \leq H_\pi$$.
+
+**Proof**
+
+Suppose $$\sigma, \tau \in H_\pi$$.
+
+1. $$(\sigma\tau)\pi = \sigma(\tau\pi) = \sigma(\pi\tau) = \pi(\sigma\tau)$$.
+2. $$e\pi = \pi e$$.
+3. $$\pi\tau = \tau\pi \implies \tau^{-1}\pi = \pi\tau^{-1}$$. ◼
+
+### Remark
+
+兩元素可交換，相當於用對方對自己共軛之後，和自己相等！也就是：$$\sigma\pi\sigma^{-1} = \pi$$。於是，我們可以用[上述的引理](#lemma-conjugate)！
+
+### Example
+
+Let $$G = S_4$$ and $$X = \{(1234),(1243),\cdots \}$$ be that set of cycls of length $$4$$. Let $$G$$ acts on $$X$$ by conjugation. Determine if the action of $$G$$ is faithful.
+
+**Solution**
+
+Since all $$x\in X$$ are four cycles, we take $$\sigma_0=(1234)$$ for demonstration. 
+
+Suppose that $$G$$ is not faithful, i.e., there exists $$\pi \in G$$, $$\pi \not = e$$ such that $$\pi\sigma\pi^{-1} = \sigma$$ for all $$\sigma\in X$$. By this [lemma](#lemms-conjugate), we have 
+
+$$
+\pi\sigma_0\pi^{-1} = (\pi(1), \pi(2), \pi(3), \pi(4)) = (1, 2, 3, 4) = \sigma_0.
+$$
+
+We can see that $$\pi$$ must be a $$4$$-cycle or consist of two $$2$$-cycles. Now, let's try to find the subgroup that contains all the elements that commutes with $$\sigma_0$$. First, we have
+
+$$
+\langle \sigma_0 \rangle = \{e, (1234),(13)(24), (4321) \}.
+$$
+
+It can be verified that the remaining elements of $$X$$, $$(12)(34)$$, and $$(14)(23)$$ do not commute with $$\sigma_0$$. Thus, $$H_{\sigma_0} = \langle \sigma_0 \rangle$$. By symmetry, we can deduce that $$H_{\sigma_1} = \langle \sigma_1 \rangle$$ and $$H_{\sigma_2} = \langle \sigma_2 \rangle$$, for $$\sigma_1, \sigma_2\in X$$. However, $$\pi \in H_{\sigma_0} \cup H_{\sigma_1} \cup H_{\sigma_2}$$ = $$\{e\}$$, which is a contradiction. Therefore, $$G$$ is faithful. ◼
+
+---
+
+## Reference
+
+- [MIT math](https://math.mit.edu/~mckernan/Teaching/12-13/Spring/18.703/l_6.pdf)
+- [Quora](https://www.quora.com/How-do-I-find-all-permutations-that-commute-with-the-permutation-1-3-4-2-5)
