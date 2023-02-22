@@ -11,4 +11,6 @@ tag: about
 ---
 
 ## 說明
-[Concrete-Math](../Concrete-Math) 部分內容出自 *Concrete Mathematics: A Foundation for Computer Science, by Ronald Graham, Donald Knuth, and Oren Patashnik*，但其餘（如 [Relation](../Concrete-Math/Relation/)） 則是筆者自行分類整理。
+[Concrete-Math](../Concrete-Math) 部分內容出自 *Concrete Mathematics: A Foundation for Computer Science, by Ronald Graham, Donald Knuth, and Oren Patashnik*。
+
+[Abstract-Algebra](../Abstract-Algebra) 許多內容出自國立陽明交通大學代數學（一）、（二）課程。
