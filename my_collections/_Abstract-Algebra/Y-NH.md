@@ -7,6 +7,13 @@ time: 2023/02/24
 ---
 
 **Table of Content**
+- [Group structure of $$NH$$](#group-structure-of-nh)
+  - [Theorem (two normal subgroups)](#theorem-two-normal-subgroups)
+  - [Semi-direct product](#semi-direct-product)
+    - [Theorem (semi-direct product)](#theorem-semi-direct-product)
+    - [Remark](#remark)
+    - [Theorem (some properties)](#theorem-some-properties)
+- [Reference](#reference)
 
 ---
 
@@ -33,7 +40,7 @@ Suppose $$(n,h)\in\text{ker}(\rho)$$, i.e., $$\rho(n, h) = nh = e$$. This implie
 
 ### Semi-direct product
 
-Now, suppose $$N$$ is normal and $$N\cap H = \{e\}$$. By [this theorem](#theorem-unique-product), the elements in $$NH$$ can be uniquely represented as $$nh$$ for some $$n\in N$$ and $$h\in H$$. Moreover. the product of two elements $$n_1h_1$$ and $$n_2h_2$$ can be written as
+Now, suppose $$N$$ is normal and $$N\cap H = \{e\}$$. By [this theorem](../X-3-isomorphism/#theorem-unique-product), the elements in $$NH$$ can be uniquely represented as $$nh$$ for some $$n\in N$$ and $$h\in H$$. Moreover. the product of two elements $$n_1h_1$$ and $$n_2h_2$$ can be written as
 
 $$
 n_1h_1n_2h_2 = n_1(h_1n_2h_1^{-1})h_1h_2 = n_1\rho_{h_1}(n_2)h_1h_2,
@@ -57,9 +64,17 @@ Let's first prove that $$(N\rtimes_{\rho}H, *)$$ is a group:
 
 Expand everything.
 
-<u>idnetity</u>
+<u>identity</u>
+
+$$(e_N, e_H)$$.
 
 <u>inverse</u>
+
+Let $$(n_2, h_2) = (n_1, h_1)^{-1}$$. Then $$(n_1, h_1)(n_2, h_2) = (e, e)$$, which means that $$n_1h_1n_2h_1^{-1} = e$$ and $$h_1h_2 = e$$. Thus we have 
+
+$$
+(n_1, h_1)^{-1} = (n_2, h_2) = (h_1^{-1}n_1h_1, h_1^{-1}). \tag*{$\blacksquare$}
+$$
 
 
 Then prove that $$(N\rtimes_{\rho}H, *) \cong (NH, \cdot)$$. Define $$\phi: NH\to N\rtimes_{\rho}H$$ given by $$nh\mapsto (n, h)$$. Here we only show that $$\phi$$ is a homomorphism:
@@ -72,8 +87,9 @@ $$
 \end{align*}
 $$
 
-
 Especially, the group $$N\rtimes_{\rho}H$$ is called the **semi-direct product** of $$N$$ and $$H$$ with respect to $$\rho$$.
+
+> 因為 $$NH$$ 是 group，所以證明 $$NH$$ 和 $$N\rtimes_{\rho}H$$ 同構也就證明了 $$N\rtimes_{\rho}H$$ 是 group！
 
 #### Theorem (semi-direct product)
 > Let $$H$$ and $$N$$ be two subgroups of a finite group $$G$$. Suppose $$N$$ is normal and $$H\cap N = \{e\}$$. Then **there exists some group homomorphism $$\rho:H\to \text{Aut}(N)$$ such that $$NH \cong N\rtimes_{\rho}H$$**.
@@ -82,6 +98,17 @@ Especially, the group $$N\rtimes_{\rho}H$$ is called the **semi-direct product**
 
 The binary structure $$(N\rtimes_{\rho}H, *)$$ **only** involves *the group operation of $$N$$, the group operation of $$H$$, and the group homomorphism $$\rho$$.*
 
+#### Theorem (some properties)
+> Let $$H$$ and $$N$$ be two groups and $$\rho$$ is a group homomorphism from $$H$$ to $$\text{Aut}(N)$$. Then $$G_{\rho}=N\rtimes_{\rho}H$$ is a group satisfying the following conditions:
+>
+> - $$N'= N\times \{e_H\} \cong N$$, which is a normal subgroup of $$G_\rho$$.
+> - $$H'= \{e_N\}\times H\cong H$$, which is a normal subgroup of $$G_\rho$$.
+> - $$N' \cap H' = \{(e, e)\}$$ and $$G_{\rho} = N'H'$$.
+> - For all $$n' = (n, e_H)\in N', h'=(e_N, h)\in H'$$, 
+>
+> $$
+>   h'n'h'^{-1} = (\rho_h(n), e_H).
+> $$
 
 ---
 
