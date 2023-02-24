@@ -16,6 +16,9 @@ time: 2023/02/18
   - [Theorem (the second isomorphism theorem)](#theorem-the-second-isomorphism-theorem)
     - [Remark](#remark-1)
     - [Theorem (unique product)](#theorem-unique-product)
+- [The Third Isomorphism Theorem](#the-third-isomorphism-theorem)
+  - [Theorem (the third isomorphism theorem)](#theorem-the-third-isomorphism-theorem)
+  - [Example](#example)
 
 ---
 
@@ -50,6 +53,12 @@ Any subgroup containing both $$H$$ and $$N$$ must also contain all elements of t
 兩個 finite subgroup 的 join 可能 infinite！
 
 因為 $$H\cup N$$ 不見得是 subgroup，所以定義 join（$$H\cap N$$ 是 subgroup）。
+
+另外，join 也可以如下表示：
+
+$$
+\langle H,N\rangle = HN \cup HNHN \cup \cdots = \bigcup^{\infty}_{i=1}(HN)^i。
+$$
 
 ### Theorem (the second isomorphism theorem)
 > Let $$H$$ be a subgroup of $$G$$ and $$N$$ be a **normal** subgroup of $$G$$. Then $$(HN)/N \simeq H/(H\cap N) $$.
@@ -106,3 +115,38 @@ In other words,
 $$
 G = \{e, b, b^2, \cdots, b^{p-1}, a, ab, ab^2, \cdots, ab^{p-1}\}.
 $$
+
+---
+
+## The Third Isomorphism Theorem
+### Theorem (the third isomorphism theorem)
+> Let $$H$$ and $$K$$ be normal subgroups of $$G$$ with $$K\leq H$$. Then $$G/H \simeq (G/K)/(H/K)$$.
+
+**Proof**
+
+Define $$\phi:G/K \to G/H$$ by $$\phi(gK) = gH$$. We claim that
+
+1. $$\phi$$ is **well-defined**.
+2. $$\phi$$ is a homomorphism.
+3. $$\text{ker}(\phi) = H/K$$.
+4. $$\phi$$ is onto.
+
+Then by [the first isomorphism theorem](#the-first-isomorphism-theorem), we have proved this theorem. ◼
+
+### Example
+
+> **Q:** Let $$G = \Bbb Z^2$$ and $$H=\langle(1, 2), (2, 1)\rangle$$. Find the structure of $$G/H$$.
+
+**Solution $$\rm I$$**
+
+Let $$K=\langle(3, 0),(0, 3)\rangle$$, which is a subgroup of $$H$$. It is easy to see that $$G/K \cong \Bbb Z_3 \times \Bbb Z_3 = \{K, [(0,1)+K], [(0,2)+K],\cdots,[(2,2)+K]\}$$. Moreover, we can see that 
+
+$$
+H/K = \{K, [(1,2)+K],[(2,1)+K] \} \cong \Bbb Z_3.
+$$
+
+By the above theorem, $$\vert G/H\vert = {\vert G/K\vert\over\vert H/K\vert} = 3$$, which implies that $$G/H\cong \Bbb Z_3$$.
+
+**Solution $$\rm II$$**
+
+change of basis ?
