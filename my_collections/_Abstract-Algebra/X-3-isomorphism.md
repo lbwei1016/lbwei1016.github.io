@@ -61,7 +61,7 @@ $$
 $$
 
 ### Theorem (the second isomorphism theorem)
-> Let $$H$$ be a subgroup of $$G$$ and $$N$$ be a **normal** subgroup of $$G$$. Then $$(HN)/N \simeq H/(H\cap N) $$.
+> Let $$H$$ be a subgroup of $$G$$ and $$N$$ be a **normal** subgroup of $$G$$. Then $$(HN)/N \cong H/(H\cap N) $$.
 
 **Proof**
 
@@ -81,7 +81,7 @@ If $$h\in \text{ker}(\phi)$$, then $$hN = N$$ and thus $$h\in N$$. Since $$h$$ i
 
 Given $$hnN\in HN/N$$ with $$h\in H$$ and $$n\in N$$. Then $$\phi(h) = hN = hnN$$. Thus $$\phi$$ is onto.
 
-By the first isomorphism theorem, $$(HN)/N \simeq H/(H\cap N) $$. ◼
+By the first isomorphism theorem, $$(HN)/N \cong H/(H\cap N) $$. ◼
 
 #### Remark
 
@@ -120,7 +120,7 @@ $$
 
 ## The Third Isomorphism Theorem
 ### Theorem (the third isomorphism theorem)
-> Let $$H$$ and $$K$$ be normal subgroups of $$G$$ with $$K\leq H$$. Then $$G/H \simeq (G/K)/(H/K)$$.
+> Let $$H$$ and $$K$$ be normal subgroups of $$G$$ with $$K\leq H$$. Then $$G/H \cong (G/K)/(H/K)$$.
 
 **Proof**
 
