@@ -15,7 +15,7 @@ time: 2023/02/24
     - [Theorem (some properties)](#theorem-some-properties)
     - [Theorem (all group structures)](#theorem-all-group-structures)
       - [**Remark**](#remark-1)
-    - [**Theorem (cyclic subgroups)**](#theorem-cyclic-subgroups)
+    - [**Theorem (determine structure of $$G$$)**](#theorem-determine-structure-of-g)
       - [Remark](#remark-2)
     - [Theorem (groups of order $$2p$$)](#theorem-groups-of-order-2p)
 - [Reference](#reference)
@@ -147,7 +147,7 @@ The binary structure $$(N\rtimes_{\rho}H, *)$$ **only** involves *the group oper
 - It is possible that $$N\rtimes_\rho H\cong N\rtimes_{\rho'}H$$ for *distinct* $$\rho$$ and $$\rho'$$.
 - When $$\rho$$ is the trivial homomorphism, $$N\rtimes_\rho H \cong N\times H$$.
 
-#### **Theorem (cyclic subgroups)**
+#### **Theorem (determine structure of $$G$$)**
 
 > Let $$G$$ be a group with a **normal** subgroup  $$N=\langle a\rangle$$ of order $$n$$ and a subgroup $$H=\langle b\rangle$$ of order $$m$$, where $$\gcd(n, m) = 1$$ and $$\vert G\vert=nm$$. Then **$$G$$ is isomorphic to $$N\rtimes_\rho H$$** where $$\rho_b(a) = a^k$$ for some $$k$$ satisfying $$k^m \equiv 1 \pmod n$$.
 
@@ -168,6 +168,8 @@ $$
 > 想想 [Dihedral groups](../B-n-gons/#dihedral-group)！
 
 **這個定理的意義在於**，如果 $$G$$ 可以找到兩個 cyclic subgroups（其中一個 normal），我們可以用只牽涉到該 subgroups 的 order 的同餘式，來明確的找出所有 $$G$$ 可能的結構！（用到[這個定理](#theorem-all-group-structures)。）
+
+> Check [this](../X-3-isomorphism/#theorem-unique-product).
 
 #### Theorem (groups of order $$2p$$)
 > Let $$G$$ be a group of order $$2p$$ where $$p$$ is an odd prime. Then $$G\cong \Bbb Z_{2p}$$ or $$D_p$$.

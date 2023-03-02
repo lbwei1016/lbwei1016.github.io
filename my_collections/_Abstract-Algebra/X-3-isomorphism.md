@@ -98,7 +98,7 @@ $$
 若 $$\vert H\cap N\vert =1$$，則 $$\vert HN\vert =\vert N\vert \vert H\vert$$，亦即所有 $$HN$$ 內的元素可以唯一被 $$x\in H$$ 和 $$y\in N$$ 的乘積表示。定理如下：
 
 #### Theorem (unique product)
-> Let $$G$$ be a finite group with a subgroup $$H$$ and a normal subgroup $$N$$. If **$$\vert H\cap N\vert = 1$$ and $$\vert G\vert = \vert N\vert \vert H\vert $$**, then **every element** of $$G$$ can be written as $$xy$$ for some **unique** $$x\in H$$ and $$y\in N$$. That is, $$G=NH$$.
+> Let $$G$$ be a finite group with a subgroup $$H$$ and a normal subgroup $$N$$. If **$$\vert H\cap N\vert = 1$$ and $$\vert G\vert = \vert N\vert \vert H\vert $$**, then **every element** of $$G$$ can be written as $$xy$$ for some **unique** $$x\in H$$ and $$y\in N$$.
 
 > If $$\gcd(\vert H\vert ,\vert N\vert )=1$$, then we always have $$\vert H\cap N\vert = 1$$.
 
