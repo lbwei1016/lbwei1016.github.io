@@ -23,13 +23,13 @@ time: 2023/03/02
 ### Theorem (smallest index; normal)
 > Let $$G$$ be a finite group and $$p$$ be the smallest prime factor of $$\vert G\vert$$. Then every subgroup $$H$$ of **index $$p$$** is a **normal** subgroup.
 
-> [This proposition](../H-homomorphism-and-normal-groups/#proposition-index-two) is a special case of this theorem.
+> [This proposition](../homomorphism-and-normal-groups/#proposition-index-two) is a special case of this theorem.
 
 #### Proof
 
 Let $$X=G/H$$. Then $$\vert X\vert =p$$ and $$G$$ acts on $$X$$ by left multiplication, which induces a group homomorphism $$\rho: G\to S_X$$. We claim that $$H$$ is the **kernel** of $$\rho$$, which implies that $$H$$ is normal.
 
-From [the first isomorphism theorem](../X-3-isomorphism/#the-first-isomorphism-theorem), we have 
+From [the first isomorphism theorem](../3-isomorphism/#the-first-isomorphism-theorem), we have 
 
 $$
 G/\text{ker}\rho \cong \rho(G) \leq S_X,
@@ -88,7 +88,7 @@ $$
 \vert G\vert = \vert X\vert \vert N(H)\vert ,
 $$
 
-by the [orbit-stablizer theorem](../U-group-action/#theorem-the-orbit-stabilizer-theorem).
+by the [orbit-stablizer theorem](../group-action/#theorem-the-orbit-stabilizer-theorem).
 
 ### Lemma (index congruent)
 > Let $$H$$ be a **$$p$$-subgroup** of a finite group $$G$$. Then 
@@ -99,7 +99,7 @@ by the [orbit-stablizer theorem](../U-group-action/#theorem-the-orbit-stabilizer
 
 **Proof**
 
-Let $$X$$ be the set of all left cosets of $$H$$. Let $$H$$ acts on $$X$$ by left multiplication. Since $$H$$ is a [$$p$$-group](../V-more-group-action/#theorem-order-modulo), we have
+Let $$X$$ be the set of all left cosets of $$H$$. Let $$H$$ acts on $$X$$ by left multiplication. Since $$H$$ is a [$$p$$-group](../more-group-action/#theorem-order-modulo), we have
 
 $$
 \vert X\vert \equiv\vert X^H\vert \pmod p.

@@ -33,7 +33,7 @@ $$
 
 This proves the theorem.
 
-> 看看[這個 theorem](../G-Finitely-Generated-Abelian-Groups/#theorem-subgroup-of-order-m)。
+> 看看[這個 theorem](../Finitely-Generated-Abelian-Groups/#theorem-subgroup-of-order-m)。
 
 ### Corollary (order of an element)
 > The order of an element $$a$$ of a finite group $$G$$ divides the order of $$G$$.

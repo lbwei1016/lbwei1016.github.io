@@ -40,7 +40,7 @@ $$
 \sum_{g\in G}\vert X^g\vert = \sum_{x\in X}\vert \text{Stab}_G(x)\vert = \vert G\vert \sum_{x\in X}{1\over \vert G_x\vert},
 $$
 
-where the last equality follows from [this theorem](../U-group-action/#theorem-the-orbit-stabilizer-theorem).
+where the last equality follows from [this theorem](../group-action/#theorem-the-orbit-stabilizer-theorem).
 
 Let $$\mathcal{O}_1\cdots, \mathcal{O}_r$$ be the orbits, where $$r=\vert X/G\vert$$. We have
 
@@ -48,7 +48,7 @@ $$
 \sum_{g\in G}\vert X^g\vert = \vert G\vert \sum_{x\in X}{1\over \vert G_x\vert} = \vert G\vert \sum_{i=1}^{r} \sum_{x\in \mathcal{O}_i} {1\over \vert G_x\vert},
 $$
 
-since [$$X$$ can be written as a disjoint union of $$G$$-orbits](../U-group-action/#corollary-disjoint-union-of-orbits).
+since [$$X$$ can be written as a disjoint union of $$G$$-orbits](../group-action/#corollary-disjoint-union-of-orbits).
 
 When $$x\in \mathcal{O}_i$$, $$G_x = \mathcal{O}_i$$, and thus it follows that
 
@@ -71,9 +71,9 @@ $$
 
 **Proof**
 
-By this [lemma](../U-group-action/#lemma-transitive-and-orbit), we have $$\vert X/G\vert = 1$$, which proves this corollary. ◼
+By this [lemma](../group-action/#lemma-transitive-and-orbit), we have $$\vert X/G\vert = 1$$, which proves this corollary. ◼
 
-> See also this [lemma](../V-more-group-action/#lemma-fixed-subset-and-stabilizer).
+> See also this [lemma](../more-group-action/#lemma-fixed-subset-and-stabilizer).
 
 ---
 
@@ -85,7 +85,7 @@ Given a **regular $$k$$-gon and $$n$$ colors**, determine the number of ways to 
 
 Let $$X$$ be the set of all possible ways to paint the frame, with $$\vert X\vert = n^k$$. Let $$G=D_k$$, the group of symmetries of the regular $$k$$-gon, consists of $$k$$ rotations and $$k$$ reflections. The group $$G$$ acts on $$X$$, and our task is to determine $$\vert X/G\vert$$.
 
-> 為什麼是 $$\vert X/G\vert$$？因為[每個 orbit 都是一 cell](../U-group-action/#theorem-eq-relation)，而同一 orbit 中的兩種著色法可以經由旋轉或對稱而變成對方。
+> 為什麼是 $$\vert X/G\vert$$？因為[每個 orbit 都是一 cell](../group-action/#theorem-eq-relation)，而同一 orbit 中的兩種著色法可以經由旋轉或對稱而變成對方。
 
 **Solution**
 

@@ -54,7 +54,7 @@ $$
 X^g = \{x\in X \mid gxg^{-1}=x\}
 $$
 
-也是合法的定義。（見 [Examples](../U-group-action/#examples) 的最末項。）
+也是合法的定義。（見 [Examples](../group-action/#examples) 的最末項。）
 
 最後，$$g$$-fixed subset 可以和 stabilizer 相對應：一個收 $$x$$，另一個收 $$g$$。
 
@@ -87,18 +87,18 @@ $$
 X = X^G \sqcup X_1 \sqcup \cdots \sqcup X_k.
 $$
 
-By [the orbit-stabilizer theorem](../U-group-action/#theorem-the-orbit-stabilizer-theorem), for all $$i$$, $$\vert X_i\vert$$ divides $$\vert G\vert$$, implying that $$\vert X_i \vert$$ is a multiple of $$p$$. Since the $$G$$-orbit form a partition of $$X$$, we obtain
+By [the orbit-stabilizer theorem](../group-action/#theorem-the-orbit-stabilizer-theorem), for all $$i$$, $$\vert X_i\vert$$ divides $$\vert G\vert$$, implying that $$\vert X_i \vert$$ is a multiple of $$p$$. Since the $$G$$-orbit form a partition of $$X$$, we obtain
 
 $$
 \vert X\vert = \vert X^G\vert + \vert X_1\vert + \cdots \vert X_k\vert \equiv \vert X^G\vert \pmod p. ◼
 $$
 
 ### Theorem (center of $$p$$-groups)
-> If $$G$$ is a finite $$p$$-group for some prime $$p$$, then the center **$$Z(G)$$ is non-trivial**. In particular, $$G$$ is not a [simple group](../I-more-on-normal-subgroups/#simple-groups) if $$G$$ is not of order $$p$$ (i.e., $$\vert G\vert = p^2, p^3, \cdots$$).
+> If $$G$$ is a finite $$p$$-group for some prime $$p$$, then the center **$$Z(G)$$ is non-trivial**. In particular, $$G$$ is not a [simple group](../more-on-normal-subgroups/#simple-groups) if $$G$$ is not of order $$p$$ (i.e., $$\vert G\vert = p^2, p^3, \cdots$$).
 
 > not a simple group ?
 
-> $$Z(G) \triangleleft G$$. See [Homomorphism & Normal Subgroups](../H-homomorphism-and-normal-groups/#definition-normal-subgroup).
+> $$Z(G) \triangleleft G$$. See [Homomorphism & Normal Subgroups](../homomorphism-and-normal-groups/#definition-normal-subgroup).
 
 **Proof**
 
@@ -112,7 +112,7 @@ Note that $$x\in X^G$$ iff $$gxg^{-1}=x$$ for all $$g\in G$$. Thus, $$X^G = Z(G)
 
 ### Class equation
 
-For each element $$x\in G$$, the set of all elements conjugate to $$x$$ is referred to as the **conjugacy class** of $$x$$, denoted by $$[x]$$. *The stabilizer of $$x$$ under conjugation* is called the **centralizer** of $$x$$, deonted by $$C_G(x)$$. The size of the conjugacy class of $$x$$ is $$[G:C_G(x)]$$, as stated by [the orbit-stabilizer theorem](../U-group-action/#theorem-the-orbit-stabilizer-theorem).
+For each element $$x\in G$$, the set of all elements conjugate to $$x$$ is referred to as the **conjugacy class** of $$x$$, denoted by $$[x]$$. *The stabilizer of $$x$$ under conjugation* is called the **centralizer** of $$x$$, deonted by $$C_G(x)$$. The size of the conjugacy class of $$x$$ is $$[G:C_G(x)]$$, as stated by [the orbit-stabilizer theorem](../group-action/#theorem-the-orbit-stabilizer-theorem).
 
 Let $$[G]$$ be the collection of all conjugacy classes of $$G$$. Then the **class equation** states that 
 
@@ -129,7 +129,7 @@ $$
 
 > Under conjugacy, stabilizer becomes centralizer!
 
-> 針對某一 $$x$$，收集所有使得 $$x$$ 可以交換的 $$g$$；也就是說，**the centralizer of $$x$$ 使 $$x$$ 彷彿置身 [center](../I-more-on-normal-subgroups/#definition-center)！**
+> 針對某一 $$x$$，收集所有使得 $$x$$ 可以交換的 $$g$$；也就是說，**the centralizer of $$x$$ 使 $$x$$ 彷彿置身 [center](../more-on-normal-subgroups/#definition-center)！**
 
 > $$gx = xg,\  \forall g \in C_G(x)$$.
 
@@ -191,6 +191,6 @@ Note that $$y\in Y^P$$ iff $$y = (g,g,\cdots,g)$$ for some $$g\in G$$ with $$g^p
 
 ### **Remark**
 
-[Lagrange's theorem](../F-Lagrange-thm) 指出，若有 order 為 $$n$$ 的 element，則 group size 可被 $$n$$ 整除。反過來成立嗎？若 $$G$$ 是交換群，根據 [the fundamental theorem of finitely generated abelian groups](../G-Finitely-Generated-Abelian-Groups/#theorem--fundamental-theorem-of-finitely-generated-abelian-groups)，$$G$$ 可以被拆為數個 $$\Bbb Z_{p_i^{e_i}}$$ 的 direct product，其中 $$p_i$$ 是 $$\vert G \vert$$ 的質因數且 $$e_i \in \Bbb N$$。可以觀察到，$$\Bbb Z_{p^k} = \langle 1 \rangle$$ 所有元素的 order 涵括了 $$p^k$$ 的所有因數：$$\langle p^i\rangle$$ 的 order 正是 $$p^{k-i}$$。於是對於 abelian group，Lagrange's theorem 的逆定理是成立的。
+[Lagrange's theorem](../Lagrange-thm) 指出，若有 order 為 $$n$$ 的 element，則 group size 可被 $$n$$ 整除。反過來成立嗎？若 $$G$$ 是交換群，根據 [the fundamental theorem of finitely generated abelian groups](../Finitely-Generated-Abelian-Groups/#theorem--fundamental-theorem-of-finitely-generated-abelian-groups)，$$G$$ 可以被拆為數個 $$\Bbb Z_{p_i^{e_i}}$$ 的 direct product，其中 $$p_i$$ 是 $$\vert G \vert$$ 的質因數且 $$e_i \in \Bbb N$$。可以觀察到，$$\Bbb Z_{p^k} = \langle 1 \rangle$$ 所有元素的 order 涵括了 $$p^k$$ 的所有因數：$$\langle p^i\rangle$$ 的 order 正是 $$p^{k-i}$$。於是對於 abelian group，Lagrange's theorem 的逆定理是成立的。
 
 但若不是交換群呢？柯西定理就派上用場了，只不過多了質數的限制。

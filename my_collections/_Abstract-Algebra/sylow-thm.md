@@ -7,17 +7,15 @@ time: 2023/03/02
 ---
 
 **Table of Content**
-- [Sylow Theorem](#sylow-theorem)
-  - [**Theorem (Sylow theorems)**](#theorem-sylow-theorems)
-    - [Corollary (contain; normal)](#corollary-contain-normal)
+- [**Theorem (Sylow theorems)**](#theorem-sylow-theorems)
+  - [Corollary (contain; normal)](#corollary-contain-normal)
+  - [Proof of Sylow theorem](#proof-of-sylow-theorem)
 
 ---
 
-## Sylow Theorem
+Sylow theorems can be used to find normal subgroups, and in turn [determine group structures](../NH/#theorem-determine-structure-of-g)!
 
-Sylow theorems can be used to find normal subgroups, and in turn [determine group structures](../Y-NH/#theorem-determine-structure-of-g)!
-
-### **Theorem (Sylow theorems)**
+## **Theorem (Sylow theorems)**
 > Suppose $$\vert G\vert=p^nm$$ where $$p$$ is a prime with $$p\not \mid m$$.
 >
 > 1. There exists a subgroup of order $$p^i$$ for $$1<i\leq n$$. Moreover, **every subgroup of order $$p^i$$ is normal in some subgroup of order $$p^{i+1}$$** when $$i<n$$.
@@ -33,6 +31,8 @@ Sylow theorems can be used to find normal subgroups, and in turn [determine grou
 
 > The subgroup $$H$$ of order $$p^n$$ is called a **Sylow $$p$$-subgroup**, which is exactly a maximal $$p$$-subgroup.
 
-#### Corollary (contain; normal)
+### Corollary (contain; normal)
 > 1. Every $$p$$-subgroup is contained in a Sylow $$p$$-subgroup.
 > 2. **A Sylow $$p$$-subgroup is normal iff $$n_p = 1$$.**
+
+### Proof of Sylow theorem

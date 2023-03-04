@@ -26,7 +26,7 @@ time: 2023/02/18
 ### Theorem (the first isomorphiam theorem)
 > Let $$\psi: G\to G'$$ be a group homomorphism with kernel $$N$$. Then $$G/N$$ and $$\psi(G)$$ are isomorphic. The **canonical isomorphism** $$\mu: G/N \to \psi(G) $$ is given by $$\mu(gN) = \psi(g)$$.
 
-> See [here](../H-homomorphism-and-normal-groups/#theorem-the-first-isomorphism-theorem).
+> See [here](../homomorphism-and-normal-groups/#theorem-the-first-isomorphism-theorem).
 
 ---
 
@@ -41,7 +41,7 @@ time: 2023/02/18
 
 **Proof**
 
-1. Show that $$HN$$ is a subgroup of $$G$$. (by [this](../H-homomorphism-and-normal-groups/#theorem-equivalent-conditions))
+1. Show that $$HN$$ is a subgroup of $$G$$. (by [this](../homomorphism-and-normal-groups/#theorem-equivalent-conditions))
 2. Show that $$\langle H,N\rangle = HN$$.
 
 $$HN$$ clearly contains both $$H$$ and $$N$$. Thus $$\langle H, N\rangle\subset HN $$.
@@ -87,7 +87,7 @@ By the first isomorphism theorem, $$(HN)/N \cong H/(H\cap N) $$. ◼
 
 我們也可以構造 $$\rho: HN\to H/(H\cap N)$$ 來證明，但上述的 $$\phi$$ 比較方便（因為 $$H$$ 比較小）。
 
-另一重點是，我們不需檢查 $$\phi$$ 是否 well-defined，因為 $$\phi$$ 定義在 $$H$$ 上，而非 [quotient group](../H-homomorphism-and-normal-groups/#theorem-quotient-group) 上。
+另一重點是，我們不需檢查 $$\phi$$ 是否 well-defined，因為 $$\phi$$ 定義在 $$H$$ 上，而非 [quotient group](../homomorphism-and-normal-groups/#theorem-quotient-group) 上。
 
 從上述定理，我們可以得知當 $$\vert G\vert < \infty$$，
 
@@ -104,7 +104,7 @@ $$
 
 **Example**
 
-Let $$G$$ be a group of order $$2p$$ where $$p$$ is an odd prime. By [Cauchy's Theorem](../V-more-group-action/#theorem-cauchys-theorem), there exists an element $$a$$ of order $$2$$ and an element $$b$$ of order $$p$$. Since $$\langle b\rangle$$ is of index $$2$$, [it is a normal subgroup](../H-homomorphism-and-normal-groups/#proposition-index-two). In this case, we have
+Let $$G$$ be a group of order $$2p$$ where $$p$$ is an odd prime. By [Cauchy's Theorem](../more-group-action/#theorem-cauchys-theorem), there exists an element $$a$$ of order $$2$$ and an element $$b$$ of order $$p$$. Since $$\langle b\rangle$$ is of index $$2$$, [it is a normal subgroup](../homomorphism-and-normal-groups/#proposition-index-two). In this case, we have
 
 $$
 \langle a,b\rangle = \langle a\rangle\langle b\rangle = G.

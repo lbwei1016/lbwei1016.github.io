@@ -18,7 +18,7 @@ time: 2022/09/22
   - [Order 4](#order-4)
   - [Order 6](#order-6)
   - [Order 8](#order-8)
-- [Multiplicative Group $$\mathbb{Z}_n$$](#multiplicative-group-mathbbz_n)
+- [Multiplicative Group $$\\mathbb{Z}\_n$$](#multiplicative-group-mathbbz_n)
   - [Theorem (inverse)](#theorem-inverse)
   - [Theorem (making a group)](#theorem-making-a-group)
 - [The Nature of Groups](#the-nature-of-groups)
@@ -36,7 +36,7 @@ time: 2022/09/22
 > If $$g \in G$$ and for some $$m \in \mathbb{N}$$ such that $$g^m = e$$, then $$m$$ is called *exponent* of $$g$$. The **order** of $$g$$ is the **smallest such *exponent***, denoted by $$\text{ord}(g)$$. In this case we say $$g$$ is of finite order (otherwise infinite).
 
 #### **Remark (order divides order)**
-As a consequence of [Lagrange’s Theorem](../F-Lagrange-thm/#theorem), the order of an element $$g$$ of a group $$G$$ **divides** the group order \|$$G$$\| in case $$G$$ is finite.
+As a consequence of [Lagrange’s Theorem](../Lagrange-thm/#theorem), the order of an element $$g$$ of a group $$G$$ **divides** the group order \|$$G$$\| in case $$G$$ is finite.
 
 ## Group of small order
 ### Order 1
@@ -170,7 +170,7 @@ Therefore, the set of symmetries together with the composition operator form an 
 
 When $$A$$ is just a set, a symmetry on $$A$$ is just a bijective function from $$A$$ to itself. When $$A$$ is finite, its symmetry is also called **a permutation of $$A$$**.
 
-> 見 [Groups of Permutation](../9-Groups-of-Permutation)、[Dihedral Group](../B-n-gons/#dihedral-group)。
+> 見 [Groups of Permutation](../Groups-of-Permutation)、[Dihedral Group](../n-gons/#dihedral-group)。
 
 ---
 

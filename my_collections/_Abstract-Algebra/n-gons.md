@@ -117,5 +117,5 @@ which **defines a group by generators and relations**.
 
 > $$G_n = \langle \text{generator} \vert \text{relations} \rangle$$.
 
-> 參 [Group of Symmetries](../5-More-on-Groups/#group-of-symmetries)。
+> 參 [Group of Symmetries](../More-on-Groups/#group-of-symmetries)。
 

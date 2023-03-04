@@ -135,7 +135,7 @@ $$
 \phi_a(f(x)) = f(a).
 $$
 
-Then $$\phi_a$$ is an [evalutation homomorphism](../M-rings-of-polynomials/#evaluation-homomorphism).
+Then $$\phi_a$$ is an [evalutation homomorphism](../rings-of-polynomials/#evaluation-homomorphism).
 
 For $$a=\sqrt{2}$$, we have
 

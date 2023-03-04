@@ -34,7 +34,7 @@ time: 2022/10/12
 
 ---
 
-> 參 [More on Groups](../5-More-on-Groups/#the-nature-of-groups)。
+> 參 [More on Groups](../More-on-Groups/#the-nature-of-groups)。
 
 ## Theorem (permutation group)
 > Let $$A$$ be a nonempty set. Then the set $$S_A$$ of all permutations of $$A$$ is **a group under composition**.
@@ -86,7 +86,7 @@ We can see that $$\sigma = \sigma_1\sigma_2 = \sigma_2\sigma_1 = (12)(345)$$.
 
 > $$\sigma$$ is of order $$n$$: $$\sigma^n = e$$.
 
-> 想想 [cyclic groups](../8-Cyclic-Subgroups/#definition-order)。
+> 想想 [cyclic groups](../Cyclic-Subgroups/#definition-order)。
 
 ---
 
@@ -128,7 +128,7 @@ S_n &= \Big\langle (i,j) \vert 1 \le i \le j \le n \Big\rangle \\
 \end{align*}  
 $$
 
-> [集合表示法見此](../B-n-gons/#dihedral-group)。
+> [集合表示法見此](../n-gons/#dihedral-group)。
 
 ---
 

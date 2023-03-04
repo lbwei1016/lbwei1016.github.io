@@ -163,7 +163,7 @@ where $$q(x), r(x)\in F_2[x]$$. Since $$\text{Irr}(\alpha, F_1)(\alpha) = \text{
 
 It is clear that $$F[\alpha] \subset F(\alpha)$$. It remains to show that every $$f(\alpha)/g(\alpha)\in F(\alpha)$$ is also in $$F[\alpha]$$.
 
-Since $$g(\alpha)\not = 0$$, $$g(x)$$ is not divisible by $$\text{Irr}(\alpha, F)$$. Moreover, $$\text{Irr}(\alpha, F)$$ is irreducible, so $$1$$ is a [GCD](../O-poly-factorization/#definition-gcd) of $$g(x)$$ and $$\text{Irr}(\alpha, F)$$. Thus, we can find $$p(x)$$ and $$q(x)$$ such that 
+Since $$g(\alpha)\not = 0$$, $$g(x)$$ is not divisible by $$\text{Irr}(\alpha, F)$$. Moreover, $$\text{Irr}(\alpha, F)$$ is irreducible, so $$1$$ is a [GCD](../poly-factorization/#definition-gcd) of $$g(x)$$ and $$\text{Irr}(\alpha, F)$$. Thus, we can find $$p(x)$$ and $$q(x)$$ such that 
 
 $$
 p(x)g(x) + q(x)\text{Irr}(\alpha, F) = 1
@@ -218,7 +218,7 @@ $$
 
 which is a field of $$9$$ elements.
 
-Since [the multiplicative group of every finite field is cyclic](../N-zeros-of-polynomials/#corollary-the-multiplicative-group-of-a-field), we can find a generator of $$\mathbb{Z}_3^\times(\alpha)$$; let's first check whether $$\alpha$$ is a generator:
+Since [the multiplicative group of every finite field is cyclic](../zeros-of-polynomials/#corollary-the-multiplicative-group-of-a-field), we can find a generator of $$\mathbb{Z}_3^\times(\alpha)$$; let's first check whether $$\alpha$$ is a generator:
 
 $$
 \alpha^2 = -1 \Rightarrow \alpha \text{ is not a generator.}
@@ -255,7 +255,7 @@ which means that we can express **all** non-zero elements in $$\mathbb{Z}_3(\bet
 
 ## Extension Fields and Residue Classes
 
-Recall the [evaluation homomorphism](../M-rings-of-polynomials/#evaluation-homomorphism); here we define it as
+Recall the [evaluation homomorphism](../rings-of-polynomials/#evaluation-homomorphism); here we define it as
 
 $$
 e_\alpha: F[x] \to E,
@@ -267,7 +267,7 @@ $$
 \text{ker}(e_\alpha) = \{f(x)\in F[x]\mid f(\alpha)=0 \} = \text{Irr}(\alpha, F)F[x].
 $$
 
-By [the first ring isomorphism theorem](../M-rings-of-polynomials/#theorem-first-ring-isomorphism-theorem), we have
+By [the first ring isomorphism theorem](../rings-of-polynomials/#theorem-first-ring-isomorphism-theorem), we have
 
 $$
 F[x]\big/\text{Irr}(\alpha, F)F[x] \cong F[\alpha]=F(\alpha).
@@ -282,7 +282,7 @@ Therefore, there are two equivalent ways to construct a **algebraic field extens
 
 #### Remark
 
-第一種方法的好處是，我們比較容易同時觀察好幾個 algebraic field extension，因為他們都在同一**代數閉包**（[algebraic closure](../S-algebraic-closure)）之中；第二種方法的好處是，建構過程只牽涉到 $$F$$。
+第一種方法的好處是，我們比較容易同時觀察好幾個 algebraic field extension，因為他們都在同一**代數閉包**（[algebraic closure](../algebraic-closure)）之中；第二種方法的好處是，建構過程只牽涉到 $$F$$。
 
 Let $$\alpha$$ and $$\beta$$ be two distinct zeros of an irreducible polynomials $$f(x)$$ over $$F$$, then we have
 

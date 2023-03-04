@@ -44,7 +44,7 @@ time: 2023/02/13
 
 ### Example (prove to be a $$G$$-set)
 
-See [this](../V-more-group-action/#proof-y-is-a-g-set).
+See [this](../more-group-action/#proof-y-is-a-g-set).
 
 ### Proposition (Group actions as permutations)
 > Suppose that a group $$G$$ acts on a set $$X$$. Then for a given $$g\in G$$, **the function $$X\to X$$ represented by $$g$$** is **one-to-one** and **onto**, that is:
@@ -60,7 +60,7 @@ See [this](../V-more-group-action/#proof-y-is-a-g-set).
 
 #### Remark
 
-[回想起來](../C-Cayley-thm)，permutation 是一 **one-to-one** 且 **onto** 的 mapping，與此處的 group action 不謀而和。也就是說，以上的定理可以如下表示：
+[回想起來](../Cayley-thm)，permutation 是一 **one-to-one** 且 **onto** 的 mapping，與此處的 group action 不謀而和。也就是說，以上的定理可以如下表示：
 
 Let $$S_X$$ be the set of permutations on $$X$$. A group action $$*$$ of $$G$$ on $$X$$ can be regarded as **a group homomorphism** $$\rho: G\to S_X$$ such that
 
@@ -102,13 +102,13 @@ Below $$G$$s act on $$X$$s, repsectively.
 - Let $$G=\text{GL}(n, \Bbb{R}), X=\Bbb{R}^n$$.
   - $$\text{GL}(n, \Bbb{R})$$ acts on $$X$$ by $$(M, v) \mapsto Mv$$.
 - Let $$X=G$$; $$(g, x)\mapsto gx$$. 
-  - See [Cayley's theorem](../C-Cayley-thm).
+  - See [Cayley's theorem](../Cayley-thm).
 - Let $$X=G/H$$; $$(g, aH) \mapsto (ga)H$$.
-  - See [generalized Cayley's theorem](../I-more-on-normal-subgroups/#normal-subgroup-and-homomorphism).
+  - See [generalized Cayley's theorem](../more-on-normal-subgroups/#normal-subgroup-and-homomorphism).
 - Let $$X$$ be a non-empty set and $$n$$ be a positive integer. Let $$G$$ be *any* subgroup of $$S_n$$.
   - $$S_n$$ acts on $$X^n$$ by $$(\sigma, (x_1, \cdots, x_n)) \mapsto (x_{\sigma(1)}, \cdots, x_{\sigma(n)})$$.
 - The map $$*: G\times G\to G$$ given by $$*(g, x) = gxg^{-1}$$ is a group action, since $$\rho: G \to \text{Aut}(G)$$ is a group homomorphism.
-  - See [remark](#remark-1) and [Normal Subgroup and Homomorphism](../I-more-on-normal-subgroups/#normal-subgroup-and-homomorphism).
+  - See [remark](#remark-1) and [Normal Subgroup and Homomorphism](../more-on-normal-subgroups/#normal-subgroup-and-homomorphism).
 
 ### Definition (faithful and transitive)
 > A group action $$*$$ by $$G$$ on $$X$$ is said to be **faithful** if $$e\in G$$ (identity) is the **only** element that leaves every element of $$X$$ unchanged. That is to say, **$$*$$ is faithful iff $$\text{ker}(\rho) = \{e\}$$**, where $$\rho: G\to S_X$$, by this [remark](#remark-1).
@@ -125,9 +125,9 @@ Below $$G$$s act on $$X$$s, repsectively.
 > G_x := \{gx\mid g\in G\}.
 > $$
 
-> See [Symmetry Groups on N-gons](../B-n-gons/#the-order-of-the-symmetry-group). Note that $$G$$-orbit itself is a $$G$$-set.
+> See [Symmetry Groups on N-gons](../n-gons/#the-order-of-the-symmetry-group). Note that $$G$$-orbit itself is a $$G$$-set.
 
-令 $$H$$ 為 $$G$$ 的 subgroup。若 $$H$$ 作用在 $$G$$ 上，則對於任意 $$g\in G$$，$$H$$-orbit of $$g$$ 就是 $$H$$ 的 [right coset](../E-coset/#definition-coset)！也就是說，$$H_g = Hg$$。
+令 $$H$$ 為 $$G$$ 的 subgroup。若 $$H$$ 作用在 $$G$$ 上，則對於任意 $$g\in G$$，$$H$$-orbit of $$g$$ 就是 $$H$$ 的 [right coset](../coset/#definition-coset)！也就是說，$$H_g = Hg$$。
 
 #### Lemma (transitive and orbit)
 
@@ -167,7 +167,7 @@ The equivalence relation defined above defines a partition of $$X$$, and the cel
 > \vert G\vert = \vert G_x\vert \vert\text{Stab}_G(x) \vert.
 > $$
 
-> See [Symmetry Groups on N-gons](../B-n-gons/#theorem-stabilizer--ordit).
+> See [Symmetry Groups on N-gons](../n-gons/#theorem-stabilizer--ordit).
 
 **Proof**
 

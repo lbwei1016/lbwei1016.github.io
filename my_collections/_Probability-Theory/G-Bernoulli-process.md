@@ -3,7 +3,7 @@ layout: page
 title: The Bernoulli Process
 usemathjax: true
 tag: Probability, Statistics
-time: 2022/01/04
+time: 2023/01/04
 ---
 
 **Table of Content**

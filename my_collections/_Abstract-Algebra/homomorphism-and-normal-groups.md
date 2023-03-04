@@ -159,7 +159,7 @@ $$
 
 is a group homomorphism, and therefore $$A_n = \text{ker(sgn)}$$ is a **subgroup** of $$S_n$$.
 
-> $$A_n$$ 是 [even permutation 形成的 subgroup！](../D-transpositions/#corollary-even-permutation)
+> $$A_n$$ 是 [even permutation 形成的 subgroup！](../transpositions/#corollary-even-permutation)
 
 ### Theorem (kernel and coset)
 
@@ -228,7 +228,7 @@ g(h_1^{i_1}\cdots h_m^{i_m})g^{-1} = (gh_1^{i_1}g^{-1})\cdots(gh_m^{i_m}g^{-1}) 
 \end{align*}
 $$
 
-> 非常好用！尤其在處理 [permutaiton group](../9-Groups-of-Permutation/#theorem-generator) 的時候。
+> 非常好用！尤其在處理 [permutaiton group](../Groups-of-Permutation/#theorem-generator) 的時候。
 
 ### Corollary (kernel is normal)
 > If $$\psi: G\to G'$$ is a group homomorphism, then $$\text{ker}(\psi)$$ is a normal subgroup.
@@ -237,7 +237,7 @@ $$
 
 ### Proposition (index two)
 
-> Let $$N$$ be **a subgroup of [index](../F-Lagrange-thm/#index) two** of $$G$$. Then $$N$$ is normal.
+> Let $$N$$ be **a subgroup of [index](../Lagrange-thm/#index) two** of $$G$$. Then $$N$$ is normal.
 
 **Proof**
 
@@ -282,7 +282,7 @@ $$
 aN * bN := abN
 $$
 
-is a [well-defined](../2-Isomorphism/#well-definedness) binary operator on $$G/N$$.
+is a [well-defined](../Isomorphism/#well-definedness) binary operator on $$G/N$$.
 
 > For $$c=a, d=b$$, we have $$cNdN = cdN = abN = aNbN$$.
 

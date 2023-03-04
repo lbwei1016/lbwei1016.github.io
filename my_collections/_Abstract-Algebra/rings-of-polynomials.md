@@ -107,9 +107,9 @@ $$
 
 ### Remark B
 
-Let $$F$$ be a field. The set $$F[x]$$ is not a field since the inverse of $$x$$, $$1/x$$, is not in $$F[x]$$. On the other hand, we can construct a field containing $$F[x]$$ as a subdomain: The [field of quotients](../L-fields-of-quotients) of $$F[x]$$ is $$F(x) = \{f(x)/g(x): f(x),g(x)\in F[x], g(x)\not=0 \}$$, called the **field of rational functions** in $$x$$ over $$F$$.
+Let $$F$$ be a field. The set $$F[x]$$ is not a field since the inverse of $$x$$, $$1/x$$, is not in $$F[x]$$. On the other hand, we can construct a field containing $$F[x]$$ as a subdomain: The [field of quotients](../fields-of-quotients) of $$F[x]$$ is $$F(x) = \{f(x)/g(x): f(x),g(x)\in F[x], g(x)\not=0 \}$$, called the **field of rational functions** in $$x$$ over $$F$$.
 
-> 注意 notation！$$F(x)$$ 是 field，而 $$F[x]$$ 只是 integral domain（因為 $$F$$ 是 integral domain；by [theorem](../K-integral-domain/#theorem-fields-are-integral-domain) and [corollary](#corollary-integral-domain)）。
+> 注意 notation！$$F(x)$$ 是 field，而 $$F[x]$$ 只是 integral domain（因為 $$F$$ 是 integral domain；by [theorem](../integral-domain/#theorem-fields-are-integral-domain) and [corollary](#corollary-integral-domain)）。
 
 ### Remark C
 
@@ -169,7 +169,7 @@ $$
 \mathbb{Z}_n/\text{ker}\phi_\alpha \cong \langle 1_{R'}, \alpha \rangle.
 $$
 
-> 見[此](../K-integral-domain/#theorem-subring-generated-by-the-unity)。
+> 見[此](../integral-domain/#theorem-subring-generated-by-the-unity)。
 
 ### Ring Extension (finitely generated commutative ring)
 

@@ -10,8 +10,8 @@ time: 2022/10/13
 - [Coset](#coset)
   - [Definition (coset)](#definition-coset)
   - [Theorem (left coset)](#theorem-left-coset)
-  - [Example $$\rm I$$](#example-rm-i)
-  - [Example $$\rm II$$](#example-rm-ii)
+  - [Example $$\\rm I$$](#example-rm-i)
+  - [Example $$\\rm II$$](#example-rm-ii)
 
 ---
 
@@ -44,7 +44,7 @@ $$
 
 **Proof**
 
-1 . By [Cayley's Theorem](../C-Cayley-thm) we konw $$\lambda_a$$ is a bijection. Since $$aH = \lambda_a(H)$$, 
+1 . By [Cayley's Theorem](../Cayley-thm) we konw $$\lambda_a$$ is a bijection. Since $$aH = \lambda_a(H)$$, 
 
 2 . Suppose $$ah_1 = bh_2$$ for some $$h1,h_2 \in H$$. Since $$hH = H$$ for all $$h \in H$$, $$H$$ and $$aH$$ have the same cardinality.
 

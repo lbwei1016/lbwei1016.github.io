@@ -20,10 +20,10 @@ time: 2022/09/29
   - [Proof](#proof)
   - [Corollary](#corollary)
   - [Theorem (subgroups of finite cyclic groups)](#theorem-subgroups-of-finite-cyclic-groups)
-    - [Corollary $$\rm I$$ (equality of subgroups)](#corollary-rm-i-equality-of-subgroups)
-    - [Corollary $$\rm II$$ (generators)](#corollary-rm-ii-generators)
-    - [Corollary $$\rm III$$ (number of subgroups)](#corollary-rm-iii-number-of-subgroups)
-    - [Corollary $$\rm IV$$ (order of subgroups)](#corollary-rm-iv-order-of-subgroups)
+    - [Corollary $$\\rm I$$ (equality of subgroups)](#corollary-rm-i-equality-of-subgroups)
+    - [Corollary $$\\rm II$$ (generators)](#corollary-rm-ii-generators)
+    - [Corollary $$\\rm III$$ (number of subgroups)](#corollary-rm-iii-number-of-subgroups)
+    - [Corollary $$\\rm IV$$ (order of subgroups)](#corollary-rm-iv-order-of-subgroups)
 - [Reference](#reference)
 
 ---
@@ -49,7 +49,7 @@ is a subgroup of $$G$$ and it is the **smallest subgroup of $$G$$** that contain
 
 > **cyclic $$\iff$$ generator**
 
-> Note: **Being cyclic** is a [structural property](../4-Groups/#structural-properties).
+> Note: **Being cyclic** is a [structural property](../Groups/#structural-properties).
 
 > 也就是說，**generator** 在 *isomorphic groups* 之間必須一一對應。
 
@@ -63,7 +63,7 @@ is a subgroup of $$G$$ and it is the **smallest subgroup of $$G$$** that contain
 
 **Proof**
 
-Let $$m = r - s$$. By [Cancellation Law](../4-Groups/#cancellation-law), we have $$a^m = e$$. For any $$n \in \mathbb{Z}$$, by division algorithm, we can write $$n=qm + r$$ with $$0 \leq r < m$$. Then $$a^n = a^{qm+r} = (a^m)^qa^r = a^r$$. Therefore, every element of $$G$$ is equal to one of $$a^0, \cdots, a^{m-1}$$. ◼
+Let $$m = r - s$$. By [Cancellation Law](../Groups/#cancellation-law), we have $$a^m = e$$. For any $$n \in \mathbb{Z}$$, by division algorithm, we can write $$n=qm + r$$ with $$0 \leq r < m$$. Then $$a^n = a^{qm+r} = (a^m)^qa^r = a^r$$. Therefore, every element of $$G$$ is equal to one of $$a^0, \cdots, a^{m-1}$$. ◼
 
 ### Theorem (infinite cyclic groups)
 > Let $$G = \langle a \rangle$$ be an infinite cyclic group. Then $$a^r \not = a^s$$ for all integers $$r \not = s$$. Moreover, $$G \cong \mathbb{Z}$$.

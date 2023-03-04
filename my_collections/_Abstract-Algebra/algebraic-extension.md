@@ -62,7 +62,7 @@ time: 2022/12/02
 
 **Proof**
 
-If $$\alpha$$ is algebraic over $$F$$, then by [this theorem](../P-field-extension/#theorem-unique-expression), $$\{1, \alpha, \cdots, \alpha^{n-1} \}$$ is indeed a basis for $$F(\alpha)$$.
+If $$\alpha$$ is algebraic over $$F$$, then by [this theorem](../field-extension/#theorem-unique-expression), $$\{1, \alpha, \cdots, \alpha^{n-1} \}$$ is indeed a basis for $$F(\alpha)$$.
 
 If $$\alpha$$ is transcendental over $$F$$, then the vectors $$1, \alpha, \alpha^2, \cdots$$ are linealy independent. Thus, $$F(\alpha)$$ is not finite-dimensional. ◼
 
@@ -76,7 +76,7 @@ If $$\alpha$$ is transcendental over $$F$$, then the vectors $$1, \alpha, \alpha
 
 **Solution**
 
-By [this theorem](#theorem-basis-for-falpha) and [this corollary](../N-zeros-of-polynomials/#corollary-the-multiplicative-group-of-a-field), we know that $$F(\alpha)$$ is finite and $$F^\times(\alpha)$$ is cyclic. Now, for any non-zero $$g(\alpha) \in F(\alpha)$$, let $$\text{ord}(g(\alpha)) = d $$. Then we have $$f(x) = x - x^{d+1} \in F[x]$$ such that 
+By [this theorem](#theorem-basis-for-falpha) and [this corollary](../zeros-of-polynomials/#corollary-the-multiplicative-group-of-a-field), we know that $$F(\alpha)$$ is finite and $$F^\times(\alpha)$$ is cyclic. Now, for any non-zero $$g(\alpha) \in F(\alpha)$$, let $$\text{ord}(g(\alpha)) = d $$. Then we have $$f(x) = x - x^{d+1} \in F[x]$$ such that 
 
 $$
 f\big(g(\alpha)\big) = g(\alpha) - \big(g(\alpha)\big)^{d+1} = 0.
@@ -214,7 +214,7 @@ Thus $$\{1, \alpha, \alpha^2, \alpha^3\}$$ are linearly independent.
 
 > 以 $$\{1, \sqrt{2}, \sqrt{3}, \sqrt{6}\}$$ 為基底，驗證 $$\{1, \alpha, \alpha^2, \alpha^3\}$$ 是否線性獨立。因為 $$\Bbb Q(\alpha) \subset \Bbb Q(\sqrt{2}, \sqrt{3})$$，因此我們可以用 $$\Bbb Q(\sqrt{2}, \sqrt{3})$$ 的基底來表示 $$\Bbb Q(\alpha)$$ 的元素。
 
-> 知道 $$\{1, \alpha, \alpha^2, \alpha^3\}$$ 線性獨立後，我們[也就知道](../Q-algebraic-extension/#theorem-basis) $$\Bbb Q(\alpha)$$ over $$\Bbb Q$$ 的 degree 至少是 $$4$$！
+> 知道 $$\{1, \alpha, \alpha^2, \alpha^3\}$$ 線性獨立後，我們[也就知道](../algebraic-extension/#theorem-basis) $$\Bbb Q(\alpha)$$ over $$\Bbb Q$$ 的 degree 至少是 $$4$$！
 
 **2.3**
 

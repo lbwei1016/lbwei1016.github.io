@@ -10,7 +10,7 @@ time: 2022/11/15
 - [Motivation](#motivation)
 - [Definition (zero divisor)](#definition-zero-divisor)
   - [Example](#example)
-  - [Theorem (zero divisors of $$\mathbb{Z}_n$$)](#theorem-zero-divisors-of-mathbbz_n)
+  - [Theorem (zero divisors of $$\\mathbb{Z}\_n$$)](#theorem-zero-divisors-of-mathbbz_n)
     - [Corollary (when $$n$$ is prime)](#corollary-when-n-is-prime)
   - [Theorem (cancellation law)](#theorem-cancellation-law)
     - [Remark](#remark)
@@ -19,7 +19,7 @@ time: 2022/11/15
   - [Theorem (subrings with unity of a field)](#theorem-subrings-with-unity-of-a-field)
   - [Theorem (fields are integral domain)](#theorem-fields-are-integral-domain)
   - [Theorem (finite integral domains are fields)](#theorem-finite-integral-domains-are-fields)
-    - [Corollary ($$\mathbb{Z}_p$$ is a field)](#corollary-mathbbz_p-is-a-field)
+    - [Corollary ($$\\mathbb{Z}\_p$$ is a field)](#corollary-mathbbz_p-is-a-field)
 - [Characteristic](#characteristic)
   - [Deinition (the characteristic of a ring)](#deinition-the-characteristic-of-a-ring)
   - [Theorem (check unity)](#theorem-check-unity)
@@ -80,7 +80,7 @@ $$(\Leftarrow)$$ Assume that $$R$$ has no zero divisors. If $$ab=ac$$ and $$a\no
 - $$\mathbb{Z}_n$$ is an integral domain iff $$n$$ is prime.
 - The direct product $$R\times S$$ of two nonzero rings $$R$$ and $$S$$ is never an integral domain since $$(r,0)(0,s)=(0,0) $$ for all $$r\in R$$ and $$ s\in S$$.
 
-> 第二項 remark 說明了，我們難以用 direct product 的方式建構出性質良好的 ring，不像 [groups](../G-Finitely-Generated-Abelian-Groups)。
+> 第二項 remark 說明了，我們難以用 direct product 的方式建構出性質良好的 ring，不像 [groups](../Finitely-Generated-Abelian-Groups)。
 
 ### Theorem (subrings with unity of a field)
 > *Every* **subring** $$R$$ of a field containing the **unity** is an integral domain.

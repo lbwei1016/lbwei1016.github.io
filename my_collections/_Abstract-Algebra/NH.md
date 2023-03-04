@@ -49,13 +49,13 @@ Then, consider one subgroup is **normal** and the other is arbitrary.
 
 ### Semi-direct product
 
-Now, suppose $$N$$ is normal and $$N\cap H = \{e\}$$. By [this theorem](../X-3-isomorphism/#theorem-unique-product), the elements in $$NH$$ can be uniquely represented as $$nh$$ for some $$n\in N$$ and $$h\in H$$. Moreover. the product of two elements $$n_1h_1$$ and $$n_2h_2$$ can be written as
+Now, suppose $$N$$ is normal and $$N\cap H = \{e\}$$. By [this theorem](../3-isomorphism/#theorem-unique-product), the elements in $$NH$$ can be uniquely represented as $$nh$$ for some $$n\in N$$ and $$h\in H$$. Moreover. the product of two elements $$n_1h_1$$ and $$n_2h_2$$ can be written as
 
 $$
 n_1h_1n_2h_2 = n_1(h_1n_2h_1^{-1})h_1h_2 = n_1\rho_{h_1}(n_2)h_1h_2,
 $$
 
-where $$\rho_{h_1}(x) := h_1xh_1^{-1}$$ is an [inner automorphism](../I-more-on-normal-subgroups/#inner-automorphism) on $$N$$.
+where $$\rho_{h_1}(x) := h_1xh_1^{-1}$$ is an [inner automorphism](../more-on-normal-subgroups/#inner-automorphism) on $$N$$.
 
 > $$\rho: H\to \text{Aut}(N)$$, given by $$h_1\mapsto \rho_{h_1}$$.
 
@@ -109,7 +109,7 @@ Especially, the group $$N\rtimes_{\rho}H$$ is called the **semi-direct product**
 
 The binary structure $$(N\rtimes_{\rho}H, *)$$ **only** involves *the group operation of $$N$$, the group operation of $$H$$, and the group homomorphism $$\rho$$.*
 
-因為 $$NH \leq G$$，所以如果 $$\vert NH\vert = \vert G\vert $$，則 $$NH=G$$。參考 [Three Isomorphism Theorems](../X-3-isomorphism/#theorem-unique-product)。
+因為 $$NH \leq G$$，所以如果 $$\vert NH\vert = \vert G\vert $$，則 $$NH=G$$。參考 [Three Isomorphism Theorems](../3-isomorphism/#theorem-unique-product)。
 
 #### Theorem (some properties)
 > Let $$H$$ and $$N$$ be two groups and $$\rho$$ is a group homomorphism from $$H$$ to $$\text{Aut}(N)$$. Then $$G_{\rho}=N\rtimes_{\rho}H$$ is a group satisfying the following conditions:
@@ -142,7 +142,7 @@ The binary structure $$(N\rtimes_{\rho}H, *)$$ **only** involves *the group oper
 
 ##### **Remark**
 
-- 也看看[這](../X-3-isomorphism/#theorem-unique-product)。
+- 也看看[這](../3-isomorphism/#theorem-unique-product)。
 - $$\rho: H\to \text{Aut}(N)$$ 是 group homomorphism！
 - It is possible that $$N\rtimes_\rho H\cong N\rtimes_{\rho'}H$$ for *distinct* $$\rho$$ and $$\rho'$$.
 - When $$\rho$$ is the trivial homomorphism, $$N\rtimes_\rho H \cong N\times H$$.
@@ -165,20 +165,20 @@ $$
 N\rtimes_\rho H = \langle a,b\mid a^n=b^m=e, bab^{-1}=a^k\rangle.
 $$
 
-> 想想 [Dihedral groups](../B-n-gons/#dihedral-group)！
+> 想想 [Dihedral groups](../n-gons/#dihedral-group)！
 
 **這個定理的意義在於**，如果 $$G$$ 可以找到兩個 cyclic subgroups（其中一個 normal），我們可以用只牽涉到該 subgroups 的 order 的同餘式，來明確的找出所有 $$G$$ 可能的結構！（用到[這個定理](#theorem-all-group-structures)。）
 
-> Check [this](../X-3-isomorphism/#theorem-unique-product).
+> Check [this](../3-isomorphism/#theorem-unique-product).
 
 #### Theorem (groups of order $$2p$$)
 > Let $$G$$ be a group of order $$2p$$ where $$p$$ is an odd prime. Then $$G\cong \Bbb Z_{2p}$$ or $$D_p$$.
 
 **Proof**
 
-By [Cauchy's theorem](../V-more-group-action/#theorem-cauchys-theorem), $$G$$ contains a subgroup $$N=\langle a\rangle$$ of order $$p$$ and a subgroup $$H=\langle b\rangle$$ of order $$2$$. Since $$[G:N]=2$$, $$N$$ is normal. Moreover, $$\vert G\vert =\vert N\vert \vert H\vert $$ and $$\vert N\cap H\vert =1$$. Therefore by [this theorem](#theorem-cyclic-subgroups), $$G$$ is isomorphic to $$N\rtimes_\rho H$$ where $$\rho_b(a) = a^k$$ for some $$k$$ with $$k^2\equiv 1\pmod p$$.
+By [Cauchy's theorem](../more-group-action/#theorem-cauchys-theorem), $$G$$ contains a subgroup $$N=\langle a\rangle$$ of order $$p$$ and a subgroup $$H=\langle b\rangle$$ of order $$2$$. Since $$[G:N]=2$$, $$N$$ is normal. Moreover, $$\vert G\vert =\vert N\vert \vert H\vert $$ and $$\vert N\cap H\vert =1$$. Therefore by [this theorem](#theorem-cyclic-subgroups), $$G$$ is isomorphic to $$N\rtimes_\rho H$$ where $$\rho_b(a) = a^k$$ for some $$k$$ with $$k^2\equiv 1\pmod p$$.
 
-Since $$\Bbb Z_p$$ is a [field](../N-zeros-of-polynomials/#corollary-distinct-zeros), $$x^2=1$$ has at most $$2$$ distinct zeros; here, $$1$$ and $$-1$$.
+Since $$\Bbb Z_p$$ is a [field](../zeros-of-polynomials/#corollary-distinct-zeros), $$x^2=1$$ has at most $$2$$ distinct zeros; here, $$1$$ and $$-1$$.
 
 When $$k=1$$, $$\rho$$ is the trivial homomorphism, which implies that 
   

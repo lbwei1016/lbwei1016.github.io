@@ -246,7 +246,7 @@ $$
 \langle \zeta_n^k \rangle \cong \langle \zeta_n \rangle \iff \gcd(k,n)=1.
 $$
 
-> 見 [cyclic subgroups](../8-Cyclic-Subgroups)。
+> 見 [cyclic subgroups](../Cyclic-Subgroups)。
 
 ---
 

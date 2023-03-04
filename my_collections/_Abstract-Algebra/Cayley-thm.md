@@ -21,9 +21,9 @@ time: 2022/10/12
 
 ## Theorem
 
-> 參考 [Generalized Cayley Theorem](../I-more-on-normal-subgroups/#normal-subgroup-and-homomorphism)。
+> 參考 [Generalized Cayley Theorem](../more-on-normal-subgroups/#normal-subgroup-and-homomorphism)。
 
-Every group is isomorphic to a [group of permutation](../9-Groups-of-Permutation). More percisely, every group $$G$$ is isomorphic to **a subgroup of $$S_G$$** given by:
+Every group is isomorphic to a [group of permutation](../Groups-of-Permutation). More percisely, every group $$G$$ is isomorphic to **a subgroup of $$S_G$$** given by:
  
 $$
 \begin{align*}
@@ -52,7 +52,7 @@ where $$\lambda_a(g) = ag$$.
 
 $$\lambda_a$$ 在 $$(1)$$ 作為一個 mapping，其實也是一 permutation（底下會證明 $$\lambda_a$$ 是 permutation）。permutation 本來就是一 image 和 preimage 相同的 one-to-one、onto mapping！（想想 permutation 總是以 composition 進行運算。）
 
-> 見 [Automorphism](../I-more-on-normal-subgroups/#interlude-automorphism)。
+> 見 [Automorphism](../more-on-normal-subgroups/#interlude-automorphism)。
 
 ### Example
 
@@ -139,4 +139,4 @@ We need to show that $$\phi(ab) = \phi(a) \circ \phi(b)$$, that is $$\lambda_{ab
 
 $$|G|=n,$$
 
-我們可以只針對 $$S_n$$ 的 subgroups 來縮小研究範圍。又已知 [the order of an element of $$G$$ divides \|$$G$$\|](../5-More-on-Groups/#remark-order-divides-order)，於是我們可以從找出 order 為 $$d,\ d \vert n$$ 的 element 開始，進而找出所有 subgroups of order $$n$$。
+我們可以只針對 $$S_n$$ 的 subgroups 來縮小研究範圍。又已知 [the order of an element of $$G$$ divides \|$$G$$\|](../More-on-Groups/#remark-order-divides-order)，於是我們可以從找出 order 為 $$d,\ d \vert n$$ 的 element 開始，進而找出所有 subgroups of order $$n$$。

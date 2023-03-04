@@ -65,7 +65,7 @@ We know that $$\Bbb{Z}_p$$ is of characteristic $$p$$. Since $$\Bbb{Z}_p$$ is cy
 
 **Proof**
 
-[basis](../Q-algebraic-extension/#theorem-basis) + [unique expression](../P-field-extension/#theorem-unique-expression).
+[basis](../algebraic-extension/#theorem-basis) + [unique expression](../field-extension/#theorem-unique-expression).
 
 ### Corollary (power size)
 > If $$E$$ is a finite field of **characteristic $$p$$**, then the number of elements in $$E$$ is $$p^n$$ for some positive integer $$n$$.
@@ -101,14 +101,14 @@ $$
 [E:\Bbb Z_p] = [E:F][F:\Bbb Z_p].
 $$
 
-Since $$F, E$$ are both finite, $$[E:\Bbb Z_p]$$ and $$[F:\Bbb Z_p]$$ are finite, which implies that $$[E:F]$$ is finite as well. By this [lemma](../S-algebraic-closure/#lemma-finite-degree-implies-algebraic), there exists $$\alpha \in E$$ such that $$\alpha$$ is algebraic over $$F$$. Hence, $$F$$ is not algebraically closed. ◼
+Since $$F, E$$ are both finite, $$[E:\Bbb Z_p]$$ and $$[F:\Bbb Z_p]$$ are finite, which implies that $$[E:F]$$ is finite as well. By this [lemma](../algebraic-closure/#lemma-finite-degree-implies-algebraic), there exists $$\alpha \in E$$ such that $$\alpha$$ is algebraic over $$F$$. Hence, $$F$$ is not algebraically closed. ◼
 
 ### Theorem (zero; closure)
 > Let $$E$$ be a field of $$p^n$$ elements contained in $$\overline{\Bbb{Z}}_p$$. Then the elements of $$E$$ are **precisely** the **zeros of $$x^{p^n}-x$$** in $$\overline{\Bbb{Z}}_p$$.
 
 **Proof**
 
-There are $$p^n-1$$ elements in $$E^\times$$. By [Lagrange's theorem](../F-Lagrange-thm), every nonzero element of $$E$$ is a zero of $$x^{p^n-1}-1$$. Thus, every elements if $$E$$ is a zero of $$x^{p^n}-x = x(x^{p^n-1}-1)$$.
+There are $$p^n-1$$ elements in $$E^\times$$. By [Lagrange's theorem](../Lagrange-thm), every nonzero element of $$E$$ is a zero of $$x^{p^n-1}-1$$. Thus, every elements if $$E$$ is a zero of $$x^{p^n}-x = x(x^{p^n-1}-1)$$.
 
 On the other hand, since $$\overline{\Bbb Z}_p$$ is a field, a polynomial of degree $$p^n$$ has at most $$p^n$$ zeros. 
 
@@ -231,13 +231,13 @@ $$
 F = \Bbb{Z}_p(\alpha) \cong \Bbb{Z}_p[x]\Big/f(x)\Bbb{Z} _p[x] \cong \Bbb{Z}_p(\alpha') = GF(p^n). ◼
 $$
 
-> 參考 [Field extension](../P-field-extension/#remark-3)。
+> 參考 [Field extension](../field-extension/#remark-3)。
 
 ---
 
 ## Cyclotomic Polynomials over Finite Fields
 
-> See [More on cyclotomic polynomials](../O-poly-factorization/#more-on-cyclotomic-polynomials).
+> See [More on cyclotomic polynomials](../poly-factorization/#more-on-cyclotomic-polynomials).
 
 Recall that $$n$$-th cyclotomic polynomial is defined to be
 
@@ -278,7 +278,7 @@ Therefore, there are exactly [three](#exercise-i) irreducible monic polynomials 
 
 > Q: How to find the order of those zeros?
 > 
-> A: This is by [definition](../O-poly-factorization/#more-on-cyclotomic-polynomials). (See the substack of $$\prod$$.) To it state explicitly: All the zeros of $$\Phi_n(x)$$ are of degree $$n$$. (any [exceptions](#exercise-iii)?)
+> A: This is by [definition](../poly-factorization/#more-on-cyclotomic-polynomials). (See the substack of $$\prod$$.) To it state explicitly: All the zeros of $$\Phi_n(x)$$ are of degree $$n$$. (any [exceptions](#exercise-iii)?)
 
 Now if $$\alpha$$ is a zero of $$x^4+x+1$$, then
 
@@ -422,7 +422,7 @@ In this case, $$\Phi_9(x)$$ is indeed reducible over $$\Bbb Z_3$$. ◼
 
 #### Remark
 
-在[這裡](../P-field-extension/#remark-2)，我們說明了對於 field extension，加入 generator 是比較好的。但是如何找到 a zero $$\alpha$$ of an irreducible polynomial $$f(x)$$，使得 $$\alpha$$ 是 generator？
+在[這裡](../field-extension/#remark-2)，我們說明了對於 field extension，加入 generator 是比較好的。但是如何找到 a zero $$\alpha$$ of an irreducible polynomial $$f(x)$$，使得 $$\alpha$$ 是 generator？
 
 如果 $$\alpha$$ 是 generator，則 $$\alpha$$ 的 order 必須是 $$p^n-1$$，等同於，$$\alpha$$ 是 $$\Phi_{p^n-1}(x)$$ 的 zero 之一；也就是說，$$f(x)$$ 必須是 $$\Phi_{p^n-1}(x)$$ 的不可約因式之一。
 

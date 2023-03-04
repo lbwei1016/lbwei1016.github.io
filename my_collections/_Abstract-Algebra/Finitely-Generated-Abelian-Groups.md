@@ -148,7 +148,7 @@ has order $$p_1^{f_1}\cdots p_n^{f_n} = m$$. ◼
 
 > 連加 $$p_1^{f_1}$$ 次就回到 identity！
 
-> 對比 [Lagrange's Theorem](../F-Lagrange-thm/#lagranges-theorem)。
+> 對比 [Lagrange's Theorem](../Lagrange-thm/#lagranges-theorem)。
 
 ### $$p$$-torsion Subgroup
 

@@ -33,7 +33,7 @@ Let $$F=\mathbb{Q}, E=\mathbb{R}$$ and $$f(x)=x^2-2$$. Then $$\pm\sqrt{2}$$ are 
 
 **Proof**
 
-Use the [division algorithm](../M-rings-of-polynomials/#division-algorithm-of-polynomials).
+Use the [division algorithm](../rings-of-polynomials/#division-algorithm-of-polynomials).
 
 ### Corollary (distinct zeros)
 > A non-zero polynomial $$f(x)\in \mathbb{F}[x]$$ of degree $$n$$ can have **at most $$n$$ distinct zeros in $$\mathbb{F}$$**.
@@ -52,11 +52,11 @@ Use the [division algorithm](../M-rings-of-polynomials/#division-algorithm-of-po
 
 **Proof**
 
-By the [fundamental theorem of finitely generated abelian groups](../G-Finitely-Generated-Abelian-Groups/#finitely-generated-abelian-groups), the finite abelian group $$G$$ is isomorphic to $$\mathbb{Z}_{p_1^{e_1}}\times\cdots\times\mathbb{Z}_{p_k^{e_k}} $$ for some primes $$p_i$$ and integers $$e_i\ge 1$$.
+By the [fundamental theorem of finitely generated abelian groups](../Finitely-Generated-Abelian-Groups/#finitely-generated-abelian-groups), the finite abelian group $$G$$ is isomorphic to $$\mathbb{Z}_{p_1^{e_1}}\times\cdots\times\mathbb{Z}_{p_k^{e_k}} $$ for some primes $$p_i$$ and integers $$e_i\ge 1$$.
 
 Note that $$G$$ contains a subgroup $$H$$ isomorphic to $$\mathbb{Z}_{p_1}\times\cdots\times\mathbb{Z}_{p_k}$$. Suppose $$p_i=p_j=p$$, then $$x^p = 1$$ has **at least** $$p^2$$ solutions in $$H\subset \mathbb{F}$$, which, by [the above corollary](#corollary-distinct-zeros), is a contradiction.
 
-Therefore, all $$p_i$$ are distinct and by [this theorem](../G-Finitely-Generated-Abelian-Groups/#theorem-cyclic-abelian-groups), $$G$$ is cyclic.
+Therefore, all $$p_i$$ are distinct and by [this theorem](../Finitely-Generated-Abelian-Groups/#theorem-cyclic-abelian-groups), $$G$$ is cyclic.
 
 > $$p^2$$ 個解哪裡來？例如 $$x=(a,b,1,\cdots,1)$$，而 $$a$$ 和 $$b$$ 各有 $$p$$ 種選擇使 $$x^p = 1$$。
 

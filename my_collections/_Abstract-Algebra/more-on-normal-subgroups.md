@@ -93,7 +93,7 @@ Thus $$N$$ must contain all the commutators.
 
 We first show that $$[G,G]$$ is a normal subgroup of $$G$$, i.e. $$[G,G]\triangleleft G$$. It suffices to prove that the generators (commutators) satisfy $$g^{-1}(a^{-1}b^{-1}ab)g \in [G,G]$$ for all $$a,b,g \in G $$.
 
-> 見 [remark](../H-homomorphism-and-normal-groups/#remark)。
+> 見 [remark](../homomorphism-and-normal-groups/#remark)。
 
 We have
 
@@ -143,7 +143,7 @@ is called the **normal core** of $$H$$, which is the **largest** normal subgroup
 
 ## Normal Subgroup and Homomorphism
 
-From [this theorem](../H-homomorphism/#theorem-homomorphism-and-normal-subgroups), we know that every normal subgroup $$N$$ of $$G$$ is a kernel of some group homomorphism $$\rho$$. To gain more insight of $$N$$, we shall look for a more *canonical* homomorphism.
+From [this theorem](../homomorphism/#theorem-homomorphism-and-normal-subgroups), we know that every normal subgroup $$N$$ of $$G$$ is a kernel of some group homomorphism $$\rho$$. To gain more insight of $$N$$, we shall look for a more *canonical* homomorphism.
 
 **e.g.**
 
@@ -169,7 +169,7 @@ $$
 
 Thus, $$g \in Z(G)$$. ◼
 
-第二個例子稱作 **generalized [Caley theorem](../C-Cayley-thm)**。$$S_{G/H}$$ 相較於 Cayley theorem 的 $$S_G$$，是較小的群，因此比較容易[應用](../C-Cayley-thm/#application)，但這是有代價的：Cayley theorem 中的 $$\text{ker}(\phi) = \{e\}$$，而此處 $$\text{ker}(\rho) = \bigcap_{g\in G}gHg^{-1}$$，也就是說，$$\rho$$ 不是 **one-to-one**！
+第二個例子稱作 **generalized [Caley theorem](../Cayley-thm)**。$$S_{G/H}$$ 相較於 Cayley theorem 的 $$S_G$$，是較小的群，因此比較容易[應用](../Cayley-thm/#application)，但這是有代價的：Cayley theorem 中的 $$\text{ker}(\phi) = \{e\}$$，而此處 $$\text{ker}(\rho) = \bigcap_{g\in G}gHg^{-1}$$，也就是說，$$\rho$$ 不是 **one-to-one**！
 
 底下證明 $$\text{ker}(\rho) = \bigcap_{g\in G}gHg^{-1}$$：
 

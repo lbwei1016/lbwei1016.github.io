@@ -82,7 +82,7 @@ This means that if $$F$$ is algebraically closed, then we will **not** get anyth
 
 **Proof**
 
-By definition, $$\overline{\Bbb Q}$$ is an [algebraic extension](../Q-algebraic-extension/#definition-algebraic-extension) over $$\Bbb Q$$. It remains to prove that $$\overline{\Bbb Q}$$ is algebraically closed, i.e., if $$\alpha$$ is a zero of $$f(x) \in \overline{\Bbb Q}[x]$$, then $$\alpha$$ is in $$\overline{\Bbb Q}$$.
+By definition, $$\overline{\Bbb Q}$$ is an [algebraic extension](../algebraic-extension/#definition-algebraic-extension) over $$\Bbb Q$$. It remains to prove that $$\overline{\Bbb Q}$$ is algebraically closed, i.e., if $$\alpha$$ is a zero of $$f(x) \in \overline{\Bbb Q}[x]$$, then $$\alpha$$ is in $$\overline{\Bbb Q}$$.
 
 Suppose that $$\alpha$$ is a zero of $$a_nx^n + \cdots + a_0$$, where $$a_i \in \overline{\Bbb Q}$$. We shall show that $$[\Bbb{Q}(\alpha): \Bbb Q] < \infty$$, by [this lemma](#lemma-finite-degree-implies-algebraic).
 

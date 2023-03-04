@@ -32,7 +32,7 @@ $$
 
 which is an element of $$\mathcal{L}(E/F)$$.
 
-> **$$F$$-linear** means that it is a linear transformation over $$E$$ where we view [$$E$$ as a vector space over $$F$$](../Q-algebraic-extension/#lemma-extension-field-is-a-vector-space).
+> **$$F$$-linear** means that it is a linear transformation over $$E$$ where we view [$$E$$ as a vector space over $$F$$](../algebraic-extension/#lemma-extension-field-is-a-vector-space).
 
 > 換句話說，不用理他。
 
