@@ -7,6 +7,7 @@ title: Home
   {% if collection.label != "posts" %}
     <h2>{{ collection.label }}</h2>
     <ul>
+      {% sort: 'time' %}
       {% for item in site[collection.label] %}
         <li><a href="{{ item.url }}">{{ item.title }}</a></li>
       {% endfor %}
