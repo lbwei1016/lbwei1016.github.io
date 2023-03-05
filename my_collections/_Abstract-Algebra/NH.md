@@ -17,6 +17,7 @@ time: 2023/02/24
       - [**Remark**](#remark-1)
     - [**Theorem (determine structure of $$G$$)**](#theorem-determine-structure-of-g)
       - [Remark](#remark-2)
+      - [Example](#example)
     - [Theorem (groups of order $$2p$$)](#theorem-groups-of-order-2p)
 - [Reference](#reference)
 
@@ -170,6 +171,33 @@ $$
 **這個定理的意義在於**，如果 $$G$$ 可以找到兩個 cyclic subgroups（其中一個 normal），我們可以用只牽涉到該 subgroups 的 order 的同餘式，來明確的找出所有 $$G$$ 可能的結構！（用到[這個定理](#theorem-all-group-structures)。）
 
 > Check [this](../3-isomorphism/#theorem-unique-product).
+
+##### Example
+> Let $$G$$ be a group of order $$39$$ with elements $$a$$ and $$b$$ of order $$13$$ and $$3$$ respectively. Find all **non-isomorphic** group structures of $$G$$.
+
+**Solution**
+
+By the above theorem, we know that $$G\cong \langle a\rangle \rtimes_\rho \langle b\rangle$$, where $$\rho_b(a) = bab^{-1} = a^k$$ for some $$k$$ satisfies $$k^3 \equiv 1 \pmod{ 13}$$. 
+
+Note that $$\Bbb Z_{13}^\times \cong \Bbb Z_{12}$$, which means that **the number of elements of order divisible by $$3$$ is the same in the two groups**. Then, there $$3$$ elements, $$\{0, 4, 8\}$$ of order divisible by $$3$$, which implies that $$k$$ has $$3$$ choices. After some calculation, we obtain
+
+$$
+k = 1, 3, 3^2 = 9.
+$$
+
+When $$k=1$$, we have $$G_1 \cong \Bbb Z_3 \times \Bbb Z_{13}$$ for it is abelian.
+
+When $$k=3$$ or $$k=9$$, we have $$bab^{-1}=a^3$$ and $$bab^{-1}=a^9$$ respectively. We need to check whether these two groups are isomorphic. First observe that $$b^{-1} = b^2$$, and thus let $$c=b^2$$. Then 
+
+$$
+c^{-1}ac = a^3 \implies ca^3c^{-1} = a \\ 
+\implies (ca^3c^{-1})^9 = ca^{27}c^{-1} = cac^{-1} = a^9.
+$$
+
+Therefore, $$G_3\cong G_9$$. ◼
+
+> $$G\cong \langle a,b\mid a^{13}=b^3=e, bab^{-1}=a^k\rangle$$.
+
 
 #### Theorem (groups of order $$2p$$)
 > Let $$G$$ be a group of order $$2p$$ where $$p$$ is an odd prime. Then $$G\cong \Bbb Z_{2p}$$ or $$D_p$$.
