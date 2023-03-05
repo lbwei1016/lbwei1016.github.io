@@ -11,6 +11,8 @@ time: 2023/03/02
   - [Theorem (smallest index; normal)](#theorem-smallest-index-normal)
     - [Proof](#proof)
   - [Corollary (two primes)](#corollary-two-primes)
+  - [Corollary (normal subgroup: $$p^k$$)](#corollary-normal-subgroup-pk)
+  - [Theorem (groups of order $$pqr$$)](#theorem-groups-of-order-pqr)
 - [Normalizer](#normalizer)
   - [Definition (conjugate subgroups)](#definition-conjugate-subgroups)
   - [Definition (normalizer)](#definition-normalizer)
@@ -65,7 +67,24 @@ $$
 Together with the result $$[G:\text{ker}\rho]=1$$ or $$p$$, we conclude that $$[G:\text{ker}\rho]=p$$ and $$[H:\text{ker}\rho]=1$$, which implies that $$H=\text{ker}\rho$$. ◼
 
 ### Corollary (two primes)
-> If $$\vert G\vert = pq$$, where $$p>q$$ are two primes, then $$G$$ contains a normal subgroup of order $$p$$.
+> If $$\vert G\vert = pq$$, where $$p>q$$ are two primes, then $$G$$ contains a normal subgroup of order $$p$$. Moreover, if $$p\not \equiv 1\pmod q$$, then $$G$$ is cyclic.
+
+**Proof** 
+
+By [the Sylow Theorems](../sylow-thm).
+
+### Corollary (normal subgroup: $$p^k$$)
+> Let $$p$$ and $$q$$ be two distinct primes with $$p>q$$. Let $$G$$ be a group of order $$p^kq$$. Then $$G$$ has a **normal subgroup of order $$p^k$$**.
+
+### Theorem (groups of order $$pqr$$)
+> Let $$p>q>r$$ be three distinct primes. Let $$G$$ be a group of order $$pqr$$ and $$\mathcal S_k$$ be a Sylow $$k$$-subgroup of $$G$$. Then 
+>
+> - Either $$\mathcal S_p$$ or $$\mathcal S_q$$ is normal.
+> - $$\mathcal S_p\mathcal S_q$$ is a normal subgroup of $$G$$.
+
+**Proof**
+
+By [the Third Sylow Theorem](../sylow-thm/#the-third-sylow-theorem), and prove by contradiction on the size of $$\vert G\vert$$, i.e. $$pqr$$.
 
 ---
 
