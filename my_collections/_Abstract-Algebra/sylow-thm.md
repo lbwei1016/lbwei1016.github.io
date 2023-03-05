@@ -8,9 +8,11 @@ time: 2023/03/02
 
 **Table of Content**
 - [The first Sylow theorem](#the-first-sylow-theorem)
+  - [Corollary ($$p$$-subgroup contained)](#corollary-p-subgroup-contained)
   - [Corollary (subgroup order)](#corollary-subgroup-order)
 - [The Second Sylow Theorem](#the-second-sylow-theorem)
 - [The Third Sylow Theorem](#the-third-sylow-theorem)
+  - [Corollary (normal)](#corollary-normal)
 - [Applications](#applications)
   - [Simple groups](#simple-groups)
     - [Theorem ($$p$$-group + non-abelian)](#theorem-p-group--non-abelian)
@@ -43,6 +45,9 @@ Now consider the canonical homomorphism $$\phi: N_G(H_i)\to N_G(H_i)/H_i$$ defin
 Moreover, $$H_i$$ is normal in $$N_G(H_i)$$ by [definition](../normalizer/#definition-normalizer), and thus $$H_i$$ is also normal in $$R$$. The desired $$H_{i+1}$$ is exactly $$R$$. ◼
 
 > $$R = \{e, g_1,\cdots, g_{p-1} \}H_i$$，這是兩個 set 乘在一起，像 [$$NH$$](../NH) 一樣！
+
+### Corollary ($$p$$-subgroup contained)
+> Every $$p$$-subgroup is contained in a Sylow $$p$$-subgroup.
 
 ### Corollary (subgroup order)
 > If $$G$$ is a $$p$$-group, then $$G$$ admits a subgroup of any order $$d$$ that divides $$\vert G\vert$$.
@@ -111,6 +116,9 @@ m = [G:P] = [G:N_G(P)][N_G(P):P] = n_p[N_G(P):P].
 $$
 
 Thus, $$n_p\mid m$$. ◼
+
+### Corollary (normal)
+> A Sylow $$p$$-subgroup is **normal iff $$n_p = 1$$**.
 
 ---
 
