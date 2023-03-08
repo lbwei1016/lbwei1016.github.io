@@ -168,7 +168,7 @@ $$
 
 > 想想 [Dihedral groups](../n-gons/#dihedral-group)！
 
-**這個定理的意義在於**，如果 $$G$$ 可以找到兩個 cyclic subgroups（其中一個 normal），我們可以用只牽涉到該 subgroups 的 order 的同餘式，來明確的找出所有 $$G$$ 可能的結構！（用到[這個定理](#theorem-all-group-structures)。）
+**這個定理的意義在於**，如果 $$G$$ 可以找到兩個 cyclic subgroups（其中一個 **normal**），我們可以用只牽涉到該 subgroups 的 order 的同餘式，來明確的找出所有 $$G$$ 可能的結構！（用到[這個定理](#theorem-all-group-structures)。）
 
 > Check [this](../3-isomorphism/#theorem-unique-product).
 

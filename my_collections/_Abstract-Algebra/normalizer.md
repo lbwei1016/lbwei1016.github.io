@@ -67,7 +67,7 @@ $$
 Together with the result $$[G:\text{ker}\rho]=1$$ or $$p$$, we conclude that $$[G:\text{ker}\rho]=p$$ and $$[H:\text{ker}\rho]=1$$, which implies that $$H=\text{ker}\rho$$. ◼
 
 ### Corollary (two primes)
-> If $$\vert G\vert = pq$$, where $$p>q$$ are two primes, then $$G$$ contains a normal subgroup of order $$p$$. Moreover, if $$p\not \equiv 1\pmod q$$, then $$G$$ is cyclic.
+> If $$\vert G\vert = pq$$, where $$p>q$$ are two primes, then $$G$$ contains a normal subgroup of order $$p$$. Moreover, if $$p\not \equiv 1\pmod q$$, then $$G$$ is **cyclic**.
 
 **Proof** 
 

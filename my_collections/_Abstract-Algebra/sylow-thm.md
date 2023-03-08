@@ -16,6 +16,8 @@ time: 2023/03/02
 - [Applications](#applications)
   - [Simple groups](#simple-groups)
     - [Theorem ($$p$$-group + non-abelian)](#theorem-p-group--non-abelian)
+    - [Lemma (injective homomorphism)](#lemma-injective-homomorphism)
+    - [Theorem (orders)](#theorem-orders)
 
 ---
 
@@ -132,3 +134,28 @@ Thus, $$n_p\mid m$$. ◼
 
 #### Theorem ($$p$$-group + non-abelian)
 > **A non-abelian $$p$$-group is not simple**. Conversely, a non-abelian simple group is not a $$p$$-group.
+
+**Proof**
+
+By this [theorem](../more-group-action/#theorem-center-of-p-groups).
+
+#### Lemma (injective homomorphism)
+If $$G$$ is simple, then for any non-trivial homomorphism $$\rho:G\to G'$$, $$\rho$$ must be injective.
+
+**Proof**
+
+Suppose $$\rho$$ is not injective, which means that $$\text{ker}\rho > 1$$. However, since $$\text{ker}\rho$$ is normal and $$G$$ is simple, we must have $$\text{ker}\rho = G$$, i.e., $$\rho$$ is trivial. ◼
+
+#### Theorem (orders)
+> Suppose $$G$$ is a non-abelian **simple** group.
+>
+> 1. For all primes $$p\mid \vert G\vert$$, $$\vert G\vert \mid (np)!$$.
+> 2. For all *proper* subgroups $$H$$ of $$G$$, $$\vert G\vert \mid [G:H]!$$.
+
+**Proof 1.**
+
+Since $$G$$ is simple and $$G$$ is not a $$p$$-group, we have $$n_p > 1$$. The action of $$G$$ on the set of Sylow $$p$$-subgroups by conjugation induces a group homomorphism $$\rho:G\to S_{n_p}$$. By the Second Sylow Theorem, such action is **transitive**, which implies $$\rho$$ is [non-trivial](../group-action/#remark-2). By this [lemma](#lemma-injective-homomorphism), $$\rho$$ is **injective** and $$\vert G\vert =\vert \rho(G)\vert$$ divides $$\vert S_{n_p}\vert = (n_p)!$$. ◼
+
+**Proof 2.**
+
+The action of $$G$$ on $$G/H$$ by left multiplication induces a group homomorphism $$\rho: G\to S_{G/H}$$. Since only $$h\in H_i$$ makes $$hH_i = H_i$$, $$\rho$$ is transitive; since $$H$$ is a proper subgroup, $$\rho$$ is non-trivial. Thus, $$\rho$$ is **injective** and $$\vert G\vert = \vert \rho(G)\vert $$ divides $$\vert S_{G/H}\vert= [G:H]!$$. 

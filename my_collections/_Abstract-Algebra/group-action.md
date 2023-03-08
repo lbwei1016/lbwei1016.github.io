@@ -14,12 +14,13 @@ time: 2023/02/13
     - [Remark](#remark-1)
   - [Examples](#examples)
   - [Definition (faithful and transitive)](#definition-faithful-and-transitive)
+    - [Remark](#remark-2)
 - [Orbit and Stabilizer](#orbit-and-stabilizer)
   - [Definition (orbit)](#definition-orbit)
     - [Lemma (transitive and orbit)](#lemma-transitive-and-orbit)
   - [Definition (stabilizer)](#definition-stabilizer)
   - [Theorem (eq. relation)](#theorem-eq-relation)
-    - [Remark](#remark-2)
+    - [Remark](#remark-3)
     - [Corollary (disjoint union of orbits)](#corollary-disjoint-union-of-orbits)
   - [Theorem (the orbit-stabilizer theorem)](#theorem-the-orbit-stabilizer-theorem)
 
@@ -114,6 +115,12 @@ Below $$G$$s act on $$X$$s, repsectively.
 > A group action $$*$$ by $$G$$ on $$X$$ is said to be **faithful** if $$e\in G$$ (identity) is the **only** element that leaves every element of $$X$$ unchanged. That is to say, **$$*$$ is faithful iff $$\text{ker}(\rho) = \{e\}$$**, where $$\rho: G\to S_X$$, by this [remark](#remark-1).
 >
 > Then, $$*$$ is called **transitive** if for all $$x_1,x_2\in X$$, there exists $$g\in G$$ such that $$gx_1 = x_2$$.
+
+#### Remark 
+
+If $$*$$ is transitive, the [induced homomorphism](#remark-1) must be non-trivial.
+
+> 不 transitive 也可以 non-trivial！存在 $$gx_1=x_2$$ 就代表 $$\rho(g)$$ 不是 identity map。
 
 ---
 
