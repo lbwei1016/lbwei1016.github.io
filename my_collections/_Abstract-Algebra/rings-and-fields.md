@@ -18,12 +18,17 @@ time: 2022/11/03
 - [Homomorphism](#homomorphism)
   - [Definition (homomorphism)](#definition-homomorphism)
   - [Theorem (subring)](#theorem-subring)
+  - [Definition (endomorphism)](#definition-endomorphism)
+    - [Theorem (endomorphism ring)](#theorem-endomorphism-ring)
     - [Example $$I$$](#example-i)
     - [Example $$II$$](#example-ii)
 - [Isomorphism](#isomorphism)
   - [Example $$I$$](#example-i-1)
   - [Example $$II$$](#example-ii-1)
   - [Example $$III$$](#example-iii)
+- [Application](#application)
+  - [Chinese Remainder Theorem](#chinese-remainder-theorem)
+    - [Theorem (CRT)](#theorem-crt)
 
 ---
 
@@ -111,7 +116,6 @@ which is denoted by $$S<R$$.
 > 
 > for all $$a,b \in R$$.
 
-
 The **kernel** of $$\phi$$ is
 
 $$\text{ker}(\phi) = \{a\in R\vert \phi(a) = 0\}.$$
@@ -120,6 +124,12 @@ $$\text{ker}(\phi) = \{a\in R\vert \phi(a) = 0\}.$$
 
 ### Theorem (subring)
 > Let $$\phi: R\to R'$$ be a ring homomorphism. Then $$\phi(R)$$ is a **subring** of $$R'$$.
+
+### Definition (endomorphism)
+> Let $$G$$ be a group. A homomorphism **from $$G$$ to itself** is an **endomorphism**.
+
+#### Theorem (endomorphism ring)
+> Let $$(G,+)$$ be an **abelian** group. The set $$\text{End}(G)$$ of **all endomorphisms of $$G$$ forms a ring** under function addition and function composition.
 
 #### Example $$I$$
 
@@ -168,7 +178,7 @@ given by $$\rho(\bar a) = (\bar a, \bar a)$$ is a **group isomorphism** and is a
 
 Let $$\alpha$$ be a basis of $$n$$-dimensional vector space $$V$$ over $$F$$. Then the matrix representation $$\text{Rep}_\alpha:\text{End}(V) \to M_n(F) $$ is a ring isomorphism.
 
-> $$\text{End}(V)$$: the set of all linear transformations from $$V$$ to $$V$$
+> $$\text{End}(V)$$: see [this](#definition-endomorphism).
 
 > 任意 linear trans. 都可以用矩陣表示！
 
@@ -220,3 +230,64 @@ $$
 > $$\rho_{a+bi} = \rho(a+bi)$$.
 
 > 將 basis 從 $$\{1, i\}$$ 變換到 $$\{\rho_{a+bi}(1), \rho_{a+bi}(i) \}$$。
+
+---
+
+## Application
+### Chinese Remainder Theorem
+For two positive coprime integers $$m$$ and $$n$$, we have a ring isomorphism
+
+$$
+\begin{align*}
+\rho: \Bbb Z_{mn} &\to \Bbb Z_m \times \Bbb Z_n \\
+x \bmod{mn} &\mapsto (x\bmod m, x\bmod n).
+\end{align*}
+$$
+
+This means that the system of congruent equation
+
+$$
+\begin{cases}
+  x \equiv a \bmod m \\
+  x \equiv b \bmod n
+\end{cases}
+$$
+
+has a **unique solution upto a multiple of $$mn$$**. To solve this, it is sufficient to find
+
+$$
+x_1 = \rho^{-1}(1, 0), x_2 = \rho^{-1}(0, 1),
+$$
+
+which are called the **fundamental solutions**. Then we have
+
+$$
+\rho^{-1}(a, b) = ax_1 + bx_2.
+$$
+
+Since $$x_1\equiv 0 \bmod n$$, we can write $$x_1=kn$$ for some integer $$k$$. Thus, 
+
+$$
+x_1 = kn \equiv 1 \bmod m.
+$$
+
+This implies that $$k$$ is the multiplicative inverse of $$n$$ modulo $$m$$, which can be [solved easily](../../Concrete-Math/extgcd). Generalize it, we have the following theorem:
+
+#### Theorem (CRT)
+
+Consider the system of equations
+
+$$
+\begin{cases}
+  x &\equiv a_1 \bmod b_1 \\
+  x &\equiv a_2 \bmod b_2 \\
+  &\vdots\\
+  x &\equiv a_k \bmod b_k
+\end{cases}
+$$
+
+> If any pair of $$b_1, \cdots b_k$$ are **coprime**, then the above equation has a **unique solution** upto a multiple of $$b_1\cdots b_k$$. Moreover, if $$x_1,\cdots,x_k$$ are fundamental solutions, the **general solution** is 
+>
+> $$
+> a_1x_1 + \cdots a_kx_k \pmod {b_1\cdots b_k}.
+> $$

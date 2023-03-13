@@ -13,6 +13,7 @@ time: 2023/03/02
 - [The Second Sylow Theorem](#the-second-sylow-theorem)
 - [The Third Sylow Theorem](#the-third-sylow-theorem)
   - [Corollary (normal)](#corollary-normal)
+- [Remark](#remark)
 - [Applications](#applications)
   - [Simple groups](#simple-groups)
     - [Theorem ($$p$$-group + non-abelian)](#theorem-p-group--non-abelian)
@@ -121,6 +122,10 @@ Thus, $$n_p\mid m$$. ◼
 
 ### Corollary (normal)
 > A Sylow $$p$$-subgroup is **normal iff $$n_p = 1$$**.
+
+## Remark
+
+對於兩質數 $$p$$、$$q$$，$$\mathcal S_p$$ 和 $$\mathcal S_q$$ 的交集必定只有 identity（從 element order 來想）。但對於兩個 Sylow $$p$$-subgroups，$$\mathcal{S_{p,1}}$$、$$\mathcal{S_{p,2}}$$，他們的交集**不一定**是 $$\{e\}$$：若 $$\vert S_{p, 1} \vert = \vert S_{p, 2} \vert = p$$，交集是 $$\{e\}$$，但若 $$\vert S_{p, 1}\vert = \vert S_{p, 2} \vert = p^k, k > 1$$，交集就不見得是 $$\{e\}$$（element order 可以是 $$p^j, j<k$$）！
 
 ---
 

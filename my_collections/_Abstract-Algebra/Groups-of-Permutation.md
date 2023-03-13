@@ -226,7 +226,7 @@ If $$\sigma \in B_n$$ is an odd permutation, then $$(1,2)\sigma$$ is even and we
 
 
 ### Theorem (subgroup; elements that commute)
-> Let $$\pi \in S_n$$. Then **all the elements in $$S_n$$ that commute with $$\pi$$ form a subgroup**, and we denote it by $$H_\pi$$ here. In particular, we have $$\langle \pi \rangle \leq H_\pi$$.
+> Let $$\pi \in S_n$$. Then **all the elements in $$S_n$$ that commute with $$\pi$$ from a subgroup**, and we denote it by $$H_\pi$$ here. In particular, we have $$\langle \pi \rangle \leq H_\pi$$.
 
 **Proof**
 

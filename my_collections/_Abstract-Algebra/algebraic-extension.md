@@ -44,7 +44,7 @@ time: 2022/12/02
 >
 > for all $$a, b\in F$$ and all $$\alpha,\beta \in V$$.
 
-> $$\alpha, \beta \in V$$ 之間的乘法沒有定義喔！
+> $$\alpha, \beta \in V$$ 之間的乘法沒有定義喔！如果有定義，該結構稱為 **algebra**，如 **quaternion algebra**。
 
 #### Lemma (extension field is a vector space)
 > Let $$E$$ be an **extension field** of a field $$F$$. Then $$E$$ is a **vector space**  over $$F$$.
