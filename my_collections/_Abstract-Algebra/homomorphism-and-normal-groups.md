@@ -230,6 +230,8 @@ $$
 
 > 非常好用！尤其在處理 [permutaiton group](../Groups-of-Permutation/#theorem-generator) 的時候。
 
+另外，kernel 是 normal 的；而對任意 normal subgroup $$N$$，存在一 group homomorphism $$\rho$$ 使得 $$\text{ker}\rho = N$$。
+
 ### Corollary (kernel is normal)
 > If $$\psi: G\to G'$$ is a group homomorphism, then $$\text{ker}(\psi)$$ is a normal subgroup.
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Integral Domain and Charateristic
+title: Integral Domain and Characteristic
 usemathjax: true
 tag: Abstract Algebra, Ring, Field
 time: 2022/11/15
