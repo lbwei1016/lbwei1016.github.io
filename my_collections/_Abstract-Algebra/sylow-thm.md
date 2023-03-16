@@ -19,6 +19,7 @@ time: 2023/03/02
     - [Theorem ($$p$$-group + non-abelian)](#theorem-p-group--non-abelian)
     - [Lemma (injective homomorphism)](#lemma-injective-homomorphism)
     - [Theorem (orders)](#theorem-orders)
+    - [Questions](#questions)
 
 ---
 
@@ -164,3 +165,47 @@ Since $$G$$ is simple and $$G$$ is not a $$p$$-group, we have $$n_p > 1$$. The a
 **Proof 2.**
 
 The action of $$G$$ on $$G/H$$ by left multiplication induces a group homomorphism $$\rho: G\to S_{G/H}$$. Since only $$h\in H_i$$ makes $$hH_i = H_i$$, $$\rho$$ is transitive; since $$H$$ is a proper subgroup, $$\rho$$ is non-trivial. Thus, $$\rho$$ is **injective** and $$\vert G\vert = \vert \rho(G)\vert $$ divides $$\vert S_{G/H}\vert= [G:H]!$$. 
+
+#### Questions
+
+> Show that for any non-abelian group $$G$$, if $$\vert G\vert=90$$, $$G$$ is **not** a simple group.
+
+**Solution**
+
+First note that $$90=2\cdot 3^2\cdot 5$$. As a routine, we check that 
+
+$$
+\begin{align*}
+n_2&=1, 3, 5, 15 \\
+n_3&=1, 10 \\
+n_5&=1,6
+\end{align*}
+$$
+
+by [the third Sylow theorem](#the-third-sylow-theorem). Since $$3$$ is the only prime which is squared, let's play with it. (Actually we should first suppose $$n_5=6$$, and count the elements of order $$5$$, trying to make a contradiction. However, this doesn't help.)
+
+If $$n_3=1$$, game over. Suppose $$n_3=10$$. For any two distinct Sylow $$3$$-subgroup $$P$$ and $$Q$$, there are two possibilities: $$\vert P\cap Q\vert = 1$$ or $$3$$.
+
+If $$\vert P\cap Q\vert=1$$, the number of elements whose order is divisible by $$3$$ is $$10 \cdot (9 - 1) = 80$$. Add this with the number of order $$5$$ elements, we have $$6\cdot(5-1) + 80 = 104 > 90$$, a contradiction. Thus, we must have some $$P, Q$$ such that $$\vert P\cap Q\vert = 3$$.
+
+In such case, by [the second isomorphism theorem](../3-isomorphism/#the-second-isomorphism-theorem), 
+
+$$
+\vert PQ\vert = {\vert P\vert \vert Q\vert \over \vert P\cap Q\vert } = 27.
+$$
+
+Then, by [the first Sylow theorem](#the-first-sylow-theorem), we know that $$P\cap Q$$ is normal in $$P$$ and in $$Q$$(or use this [theorem](../normalizer/#theorem-smallest-index-normal)), which implies that 
+
+$$
+PQ \subseteq N_G(P\cap Q) \text{ and } P\leq N_G(P\cap Q).
+$$
+
+Hence, we have gathered some information regarding the order of $$N_G(P\cap Q)$$:
+
+1. $$\geq 27$$,
+2. divisible by $$9$$,
+3. divides $$90$$;
+
+the only choices are $$45$$ and $$90$$. If $$\vert N_G(P\cap Q)\vert = 90$$, we have $$P\cap Q$$ as a non-trivial proper normal subgroup of $$G$$. If $$\vert N_G(P\cap Q)\vert = 45$$, since $$[G:N_G(P\cap Q)] = 2$$, we have $$N_G(P\cap Q)$$ as a normal subgroup of $$G$$. In conclusion, $$G$$ must not be simple. ◼
+
+> For $$\vert G\vert = 112$$, check [this](https://math.stackexchange.com/questions/351642/proving-that-a-group-of-order-112-is-not-simple). (Check all the answers, and comments.)
