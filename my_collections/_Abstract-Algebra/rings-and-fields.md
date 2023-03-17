@@ -17,6 +17,7 @@ time: 2022/11/03
 - [Subrings and Subfields](#subrings-and-subfields)
 - [Homomorphism](#homomorphism)
   - [Definition (homomorphism)](#definition-homomorphism)
+  - [Proposition (one-to-one)](#proposition-one-to-one)
   - [Theorem (subring)](#theorem-subring)
   - [Definition (endomorphism)](#definition-endomorphism)
     - [Theorem (endomorphism ring)](#theorem-endomorphism-ring)
@@ -121,6 +122,9 @@ The **kernel** of $$\phi$$ is
 $$\text{ker}(\phi) = \{a\in R\vert \phi(a) = 0\}.$$
 
 > 映到加法單位元素才是 kernel！
+
+### Proposition (one-to-one)
+> A ring homomorphism is **one-to-one** if and only if its kernel is $$\{0\}$$.
 
 ### Theorem (subring)
 > Let $$\phi: R\to R'$$ be a ring homomorphism. Then $$\phi(R)$$ is a **subring** of $$R'$$.
