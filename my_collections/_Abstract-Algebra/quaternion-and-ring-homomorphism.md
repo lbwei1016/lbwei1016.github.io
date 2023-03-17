@@ -7,6 +7,13 @@ time: 2023/03/17
 ---
 
 **Table of Content**
+- [Hamiltonian Quaternion](#hamiltonian-quaternion)
+  - [Theorem (vector multiplication)](#theorem-vector-multiplication)
+  - [Theorem (Quaternion rotation)](#theorem-quaternion-rotation)
+    - [Remark](#remark)
+- [Ring Homomoprhism](#ring-homomoprhism)
+  - [Theorem (factor rings)](#theorem-factor-rings)
+    - [Lemma (kernel element)](#lemma-kernel-element)
 
 
 ---
@@ -131,3 +138,5 @@ We need to prove that
 > $$
 >
 > for all $$a,b \in R$$ and $$h\in H$$.
+
+> 用來輔助證明乘法是 well-defined 的。
