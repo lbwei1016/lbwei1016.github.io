@@ -11,13 +11,14 @@ time: 2022/09/17
 - [The Matrix of a Linear Transformation](#the-matrix-of-a-linear-transformation)
   - [Theorem (The matrix of a linear trans.)](#theorem-the-matrix-of-a-linear-trans)
 - [Find the Standard Matrix for $$T$$](#find-the-standard-matrix-for-t)
-  - [Example $$\rm I$$](#example-rm-i)
+  - [Example $$\\rm I$$](#example-rm-i)
 - [Injection and Surjection](#injection-and-surjection)
   - [Injection](#injection)
   - [Surjection](#surjection)
 - [{Homo, Iso}morphism](#homo-isomorphism)
   - [Homomorphism](#homomorphism)
   - [Isomorphism](#isomorphism)
+- [See also](#see-also)
 - [Reference](#reference)
 
 ---
@@ -158,6 +159,9 @@ between them.
 > 見 [Isomorphism](../../Algebra/Isomorphism)。
 
 ---
+
+## See also
+- [Change of basis](https://hackmd.io/@William1016/HJ1vC47e2)
 
 ## Reference
 - [StackExchange](https://math.stackexchange.com/questions/29944/
