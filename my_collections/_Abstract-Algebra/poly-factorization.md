@@ -294,12 +294,14 @@ $$
 
 **Proof**
 
-Use [Euclidean algorithm](#theorem-euclidean-algorithm) to prove this.
+Use [Euclidean algorithm](#theorem-euclidean-algorithm) to prove this. Or use the concept of [prime ideals](../more-on-ideals/#theorem-irreducible-prime).
 
 #### Theorem (unique factorization)
 > *Every nonconstant polynomial* $$f(x) \in \mathbb{F}[x]$$ can be factored in $$\mathbb{F}[x]$$ into a **product of irreducible polynomials**. The factorization is *unique upto order and units*.
 
 > *upto order* 代表交換 factor 的順序後還是同一種。
+
+> 這是 The Fundamental Theorem of Arithmetic 的推廣！
 
 **Proof**
 

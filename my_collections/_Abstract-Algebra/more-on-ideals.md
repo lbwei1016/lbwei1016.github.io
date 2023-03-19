@@ -22,6 +22,12 @@ time: 2023/03/19
   - [Theorem (prime \<=\> integral domain)](#theorem-prime--integral-domain)
     - [Corollary (maximal =\> prime)](#corollary-maximal--prime)
     - [Examples](#examples)
+- [Ideals of Polynomial Rings](#ideals-of-polynomial-rings)
+  - [Theorem (field =\> principal)](#theorem-field--principal)
+  - [Theorem (maximal \<=\> irreducible)](#theorem-maximal--irreducible)
+    - [Corollary (field \<=\> irreducible)](#corollary-field--irreducible)
+  - [Theorem (irreducible: prime)](#theorem-irreducible-prime)
+- [Remark](#remark-1)
 
 ---
 
@@ -79,6 +85,8 @@ Since $$p\Bbb Z\subset I$$, $$[I:p\Bbb Z]>1$$. This implies that $$[I:p\Bbb Z]=p
 ### Theorem (maximal <=> field)
 > Let $$R$$ be a commutative ring with unity. Then $$M$$ is a **maximal ideal iff $$R/M$$ is a field**.
 
+> Check [this](#theorem-prime--integral-domain).
+
 **Proof**
 
 $$(\Rightarrow)$$:
@@ -118,6 +126,8 @@ Let $$R=\Bbb Z$$. If $$n=p$$ is a **prime** and $$ab\in p\Bbb Z$$, then $$p\mid 
 ### Theorem (prime <=> integral domain)
 > Let $$R$$ be a **commutative** ring with unity. Then $$P$$ is a **prime ideal of $$R$$ iff $$R/P$$ is an integral domain**.
 
+> Check [this](#theorem-maximal--field).
+
 **Proof**
 
 Since $$R$$ is a commutative ring with unity, its quotient ring $$R/P$$ is also a commutative ring with unity. We can see that
@@ -136,8 +146,69 @@ $$
 
 > 反之未必！The trivial ideal $$\{0\}$$ of $$\Bbb Z$$ is a prime ideal but **not** a maximal one.
 
+> 由此可知，maximal 是比 prime 更強的性質。
+
 #### Examples
 
 - Let $$R$$ be an integral domain. Then $$\{0\}$$ is a prime ideal. We find that $$R/\{0\}\cong R$$ is indeed an integral domain.
-- If $$p$$ is prime, then $$p\Bbb Z$$ is a prime ideal, and $$\Bbb{Z}/p\Bbb{ Z} = \Bbb Z_p$$ is a field! 
+- If $$p$$ is prime, then $$p\Bbb Z$$ is a prime ideal, and $$\Bbb{Z}/p\Bbb{Z} = \Bbb Z_p$$ is a field! 
   - If $$n$$ is not prime, $$\Bbb Z_n$$ is not an integral domain.
+
+---
+
+## Ideals of Polynomial Rings
+### Theorem (field => principal)
+> Let $$\Bbb F$$ be a **field**. Then **every** ideal $$I$$ in $$\Bbb F[x]$$ is [principal](../ideals/#theorem-principal-ideal).
+
+**Proof**
+
+If $$I=\{0\}$$, $$I=\langle 0\rangle$$ is principal. Otherwise, let $$g(x)$$ be a nonzero element of $$I$$ of minimal degree. We claim that $$I=\langle g(x)\rangle$$.
+
+For any $$f(x)\in I$$, using the division algoritm can yield $$f(x) = q(x)g(x) + r(x)$$, where $$r(x)=0$$ must hold, by the minimality of $$\deg g(x)$$. Thus, $$f(x)=q(x)g(x)\in \langle g(x) \rangle$$, and thus $$I\subseteq \langle g(x)\rangle$$.
+
+Conversely, since $$g(x)\in I$$, we have $$\langle g(x)\rangle \subseteq I$$, and hence $$I=\langle g(x)\rangle$$. Therefore, $$I$$ is a principal ideal. ◼
+
+> Every $$I$$ on $$\Bbb Z$$ is also principal!
+
+### Theorem (maximal <=> irreducible)
+> An ideal $$\langle p(x)\rangle$$ in $$\Bbb F[x]$$ is **maximal** iff $$p(x)$$ is **irredcible** over $$\Bbb F$$.
+
+**Proof**
+
+$$(\Rightarrow)$$:
+
+Let $$\langle p(x)\rangle$$ be a maximal ideal. We need to prove that 
+
+- $$p(x)$$ is not a constant polynomial, and
+- if $$p(x) = f(x)g(x)$$, then either $$f(x)$$ or $$g(x)$$ is a unit in $$\Bbb F[x]$$.
+
+If $$p(x)$$ is a nonzero constant polynomial, then $$p(x)$$ is a unit in $$\Bbb F[x]$$ and $$\langle p(x) \rangle = \Bbb F[x]$$, contradictiing to the assumption that $$\langle p(x)\rangle$$ is maxiaml. Thus, $$p(x)$$ is not a constant polynomial.
+
+Now suppose $$p(x) = f(x)g(x)$$. Then by [this corollary](../ideals/#corollary-eq-propertiey), $$\langle p(x) \rangle \subset \langle f(x)\rangle$$. Since $$\langle p(x)\rangle$$ is maximal, either $$\langle f(x)\rangle=\Bbb F[x]$$ or $$\langle f(x)\rangle = \langle p(x) \rangle$$. For the former case, $$f(x)$$ is a unit; for the latter case, $$f(x)\in \langle p(x)\rangle$$ and $$f(x) = p(x)h(x)$$ for some $$h(x) \in \Bbb F[x]$$. Then, $$p(x) = f(x)g(x) = p(x)[h(x)g(x)]$$, and thus $$h(x)g(x)=1$$, implying $$g(x)$$ is a unit. 
+
+$$(\Leftarrow)$$:
+
+Use a similar argument as above.
+
+#### Corollary (field <=> irreducible)
+> The factor ring $$\Bbb F[x]/\langle p(x)\rangle$$ is a **field** iff $$p(x)$$ is irreducible over $$\Bbb F$$.
+
+> By [this theorem](#theorem-maximal--field)!
+
+### Theorem (irreducible: prime)
+> Check [here](../poly-factorization/#theorem-like-prime).
+
+**Proof (use ideals)**
+
+Since $$p(x)$$ is irreducible, by the [previous theorem](#theorem-maximal--irreducible), $$\langle p(x)\rangle$$ is maximal, which is also a **prime** ideal. If $$p(x)\mid r(x)s(x)$$, then $$r(x)s(x)\in \langle p(x)\rangle$$. Thus, $$r(x)\in \langle p(x)\rangle$$ or $$s(x)\in \langle p(x)\rangle$$, which implies the result. ◼
+
+---
+
+## Remark
+
+- $$
+\text{Commutative ring with unity } \xrightarrow{\text{no proper non-trivial ideals}} \text{ field}
+$$,
+- $$
+\text{Group} \xrightarrow{\text{no proper non-trivial normal subgroups}} \text{simple group}
+$$.
