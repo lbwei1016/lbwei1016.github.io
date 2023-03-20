@@ -11,9 +11,12 @@ time: 2023/03/02
   - [Corollary ($$p$$-subgroup contained)](#corollary-p-subgroup-contained)
   - [Corollary (subgroup order)](#corollary-subgroup-order)
 - [The Second Sylow Theorem](#the-second-sylow-theorem)
+  - [Corollary (all intersection =\> normal)](#corollary-all-intersection--normal)
+    - [Lemma (conjugate; intersection)](#lemma-conjugate-intersection)
+    - [Corollary (not simple)](#corollary-not-simple)
 - [The Third Sylow Theorem](#the-third-sylow-theorem)
   - [Corollary (normal)](#corollary-normal)
-- [Remark](#remark)
+- [**Remark**](#remark)
 - [Applications](#applications)
   - [Simple groups](#simple-groups)
     - [Theorem ($$p$$-group + non-abelian)](#theorem-p-group--non-abelian)
@@ -71,6 +74,30 @@ Let $$xP_1\in X^{P_2}$$. Then $$gxP_1 = xP_1$$ for all $$g\in P_2$$, which impli
 
 > Conjugate 後大小不變！
 
+### Corollary (all intersection => normal)
+> Let $$H = H_1\cap H_2\cap \cdots\cap H_n$$ be the intersection of all Sylow $$p$$-subgroups of $$G$$. Then $$H$$ is **normal** in $$G$$.
+
+**Proof**
+
+First, we should prove a lemma: 
+
+#### Lemma (conjugate; intersection)
+
+> For some $$g\in G$$, $$g(H_1\cap H_2)g^{-1} = (gH_1g^{-1})\cap(gH_2g^{-1})$$. 
+
+Since $$\rho_g: h \mapsto ghg^{-1}$$ is an isomorphism, we have a bijective correspondence between $$H_1$$ and $$gH_1g^{-1}$$, and similarly, between $$H_2$$ and $$gH_2g^{-1}$$. Then, for all $$h\in H_1\cap H_2$$, there is also a bijective correspondence between $$h$$ and $$ghg^{-1}$$, and thus the lemma is proved.
+
+Now consider $$gHg^{-1}$$ for some $$g \in G$$. We have
+
+$$
+gHg^{-1} = g\big(\bigcap_i H_i\big)g^{-1} = \bigcap_i\big(gH_ig^{-1}\big) \supseteq H,
+$$
+
+by [the second Sylow theorem](#the-second-sylow-theorem). However, it is obviois that $$gHg^{-1} \subseteq H$$, and thus $$gHg^{-1}=H$$. Since $$g$$ is arbitrary, we have proved that $$H$$ is a normal subgroup of $$G$$. ◼
+
+#### Corollary (not simple)
+> Let $$H = H_1\cap H_2\cap \cdots\cap H_n$$ be the intersection of all Sylow $$p$$-subgroups of $$G$$. If $$H$$ is non-trivial, then $$G$$ is **not simple**.
+
 ---
 
 ## The Third Sylow Theorem
@@ -124,9 +151,11 @@ Thus, $$n_p\mid m$$. ◼
 ### Corollary (normal)
 > A Sylow $$p$$-subgroup is **normal iff $$n_p = 1$$**.
 
-## Remark
+## **Remark**
 
 對於兩質數 $$p$$、$$q$$，$$\mathcal S_p$$ 和 $$\mathcal S_q$$ 的交集必定只有 identity（從 element order 來想）。但對於兩個 Sylow $$p$$-subgroups，$$\mathcal{S_{p,1}}$$、$$\mathcal{S_{p,2}}$$，他們的交集**不一定**是 $$\{e\}$$：若 $$\vert S_{p, 1} \vert = \vert S_{p, 2} \vert = p$$，交集是 $$\{e\}$$，但若 $$\vert S_{p, 1}\vert = \vert S_{p, 2} \vert = p^k, k > 1$$，交集就不見得是 $$\{e\}$$（element order 可以是 $$p^j, j<k$$）！
+
+假設有 $$m$$ 個 Sylow $$p$$-subgroups，對於任意兩 Sylow $$p$$-subgroup，他們的交集大小必須一樣嗎？答案是否定的，看看 [maximal Sylow intersection](https://groupprops.subwiki.org/wiki/Maximal_Sylow_intersection)。
 
 ---
 
@@ -168,6 +197,30 @@ The action of $$G$$ on $$G/H$$ by left multiplication induces a group homomorphi
 
 #### Questions
 
+**Q1:**
+
+> Show that for any non-abelian group $$G$$, if $$\vert G\vert=132=2^2\cdot 3\cdot 11$$, $$G$$ is **not** a simple group.
+
+**Solution**
+
+We have $$n_2=1, 3, 11, 33$$, $$n_3=1,4$$, and $$n_{11} = 1, 12$$. Suppose $$n_{11}=12$$ and $$n_3=4$$. There are already $$(11-1)\cdot 12 + (3-1)\cdot 4 = 128$$ elements. Suppose $$n_2=3$$, for minimizing possible elements. Let $$N_2$$ denote the number of elements whose order divides $$4$$. Then by t*he inclusion-exclusion principle*, 
+
+$$
+\begin{align*}
+N_2 = \vert H_1\cup H_2\cup H_3\vert &\geq \sum_i \vert H_i\vert - \sum_{\substack{i, j \\ i\not=j}}\vert H_i\cap H_j\vert \\
+&\geq 4\cdot 3 - {3\choose 2}\cdot 2 \\
+&= 6,
+\end{align*}
+$$
+
+where $$H_i$$ are distinct Sylow $$2$$-subgroups. However, $$128 + 6=134>132$$, which is a contradiction. Thus, $$G$$ is not simple. ◼
+
+> $$\vert H_i\cap H_j\vert = 1\text{ or } 2$$.
+
+> $$n_p$$ 小的時候，inclusion-exclusion 比較容易奏效。
+
+**Q2:**
+
 > Show that for any non-abelian group $$G$$, if $$\vert G\vert=90$$, $$G$$ is **not** a simple group.
 
 **Solution**
@@ -200,6 +253,8 @@ $$
 PQ \subseteq N_G(P\cap Q) \text{ and } P\leq N_G(P\cap Q).
 $$
 
+> $$P$$ and $$Q$$ are assumed to be **not** normal, and thus $$PQ$$ is **not** necessarily a subgroup!
+
 Hence, we have gathered some information regarding the order of $$N_G(P\cap Q)$$:
 
 1. $$\geq 27$$,
@@ -207,5 +262,7 @@ Hence, we have gathered some information regarding the order of $$N_G(P\cap Q)$$
 3. divides $$90$$;
 
 the only choices are $$45$$ and $$90$$. If $$\vert N_G(P\cap Q)\vert = 90$$, we have $$P\cap Q$$ as a non-trivial proper normal subgroup of $$G$$. If $$\vert N_G(P\cap Q)\vert = 45$$, since $$[G:N_G(P\cap Q)] = 2$$, we have $$N_G(P\cap Q)$$ as a normal subgroup of $$G$$. In conclusion, $$G$$ must not be simple. ◼
+
+> Reference: [StackExchange](https://math.stackexchange.com/a/2793813)
 
 > For $$\vert G\vert = 112$$, check [this](https://math.stackexchange.com/questions/351642/proving-that-a-group-of-order-112-is-not-simple). (Check all the answers, and comments.)
