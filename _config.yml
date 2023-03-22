@@ -46,3 +46,6 @@ collections:
 
         Abstract-Algebra:
           output: true
+
+        Quantum-Computation:
+          output: false

@@ -14,6 +14,7 @@ time: 2023/03/17
 - [Ring Homomoprhism](#ring-homomoprhism)
   - [Theorem (factor rings)](#theorem-factor-rings)
     - [Lemma (kernel element)](#lemma-kernel-element)
+  - [Regarding Quaterion](#regarding-quaterion)
 
 
 ---
@@ -140,3 +141,27 @@ We need to prove that
 > for all $$a,b \in R$$ and $$h\in H$$.
 
 > 用來輔助證明乘法是 well-defined 的。
+
+### Regarding Quaterion 
+
+We have
+
+$$
+\begin{align*}
+\Bbb H &= \Bbb R \oplus \Bbb Ri \oplus \Bbb Rj \oplus \Bbb Rk \\
+&= \Bbb C \oplus \Bbb Cj.
+\end{align*}
+$$
+
+Then, for any $$\alpha\in \Bbb H, \alpha = \alpha_1 + \alpha_2j$$,  we have the following homomorphism:
+
+$$
+\begin{align*}
+\rho: \Bbb H&\to \text{M}_2(\Bbb C), \\ 
+\alpha &\mapsto [L_\alpha]_\beta,
+\end{align*}
+$$
+
+where $$\beta = \{1, j\}$$.
+
+> Check [Matrix representation](../matrix-rep-of-extension).
