@@ -11,7 +11,7 @@ time: 2023/03/19
   - [Definitions (trivial; proper)](#definitions-trivial-proper)
   - [Theorem (ideal =\> all)](#theorem-ideal--all)
     - [Corollary (field: no proper, nontrivial ideal)](#corollary-field-no-proper-nontrivial-ideal)
-  - [Theorem (principal ideal \<=\> all)](#theorem-principal-ideal--all)
+  - [Theorem (principal ideal + unit \<=\> all)](#theorem-principal-ideal--unit--all)
   - [Definition (maximal ideal)](#definition-maximal-ideal)
     - [Proposition (prime; maximal)](#proposition-prime-maximal)
   - [Theorem (maximal \<=\> field)](#theorem-maximal--field)
@@ -55,7 +55,7 @@ Let $$u$$ be a unit contained in $$I$$. Then $$1=u^{-1}u\in I$$. It follows that
 
 Sine any nontrivial ideal of a field contains a unit, it must be the whole field.
 
-### Theorem (principal ideal <=> all)
+### Theorem (principal ideal + unit <=> all)
 > Let $$R$$ be a **commutative** ring with unity. A **principal ideal** $$Ra$$ is equal to $$R$$ **iff $$a$$ is a unit**.
 
 > 看看[這](../ideals/#theorem-principal-ideal)！
