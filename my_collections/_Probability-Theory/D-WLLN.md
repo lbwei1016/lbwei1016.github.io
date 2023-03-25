@@ -236,7 +236,7 @@ $$
 for all $$c$$ such that $$g'(c)$$ is defined. We now substitute $$E[X]$$ for $$c$$, and take the expectation of both sides, yielding
 
 $$
-E[g(X)] \le g(E[X]).
+E[g(X)] \ge g(E[X]).
 $$
 
 This is what we want. The proof is similar for the concave case. ◼
