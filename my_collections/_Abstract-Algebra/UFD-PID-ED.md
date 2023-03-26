@@ -95,7 +95,29 @@ On the other hand, $$2$$ is irreducible in $$\Bbb Z[\sqrt{-5}]$$, but $$2\vert (
 
 **Proof (irreduciblity implies prime)**
 
-Let $$p$$ be an irreducible in a UFD $$D$$. We shall prove that for some $$q, x, y\in D$$, whenever $$pq = xy$$, $$p\vert x$$ or $$p\vert y$$. Since $$pq=xy$$, there must be a one-to-one correspondence between the irreducibles on both sides (unique factorization). This means that $$p$$ must correspond to an irreducible factor of $$x$$ or that of $$y$$, i.e., $$p$$ divides either $$x$$ or $$y$$. ◼
+Let $$p$$ be an irreducible in a UFD $$D$$. We shall prove that for some $$q, x, y\in D$$, whenever $$pq = xy$$, $$p\vert x$$ or $$p\vert y$$. 
+
+**Case 1**: $$xy=0$$.
+
+Since $$D$$ is an integral domain, either $$x$$ or $$y$$ is zero, and we have $$p\vert 0$$.
+
+**Case 2**: $$x$$ or $$y$$ is a unit.
+
+Without loss of generality, suppose $$x$$ is a unit. Then, $$(x^{-1}q)p = y$$, which implies that $$p\vert y$$.
+
+**Case 3**: $$x$$ and $$y$$ are non-zero, non-unit.
+
+First, suppose $$q$$ is a unit. Then $$p = q^{-1}xy = (q^{-1}x)y$$. Since $$p$$ is a prime, it is also irreducible, which implies that either $$(q^{-1}x)$$ or $$y$$ is a unit. By assumption, $$y$$ is not a unit. Suppose $$(q^{-1}x)$$ is a unit, let $$r$$ be its inverse. Then
+
+$$
+rq^{-1}x = 1 \implies x = r^{-1}q,
+$$
+
+which means that $$x$$ is as well a unit. A contradiction. Thus $$q$$ is not a unit.
+
+Since $$pq=xy$$ and all of them are **non-zero and non-unit**, there must be a one-to-one correspondence between the irreducibles on both sides (unique factorization). This means that $$p$$ must correspond to an irreducible factor of $$x$$ or that of $$y$$, i.e., $$p$$ divides either $$x$$ or $$y$$. ◼
+
+> 要先確認大家都 **non-zero、non-unit**，才可以分解！
 
 #### Corollary (not UFD)
 >  To show an integral domain is **not** a UFD, one may show that there exists some irreducible element which is **not** a prime.
