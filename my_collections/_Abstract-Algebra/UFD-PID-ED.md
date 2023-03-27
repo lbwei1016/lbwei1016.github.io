@@ -236,7 +236,7 @@ Finally, the proof of uniqueness of factorization resembles the proof [here](../
 > The polynomial ring over a UFD is still a UFD.
 
 #### Corollary (Hilbert; multivariate)
-> Let $$\Bbb F$$ be a field. Then $$\Bbb F[x_1, \cdots, x_n]$$ is a UFD, but not a PID when $$n>2$$.
+> Let $$\Bbb F$$ be a field. Then $$\Bbb F[x_1, \cdots, x_n]$$ is a UFD, but not a PID when $$n\ge2$$.
 
 **Proof (not a PID)**
 
