@@ -168,9 +168,11 @@ If $$p$$ is not irreducible, there exist $$a\mid p$$ for some non-unit $$a$$, wh
 
 Suppose $$p\mid ab$$, then $$ab=pr$$ for some $$r\in D$$. This implies that $$ab\equiv 0$$ in $$D/\langle p\rangle$$. Since $$\langle p\rangle$$ is maximal (by the previous lemma), $$D/\langle p\rangle$$ is a [field](../more-on-ideals/#theorem-maximal--field); we conclude that $$a\equiv 0$$ or $$b\equiv 0$$ (no zero divisor), i.e., $$a\in \langle p\rangle$$ or $$b\in \langle p\rangle$$. ◼
 
-**Alternative proof idea:**
+**Alternative proof**
 
-$$x\vert n \iff n\in \langle x\rangle.$$
+Suppose $$p\vert ab$$, then $$ab=pr$$ for some $$r\in D$$. This implies that $$ab\in \langle p\rangle$$. Since $$p$$ is irreducible, $$\langle p\rangle$$ is maximal, which [implies](../more-on-ideals/#corollary-maximal--prime) that $$\langle p \rangle$$ is prime. Thus, either $$a\in \langle p\rangle$$ or $$b\in \langle p\rangle$$. ◼
+
+> $$x\vert n\iff n\in \langle x\rangle$$.
 
 > 小就是大！
 
