@@ -181,7 +181,7 @@ By [Eisenstein criterion](#theorem-eisenstein-criterion), $$\Phi_p(x)$$ is irred
 In general, **$$n$$-th cyclotomic polynomial** is defined to be
 
 $$
-\Phi_p(x) = \prod_{0\le k\le n-1 \\ \gcd(k,n)=1}(x-\zeta^k_n) = \prod_{\ \ \ \ a\in\mathbb{C}^\times \\ \text{ord}(a) = n} (x-a)
+\Phi_n(x) = \prod_{0\le k\le n-1 \\ \gcd(k,n)=1}(x-\zeta^k_n) = \prod_{\ \ \ \ a\in\mathbb{C}^\times \\ \text{ord}(a) = n} (x-a)
 $$
 
 where $$\zeta_n = e^{2\pi i\over n}$$. For example, we have
@@ -194,6 +194,8 @@ $$
   \Phi_4(x) &= (x-\zeta_4)(x-\zeta^3_4) = x^2+1 \\
 \end{align*}
 $$
+
+> 根據定義，$$\deg{\Phi_n(x)} = \phi(n)$$，其中 $$\phi(n)$$ 是 Euler's totient function。
 
 Observe that 
 

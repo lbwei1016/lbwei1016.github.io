@@ -18,6 +18,8 @@ time: 2023/03/22
 - [Principal Ideal Domain (PID)](#principal-ideal-domain-pid)
   - [Definition (PID)](#definition-pid)
     - [Examples](#examples-1)
+  - [Definition (coprime)](#definition-coprime)
+    - [Proposition (two coprime =\> whole domain)](#proposition-two-coprime--whole-domain)
   - [Lemma (maximal \<=\> irreducible)](#lemma-maximal--irreducible)
   - [Lemma (irreducible)](#lemma-irreducible)
     - [Proof](#proof)
@@ -153,6 +155,12 @@ Since $$(3-2\sqrt{-6})$$ is not associated to $$3$$ and $$11$$, we obtain two no
 
 - $$\Bbb Z$$ is a PID. ($$n\Bbb Z$$)
 - Let $$\Bbb F$$ be a field, then $$\Bbb F[x]$$ is a PID.
+
+### Definition (coprime)
+> Let $$D$$ be a PID and $$a, b\in D$$. Then $$a$$ and $$b$$ are called **coprime** if $$c\vert a$$ and $$c\vert b$$, $$c\in D^\times$$.
+
+#### Proposition (two coprime => whole domain)
+> For $$a, b\in D$$ where $$D$$ is a PID, $$a$$ and $$b$$ are coprime **iff** $$\langle a, b\rangle=D$$.
 
 ### Lemma (maximal <=> irreducible)
 > An ideal $$\langle p\rangle$$ in a PID is **maximal** iff $$p$$ is **irreducible**.

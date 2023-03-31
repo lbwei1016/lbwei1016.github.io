@@ -11,6 +11,9 @@ time: 2023/03/22
   - [Theorem (properties)](#theorem-properties)
 - [Multiplicative Norm as Euclidean Function](#multiplicative-norm-as-euclidean-function)
   - [**Example**](#example)
+  - [Lemma (general condition)](#lemma-general-condition)
+  - [Lemma (not ED)](#lemma-not-ed)
+  - [Remark](#remark)
 
 
 ---
@@ -82,3 +85,47 @@ $$
 Thus, for any $$a, b\in D$$, there exist $$q, r\in D$$ such that $$a=bq + r$$ with $$r=0$$ or $$N(r)<N(b)$$. Since $$N$$ is a multiplicative norm, which already satisfies **EF2**, we now have proved $$D$$ is a Euclidean domain. ◼
 
 > $$N(x)$$ 定義在 $$\Bbb Q(\sqrt{2})$$ 上，因此 $$N({a\over b}-q)$$ 是合法的。
+
+### Lemma (general condition)
+
+> Let $$\alpha$$ be a zero of $$x^2+bx+c$$. Then $$\Bbb Z[\alpha]$$ is **ED** if $$\vert b\vert + \vert c\vert \le 2$$.
+
+> 用和 Example 一樣的方法，只是推廣 irreducible 而已！
+
+> 高斯整數 $$\Bbb Z[i]$$ 是 ED！
+
+### Lemma (not ED)
+> $$D = \Bbb Z[\sqrt{-n}]$$ is **not** a **UFD** if $$n\ge 3$$.
+
+**Proof**
+
+To prove $$D$$ is not a UFD, we may find an irreducible which is not a prime. Here, we will show that $$2$$ is the case.
+
+First, define the multiplicative norm on $$D$$ as
+
+$$
+N(a+b\sqrt{-n}) = a^2 + nb^2, a, b\in \Bbb Z.
+$$
+
+Then, suppose $$2=z_1z_2, z_i\in D$$, and we have $$4 = N(2) = N(z_1)N(z_2)$$. Since $$n \ge 3$$, one of $$N(z_1)$$ and $$N(z_2)$$ must be $$1$$, which means that one of them is a unit. Thus $$2$$ is irreducible in $$D$$.
+
+Suppose $$n$$ is odd. Let $$\alpha=1+\sqrt{-n}$$. We have $$2\vert {\alpha\overline{\alpha}} = (1+n^2)$$, but $$2$$ divides neither $$\alpha$$ nor $$\overline\alpha$$. This means that $$2$$ is not a prime.
+
+Now suppose $$n$$ is even. Let $$\beta=\sqrt{-n}$$. We have $$2\vert \beta\overline{\beta} = n^2$$, but again $$2$$ divides neither $$\beta$$ nor $$\overline\beta$$.
+
+We have shown that a irreducible element, $$2$$, is not a prime no matter what $$n$$ is. Therefore, $$D$$ is not a UFD. ◼
+
+### Remark
+
+我們可以證明 $$3$$ 在 $$\Bbb Z[i]$$ 中是不可約的。而因為 $$\Bbb Z[i]$$ 是 ED，代表他也是 PID；根據此[引理](../UFD-PID-ED/#lemma-maximal--irreducible)，$$\langle 3\rangle$$ 在 $$\Bbb Z[i]$$ 中是極大的。再根據此[定理](../more-on-ideals/#theorem-maximal--field)，我們得知 $$\Bbb Z[i]/\langle 3\rangle$$ 是 field！更進一步，
+
+$$
+\begin{align*}
+  \Bbb Z[i] &\cong \Bbb Z[x]/\langle x^2+1\rangle, \\
+  \Bbb Z[i]/\langle 3\rangle &\cong \Bbb Z[x]/\langle 3,x^2+1\rangle \\
+  &\cong \Bbb Z_3[x]/\langle x^2+1\rangle \\
+  &\cong \Bbb Z_3[i].
+\end{align*}
+$$
+
+而 $$\Bbb Z_3[i]$$ 是有 9 個元素的 [Galois field](../finite-field/#theorem-galois-fields)！
