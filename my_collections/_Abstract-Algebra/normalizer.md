@@ -10,7 +10,7 @@ time: 2023/03/02
 - [Normal Subgroups with Small Indexes](#normal-subgroups-with-small-indexes)
   - [Theorem (smallest index; normal)](#theorem-smallest-index-normal)
     - [Proof](#proof)
-  - [Corollary (two primes)](#corollary-two-primes)
+  - [Corollary (two primes; cyclic)](#corollary-two-primes-cyclic)
   - [Corollary (normal subgroup: $$p^k$$)](#corollary-normal-subgroup-pk)
   - [Theorem (groups of order $$pqr$$)](#theorem-groups-of-order-pqr)
 - [Normalizer](#normalizer)
@@ -66,7 +66,7 @@ $$
 
 Together with the result $$[G:\text{ker}\rho]=1$$ or $$p$$, we conclude that $$[G:\text{ker}\rho]=p$$ and $$[H:\text{ker}\rho]=1$$, which implies that $$H=\text{ker}\rho$$. ◼
 
-### Corollary (two primes)
+### Corollary (two primes; cyclic)
 > If $$\vert G\vert = pq$$, where $$p>q$$ are two primes, then $$G$$ contains a normal subgroup of order $$p$$. Moreover, if $$p\not \equiv 1\pmod q$$, then $$G$$ is **cyclic**.
 
 **Proof** 

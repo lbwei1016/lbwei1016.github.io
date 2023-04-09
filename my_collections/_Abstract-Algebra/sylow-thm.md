@@ -266,3 +266,15 @@ the only choices are $$45$$ and $$90$$. If $$\vert N_G(P\cap Q)\vert = 90$$, we 
 > Reference: [StackExchange](https://math.stackexchange.com/a/2793813)
 
 > For $$\vert G\vert = 112$$, check [this](https://math.stackexchange.com/questions/351642/proving-that-a-group-of-order-112-is-not-simple). (Check all the answers, and comments.)
+
+**Q3:**
+
+> Show that for any non-abelian group $$G$$, if $$\vert G\vert=120$$, $$G$$ is **not** a simple group.
+
+**Solution**
+
+Assume $$G$$ is simple. Then we have $$n_5=6$$. This means (check the proof [here](#theorem-orders)) that $$\rho: G\to S_6$$ is injective. Moreover, since $$2$$ is the [minimum prime factor](../normalizer/#theorem-smallest-index-normal) of $$\vert G\vert=120$$, $$G$$ has no subgroup of index $$2$$, and neither does $$\rho(G)$$. This implies that $$\rho(G)$$ is composed of only even cycles (Otherwise, half of $$\rho(G)$$ is even and the other half is odd, which means that $$\rho(G)$$ has a subgroup of index $$2$$.), i.e., $$\rho(G)\le A_6$$. 
+
+Now, let $$A_6$$ acts on $$A_6/\rho(G)$$. Since this action is transitive (multiply by some inverse), $$\rho': A_6 \to S_{\vert A_6/\rho(G)\vert} \cong S_3$$ is [non-trivial](../group-action/#remark-2), i.e., $$\text{ker}(\rho') \neq A_6$$. Moreover, since $$A_6$$ is simple ($$A_n$$ is [simple](https://sites.pitt.edu/~gmc/ch1/node4.html) except $$n=4$$.), we must have $$\text{ker}(\rho') = \{e\}$$. However, $$\vert A_6\vert = 360 > 6 = \vert S_3\vert$$, which is a contradiction. Therefore, $$G$$ is not simple. ◼
+
+> Reference: [Aryaman](https://aryamanmaithani.github.io/alg/groups/simple/120/)
