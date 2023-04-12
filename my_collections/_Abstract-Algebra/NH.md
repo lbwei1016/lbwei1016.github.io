@@ -156,9 +156,9 @@ The binary structure $$(N\rtimes_{\rho}H, *)$$ **only** involves *the group oper
 
 ##### Remark
 
-這裡的 $$\rho$$ 一樣是 $$\rho: H\to \text{Aut}(N)$$。因為 $$\rho$$ 是 group homomorphism，所以一旦 $$\rho_b(a) = a^k$$ 決定了，$$\rho_{b^r}(a)$$ 必然是 $$(a^k)^r$$，於是 $$\rho_b$$ 唯一決定了 $$\rho$$（用 generator 就夠）。
+這裡的 $$\rho$$ 一樣是 $$\rho: H\to \text{Aut}(N)$$。因為 $$\rho$$ 是 group homomorphism，所以一旦 $$\rho_b(a) = a^k$$ 決定了，$$\rho_{b^r}(a)$$ 必然是 $${a^k}^r$$，於是 $$\rho_b$$ 唯一決定了 $$\rho$$（用 generator 就夠）。
 
-又因為 $$b$$ 的 order 是 $$m$$，於是 $$\rho_{b^m}$$ 是 identity map，亦即 $$\rho_{b^m}(a) = a = (a^k)^m$$、對於某些滿足 $$k^m \equiv 1 \pmod n$$ 的 $$k$$。
+又因為 $$b$$ 的 order 是 $$m$$，於是 $$\rho_{b^m}$$ 是 identity map，亦即 $$\rho_{b^m}(a) = a = {a^k}^m$$、對於某些滿足 $$k^m \equiv 1 \pmod n$$ 的 $$k$$。
 
 然後：
 
