@@ -22,6 +22,7 @@ time: 2023/03/19
   - [Theorem (prime \<=\> integral domain)](#theorem-prime--integral-domain)
     - [Corollary (maximal =\> prime)](#corollary-maximal--prime)
     - [Examples](#examples)
+  - [Lemma (principal)](#lemma-principal)
 - [Ideals of Polynomial Rings](#ideals-of-polynomial-rings)
   - [Theorem (field =\> principal)](#theorem-field--principal)
   - [Theorem (maximal \<=\> irreducible)](#theorem-maximal--irreducible)
@@ -153,6 +154,10 @@ $$
 - Let $$R$$ be an integral domain. Then $$\{0\}$$ is a prime ideal. We find that $$R/\{0\}\cong R$$ is indeed an integral domain.
 - If $$p$$ is prime, then $$p\Bbb Z$$ is a prime ideal, and $$\Bbb{Z}/p\Bbb{Z} = \Bbb Z_p$$ is a field! 
   - If $$n$$ is not prime, $$\Bbb Z_n$$ is not an integral domain.
+
+
+### Lemma (principal)
+> Let $$R$$ be a ring **with unity**. Then for any $$a\in R$$, $$\langle a \rangle$$ is a prime ideal, i.e., **every principal ideal in $$R$$ is a prime ideal**. 
 
 ---
 

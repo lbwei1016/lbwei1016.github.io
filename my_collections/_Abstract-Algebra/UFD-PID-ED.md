@@ -15,6 +15,7 @@ time: 2023/03/22
   - [Lemma (prime \<=\> irreducible)](#lemma-prime--irreducible)
     - [Corollary (not UFD)](#corollary-not-ufd)
   - [Question](#question)
+    - [**Extension**](#extension)
 - [Principal Ideal Domain (PID)](#principal-ideal-domain-pid)
   - [Definition (PID)](#definition-pid)
     - [Examples](#examples-1)
@@ -125,7 +126,7 @@ Since $$pq=xy$$ and all of them are **non-zero and non-unit**, there must be a o
 >  To show an integral domain is **not** a UFD, one may show that there exists some irreducible element which is **not** a prime.
 
 ### Question
-> Show that $$\Bbb Z[\sqrt{-6}]$$ is not a UFD.
+> Show that $$R=\Bbb Z[\sqrt{-6}]$$ is not a UFD.
 
 First note that $$D = \Bbb Z[\sqrt{-6}]$$ is an integral domain since it is a subring with unity of $$\Bbb C$$.
 
@@ -144,6 +145,46 @@ $$
 $$
 
 Since $$(3-2\sqrt{-6})$$ is not associated to $$3$$ and $$11$$, we obtain two non-equivalent factorization of $$6$$. That is to say, $$D$$ is not a UFD. ◼
+
+#### **Extension**
+
+> Show that **every** **non-zero prime ideal in $$R$$ is maximal**. 
+
+**Solution**
+
+Let $$I$$ be a prime ideal in $$R$$. To show $$I$$ is maxiaml, we may prove that $$R/I$$ is a field, and it suffices to show that $$[R:I]$$ is finite. 
+
+Since $$R$$ is a [Dedekind's domain](https://en.wikipedia.org/wiki/Dedekind_domain), every non-zero proper ideal in $$R$$ can be factored into a product of prime ideals. Choose a principal ideal, $$R\alpha$$, such that $$R\alpha$$ is divided by $$I$$ as ideal, which means that [$$R\alpha$$ is a subset of $$I$$](../ideals/#theorem-operations-on-ideals). Moreover, we can verify that $$R\alpha$$ is an ideal of $$I$$. 
+
+Suppose $$\alpha=a+b\sqrt{-6}$$. This implies that
+
+$$
+\begin{align*}
+R\alpha &= \langle a+b\sqrt{-6}\rangle \\
+&= (a+b\sqrt{-6})\Bbb Z + \sqrt{-6}(a+b\sqrt{-6})\Bbb Z \\
+&= (a+b\sqrt{-6})\Bbb Z + (-6b + a\sqrt{-6})\Bbb Z.
+\end{align*}
+$$
+
+Let $$M = \Bigg\langle\begin{pmatrix}a\\ b\end{pmatrix}, \begin{pmatrix}-6b \\ a\end{pmatrix}\Bigg\rangle$$.  If we map $$R$$ to $$\Bbb Z^2$$ (which is bijective), we have
+
+$$
+[R:R\alpha] = [\Bbb{Z}^2:M] = \det\begin{pmatrix}
+  a&-6b\\ b&a
+\end{pmatrix} = a^2 + 6b^2,
+$$
+
+which is indeed finite. Since $$I\le R$$, $$[I:R\alpha]$$ must also be finite. Therefore, 
+
+$$
+[R:I] = [R:R\alpha]/[I:R\alpha]
+$$ 
+
+is finite and $$I$$ is maximal. ◼
+
+> Maybe we need [some isomorphism theorem for rings](https://en.wikipedia.org/wiki/Isomorphism_theorems#Theorem_C_(rings)) to justify the last equation.
+
+> 試著證明 $$[\Bbb{Z}^2:M] = \det\begin{pmatrix}a&-6b\\ b&a\end{pmatrix}$$！可以方格圖觀察看看。
 
 ---
 
@@ -315,3 +356,6 @@ By **[EF2](#definition-ed)**.
 具體來說，如果找不到 Euclidean function，就可以試著證明 $$D$$ 不是 UFD。
 
 > 延伸：[Dedekind's Domain](https://en.wikipedia.org/wiki/Dedekind_domain)。
+
+---
+

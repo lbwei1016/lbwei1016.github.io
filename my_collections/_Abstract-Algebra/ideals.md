@@ -129,6 +129,8 @@ Then, by [the ring isomorphism theorem](#theorem-ring-isomorphism-theorem), $$R/
 > 
 > $$IJ \subset (I\cap J) \subset I,J \subset (I+J).$$
 
+How can we see that $$IJ$$ is a subset of $$I$$ and $$J$$? Since $$IJ$$ must maintain its **closedness**, all $$i\in I$$ and $$j\in J$$ in $$IJ$$ must also in $$I\cap J$$. Thus $$IJ\subset (I\cap J)\subset I, J$$.
+
 ## Remark
 
 對於 group 來說，任意 $$g\in G$$ 都能在 **normal** subgroup 左右移動；對於 ring 來說，任意 $$r\in R$$ 皆被 **ideal** 吸收。而且，group homomorphism 的 kernel 是 **normal** subgroup；ring homomorphism 的 kernel 正是 **ideal**！
