@@ -169,7 +169,7 @@ $$
 p(x)g(x) + q(x)\text{Irr}(\alpha, F) = 1
 $$
 
-Then we have $$p(\alpha)q(\alpha) = 1$$, which implies that 
+Then we have $$p(\alpha)g(\alpha) = 1$$, which implies that 
 
 $$
 {f(\alpha)\over g(\alpha)} = {f(\alpha)p(\alpha)\over g(\alpha)p(\alpha)} = f(\alpha)p(\alpha) \in F[\alpha]. \tag*{$\blacksquare$}

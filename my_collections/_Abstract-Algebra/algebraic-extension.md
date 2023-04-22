@@ -152,7 +152,7 @@ First notice that $$\Bbb Q(\sqrt[3]{2}\omega, \sqrt[3]{2}) = \Bbb Q(\sqrt[3]{2},
 
 **2.1**
 
-Let $$F = [\Bbb Q(\sqrt{2}, \sqrt{3})]$$. We can see that $$[\Bbb Q(\sqrt{2}): \Bbb Q] = [\Bbb Q(\sqrt{3}): \Bbb Q] = 2 $$, but what about $$[F:\Bbb Q(\sqrt{2})]$$?
+Let $$F = \Bbb Q(\sqrt{2}, \sqrt{3})$$. We can see that $$[\Bbb Q(\sqrt{2}): \Bbb Q] = [\Bbb Q(\sqrt{3}): \Bbb Q] = 2 $$, but what about $$[F:\Bbb Q(\sqrt{2})]$$?
 
 Note that by this [corollary](#corollary-degree-constriants), $$[F:\Bbb Q]=2$$ or $$4$$. Suppose $$[F:\Bbb Q] = 2$$; this means that $$[F:\Bbb Q(\sqrt{2})] = 1$$, and that there exists $$a_0$$ and $$a_1$$ in $$\Bbb Q$$ such that 
 

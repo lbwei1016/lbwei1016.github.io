@@ -22,7 +22,7 @@ time: 2023/03/19
   - [Theorem (prime \<=\> integral domain)](#theorem-prime--integral-domain)
     - [Corollary (maximal =\> prime)](#corollary-maximal--prime)
     - [Examples](#examples)
-  - [Lemma (principal)](#lemma-principal)
+  - [Lemma (principal and prime)](#lemma-principal-and-prime)
 - [Ideals of Polynomial Rings](#ideals-of-polynomial-rings)
   - [Theorem (field =\> principal)](#theorem-field--principal)
   - [Theorem (maximal \<=\> irreducible)](#theorem-maximal--irreducible)
@@ -156,8 +156,12 @@ $$
   - If $$n$$ is not prime, $$\Bbb Z_n$$ is not an integral domain.
 
 
-### Lemma (principal)
-> Let $$R$$ be a ring **with unity**. Then for any $$a\in R$$, $$\langle a \rangle$$ is a prime ideal, i.e., **every principal ideal in $$R$$ is a prime ideal**. 
+### Lemma (principal and prime)
+> Let $$R$$ be a ring **with unity**. For all $$a\in R$$, if $$\langle a\rangle$$ is a **prime ideal**, then $$a$$ is a **prime** in $$R$$.
+
+**Proof**
+
+Since $$\langle a\rangle$$ is a prime ideal, whenever $$xy\in \langle a\rangle$$, either $$x$$ or $$y$$ is in $$\langle a\rangle$$. And since all elements in $$\langle a\rangle$$ can be represented as $$ra$$ for some $$r$$ in $$R$$, we can conclude that $$a$$ is a prime in $$R$$. ◼
 
 ---
 

@@ -11,6 +11,7 @@ time: 2023/03/22
   - [Theorem (properties)](#theorem-properties)
 - [Multiplicative Norm as Euclidean Function](#multiplicative-norm-as-euclidean-function)
   - [**Example**](#example)
+    - [Interlude (show prime)](#interlude-show-prime)
   - [Lemma (general condition)](#lemma-general-condition)
   - [Lemma (not ED)](#lemma-not-ed)
   - [Remark](#remark)
@@ -85,6 +86,24 @@ $$
 Thus, for any $$a, b\in D$$, there exist $$q, r\in D$$ such that $$a=bq + r$$ with $$r=0$$ or $$N(r)<N(b)$$. Since $$N$$ is a multiplicative norm, which already satisfies **EF2**, we now have proved $$D$$ is a Euclidean domain. ◼
 
 > $$N(x)$$ 定義在 $$\Bbb Q(\sqrt{2})$$ 上，因此 $$N({a\over b}-q)$$ 是合法的。
+
+#### Interlude (show prime)
+
+> Show that $$\alpha = 3+\sqrt{2}$$ is a prime in $$D$$.
+
+We have  
+
+$$
+\big[D:\langle \alpha\rangle \big] = \big\vert\det(L_\alpha)\big\vert = N(\alpha) = 7,
+$$
+
+which is a prime. This implies that $$\langle \alpha \rangle $$ is maximal. 
+
+> Suppose there is an ideal $$I$$ properly contains $$\langle \alpha \rangle$$, i.e., $$\big[I:\langle \alpha\rangle\big]>1$$. Since $$7$$ is a prime number, we must have $$[R:I] = 1$$. Thus $$I=R$$ and $$\langle \alpha \rangle$$ is maximal.
+
+By [this corollary](../more-on-ideals/#corollary-maximal--prime), $$\langle \alpha\rangle$$ is also a prime ideal, which means that $$\alpha$$ is a prime! ◼
+
+
 
 ### Lemma (general condition)
 
