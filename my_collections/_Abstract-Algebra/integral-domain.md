@@ -10,7 +10,7 @@ time: 2022/11/15
 - [Motivation](#motivation)
 - [Definition (zero divisor)](#definition-zero-divisor)
   - [Example](#example)
-  - [Theorem (zero divisors of $$\\mathbb{Z}\_n$$)](#theorem-zero-divisors-of-mathbbz_n)
+  - [Theorem (zero divisors)](#theorem-zero-divisors)
     - [Corollary (when $$n$$ is prime)](#corollary-when-n-is-prime)
   - [Theorem (cancellation law)](#theorem-cancellation-law)
     - [Remark](#remark)
@@ -19,7 +19,7 @@ time: 2022/11/15
   - [Theorem (subrings with unity of a field)](#theorem-subrings-with-unity-of-a-field)
   - [Theorem (fields are integral domain)](#theorem-fields-are-integral-domain)
   - [Theorem (finite integral domains are fields)](#theorem-finite-integral-domains-are-fields)
-    - [Corollary ($$\\mathbb{Z}\_p$$ is a field)](#corollary-mathbbz_p-is-a-field)
+    - [Corollary (being a field)](#corollary-being-a-field)
 - [Characteristic](#characteristic)
   - [Deinition (the characteristic of a ring)](#deinition-the-characteristic-of-a-ring)
   - [Theorem (check unity)](#theorem-check-unity)
@@ -43,7 +43,7 @@ time: 2022/11/15
 
 > $$M_n(\mathbb{R})$$ 中有很多 zero divisor！
 
-### Theorem (zero divisors of $$\mathbb{Z}_n$$)
+### Theorem (zero divisors)
 > The zero divisors of $$\mathbb{Z}_n$$ are *precisely* the nonzero elements whose representatives are **not relatively prime** to $$n$$.
 
 #### Corollary (when $$n$$ is prime)
@@ -95,7 +95,7 @@ Show that for any $$a, b \in F$$ with $$ab=0$$, if $$a\not = 0$$, then $$b=0$$.
 ### Theorem (finite integral domains are fields)
 > *Every* **finite** integral domain $$D$$ is a field.
 
-#### Corollary ($$\mathbb{Z}_p$$ is a field)
+#### Corollary (being a field)
 
 From [this corollary](#corollary-when-n-is-prime), $$\mathbb{Z}_p$$ is a field when $$p$$ is a prime.
 

@@ -13,6 +13,7 @@ time: 2023/04/17
   - [Acting on the set of roots](#acting-on-the-set-of-roots)
   - [Uniqueness of automorphisms](#uniqueness-of-automorphisms)
   - [Theorem (group size upper bound)](#theorem-group-size-upper-bound)
+- [Frobenius Automorphisms](#frobenius-automorphisms)
 
 ---
 
@@ -72,3 +73,18 @@ which means that **$$\rho$$ is uniquely determined by $$\rho(\alpha)$$**.
 > $$
 > f(x) = (x-\alpha_1)(x-\alpha_2)\cdots(x-\alpha_m), \alpha_i \in E.
 > $$
+
+---
+
+## Frobenius Automorphisms
+
+> Check out [Finite Field](../finite-field/) and [Characteristic](../integral-domain/#characteristic).
+
+Let $$F=\Bbb F_q$$ and $$E = \Bbb F_{q^n}$$. Consider the map $$\sigma:E\to E$$ given by $$\sigma(x)=x^q$$. We can show that $$\sigma$$ is an element of $$\operatorname{Aut}(E/F)$$ by showing 
+
+1. $$\sigma$$ is an additive homomorphism (use $$\text{char}E$$).
+2. $$\sigma$$ is a multiplicative homomorphism.
+3. $$\sigma$$ is a bijection (show kernel is trivial; injective iff surjective for finite mapping).
+4. For all $$x\in F$$, we have $$\sigma(x)=x$$.
+
+In fact, $$\sigma$$ is called the **Frobenius automorphism**, also denoted by $$\text{Frob}_{E/F}$$.
