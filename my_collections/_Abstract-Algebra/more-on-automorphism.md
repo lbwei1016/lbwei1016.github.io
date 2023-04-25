@@ -19,6 +19,7 @@ time: 2023/04/17
   - [Theorem (transitive action on roots)](#theorem-transitive-action-on-roots)
   - [**Frobenius Automorphism On Subextensions**](#frobenius-automorphism-on-subextensions)
     - [Theorem (one root for all)](#theorem-one-root-for-all)
+    - [Remark](#remark-1)
   - [**Subgroups and Intermediate Fields**](#subgroups-and-intermediate-fields)
 - [**Theorem (the Galois theory of finite fields)**](#theorem-the-galois-theory-of-finite-fields)
 
@@ -75,11 +76,7 @@ which means that **$$\rho$$ is uniquely determined by $$\rho(\alpha)$$**.
 > \vert \text{Aut}(E/F)\vert=m\le[E:F].
 > $$
 >
-> In particular, $$\vert \text{Aut}(E/F)\vert=[E:F]$$ if $$f(x)$$ **splits** over $$F$$ without repeated roots, i.e., 
->
-> $$
-> f(x) = (x-\alpha_1)(x-\alpha_2)\cdots(x-\alpha_m), \alpha_i \in E.
-> $$
+> In particular, $$\vert \text{Aut}(E/F)\vert$$ is the number of **distinct** zeros of $$\text{Irr}(\alpha, F)$$ in $$E$$.
 
 ---
 
@@ -97,7 +94,11 @@ Let $$F=\Bbb F_q$$ and $$E = \Bbb F_{q^n}$$. Consider the map $$\sigma:E\to E$$ 
 In fact, $$\sigma$$ is called the **Frobenius automorphism**, also denoted by $$\text{Frob}_{E/F}$$.
 
 ### Theorem (Frobenius generates)
-> For a finite extension $$E$$ over a **finite field** $$F$$, the Frobenius automorphism **$$\text{Frob}_{E/F}$$** **generates** the automorphism group $$\text{Aut}(E/F)$$, i.e., **$$\text{Aut}(E/F) = \langle \text{Frob}_{E/F}\rangle$$**, which is of order $$[E:F]$$.
+> For a finite extension $$E$$ over a **finite field** $$F$$, the Frobenius automorphism **$$\text{Frob}_{E/F}$$** **generates** the automorphism group $$\text{Aut}(E/F)$$, i.e., **$$\text{Aut}(E/F) = \langle \text{Frob}_{E/F}\rangle$$**, which is of order $$[E:F]$$. 
+>
+> In particular, if $$[E:F]=n$$, then 
+> 
+> $$\text{Aut}(E/F) = \langle \text{Frob}_{E/F}\rangle \cong \Bbb Z_n.$$
 
 > Finite field extension 的 automorphism group 才會被 $$\text{Frob}_{E/F}$$ 生成！
 
@@ -166,6 +167,26 @@ Here comes a theorem:
 > 一個在 $$E$$，全都在 $$E$$。
 
 > 因為乘法有封閉性！$$(\sigma(x) = x^q)$$
+
+#### Remark
+
+設 $$F=\Bbb Z_2$$、$$E = F(\alpha)$$，且 $$[E:F]=4$$。對於所有 $$\gamma \in E$$，在什麼情況底下等式會成立？
+
+$$\text{Irr}(\gamma, F)(x) \stackrel{?}{=} \prod_{\sigma\in\text{Aut}(E/F)}\big(x - \sigma(\gamma) \big)$$
+
+從上述說明可以得知，$$\gamma$$ 加入 $$F$$ 後必須促成四次擴張；而因為 $$\vert E\vert = 2^4$$，所以 $$E$$ 和 $$F$$ 之間的 intermediate field 只有 $$\Bbb F_{2^2} = \Bbb F_4$$。
+
+> 因為只有 $$2\vert 4$$！（除了 $$1$$、$$4$$）
+
+也就是說，所有 $$\gamma \in E\backslash\Bbb F_4$$ 都可以使該等式成立！
+
+另外，令 $$\sigma = \text{Frob}_{E/F}$$。計算其實很方便：
+
+$$
+\sigma(\alpha + 1) = (\alpha + 1)^4 = \alpha^4 + 1^4
+$$
+
+> 因為是 automorphism，直接把次方分配進去！
 
 ### **Subgroups and Intermediate Fields**
 
