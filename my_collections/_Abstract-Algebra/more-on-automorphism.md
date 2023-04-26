@@ -32,7 +32,7 @@ time: 2023/04/17
 > Let $$E$$ be a field extension over a field $$F$$. The **group of automorphisms** on $$E/F$$ is defined as
 >
 > $$\begin{align*}
-  \text{Aut}(E/F) &= \{\rho: E\to F\mid \rho \text{ is a field isomorphism and } \rho(x)=x \text{, for all } x\in F \} \\
+  \text{Aut}(E/F) &= \{\rho: E\to E\mid \rho \text{ is a field isomorphism and } \rho(x)=x \text{, for all } x\in F \} \\
   &= \{\rho: E\to E\mid \rho \text{ is a } F \text{-linear field isomorphism}\}. 
 \end{align*}
 > $$
