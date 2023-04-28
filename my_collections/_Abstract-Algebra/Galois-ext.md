@@ -2,7 +2,7 @@
 layout: page
 title: Galois Extensions
 usemathjax: true
-tag: Abstract Algebra, Automorphism
+tag: Abstract Algebra, Automorphism, Galois theory
 time: 2023/04/26
 ---
 
@@ -19,6 +19,8 @@ time: 2023/04/26
   - [Theorem (like transitive)](#theorem-like-transitive)
     - [Corollary (set size upper bound)](#corollary-set-size-upper-bound)
     - [Remark](#remark-1)
+  - [Definition (Galois extension)](#definition-galois-extension)
+  - [Theorem (the action of Galois groups)](#theorem-the-action-of-galois-groups)
 
 ---
 
@@ -114,3 +116,26 @@ $$
 $$
 \beta\not\in E \implies \rho \in \text{Emb}(E/F)\backslash\text{Aut}(E/F)\tag{2}
 $$
+
+### Definition (Galois extension)
+> Let $$E/F$$ be a field extension. If 
+>
+> $$
+> \begin{align*}
+> \text{Aut}(E/F) &= \text{Emb}(E/F) \tag{1} \\
+> \vert\text{Emb}(E/F)\vert &= [E:F]   \tag{2}
+>  \end{align*}
+> $$
+>
+> are satisfied, then $$E/F$$ is called a **Galois extension**. Moreover, $$\text{Aut}(E/F)$$ is called the **Galois group** of $$E/F$$, denoted by **$$\text{Gal}(E/F)$$**.
+
+> 第一式代表所有 zero 都在 $$E$$；第二式代表沒有重根（separable）！
+
+### Theorem (the action of Galois groups)
+> Let $$E/F$$ be a finite Galois extension with Galois group $$G$$. Suppose $$E = F(\alpha)$$. Then **$$G$$ acts transitively** on the set of zeros of the irreducible polynomial $$\text{Irr}(\alpha, F)(x)$$ of $$\alpha$$. Moreover, 
+>
+> $$
+> \prod_{g\in G}(x-g(\alpha)) = \text{Irr}(\alpha, F)(x).
+> $$
+
+> $$G$$ 其實就是 $$\text{Aut}(E/F)$$ 呦！
