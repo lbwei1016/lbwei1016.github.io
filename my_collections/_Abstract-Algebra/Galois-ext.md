@@ -36,7 +36,9 @@ time: 2023/04/26
 ### Theorem (Primitive Element Theorem)
 > Every *finite* extension $$E$$ over a field $$F$$ of **characteristic zero** is a **simple** extension.
 
-> [Primitive element](https://en.wikipedia.org/wiki/Primitive_element_(finite_field))
+> [Wiki reference](https://en.wikipedia.org/wiki/Simple_extension#Definition)
+
+> primitive element 這個詞有好幾個不同意思，見 [wiki](https://en.wikipedia.org/wiki/Primitive_element)。
 
 **Proof**
 
