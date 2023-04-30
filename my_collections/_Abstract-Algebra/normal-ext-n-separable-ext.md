@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Normal Extension and Separable Extensions
+title: Normal Extension and Separable Extension
 usemathjax: true
 tag: Abstract Algebra, Field Extension
 time: 2023/04/26
@@ -62,7 +62,7 @@ Recall from [Galois Extensions](../Galois-ext/#definition-galois-extension), we 
 > 因為當 $$char F=0$$，$$E/F$$ 是 Galois extension **iff** $$E/F$$ 是 normal！
 
 ### Definition (normal closure)
-> The smallest field extension $$E'/F$$ such that $$E/F \le E'/F$$ and $$E'/F$$ is a normal extension, is called the **normal closure** of $$E/F$$.
+> The smallest field extension $$E'/F$$ such that $$E/F \le E'/F$$ and $$E'/F$$ is a normal extension, called the **normal closure** of $$E/F$$.
 
 #### Remark
 

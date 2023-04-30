@@ -82,6 +82,8 @@ which means that **$$\rho$$ is uniquely determined by $$\rho(\alpha)$$**.
 
 ## Frobenius Automorphisms
 
+> 注意！以下討論的 $$F$$ 都是 finite field！
+
 > Check out [Finite Field](../finite-field/) and [Characteristic](../integral-domain/#characteristic).
 
 Let $$F=\Bbb F_q$$ and $$E = \Bbb F_{q^n}$$. Consider the map $$\sigma:E\to E$$ given by $$\sigma(x)=x^q$$. We can show that $$\sigma$$ is an element of $$\operatorname{Aut}(E/F)$$ by showing 
