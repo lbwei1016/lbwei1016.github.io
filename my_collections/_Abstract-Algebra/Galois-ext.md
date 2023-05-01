@@ -48,7 +48,9 @@ time: 2023/04/26
 
 ## Galois Extensions
 ### Definition (embedding)
-> Let $$F$$ be a field and let $$\alpha \in \bar F\backslash F$$. Then $$\rho$$ is called a **$$F$$-embedding** of $$F(\alpha)$$ whenever $$\rho$$ is an **injective** ring homomorphism from $$F(\alpha)$$ into $$\bar F$$, which fixes $$F$$.
+> Let $$F$$ be a field and let $$\alpha \in \bar F\backslash F$$. Then $$\rho$$ is called a **$$F$$-embedding** of $$F(\alpha)$$ whenever $$\rho$$ is an **injective** ring homomorphism from $$F(\alpha)$$ into $$\bar F$$ and fixes $$F$$.
+
+> $$F$$-embedding：$$F$$ 被固定住！
 
 #### Remark
 
