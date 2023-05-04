@@ -21,6 +21,7 @@ time: 2023/04/26
     - [Remark](#remark-1)
   - [Definition (Galois extension)](#definition-galois-extension)
   - [Theorem (the action of Galois groups)](#theorem-the-action-of-galois-groups)
+  - [Remark](#remark-2)
 
 ---
 
@@ -143,3 +144,11 @@ $$
 > $$
 
 > $$G$$ 其實就是 $$\text{Aut}(E/F)$$ 呦！
+
+### Remark
+
+任何二次擴張都是 Galois！有兩種觀點可以說明：根與係數和 normal subgroup。
+
+假設在 $$F$$ 中加入 $$\alpha$$，因為 $$\text{Irr}(\alpha, F)(x) = (x-\alpha)(x-\alpha')$$ 的係數都在 $$F$$，利用根與係數的關係，可以發現 $$\alpha'$$ 由 $$\alpha$$ 生成。
+
+再來，因為是二次擴張，所以 $$[\text{Aut}(F(\alpha)/F): G_{F(\alpha)}]=2$$，$$G_{F(\alpha)}$$ 是 [normal subgroup](../normalizer/#theorem-smallest-index-normal)。根據 [the fundamental theorem of Galois theory](../Galois-theory/#theorem-the-fundamental-theorem-of-galois-theory)，$$F(\alpha)/F$$ 就是 Galois！
