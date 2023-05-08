@@ -10,7 +10,7 @@ time: 2023/04/26
 - [Normal Extensions](#normal-extensions)
   - [Definition (normal extension)](#definition-normal-extension)
     - [Definition (mapping extension)](#definition-mapping-extension)
-  - [Theorem (Embedding extension theorem)](#theorem-embedding-extension-theorem)
+  - [**Theorem (Embedding extension theorem)**](#theorem-embedding-extension-theorem)
   - [Definition (splitting field)](#definition-splitting-field)
   - [**Theorem (normal extension: eqivalence)**](#theorem-normal-extension-eqivalence)
     - [Corollary (char. zero)](#corollary-char-zero)
@@ -37,7 +37,7 @@ Recall from [Galois Extensions](../Galois-ext/#definition-galois-extension), we 
 
 > 這個定義，對於任何兩個值域有包含關係的函數都可以用！
 
-### Theorem (Embedding extension theorem)
+### **Theorem (Embedding extension theorem)**
 > Let $$E/F$$ be a finite field extension and let $$K$$ be an intermediate field bewteen $$E$$ and $$F$$. For all $$\rho\in\text{Emb}(K/F)$$, there exists an extension of $$\rho$$ to $$E$$. Moreover, **if $$F$$ is of characteristic zero, then there are $$[E:K]$$ such extensions**.
 
 ### Definition (splitting field)
@@ -105,3 +105,7 @@ E = F_f \implies E = K_f \implies E/K \text{ is normal.}
 $$
 
 但是 $$K$$ 不見得包含所有 $$f(x)$$ 的零點，於是 $$K/F$$ 不一定 normal！
+
+> split: linear factors
+>
+> separable: no repeated zeros (in algebraic closure)

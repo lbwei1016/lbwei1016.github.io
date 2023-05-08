@@ -8,6 +8,7 @@ time: 2023/04/28
 
 **Table of Content**
 - [Theorem (the fundamental theorem of Galois theory)](#theorem-the-fundamental-theorem-of-galois-theory)
+  - [Corollary](#corollary)
   - [Theorem (more properties)](#theorem-more-properties)
 
 
@@ -18,8 +19,8 @@ time: 2023/04/28
 ## Theorem (the fundamental theorem of Galois theory)
 > Let $$E/F$$ be a finite Galois extension with Galois group $$G$$ and $$\text{char}F=0$$. Let $$H$$ be a subgroup of $$G$$ and let $$K$$ be an intermediate field between $$E$$ and $$F$$. The following holds:
 >
-> 1. $$\vert H\vert = [E : E^H]$$.
-> 2. $$\vert G_K\vert = [E:K]$$.
+> 1. $$G_{E^H} = H$$ and $$\vert H\vert = [E : E^H]$$.
+> 2. $$E^{G_K} = K$$ and $$\vert G_K\vert = [E:K]$$.
 > 3. **$$K/F$$ is Galois iff $$G_K$$ is normal**. In this case, $$\text{Gal}(K/F) = G/G_K$$.
 >
 > Consequently, there is a **bijection** between subgroups pf $$G$$ and intermediate fields between $$E$$ and $$F$$.
@@ -34,6 +35,9 @@ G_K &= \{g\in G\mid g(a) = a,\forall a\in K \}.
 $$
 
 > 固定 field 中的元素！一個收集 field element，另一個收集 group element。想想 [automorphism 的定義](../more-on-automorphism/#definition-automorphism-groups)，正是固定 $$F$$ 的 mapping！
+
+### Corollary
+> Let $$E/F$$ be a finite Galois extension with Galois group $$G$$, and let $$K$$ be an intermediate field. Then for all $$\alpha\in E$$, $$\alpha \in K$$ **iff** $$\sigma(\alpha) = \alpha$$ for all $$\sigma\in G_K$$.
 
 ### Theorem (more properties)
 > Let $$E/F$$ be a finite Galois extension and $$K_1$$ and $$K_2$$ be intermediate fields. Let $$H_1=\text{Gal}(E/K_1) $$ and $$H_2=\text{Gal}(E/K_2)$$.

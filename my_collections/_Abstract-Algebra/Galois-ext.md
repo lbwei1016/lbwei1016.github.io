@@ -10,7 +10,7 @@ time: 2023/04/26
 - [Primitive Element Theorem](#primitive-element-theorem)
   - [Definition (separable polynomials)](#definition-separable-polynomials)
   - [Theorem (who is separable?)](#theorem-who-is-separable)
-  - [Theorem (Primitive Element Theorem)](#theorem-primitive-element-theorem)
+  - [**Theorem (Primitive Element Theorem)**](#theorem-primitive-element-theorem)
 - [Galois Extensions](#galois-extensions)
   - [Definition (embedding)](#definition-embedding)
     - [Remark](#remark)
@@ -34,7 +34,7 @@ time: 2023/04/26
 >
 > In particular, if $$F$$ is an infinite field with $$\text{char}F \not = 0$$, $$f(x)\in F[x]$$ may have repeated zeros.
 
-### Theorem (Primitive Element Theorem)
+### **Theorem (Primitive Element Theorem)**
 > Every *finite* extension $$E$$ over a field $$F$$ of **characteristic zero** is a **simple** extension.
 
 > [Wiki reference](https://en.wikipedia.org/wiki/Simple_extension#Definition)
@@ -144,6 +144,8 @@ $$
 > $$
 
 > $$G$$ 其實就是 $$\text{Aut}(E/F)$$ 呦！
+
+> $$G$$ acts on the set of zeros as **permutations**!
 
 ### Remark
 
