@@ -37,8 +37,33 @@ Recall from [Galois Extensions](../Galois-ext/#definition-galois-extension), we 
 
 > 這個定義，對於任何兩個值域有包含關係的函數都可以用！
 
+> 當 $$\tilde{\rho}$$ 的輸入是 $$k\in K$$，他的行為和 $$\rho$$ 一模一樣！
+
 ### **Theorem (Embedding extension theorem)**
 > Let $$E/F$$ be a finite field extension and let $$K$$ be an intermediate field bewteen $$E$$ and $$F$$. For all $$\rho\in\text{Emb}(K/F)$$, there exists an extension of $$\rho$$ to $$E$$. Moreover, **if $$F$$ is of characteristic zero, then there are $$[E:K]$$ such extensions**.
+
+**Proof**
+
+Let $$E=K(\alpha_1, \cdots, \alpha_k)$$. We will show that $$\rho$$ can be extended to $$K(\alpha_1)$$; repeating this process, $$\rho$$ can be extended to $$E$$.
+
+Let $$g(x) = \text{Irr}(\alpha_1, K)(x)$$, then $$g^\rho(x)$$ is also irreducible in $$K^{\rho}[x]$$. Let $$\beta$$ be a zero of $$g^\rho(x)$$ in $$\bar F$$. Then
+
+$$
+\begin{gather}
+  \tilde\rho: &K(\alpha_1)& \to &K[x]/\langle g(x)\rangle& \to &K^\rho[x]/\langle g^{\rho}(x)\rangle& \to &K^\rho(\beta)& \\
+  &f(\alpha_1)& \to &f(x)& \to &f^\rho(x)& \to &f^\rho(\beta)&
+\end{gather}
+$$
+
+gives an $$F$$-embedding of $$K(\alpha_1)$$ so that $$\tilde{\rho}\big\vert_K = \rho$$, and $$\tilde{\rho}(\alpha_1) = \beta$$.
+
+When $$F$$ is of characteristic zero, we may assume that $$E=K(\alpha_1)$$ by the [primitive element theorem](../Galois-ext/#primitive-element-theorem). In this case, $$g^{\rho}(x)$$ contains $$[E:K]$$ distinct zeros in $$\bar F$$ and each zero determiines a unique extension of $$\rho$$. ◼
+
+> 每個 extension 打到不同的 zero！
+
+> 原來 char 為零是為了 separable！
+
+> 補 $$g^{\rho}(x)$$ 的定義...
 
 ### Definition (splitting field)
 > If a field extension of $$F$$, $$E$$, is obtained by **adjoining all zeros of a polynomial** $$f(x)\in F[x]$$ in $$\bar F $$, then $$E$$ is called the **splitting field** of $$f(x)$$ over $$F$$, denoted by **$$F_f$$**. In other words, $$F_f$$ is the **smallest** field extension of $$F$$ in $$\bar F$$ in which $$f(x)$$ **splits**.

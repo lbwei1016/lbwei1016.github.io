@@ -12,7 +12,7 @@ time: 2023/04/26
   - [Theorem (who is separable?)](#theorem-who-is-separable)
   - [**Theorem (Primitive Element Theorem)**](#theorem-primitive-element-theorem)
 - [Galois Extensions](#galois-extensions)
-  - [Definition (embedding)](#definition-embedding)
+  - [**Definition (embedding)**](#definition-embedding)
     - [Remark](#remark)
   - [Definition (the set of embeddings)](#definition-the-set-of-embeddings)
   - [Theorem (now all zero come)](#theorem-now-all-zero-come)
@@ -21,6 +21,7 @@ time: 2023/04/26
     - [Remark](#remark-1)
   - [Definition (Galois extension)](#definition-galois-extension)
   - [Theorem (the action of Galois groups)](#theorem-the-action-of-galois-groups)
+    - [Corollary (intermediate fields)](#corollary-intermediate-fields)
   - [Remark](#remark-2)
 
 ---
@@ -48,17 +49,19 @@ time: 2023/04/26
 ---
 
 ## Galois Extensions
-### Definition (embedding)
-> Let $$F$$ be a field and let $$\alpha \in \bar F\backslash F$$. Then $$\rho$$ is called a **$$F$$-embedding** of $$F(\alpha)$$ whenever $$\rho$$ is an **injective** ring homomorphism from $$F(\alpha)$$ into $$\bar F$$ and fixes $$F$$.
+### **Definition (embedding)**
+> Let $$E$$ and $$F$$ be two fields. If $$\rho: F\to E$$ is an **injective** homomorphism of $$F$$ into $$E$$, then $$\rho$$ is called an **embedding of $$F$$ into $$E$$**.
 
-> $$F$$-embedding：$$F$$ 被固定住！
+> $$F$$-embedding: $$\rho(x) = x$$ for all $$x\in F$$.
+
+> $$F$$-embedding 代表 $$F$$ 被固定住！
 
 #### Remark
 
-Consider the case when $$F=\Bbb Q$$ and $$\alpha=\sqrt[3]{2}$$. Note that the other zeros of $$\text{Irr}(\sqrt[3]{2}, \Bbb Q)(x)$$ are $$\sqrt[3]{2}\omega$$ and $$\sqrt[3]{2}\omega^2$$, which are non-real. This means the only one zero of $$\text{Irr}(\sqrt[3]{2}, \Bbb Q)(x)$$ lies in $$\Bbb Q(\sqrt[3]{2})$$. From [this theorem](../more-on-automorphism/#theorem-transitive-action-on-roots), we can conclude that 
+Consider the case when $$F=\Bbb Q$$ and $$\alpha=\sqrt[3]{2}$$. Note that other zeros of $$\text{Irr}(\sqrt[3]{2}, \Bbb Q)(x)$$ are $$\sqrt[3]{2}\omega$$ and $$\sqrt[3]{2}\omega^2$$, which are non-real. This means the only one zero of $$\text{Irr}(\sqrt[3]{2}, \Bbb Q)(x)$$ lies in $$\Bbb Q(\sqrt[3]{2})$$. From [this theorem](../more-on-automorphism/#theorem-transitive-action-on-roots), we can conclude that 
 
 $$
-\text{Aut}\Big(\Bbb Q(\sqrt[3]{2}/\Bbb Q) \Big) = \{e\}.
+\text{Aut}\Big(\Bbb Q(\sqrt[3]{2})/\Bbb Q \Big) = \{e\}.
 $$
 
 There is nothing useful in the automorphism group. Instead, consider the following field isomorphism:
@@ -72,13 +75,13 @@ We now have
 $$
 \begin{align*}
     \rho: \Bbb Q(\sqrt[3]{2}) &\to \bar{\Bbb Q}, \\
-    a+b\sqrt[3]{2} &\mapsto a+b\sqrt[3]{2}\omega,
+    a_0+a_1\sqrt[3]{2}+a_2\sqrt[3]{4} &\mapsto a_0+a_1\sqrt[3]{2}\omega + a_2\sqrt[3]{4}\omega^2,
 \end{align*}
 $$
 
-which is an injective ring homomorphism. $$\rho$$ is called an embedding!
+which is an injective ring homomorphism that fixes $$\Bbb Q$$. Thus $$\rho$$ is a $$\Bbb Q$$-embedding of $$\Bbb Q(\sqrt[3]{2})$$!
 
-> 好像沒有說得很清楚，再想想。
+> 好像沒有說得很清楚，再想想。(2023/5/9 更新)
 
 ### Definition (the set of embeddings)
 > Let $$E/F$$ be a finite extension. Define $$\text{Emb}(E/F)$$ be the **set of $$F$$-embeddings of $$E$$ into $$\bar F$$**. In particular, $$\text{Aut}(E/F)\subseteq \text{Emb}(E/F)$$.
@@ -104,6 +107,23 @@ This prove that $$\rho(\alpha)$$ is a zero of $$f(x)$$. ◼
 
 ### Theorem (like transitive)
 > Let $$E/F$$ be a finite field extension, and let $$f(x)=\text{Irr}(\alpha, F)(x)$$ in $$E$$. Let $$\beta$$ be a zero of $$f(x)$$ in $$\bar F$$. Then there **exists** some $$\rho\in\text{Emb}(E/F)$$ such that $$\rho(\alpha)=\beta$$.
+
+**Proof**
+
+Consider
+
+$$
+\begin{gather}
+\rho: E=&F(\alpha)& \cong &F[x]/\langle f(x)\rangle& \cong 
+&F(\beta)& \\
+
+&g(\alpha)& \  &\longrightarrow& \  &g(\beta)&
+\end{gather}
+$$
+
+where $$\rho$$ is a composition of two field isomorphisms, which is also a field isomorphism. ◼
+
+> $$g(x) \in F[x]$$!
 
 #### Corollary (set size upper bound)
 > $$\vert \text{Emb}(E/F)\vert \le [E:F]$$.
@@ -134,7 +154,7 @@ $$
 >
 > are satisfied, then $$E/F$$ is called a **Galois extension**. Moreover, $$\text{Aut}(E/F)$$ is called the **Galois group** of $$E/F$$, denoted by **$$\text{Gal}(E/F)$$**.
 
-> 第一式代表所有 zero 都在 $$E$$；第二式代表沒有重根（separable）！
+> 第一式代表所有 zero 都在 $$E$$（splitting）；第二式代表沒有重根（separable）！
 
 ### Theorem (the action of Galois groups)
 > Let $$E/F$$ be a finite Galois extension with Galois group $$G$$. Suppose $$E = F(\alpha)$$. Then **$$G$$ acts transitively** on the set of zeros of the irreducible polynomial $$\text{Irr}(\alpha, F)(x)$$ of $$\alpha$$. Moreover, 
@@ -146,6 +166,57 @@ $$
 > $$G$$ 其實就是 $$\text{Aut}(E/F)$$ 呦！
 
 > $$G$$ acts on the set of zeros as **permutations**!
+
+**Proof**
+
+For all $$k\in E$$, $$k$$ can be written as 
+
+$$
+k = a_0 + a_1\alpha + \cdots + a_{n-1}\alpha^{n-1}
+$$
+
+with $$a_i \in F$$. Then for some $$g\in G$$, 
+
+$$
+g(k) = a_0 + a_1g(\alpha) + \cdots + a_{n-1}g(\alpha)^{n-1},
+$$
+
+which means that $$g$$ is uniquely determined by $$g(\alpha)$$, i.e., there is a one-to-one correspondence between $$g$$ and $$g(\alpha)$$ for all $$g\in G$$. Moreover, since $$\vert G\vert = [E:F] = n$$ and $$g(\alpha)$$ is also a zero of $$\text{Irr}(\alpha, F)(x)$$, we have proved the theorem! ◼
+
+
+#### Corollary (intermediate fields)
+> Let $$E/F$$ be a Galois extension with Galois group $$G$$. Let $$[E:F] = n$$ and $$[F(\alpha):F] = m$$, for some $$\alpha \in E$$. Then
+>
+> $$
+> \prod_{g\in G}(x-g(\alpha)) = f(x)^{n/m}.
+> $$
+
+**Proof**
+
+Let $$H = \text{Emb}(F(\alpha)/F)$$. We have $$[G:H] = [E:F(\alpha)] = n/m$$, and can write $$G$$ as the union of $$H$$ cosets:
+
+$$
+G = H \sqcup h_1H \sqcup \cdots \sqcup h_{n/m-1}H.
+$$
+
+Moreover, by [this theorem](#theorem-the-action-of-galois-groups), we can write $$f(x)$$ as
+
+$$
+\prod_{h\in H}(x-h(x)) = f(x).
+$$
+
+Equivalently, for any coset of $$H$$,
+
+$$
+\prod_{h' \in h_iH}(x-h'(x)) = \prod_{h\in H}(x-h_ih(x)) = \prod_{h\in H}(x-h(x)) = f(x),
+$$
+
+since left multiplication only permutes $$h$$s! Thus,
+
+$$
+\prod_{g\in G}(x-g(\alpha)) = \Big(\prod_{h\in H}(x-h(x))\Big)^{n/m} = f(x)^{n/m}. \tag*{$\blacksquare$}
+$$
+
 
 ### Remark
 
