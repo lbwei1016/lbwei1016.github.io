@@ -53,9 +53,11 @@ $$G_K = \{g\in G\mid g(k)=k,\ \forall k\in K \},$$
 
 which is exactly $$\text{ker}\phi$$.
 
-Then, by [the first ring isomorphism theorem](../rings-of-polynomials/#theorem-first-ring-isomorphism-theorem), we have $$\text{Gal}(K/F)\cong G_K$$. ■
+Then, by [the first ring isomorphism theorem](../rings-of-polynomials/#theorem-first-ring-isomorphism-theorem), we have $$\text{Gal}(K/F)\cong G/G_K$$. ■
 
 > See a different proof: [Northeastern University: p.35](https://web.northeastern.edu/dummit/teaching_fa20_5111/5111_lecture_20_the_fundamental_theorem_of_galois_theory.pdf#:~:text=The%20extension%20K%3DE%20is%20always%20Galois%2C%20with%20Galois,G%2C%20and%20inthat%20case%2C%20Gal%28E%3DF%29is%20isomorphic%20to%20G%3DH.).
+
+> $$G_K = \text{Aut}(E/K)$$, since now $$K$$ is the one to be fixed.
 
 ### Corollary
 > Let $$E/F$$ be a finite Galois extension with Galois group $$G$$, and let $$K$$ be an intermediate field. Then for all $$\alpha\in E$$, $$\alpha \in K$$ **iff** $$\sigma(\alpha) = \alpha$$ for all $$\sigma\in G_K$$.

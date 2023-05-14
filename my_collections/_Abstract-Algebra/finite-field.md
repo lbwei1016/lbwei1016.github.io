@@ -321,7 +321,7 @@ $$
 
 But how are they factored?
 
-> 為什麼要 $\times 2$$？見 [Frobenius Automorphism](../more-on-automorphism/#frobenius-automorphisms)！
+> 為什麼要 $$\times 2$$？見 [Frobenius Automorphism](../more-on-automorphism/#frobenius-automorphisms)！
 
 ### Question
 
