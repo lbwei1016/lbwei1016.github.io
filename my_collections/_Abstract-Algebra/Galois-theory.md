@@ -36,6 +36,27 @@ $$
 
 > 固定 field 中的元素！一個收集 field element，另一個收集 group element。想想 [automorphism 的定義](../more-on-automorphism/#definition-automorphism-groups)，正是固定 $$F$$ 的 mapping！
 
+**Proof of 3.**
+
+To show $$G_K$$ is normal, we can construct a map with $$G_K$$ being the kernel. Consider the map:
+
+$$
+\begin{gather}
+\phi: &\text{Aut}(E/F)& \to &\text{Aut}(K/F)& \\
+&\rho& \mapsto &\rho\vert_K&
+\end{gather}
+$$
+
+We can see that $$\rho$$ is in the kernel if and only if $$\rho\vert_K$$ is the identity map, i.e., $$\rho$$ as well as $$\rho\vert_K$$ fix all $$k\in K$$. By definition, 
+
+$$G_K = \{g\in G\mid g(k)=k,\ \forall k\in K \},$$ 
+
+which is exactly $$\text{ker}\phi$$.
+
+Then, by [the first ring isomorphism theorem](../rings-of-polynomials/#theorem-first-ring-isomorphism-theorem), we have $$\text{Gal}(K/F)\cong G_K$$. ■
+
+> See a different proof: [Northeastern University: p.35](https://web.northeastern.edu/dummit/teaching_fa20_5111/5111_lecture_20_the_fundamental_theorem_of_galois_theory.pdf#:~:text=The%20extension%20K%3DE%20is%20always%20Galois%2C%20with%20Galois,G%2C%20and%20inthat%20case%2C%20Gal%28E%3DF%29is%20isomorphic%20to%20G%3DH.).
+
 ### Corollary
 > Let $$E/F$$ be a finite Galois extension with Galois group $$G$$, and let $$K$$ be an intermediate field. Then for all $$\alpha\in E$$, $$\alpha \in K$$ **iff** $$\sigma(\alpha) = \alpha$$ for all $$\sigma\in G_K$$.
 
@@ -47,21 +68,3 @@ $$
 > 3. If the above two cases **both** hold and either $$K_1/F$$ or $$K_2/F$$ is Galois, then $$G=H_1H_2$$, and $$G$$ is isomorphic to a [semidirect product](../NH/#theorem-determine-structure-of-g) of $$H_1$$ and $$H_2$$.
 
 > 如果 $$K_1/F$$ 是 Galois，$$H_1$$ 就是 $$G$$ 的 **normal subgroup**！
-
-### Theorem (normal subgroup)
-> Let $$E/F$$ be a finite Galois extension with Galois group $$G$$, and let $$K$$ be an intermediate field. If $$K/F$$ is Galois, then $$H = \text{Gal}(E/K)$$ is a normal subgroup of $$G$$. Moreover, $$\text{Gal}(K/F)\cong G/H$$.
-
-**Proof**
-
-To show $$H$$ is normal, we can construct a map with $$H$$ being the kernel. Consider the map:
-
-$$
-\begin{gather}
-\phi: &\text{Aut}(E/F)& \to &\text{Aut}(K/F)& \\
-&\rho& \mapsto &\rho\vert_K&
-\end{gather}
-$$
-
-We can see that $$\rho$$ is in the kernel if and only if $$\rho\vert_K$$ is the identity map, i.e., $$\rho$$ as well as $$\rho\vert_K$$ fix all $$k\in K$$. By definition, $$\text{Gal}(E/K)= \{g\in G\mid g(k)=k\forall k\in K \}$$, which is exactly $$\text{ker}\phi$$.
-
-Then, by [the first ring isomorphism theorem](../rings-of-polynomials/#theorem-first-ring-isomorphism-theorem), we have $$\text{Gal}(K/F)\cong G/H$$. ■
