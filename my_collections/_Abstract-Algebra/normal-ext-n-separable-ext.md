@@ -81,6 +81,14 @@ When $$F$$ is of characteristic zero, we may assume that $$E=K(\alpha_1)$$ by th
 
 > $$F$$ **needs not** be of characteristic zero.
 
+#### Remark
+
+*For all elements in $$E$$, its irreducible polynomial over $$F$$ splits over $$E$$.* 說明了 $$E$$ 是所有 $$\text{Irr}(\alpha, F)(x), \alpha \in E$$ 的 splitting field！
+
+然後呀，通常說 *splitting field* 的時候，會講明 $$E$$ 是哪**個**或哪**些**多項式的 splitting field；說 *normal extension* 時，是哪些多項式並未表明！（像前一段那句）
+
+> Ref: [Definition of normal extension](https://math.stackexchange.com/questions/4615301/definition-of-normal-extension).
+
 #### Corollary (char. zero)
 > Let $$E/F$$ be a finite field extension and $$\text{char}F = 0$$. Then $$E/F$$ is a Galois extension **iff** $$E$$ is the splitting field of some polynomial over $$F$$. 
 
