@@ -32,7 +32,7 @@ We have $$\text{Gal}(\Bbb Q(\zeta_n)/\Bbb Q) \cong \Bbb Z_n^\times$$ and $$\Bbb 
 ### Lemma (transitive -> p-cycle)
 > Let $$p$$ be a prime. Then **any** transitive subgroup of $$S_p$$ has a **$$p$$-cycle**.
 
-**Proof 1.**
+**Proof**
 
 Let $$H$$ be a transitive subgroup of $$S_p$$, and let $$H$$ act on $$\{1, 2, \cdots, p\}$$. By [the orbit-stabilizer theorem](../group-action/#theorem-the-orbit-stabilizer-theorem), we have
 
@@ -49,4 +49,4 @@ for some positive integer $$q$$. Then by [Cauchy's theorem](../more-group-action
 
 **Proof**
 
-Since $$f(x)$$ is irreducible, $$\degf = p \mid \vert G\vert. By Cauchy's theorem, $$G$$ has an element of order $$p$$. ■
+Since $$f(x)$$ is irreducible, $$\deg(f) = p \mid \vert G\vert$$. By Cauchy's theorem, $$G$$ has an element of order $$p$$. ■
