@@ -12,6 +12,7 @@ time: 2023/05/22
 - [Transitive subgroups](#transitive-subgroups)
   - [Lemma (transitive -\> p-cycle)](#lemma-transitive---p-cycle)
   - [Lemma (again p-cycle)](#lemma-again-p-cycle)
+  - [Remark](#remark)
 
 
 ---
@@ -50,3 +51,7 @@ for some positive integer $$q$$. Then by [Cauchy's theorem](../more-group-action
 **Proof**
 
 Since $$f(x)$$ is irreducible, $$\deg(f) = p \mid \vert G\vert$$. By Cauchy's theorem, $$G$$ has an element of order $$p$$. ■
+
+### Remark
+
+計算 Galois group $$G$$ 的時候，只要給定的不可約多項式 $$f(x)$$ 的次數 $$n$$ 是質數，$$G$$ 就一定有 $$n$$-cycle！但若 $$n$$ 不是質數，就得找某質數 $$p$$，使得 $$f(x)$$ 在 $$\Bbb{Z}_p$$ 下是不可約的（然後 by Dedkind's theorem）。
