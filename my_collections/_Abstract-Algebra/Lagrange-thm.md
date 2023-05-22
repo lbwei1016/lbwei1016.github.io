@@ -38,7 +38,7 @@ This proves the theorem.
 ### Corollary (order of an element)
 > The order of an element $$a$$ of a finite group $$G$$ divides the order of $$G$$.
 
-> 見 [Cauchy's theorem](V-more-group-action/#theorem-cauchys-theorem)。
+> 見 [Cauchy's theorem](../more-group-action/#theorem-cauchys-theorem)。
 
 **Proof**
 
