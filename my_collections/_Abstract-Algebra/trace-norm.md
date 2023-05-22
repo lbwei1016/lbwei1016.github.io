@@ -7,7 +7,11 @@ time: 2023/05/08
 ---
 
 **Table of Content**
-
+- [Definition (trace)](#definition-trace)
+  - [Properties (trace)](#properties-trace)
+  - [Example](#example)
+- [Definition (norm)](#definition-norm)
+  - [Theorem (matrix represnetation)](#theorem-matrix-represnetation)
 
 
 ---
