@@ -266,3 +266,5 @@ With the above arguments, we now come to the following theorem.
 2. $$\vert \text{Aut}(E/F)\vert = [E:F]$$ implies that $$E$$ is the splitting field.
 
 By the above two observations, $$E/F$$ is Galois. ■
+
+> 其實從[這個定理](#theorem-one-root-for-all)就可以看出來了！
