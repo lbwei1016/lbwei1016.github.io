@@ -63,11 +63,11 @@ Since $$f(x)$$ is irreducible, $$\deg(f) = p \mid \vert G\vert$$. By Cauchy's th
 
 ## Misc
 ### Theorem (Hilbert)
-> For all positive integers $$n$$, there exists an integer polynomial $$f(x)$$ of degree $$n$$ such that the Galois group of its splitting field $$\Bbb{Q}_f$$ over $$\Bbb Q$$ is **isomorphic to $$S_n$$**.
+> For **all** positive integers $$n$$, there exists an integer polynomial $$f(x)$$ of degree $$n$$ such that the **Galois group** of its splitting field $$\Bbb{Q}_f$$ over $$\Bbb Q$$ is **isomorphic to $$S_n$$**.
 
 ### Theorem (any finite group; Galois)
 > For every **finite** group $$G$$, there exists a **Galois extension** $$E/F$$ such that $$\text{Gal}(E/F) \cong G$$.
 
 **Proof**
 
-Suppose $$\vert G\vert = n$$. By **Hilbert's theorem**, there exists an integer polynomial $$f(x)$$ of degree $$n$$ such that the Galois group of its splitting field $$\Bbb{Q}_f$$ over $$\Bbb Q$$ is isomorphic to $$S_n$$. Let $$E = \Bbb{Q}_f$$ and $$F=\Bbb Q$$. By [Cayley's theorem](../Cayley-thm), $$G$$ is isomorphic to a subgroup of $$S_n$$. Then, by [the fundamental theorem of Galois theory](../Galois-theory/#theorem-the-fundamental-theorem-of-galois-theory), there exists a subextension of $$E$$, $$E^G$$, such that $$\text{Gal}(E/E^G) \cong G$$. ■ 
+Suppose $$\vert G\vert = n$$. By [Hilbert's theorem](#theorem-hilbert), there exists an integer polynomial $$f(x)$$ of degree $$n$$ such that the Galois group of its splitting field $$\Bbb{Q}_f$$ over $$\Bbb Q$$ is isomorphic to $$S_n$$. Let $$E = \Bbb{Q}_f$$. By [Cayley's theorem](../Cayley-thm), $$G$$ is isomorphic to a subgroup of $$S_n$$. Then, by [the fundamental theorem of Galois theory](../Galois-theory/#theorem-the-fundamental-theorem-of-galois-theory), there exists a subextension of $$E$$, $$E^G$$, such that $$\text{Gal}(E/E^G) \cong G$$. ■ 
