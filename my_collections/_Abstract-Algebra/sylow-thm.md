@@ -184,8 +184,8 @@ Suppose $$\rho$$ is not injective, which means that $$\text{ker}\rho > 1$$. Howe
 #### Theorem (orders)
 > Suppose $$G$$ is a non-abelian **simple** group.
 >
-> 1. For all primes $$p\mid \vert G\vert$$, $$\vert G\vert \mid (np)!$$.
-> 2. For all *proper* subgroups $$H$$ of $$G$$, $$\vert G\vert \mid [G:H]!$$.
+> 1. For all primes $$p\mid \vert G\vert$$, $$\vert G\vert \mid (n_p)!$$.
+> 2. For all *proper* subgroups $$H$$ of $$G$$, $$\vert G\vert \Big\vert [G:H]!$$.
 
 **Proof 1.**
 
