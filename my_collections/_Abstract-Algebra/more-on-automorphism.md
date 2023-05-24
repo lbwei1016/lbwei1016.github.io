@@ -22,6 +22,7 @@ time: 2023/04/17
     - [Remark](#remark-1)
   - [**Subgroups and Intermediate Fields**](#subgroups-and-intermediate-fields)
 - [**Theorem (the Galois theory of finite fields)**](#theorem-the-galois-theory-of-finite-fields)
+  - [Theorem (must be Galois)](#theorem-must-be-galois)
 
 ---
 
@@ -255,3 +256,13 @@ With the above arguments, we now come to the following theorem.
 > $$
 >
 > Moreover, $$\rho\circ \tau$$ and $$\tau \circ\rho$$ are both the identity maps.
+
+### Theorem (must be Galois)
+> Let $$F$$ be a finite field. Then any finite field extension $$E/F$$ **must be a Galois extension**.
+
+**Proof**
+
+1. [This theorem](../Galois-ext/#theorem-who-is-separable): separable
+2. $$\vert \text{Aut}(E/F)\vert = [E:F]$$ implies that $$E$$ is the splitting field.
+
+By the above two observations, $$E/F$$ is Galois. ■
