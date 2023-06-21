@@ -194,7 +194,7 @@ $$
 \rho: \mathbb{C} \to \text{End}(\mathbb{C})
 $$
 
-given by $$\rho(x) = \rho_x$$, and $$\rho_x(y) = xy$$.
+given by $$\rho(x) = \rho_x$$, and $$\rho_x(y) = \rho_xy$$.
 
 > $$\rho_x$$ is a *linear tranformation*. 
  

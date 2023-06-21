@@ -49,3 +49,6 @@ collections:
 
         Quantum-Computation:
           output: false
+        
+        Representation-Theory:
+          output: true
