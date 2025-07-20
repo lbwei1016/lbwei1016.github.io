@@ -121,8 +121,8 @@ By the linearity of integral, we have
 
 $$
 \begin{align*}
-\int_0^1\sum_{k=0}^\beta {\beta\choose k}(-1)^{\-k}x^{\alpha+k} dx &= \sum_{k=0}^\beta{\beta\choose k}(-1)^{-k}\int_0^1 x^{\alpha+k}dx. \\
-&= \sum_{k=0}^\beta{\beta\choose k}(-1)^{\-k}{1\over \alpha+1+k} \\
+\int_0^1\sum_{k=0}^\beta {\beta\choose k}(-1)^{-k}x^{\alpha+k} dx &= \sum_{k=0}^\beta{\beta\choose k}(-1)^{-k}\int_0^1 x^{\alpha+k}dx. \\
+&= \sum_{k=0}^\beta{\beta\choose k}(-1)^{-k}{1\over \alpha+1+k} \\
 \end{align*}
 $$
 
@@ -153,7 +153,7 @@ and we have obtained the desired expression. ◼
 
 #### Remark
 
-In fact, this property holds for any real $\alpha, \beta \ge 0$, but not just positive integers.
+In fact, this property holds for any real $$\alpha, \beta \ge 0$$, but not just positive integers.
 
 ---
 
